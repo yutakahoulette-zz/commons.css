@@ -1,0 +1,11 @@
+@import 'css-mother-starter';
+@import '../modules/button/index.css';
+@import '../modules/background-colors/index.css';
+@import '../modules/link/index.css';
+@import '../modules/table/index.css';
+@import '../modules/utils/index.css';
+
+html {
+  font-family: 'Open Sans';
+}
+

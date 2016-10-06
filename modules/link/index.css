@@ -1,0 +1,7 @@
+/* link/index.css */
+@import '../color-variables.css';
+
+a {
+  color: $blue;
+}
+

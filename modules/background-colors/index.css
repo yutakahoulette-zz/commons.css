@@ -1,0 +1,15 @@
+/* background-colors/index.css */
+@import '../color-variables.css';
+
+.bg--red {
+  background: $red; 
+}
+
+.bg--blue {
+  background: $blue; 
+}
+
+.bg--lightGreen {
+  background: $light-green;
+}
+

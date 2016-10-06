@@ -1,0 +1,32 @@
+/* button/index.css */
+@import '../color-variables.css';
+
+button {
+  padding: 0.5em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background: $green;
+}
+
+button.btn--edit {
+  color: $blue;
+  border: 1px dashed $blue;
+  background: white;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:hover:not(:disabled) {
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,.1);
+}
+
+button:disabled {
+  background: grey;
+  cursor: initial;
+}
+
