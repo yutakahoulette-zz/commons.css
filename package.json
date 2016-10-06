@@ -1,0 +1,26 @@
+{
+  "name": "@commitchange/styles",
+  "version": "0.0.1",
+  "description": "CommitChange styles",
+  "style": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CommitChange/styles.git"
+  },
+  "author": "yutakahoulette",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CommitChange/styles/issues"
+  },
+  "homepage": "https://github.com/CommitChange/styles#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "css-mother-starter": "0.0.21",
+    "cssnano": "^3.7.6",
+    "postcss": "^5.2.4",
+    "postcss-cli": "^2.6.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^8.1.2",
+    "precss": "^1.4.0"
+  }
+}
