@@ -1,6 +1,3 @@
-/* button/index.css */
-@import '../color-variables.css';
-
 button {
   padding: 0.5em;
   outline: none;

@@ -1,8 +1,0 @@
-/* utils/index.css */
-@import '../color-variables.css';
-
-.border {
-  border-color: $light-grey;
-}
-
-

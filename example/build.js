@@ -11,7 +11,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _h2.default)('h1', 'Anchors'), (0, _h2.default)('div', [(0, _h2.default)('a', 'Link'), (0, _h2.default)('pre.ml1.inline', '<a>')]), (0, _h2.default)('div', [(0, _h2.default)('a.underline', 'Link'), (0, _h2.default)('pre.ml1.inline', "<a class='underline'>")])]);
 };
 
-},{"snabbdom/h":22}],2:[function(require,module,exports){
+},{"snabbdom/h":23}],2:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -24,7 +24,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _h2.default)('h1', 'Buttons'), (0, _h2.default)('div', [(0, _h2.default)('button', 'Click Me'), (0, _h2.default)('pre.ml1.inline', '<button>')]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.btn--edit', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='btn--edit'>")]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button', { props: { disabled: true } }, 'Click Me'), (0, _h2.default)('pre.ml1.inline', '<button disabled>')]), (0, _h2.default)('p.mt3', 'To change button styles, just add utility classes:'), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.bg--red', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='bg--red'>")]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.p2.h2', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='p2 h2'>")]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.small', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='small'>")])]);
 };
 
-},{"snabbdom/h":22}],3:[function(require,module,exports){
+},{"snabbdom/h":23}],3:[function(require,module,exports){
 'use strict';
 
 var _ramda = require('ramda');
@@ -59,13 +59,17 @@ var _tables = require('./tables');
 
 var _tables2 = _interopRequireDefault(_tables);
 
+var _inputs = require('./inputs');
+
+var _inputs2 = _interopRequireDefault(_inputs);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// npm
-var init = function init(_) {};
+var init = function init(_) {}; // npm
+
 
 var view = function view(_) {
-  return (0, _h2.default)('div.container.p2', [(0, _h2.default)('h1', 'CommitChange styles'), (0, _h2.default)('hr'), (0, _buttons2.default)(), (0, _h2.default)('hr'), (0, _anchors2.default)(), (0, _h2.default)('hr'), (0, _tables2.default)()]);
+  return (0, _h2.default)('div.container.p2', [(0, _h2.default)('h1', 'CommitChange styles'), (0, _h2.default)('hr'), (0, _buttons2.default)(), (0, _h2.default)('hr'), (0, _anchors2.default)(), (0, _h2.default)('hr'), (0, _tables2.default)(), (0, _h2.default)('hr'), (0, _inputs2.default)()]);
 };
 
 var container = document.querySelector('#container');
@@ -74,7 +78,20 @@ var patch = _snabbdom2.default.init([require('snabbdom/modules/class'), require(
 
 (0, _flimflamRender2.default)({ patch: patch, container: container, view: view, state: init() });
 
-},{"./anchors":1,"./buttons":2,"./tables":4,"flimflam-render":5,"flyd":14,"ramda":21,"snabbdom":30,"snabbdom/h":22,"snabbdom/modules/attributes":25,"snabbdom/modules/class":26,"snabbdom/modules/eventlisteners":27,"snabbdom/modules/props":28,"snabbdom/modules/style":29}],4:[function(require,module,exports){
+},{"./anchors":1,"./buttons":2,"./inputs":4,"./tables":5,"flimflam-render":6,"flyd":15,"ramda":22,"snabbdom":31,"snabbdom/h":23,"snabbdom/modules/attributes":26,"snabbdom/modules/class":27,"snabbdom/modules/eventlisteners":28,"snabbdom/modules/props":29,"snabbdom/modules/style":30}],4:[function(require,module,exports){
+'use strict';
+
+var _h = require('snabbdom/h');
+
+var _h2 = _interopRequireDefault(_h);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = function (_) {
+  return (0, _h2.default)('div', [(0, _h2.default)('h1', 'Form Elements'), (0, _h2.default)('form.border.p2.bg--lightGrey', [(0, _h2.default)('fieldset', [(0, _h2.default)('label.block', 'Fruit'), (0, _h2.default)('input', { props: { type: 'text' } })]), (0, _h2.default)('fieldset', [(0, _h2.default)('label.block', 'Amount'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input', { props: { type: 'number' } })])])]), (0, _h2.default)('pre', "<span class='prepend'>\n  <span>$</span>\n  <input type='number'>\n</span>")]);
+};
+
+},{"snabbdom/h":23}],5:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -87,7 +104,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _h2.default)('h1', 'Tables'), (0, _h2.default)('table', [(0, _h2.default)('tr', [(0, _h2.default)('th', 'Name'), (0, _h2.default)('th', 'Year'), (0, _h2.default)('th', 'Length')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Kraftwerk'), (0, _h2.default)('td', '1970'), (0, _h2.default)('td', '39:39')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Kraftwerk 2'), (0, _h2.default)('td', '1972'), (0, _h2.default)('td', '42:42')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Ralf and Florian'), (0, _h2.default)('td', '1973'), (0, _h2.default)('td', '37:41')])])]);
 };
 
-},{"snabbdom/h":22}],5:[function(require,module,exports){
+},{"snabbdom/h":23}],6:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -137,7 +154,7 @@ var isObj = function isObj(x) {
 module.exports = render;
 
 
-},{"flyd":6,"flyd/module/mergeall":7,"ramda":13}],6:[function(require,module,exports){
+},{"flyd":7,"flyd/module/mergeall":8,"ramda":14}],7:[function(require,module,exports){
 var curryN = require('ramda/src/curryN');
 
 'use strict';
@@ -438,7 +455,7 @@ module.exports = {
   immediate: immediate,
 };
 
-},{"ramda/src/curryN":8}],7:[function(require,module,exports){
+},{"ramda/src/curryN":9}],8:[function(require,module,exports){
 var flyd = require('../../lib');
 
 module.exports = function mergeAll(streams) {
@@ -463,7 +480,7 @@ module.exports = function mergeAll(streams) {
 };
 
 
-},{"../../lib":6}],8:[function(require,module,exports){
+},{"../../lib":7}],9:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -520,7 +537,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":9,"./internal/_curry1":10,"./internal/_curry2":11,"./internal/_curryN":12}],9:[function(require,module,exports){
+},{"./internal/_arity":10,"./internal/_curry1":11,"./internal/_curry2":12,"./internal/_curryN":13}],10:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   // jshint unused:vars
   switch (n) {
@@ -539,7 +556,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 /**
  * Optimized internal two-arity curry function.
  *
@@ -560,7 +577,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 
 
@@ -594,7 +611,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":10}],12:[function(require,module,exports){
+},{"./_curry1":11}],13:[function(require,module,exports){
 var _arity = require('./_arity');
 
 
@@ -634,7 +651,7 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":9}],13:[function(require,module,exports){
+},{"./_arity":10}],14:[function(require,module,exports){
 //  Ramda v0.19.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -9082,7 +9099,7 @@ module.exports = function _curryN(length, received, fn) {
 
 }.call(this));
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 'use strict';
 
 var curryN = require('ramda/src/curryN');
@@ -9710,7 +9727,7 @@ StreamTransformer.prototype['@@transducer/step'] = function(s, v) { return v; };
 
 module.exports = flyd;
 
-},{"ramda/src/curryN":15}],15:[function(require,module,exports){
+},{"ramda/src/curryN":16}],16:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -9766,7 +9783,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":16,"./internal/_curry1":17,"./internal/_curry2":18,"./internal/_curryN":19}],16:[function(require,module,exports){
+},{"./internal/_arity":17,"./internal/_curry1":18,"./internal/_curry2":19,"./internal/_curryN":20}],17:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   /* eslint-disable no-unused-vars */
   switch (n) {
@@ -9785,7 +9802,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 var _isPlaceholder = require('./_isPlaceholder');
 
 
@@ -9807,7 +9824,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{"./_isPlaceholder":20}],18:[function(require,module,exports){
+},{"./_isPlaceholder":21}],19:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -9837,7 +9854,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":17,"./_isPlaceholder":20}],19:[function(require,module,exports){
+},{"./_curry1":18,"./_isPlaceholder":21}],20:[function(require,module,exports){
 var _arity = require('./_arity');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -9879,14 +9896,14 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":16,"./_isPlaceholder":20}],20:[function(require,module,exports){
+},{"./_arity":17,"./_isPlaceholder":21}],21:[function(require,module,exports){
 module.exports = function _isPlaceholder(a) {
   return a != null &&
          typeof a === 'object' &&
          a['@@functional/placeholder'] === true;
 };
 
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 //  Ramda v0.22.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -18719,7 +18736,7 @@ module.exports = function _isPlaceholder(a) {
 
 }.call(this));
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 var VNode = require('./vnode');
 var is = require('./is');
 
@@ -18755,7 +18772,7 @@ module.exports = function h(sel, b, c) {
   return VNode(sel, data, children, text, undefined);
 };
 
-},{"./is":24,"./vnode":31}],23:[function(require,module,exports){
+},{"./is":25,"./vnode":32}],24:[function(require,module,exports){
 function createElement(tagName){
   return document.createElement(tagName);
 }
@@ -18811,13 +18828,13 @@ module.exports = {
   setTextContent: setTextContent
 };
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 module.exports = {
   array: Array.isArray,
   primitive: function(s) { return typeof s === 'string' || typeof s === 'number'; },
 };
 
-},{}],25:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 var booleanAttrs = ["allowfullscreen", "async", "autofocus", "autoplay", "checked", "compact", "controls", "declare",
                 "default", "defaultchecked", "defaultmuted", "defaultselected", "defer", "disabled", "draggable",
                 "enabled", "formnovalidate", "hidden", "indeterminate", "inert", "ismap", "itemscope", "loop", "multiple",
@@ -18862,7 +18879,7 @@ function updateAttrs(oldVnode, vnode) {
 
 module.exports = {create: updateAttrs, update: updateAttrs};
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 function updateClass(oldVnode, vnode) {
   var cur, name, elm = vnode.elm,
       oldClass = oldVnode.data.class,
@@ -18887,7 +18904,7 @@ function updateClass(oldVnode, vnode) {
 
 module.exports = {create: updateClass, update: updateClass};
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 function invokeHandler(handler, vnode, event) {
   if (typeof handler === "function") {
     // call function handler
@@ -18990,7 +19007,7 @@ module.exports = {
   destroy: updateEventListeners
 };
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 function updateProps(oldVnode, vnode) {
   var key, cur, old, elm = vnode.elm,
       oldProps = oldVnode.data.props, props = vnode.data.props;
@@ -19015,7 +19032,7 @@ function updateProps(oldVnode, vnode) {
 
 module.exports = {create: updateProps, update: updateProps};
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 var raf = (typeof window !== 'undefined' && window.requestAnimationFrame) || setTimeout;
 var nextFrame = function(fn) { raf(function() { raf(fn); }); };
 
@@ -19086,7 +19103,7 @@ function applyRemoveStyle(vnode, rm) {
 
 module.exports = {create: updateStyle, update: updateStyle, destroy: applyDestroyStyle, remove: applyRemoveStyle};
 
-},{}],30:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 // jshint newcap: false
 /* global require, module, document, Node */
 'use strict';
@@ -19348,7 +19365,7 @@ function init(modules, api) {
 
 module.exports = {init: init};
 
-},{"./htmldomapi":23,"./is":24,"./vnode":31}],31:[function(require,module,exports){
+},{"./htmldomapi":24,"./is":25,"./vnode":32}],32:[function(require,module,exports){
 module.exports = function(sel, data, children, text, elm) {
   var key = data === undefined ? undefined : data.key;
   return {sel: sel, data: data, children: children,

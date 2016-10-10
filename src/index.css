@@ -1,11 +1,25 @@
-@import 'css-mother-starter';
-@import '../modules/button/index.css';
-@import '../modules/background-colors/index.css';
-@import '../modules/link/index.css';
-@import '../modules/table/index.css';
-@import '../modules/utils/index.css';
+@import 'normalize.css';
+@import 'basscss-align';
+@import 'basscss-grid';
+@import 'basscss-border';
+@import 'basscss-hide';
+@import 'basscss-layout';
+@import 'basscss-margin';
+@import 'basscss-padding';
+@import 'basscss-position';
+@import 'basscss-type-scale';
+@import 'basscss-typography';
+
+@import './color-variables.css';
+@import './button.css';
+@import './background-colors.css';
+@import './link.css';
+@import './table.css';
+@import './utils.css';
+@import './form-elements.css';
 
 html {
   font-family: 'Open Sans';
 }
+
 

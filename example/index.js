@@ -8,6 +8,7 @@ import snabbdom from 'snabbdom'
 import buttons from './buttons'
 import anchors from './anchors'
 import tables from './tables'
+import inputs from './inputs'
 
 const init = _ => { }
 
@@ -20,6 +21,8 @@ const view = _ =>
   , anchors()
   , h('hr')
   , tables()
+  , h('hr')
+  , inputs()
   ])
 
 let container = document.querySelector('#container')
