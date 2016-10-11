@@ -11,7 +11,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _h2.default)('h1', 'Anchors'), (0, _h2.default)('div', [(0, _h2.default)('a', 'Link'), (0, _h2.default)('pre.ml1.inline', '<a>')]), (0, _h2.default)('div', [(0, _h2.default)('a.underline', 'Link'), (0, _h2.default)('pre.ml1.inline', "<a class='underline'>")])]);
 };
 
-},{"snabbdom/h":24}],2:[function(require,module,exports){
+},{"snabbdom/h":25}],2:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -24,7 +24,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _h2.default)('h2', 'Buttons'), (0, _h2.default)('div', [(0, _h2.default)('button', 'Click Me'), (0, _h2.default)('pre.ml1.inline', '<button>')]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.btn--main', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='btn--main'>")]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.btn--danger', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='btn--danger'>")]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.btn--edit', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='btn--edit'>")]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button', { props: { disabled: true } }, 'Click Me'), (0, _h2.default)('pre.ml1.inline', '<button disabled>')]), (0, _h2.default)('p.mt3', 'To change button styles, just add utility classes:'), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.p2.h2', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='p2 h2'>")]), (0, _h2.default)('div.mt3', [(0, _h2.default)('button.small', 'Click Me'), (0, _h2.default)('pre.ml1.inline', "<button class='small'>")])]);
 };
 
-},{"snabbdom/h":24}],3:[function(require,module,exports){
+},{"snabbdom/h":25}],3:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -34,10 +34,23 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _h2.default)('h2', 'Backgrounds'), (0, _h2.default)('div.clearfix', [(0, _h2.default)('pre.col.p1.col-3.bg--grey--1', '.bg--grey--1'), (0, _h2.default)('pre.col.p1.col-3.bg--grey--2', '.bg--grey--2'), (0, _h2.default)('pre.col.p1.col-3.bg--grey--3', '.bg--grey--3'), (0, _h2.default)('pre.col.p1.col-3.bg--grey--4', '.bg--grey--4')]), (0, _h2.default)('div.clearfix', [(0, _h2.default)('pre.col.p1.col-3.bg--green', '.bg--green'), (0, _h2.default)('pre.col.p1.col-3.bg--pink', '.bg--pink'), (0, _h2.default)('pre.col.p1.col-3.bg--blue', '.bg--blue'), (0, _h2.default)('pre.col.p1.col-3.bg--yellow', '.bg--yellow')])]);
+  return (0, _h2.default)('div', [(0, _h2.default)('h2', 'Background colors'), (0, _h2.default)('div.clearfix', [(0, _h2.default)('pre.col.p1.col-2.bg--grey--1', '.bg--grey--1'), (0, _h2.default)('pre.col.p1.col-2.bg--grey--2', '.bg--grey--2'), (0, _h2.default)('pre.col.p1.col-2.bg--grey--3', '.bg--grey--3'), (0, _h2.default)('pre.col.p1.col-2.bg--grey--4', '.bg--grey--4'), (0, _h2.default)('pre.col.p1.col-2.bg--grey--5', '.bg--grey--5'), (0, _h2.default)('pre.col.p1.col-2.bg--grey--6', '.bg--grey--6')]), (0, _h2.default)('div.clearfix', [(0, _h2.default)('pre.col.p1.col-3.bg--green', '.bg--green'), (0, _h2.default)('pre.col.p1.col-3.bg--pink', '.bg--pink'), (0, _h2.default)('pre.col.p1.col-3.bg--blue', '.bg--blue'), (0, _h2.default)('pre.col.p1.col-3.bg--yellow', '.bg--yellow')]), (0, _h2.default)('hr'), (0, _h2.default)('h2', 'Text colors'), (0, _h2.default)('div.clearfix', [(0, _h2.default)('pre.col.p1.col-3.color--black', '.color--black'), (0, _h2.default)('pre.col.p1.col-3.color--grey', '.color--grey'), (0, _h2.default)('pre.col.p1.col-3.color--blue', '.color--blue'), (0, _h2.default)('pre.col.p1.col-3.color--red', '.color--red')])]);
 };
 
-},{"snabbdom/h":24}],4:[function(require,module,exports){
+},{"snabbdom/h":25}],4:[function(require,module,exports){
+'use strict';
+
+var _h = require('snabbdom/h');
+
+var _h2 = _interopRequireDefault(_h);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = function (_) {
+  return (0, _h2.default)('div', [(0, _h2.default)('ul', [(0, _h2.default)('li', 'Background colors'), (0, _h2.default)('li', 'Text colors'), (0, _h2.default)('li', 'Buttons'), (0, _h2.default)('li', 'Tables'), (0, _h2.default)('li', 'Inputs'), (0, _h2.default)('li', 'Checkboxes'), (0, _h2.default)('li', 'Form Elements')])]);
+};
+
+},{"snabbdom/h":25}],5:[function(require,module,exports){
 'use strict';
 
 var _ramda = require('ramda');
@@ -59,6 +72,10 @@ var _flimflamRender2 = _interopRequireDefault(_flimflamRender);
 var _snabbdom = require('snabbdom');
 
 var _snabbdom2 = _interopRequireDefault(_snabbdom);
+
+var _contents = require('./contents');
+
+var _contents2 = _interopRequireDefault(_contents);
 
 var _colorVariables = require('./color-variables');
 
@@ -82,11 +99,11 @@ var _inputs2 = _interopRequireDefault(_inputs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// npm
-var init = function init(_) {};
+var init = function init(_) {}; // npm
+
 
 var view = function view(_) {
-  return (0, _h2.default)('div.container.p2', [(0, _h2.default)('h1', 'CommitChange styles'), (0, _h2.default)('hr'), (0, _colorVariables2.default)(), (0, _h2.default)('hr'), (0, _buttons2.default)(), (0, _h2.default)('hr'), (0, _anchors2.default)(), (0, _h2.default)('hr'), (0, _tables2.default)(), (0, _h2.default)('hr'), (0, _inputs2.default)()]);
+  return (0, _h2.default)('div.container.p2', [(0, _h2.default)('h1', 'CommitChange core styles'), (0, _h2.default)('hr'), (0, _contents2.default)(), (0, _h2.default)('hr'), (0, _colorVariables2.default)(), (0, _h2.default)('hr'), (0, _buttons2.default)(), (0, _h2.default)('hr'), (0, _anchors2.default)(), (0, _h2.default)('hr'), (0, _tables2.default)(), (0, _h2.default)('hr'), (0, _inputs2.default)()]);
 };
 
 var container = document.querySelector('#container');
@@ -95,7 +112,7 @@ var patch = _snabbdom2.default.init([require('snabbdom/modules/class'), require(
 
 (0, _flimflamRender2.default)({ patch: patch, container: container, view: view, state: init() });
 
-},{"./anchors":1,"./buttons":2,"./color-variables":3,"./inputs":5,"./tables":6,"flimflam-render":7,"flyd":16,"ramda":23,"snabbdom":32,"snabbdom/h":24,"snabbdom/modules/attributes":27,"snabbdom/modules/class":28,"snabbdom/modules/eventlisteners":29,"snabbdom/modules/props":30,"snabbdom/modules/style":31}],5:[function(require,module,exports){
+},{"./anchors":1,"./buttons":2,"./color-variables":3,"./contents":4,"./inputs":6,"./tables":7,"flimflam-render":8,"flyd":17,"ramda":24,"snabbdom":33,"snabbdom/h":25,"snabbdom/modules/attributes":28,"snabbdom/modules/class":29,"snabbdom/modules/eventlisteners":30,"snabbdom/modules/props":31,"snabbdom/modules/style":32}],6:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -105,10 +122,10 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _h2.default)('h2', 'Form Elements'), (0, _h2.default)('form', [(0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Text'), (0, _h2.default)('input', { props: { type: 'text' } })]), (0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Prepend number'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input', { props: { type: 'number' } })])]), (0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Select'), (0, _h2.default)('span.append.fullWidth', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', 'aasdfasdf asdlkj lkjasdflkj laskdfj  sdf'), (0, _h2.default)('option', 'asdf'), (0, _h2.default)('option', 'asdf')])])]), (0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Text'), (0, _h2.default)('textarea', { props: { type: 'text' } })])]), (0, _h2.default)('pre', "<span class='prepend'>\n  <span>$</span>\n  <input type='number'>\n</span>")]);
+  return (0, _h2.default)('div', [(0, _h2.default)('h2', 'Form Elements'), (0, _h2.default)('form', [(0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Text input'), (0, _h2.default)('input', { props: { type: 'text' } })]), (0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input', { props: { type: 'number' } })])]), (0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Select with triangle appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', 'Select One'), (0, _h2.default)('option', 'Blue pill'), (0, _h2.default)('option', 'Red pill')])])]), (0, _h2.default)('fieldset.mb2', [(0, _h2.default)('label.block.mb1', 'Textarea'), (0, _h2.default)('textarea', { props: { type: 'text' } })]), (0, _h2.default)('fieldset.mb2', [(0, _h2.default)('div', [(0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, 'Heads')]), (0, _h2.default)('div', [(0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, 'Tails')])])])]);
 };
 
-},{"snabbdom/h":24}],6:[function(require,module,exports){
+},{"snabbdom/h":25}],7:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -121,7 +138,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _h2.default)('h1', 'Tables'), (0, _h2.default)('table', [(0, _h2.default)('tr', [(0, _h2.default)('th', 'Name'), (0, _h2.default)('th', 'Year'), (0, _h2.default)('th', 'Length')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Kraftwerk'), (0, _h2.default)('td', '1970'), (0, _h2.default)('td', '39:39')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Kraftwerk 2'), (0, _h2.default)('td', '1972'), (0, _h2.default)('td', '42:42')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Ralf and Florian'), (0, _h2.default)('td', '1973'), (0, _h2.default)('td', '37:41')])])]);
 };
 
-},{"snabbdom/h":24}],7:[function(require,module,exports){
+},{"snabbdom/h":25}],8:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -171,7 +188,7 @@ var isObj = function isObj(x) {
 module.exports = render;
 
 
-},{"flyd":8,"flyd/module/mergeall":9,"ramda":15}],8:[function(require,module,exports){
+},{"flyd":9,"flyd/module/mergeall":10,"ramda":16}],9:[function(require,module,exports){
 var curryN = require('ramda/src/curryN');
 
 'use strict';
@@ -472,7 +489,7 @@ module.exports = {
   immediate: immediate,
 };
 
-},{"ramda/src/curryN":10}],9:[function(require,module,exports){
+},{"ramda/src/curryN":11}],10:[function(require,module,exports){
 var flyd = require('../../lib');
 
 module.exports = function mergeAll(streams) {
@@ -497,7 +514,7 @@ module.exports = function mergeAll(streams) {
 };
 
 
-},{"../../lib":8}],10:[function(require,module,exports){
+},{"../../lib":9}],11:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -554,7 +571,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":11,"./internal/_curry1":12,"./internal/_curry2":13,"./internal/_curryN":14}],11:[function(require,module,exports){
+},{"./internal/_arity":12,"./internal/_curry1":13,"./internal/_curry2":14,"./internal/_curryN":15}],12:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   // jshint unused:vars
   switch (n) {
@@ -573,7 +590,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 /**
  * Optimized internal two-arity curry function.
  *
@@ -594,7 +611,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 
 
@@ -628,7 +645,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":12}],14:[function(require,module,exports){
+},{"./_curry1":13}],15:[function(require,module,exports){
 var _arity = require('./_arity');
 
 
@@ -668,7 +685,7 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":11}],15:[function(require,module,exports){
+},{"./_arity":12}],16:[function(require,module,exports){
 //  Ramda v0.19.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -9116,7 +9133,7 @@ module.exports = function _curryN(length, received, fn) {
 
 }.call(this));
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 'use strict';
 
 var curryN = require('ramda/src/curryN');
@@ -9744,7 +9761,7 @@ StreamTransformer.prototype['@@transducer/step'] = function(s, v) { return v; };
 
 module.exports = flyd;
 
-},{"ramda/src/curryN":17}],17:[function(require,module,exports){
+},{"ramda/src/curryN":18}],18:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -9800,7 +9817,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":18,"./internal/_curry1":19,"./internal/_curry2":20,"./internal/_curryN":21}],18:[function(require,module,exports){
+},{"./internal/_arity":19,"./internal/_curry1":20,"./internal/_curry2":21,"./internal/_curryN":22}],19:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   /* eslint-disable no-unused-vars */
   switch (n) {
@@ -9819,7 +9836,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 var _isPlaceholder = require('./_isPlaceholder');
 
 
@@ -9841,7 +9858,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{"./_isPlaceholder":22}],20:[function(require,module,exports){
+},{"./_isPlaceholder":23}],21:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -9871,7 +9888,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":19,"./_isPlaceholder":22}],21:[function(require,module,exports){
+},{"./_curry1":20,"./_isPlaceholder":23}],22:[function(require,module,exports){
 var _arity = require('./_arity');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -9913,14 +9930,14 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":18,"./_isPlaceholder":22}],22:[function(require,module,exports){
+},{"./_arity":19,"./_isPlaceholder":23}],23:[function(require,module,exports){
 module.exports = function _isPlaceholder(a) {
   return a != null &&
          typeof a === 'object' &&
          a['@@functional/placeholder'] === true;
 };
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 //  Ramda v0.22.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -18753,7 +18770,7 @@ module.exports = function _isPlaceholder(a) {
 
 }.call(this));
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 var VNode = require('./vnode');
 var is = require('./is');
 
@@ -18789,7 +18806,7 @@ module.exports = function h(sel, b, c) {
   return VNode(sel, data, children, text, undefined);
 };
 
-},{"./is":26,"./vnode":33}],25:[function(require,module,exports){
+},{"./is":27,"./vnode":34}],26:[function(require,module,exports){
 function createElement(tagName){
   return document.createElement(tagName);
 }
@@ -18845,13 +18862,13 @@ module.exports = {
   setTextContent: setTextContent
 };
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 module.exports = {
   array: Array.isArray,
   primitive: function(s) { return typeof s === 'string' || typeof s === 'number'; },
 };
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 var booleanAttrs = ["allowfullscreen", "async", "autofocus", "autoplay", "checked", "compact", "controls", "declare",
                 "default", "defaultchecked", "defaultmuted", "defaultselected", "defer", "disabled", "draggable",
                 "enabled", "formnovalidate", "hidden", "indeterminate", "inert", "ismap", "itemscope", "loop", "multiple",
@@ -18896,7 +18913,7 @@ function updateAttrs(oldVnode, vnode) {
 
 module.exports = {create: updateAttrs, update: updateAttrs};
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 function updateClass(oldVnode, vnode) {
   var cur, name, elm = vnode.elm,
       oldClass = oldVnode.data.class,
@@ -18921,7 +18938,7 @@ function updateClass(oldVnode, vnode) {
 
 module.exports = {create: updateClass, update: updateClass};
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 function invokeHandler(handler, vnode, event) {
   if (typeof handler === "function") {
     // call function handler
@@ -19024,7 +19041,7 @@ module.exports = {
   destroy: updateEventListeners
 };
 
-},{}],30:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 function updateProps(oldVnode, vnode) {
   var key, cur, old, elm = vnode.elm,
       oldProps = oldVnode.data.props, props = vnode.data.props;
@@ -19049,7 +19066,7 @@ function updateProps(oldVnode, vnode) {
 
 module.exports = {create: updateProps, update: updateProps};
 
-},{}],31:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 var raf = (typeof window !== 'undefined' && window.requestAnimationFrame) || setTimeout;
 var nextFrame = function(fn) { raf(function() { raf(fn); }); };
 
@@ -19120,7 +19137,7 @@ function applyRemoveStyle(vnode, rm) {
 
 module.exports = {create: updateStyle, update: updateStyle, destroy: applyDestroyStyle, remove: applyRemoveStyle};
 
-},{}],32:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 // jshint newcap: false
 /* global require, module, document, Node */
 'use strict';
@@ -19382,11 +19399,11 @@ function init(modules, api) {
 
 module.exports = {init: init};
 
-},{"./htmldomapi":25,"./is":26,"./vnode":33}],33:[function(require,module,exports){
+},{"./htmldomapi":26,"./is":27,"./vnode":34}],34:[function(require,module,exports){
 module.exports = function(sel, data, children, text, elm) {
   var key = data === undefined ? undefined : data.key;
   return {sel: sel, data: data, children: children,
           text: text, elm: elm, key: key};
 };
 
-},{}]},{},[4]);
+},{}]},{},[5]);

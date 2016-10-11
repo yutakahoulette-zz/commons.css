@@ -5,31 +5,40 @@ module.exports = _ =>
     h('h2', 'Form Elements')
   , h('form', [
       h('fieldset.mb2', [
-        h('label.block.mb1', 'Text')
+        h('label.block.mb1', 'Text input')
       , h('input', {props: {type: 'text'}})
       ])
     , h('fieldset.mb2', [
-        h('label.block.mb1', 'Prepend number')
+        h('label.block.mb1', 'Number input with dollar prepended')
       , h('span.prepend', [
           h('span', '$')
         , h('input', {props: {type: 'number'}})
         ])
       ])
     , h('fieldset.mb2', [
-        h('label.block.mb1', 'Select')
-      , h('span.append.fullWidth', [
+        h('label.block.mb1', 'Select with triangle appended')
+      , h('span.append', [
           h('span', '▾')
         , h('select', [
-            h('option', 'aasdfasdf asdlkj lkjasdflkj laskdfj  sdf')
-          , h('option', 'asdf')
-          , h('option', 'asdf')
+            h('option', 'Select One')
+          , h('option', 'Blue pill')
+          , h('option', 'Red pill')
           ])
         ])
       ])
     , h('fieldset.mb2', [
-        h('label.block.mb1', 'Text')
+        h('label.block.mb1', 'Textarea')
       , h('textarea', {props: {type: 'text'}})
       ])
+    , h('fieldset.mb2', [
+        h('div', [
+          h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
+        , h('label', {attrs: {for: 'radio1'}}, 'Heads')
+        ])
+      , h('div', [
+          h('input', {props: {type: 'radio', id: 'radio2', name: 'radio'}})
+        , h('label', {attrs: {for: 'radio2'}}, 'Tails')
+        ])
+      ])
     ])
- , h('pre', "<span class='prepend'>\n  <span>$</span>\n  <input type='number'>\n</span>")
   ])

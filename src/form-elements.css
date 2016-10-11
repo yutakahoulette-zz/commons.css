@@ -3,6 +3,7 @@ select:focus,
 input:focus {
   outline: none;
   border-color: $blue;
+
 }
 
 textarea,
@@ -14,6 +15,7 @@ select {
   padding: 8px;
   font-size: 16px;
   width: 100%;
+  box-shadow: inset 0 0 7px rgba(0,0,0,.08);
 }
 
 form {
@@ -59,3 +61,36 @@ label {
   padding-right: 24px;
 }
 
+
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio'] + label {
+  cursor: pointer;
+  font-weight: normal;
+  user-select: none;
+  display: inline-block;
+  margin-bottom: .25em;
+}
+
+input[type='radio'] + label:before {
+  content: 'x';
+  color: transparent;
+  margin-right: 8px;
+  background-color: $grey--2;
+  display: inline-block;
+  width: 16px;
+  line-height: 14px;
+  border: 1px $grey--6 solid;
+  border-radius: 50%;
+}
+
+input[type='radio'] + label:hover:before {
+  background-color: $blue--light;
+}
+
+input[type='radio']:checked + label:before {
+  background-color: $blue;
+}
