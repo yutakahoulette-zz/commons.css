@@ -8,15 +8,15 @@ th {
 }
 
 tr:not(:last-of-type) {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $grey--4;
 }
 
 th:not(:last-of-type),
 td:not(:last-of-type) {
-  border-right: 1px solid $light-grey;
+  border-right: 1px solid $grey--4;
 }
 
 tr:nth-of-type(2n) {
-  background: #fbfbfb;
+  background: $grey--1;
 }
 

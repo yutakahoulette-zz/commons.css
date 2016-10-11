@@ -1,29 +1,52 @@
 button {
+  font-family: inherit;
   padding: 0.5em;
   outline: none;
-  border: none;
-  cursor: pointer;
+  border-width: 1px;
+  border-color: $blue;
+  border-style: solid;
   border-radius: 5px;
-  color: white;
-  background: $green;
+  color: $blue;
+  user-select: none;
+  background: $grey--1;
+}
+
+button:hover {
+  background: $grey--2;
 }
 
 button.btn--edit {
-  color: $blue;
-  border: 1px dashed $blue;
-  background: white;
+  border-style: dashed;
+}
+
+button.btn--danger, 
+button.btn--main {
+  color: white;
+  border-color: $grey--trans;
+}
+
+button.btn--main {
+  background: $green;
+}
+button.btn--main:hover {
+  background: $green--dark;
+}
+
+button.btn--danger {
+  background: $red;
+}
+button.btn--danger:hover {
+  background: $red--dark;
 }
 
 button:active {
   transform: translateY(1px);
 }
 
-button:hover:not(:disabled) {
-  box-shadow: 0 1px 2px 1px rgba(0,0,0,.1);
-}
-
 button:disabled {
+  color: rgba(255,255,255,.7);
   background: grey;
+  border-color: grey;
   cursor: initial;
 }
 

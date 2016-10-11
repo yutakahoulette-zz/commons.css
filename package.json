@@ -4,8 +4,8 @@
   "description": "CommitChange styles",
   "style": "lib/index.css",
   "scripts": {
-    "build-css": "postcss -c postcss.js",
-    "watch-css": "postcss -c postcss.js -w",
+    "build-css": "postcss -c postcss.js -l",
+    "watch-css": "postcss -c postcss.js -w -l",
     "watch-example": "watchify example/index.js -o example/build.js -t [babelify --presets es2015] -v"
   },
   "repository": {
@@ -24,17 +24,17 @@
     "babelify": "^7.3.0",
     "basscss": "^8.0.2",
     "browserify": "^13.1.0",
-    "normalize-css": "^2.3.1",
-    "normalize.css": "^5.0.0",
     "postcss": "^5.2.4",
     "postcss-calc": "^5.3.1",
     "postcss-cli": "^2.6.0",
+    "postcss-color-function": "^2.0.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.1",
     "postcss-discard-comments": "^2.0.4",
     "postcss-import": "^8.1.2",
     "postcss-remove-root": "0.0.2",
     "precss": "^1.4.0",
+    "ress": "^1.1.1",
     "watchify": "^3.7.0"
   },
   "dependencies": {

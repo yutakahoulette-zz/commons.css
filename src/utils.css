@@ -1,5 +1,35 @@
-* {
-  border-color: $light-grey;
+.small {
+  font-size: 0.8em;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.fullMaxHeight {
+  max-height: 100%;
+}
+
+.verticallyCenter {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.o0 {
+  opacity: 0;
+}
+
+.o1 {
+  opacity: 1;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 

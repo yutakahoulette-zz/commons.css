@@ -1,16 +1,25 @@
-.bg--red {
-  background: $red; 
+.bg--grey--1 {
+  background: $grey--1;
 }
-
+.bg--grey--2 {
+  background: $grey--2;
+}
+.bg--grey--3 {
+  background: $grey--3;
+}
+.bg--grey--4 {
+  background: $grey--4;
+}
+.bg--green {
+  background: $green--light;
+}
+.bg--pink {
+  background: $red--light; 
+}
 .bg--blue {
-  background: $blue; 
+  background: $blue--light; 
 }
-
-.bg--lightGreen {
-  background: $light-green;
-}
-
-.bg--lightGrey {
-  background: #fbfbfb;
+.bg--yellow {
+  background: $lightYellow;
 }
 

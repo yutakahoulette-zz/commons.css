@@ -1,12 +1,16 @@
+textarea:focus,
+select:focus,
 input:focus {
   outline: none;
-  border-color: grey;
+  border-color: $blue;
 }
 
 textarea,
-input {
+input,
+select {
   border-width: 1px;
-  border-stye: solid;
+  border-style: solid;
+  border-radius: 0;
   padding: 8px;
   font-size: 16px;
   width: 100%;
@@ -24,20 +28,34 @@ label {
   font-weight: bold;
 }
 
-.prepend {
+.prepend,
+.append {
   position: relative;
   display: inline-block;
 }
 
-.prepend > span {
+.prepend > span,
+.append > span {
   position: absolute;
   top: 8px;
-  left: 8px;
   opacity: 0.7;
-  font-size: 16px;
 }
 
-.prepend input {
+.prepend > span {
+  left: 8px;
+}
+
+.append > span {
+  right: 8px;
+}
+
+.prepend input, 
+.prepend select {
   padding-left: 20px;
+}
+
+.append input, 
+.append select {
+  padding-right: 24px;
 }
 

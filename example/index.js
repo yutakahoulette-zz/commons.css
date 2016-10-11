@@ -5,6 +5,7 @@ import flyd from 'flyd'
 import render from 'flimflam-render'
 import snabbdom from 'snabbdom'
 
+import colors from './color-variables'
 import buttons from './buttons'
 import anchors from './anchors'
 import tables from './tables'
@@ -15,6 +16,8 @@ const init = _ => { }
 const view = _ => 
   h('div.container.p2', [
     h('h1', 'CommitChange styles')
+  , h('hr')
+  , colors()
   , h('hr')
   , buttons()
   , h('hr')

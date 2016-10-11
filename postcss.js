@@ -2,6 +2,7 @@ module.exports = {
   use: [
     'postcss-import'
   , 'precss'
+  , 'postcss-color-function'
   , 'postcss-custom-media'
   , 'postcss-custom-properties'
   , 'postcss-calc'
