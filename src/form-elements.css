@@ -63,30 +63,39 @@ label {
 
 
 
+input[type='checkbox'],
 input[type='radio'] {
   display: none;
 }
 
+input[type='checkbox'] + label,
 input[type='radio'] + label {
   cursor: pointer;
   font-weight: normal;
   user-select: none;
   display: inline-block;
-  margin-bottom: .25em;
+  margin-bottom: .5em;
+}
+
+input[type='checkbox'] + label:before,
+input[type='radio'] + label:before {
+  content: '\2713';
+  padding: 1px;
+  color: transparent;
+  margin-right: .5em;
+  text-align: center;
+  background-color: $grey--2;
+  display: inline-block;
+  width: 18px;
+  line-height: 14px;
+  border: 1px $grey--6 solid;
 }
 
 input[type='radio'] + label:before {
-  content: 'x';
-  color: transparent;
-  margin-right: 8px;
-  background-color: $grey--2;
-  display: inline-block;
-  width: 16px;
-  line-height: 14px;
-  border: 1px $grey--6 solid;
   border-radius: 50%;
 }
 
+input[type='checkbox'] + label:hover:before,
 input[type='radio'] + label:hover:before {
   background-color: $blue--light;
 }
@@ -94,3 +103,9 @@ input[type='radio'] + label:hover:before {
 input[type='radio']:checked + label:before {
   background-color: $blue;
 }
+
+input[type='checkbox']:checked + label:before {
+  color: black;
+  text-align: center;
+}
+

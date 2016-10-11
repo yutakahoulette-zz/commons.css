@@ -40,5 +40,15 @@ module.exports = _ =>
         , h('label', {attrs: {for: 'radio2'}}, 'Tails')
         ])
       ])
+    , h('fieldset.mb2', [
+        h('div', [
+          h('input', {props: {type: 'checkbox', id: 'check1', name: 'check'}})
+        , h('label', {attrs: {for: 'check1'}}, 'Pizza')
+        ])
+      , h('div', [
+          h('input', {props: {type: 'checkbox', id: 'check2', name: 'check'}})
+        , h('label', {attrs: {for: 'check2'}}, 'Tacos')
+        ])
+      ])
     ])
   ])
