@@ -16,6 +16,9 @@
 .bg--grey--6 {
   background: $grey--6;
 }
+.bg--grey--trans {
+  background: $grey--trans;
+}
 .bg--green {
   background: $green--light;
 }

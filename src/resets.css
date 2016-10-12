@@ -51,8 +51,8 @@ blockquote {
 }
 
 hr {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   border-top: 0;
   border-bottom-width: 1px;
   border-bottom-style: solid;

@@ -3,10 +3,10 @@ import h from 'snabbdom/h'
 module.exports = _ =>
   h('div', [
     h('h2', 'Form Elements')
-  , h('form', [
+  , h('div.width--500', [
       h('fieldset.mb2', [
         h('label.block.mb1', 'Text input')
-      , h('input', {props: {type: 'text'}})
+      , h('input', {props: {type: 'text', placeholder: 'Hello'}})
       ])
     , h('fieldset.mb2', [
         h('label.block.mb1', 'Number input with dollar prepended')
@@ -16,7 +16,7 @@ module.exports = _ =>
         ])
       ])
     , h('fieldset.mb2', [
-        h('label.block.mb1', 'Select with triangle appended')
+        h('label.block.mb1', 'Select')
       , h('span.append', [
           h('span', '▾')
         , h('select', [
@@ -31,7 +31,8 @@ module.exports = _ =>
       , h('textarea', {props: {type: 'text'}})
       ])
     , h('fieldset.mb2', [
-        h('div', [
+        h('label.block.mb1', 'Radios')
+      , h('div', [
           h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
         , h('label', {attrs: {for: 'radio1'}}, 'Heads')
         ])
@@ -41,7 +42,8 @@ module.exports = _ =>
         ])
       ])
     , h('fieldset.mb2', [
-        h('div', [
+        h('label.block.mb1', 'Checkboxes')
+      , h('div', [
           h('input', {props: {type: 'checkbox', id: 'check1', name: 'check'}})
         , h('label', {attrs: {for: 'check1'}}, 'Pizza')
         ])
@@ -49,6 +51,11 @@ module.exports = _ =>
           h('input', {props: {type: 'checkbox', id: 'check2', name: 'check'}})
         , h('label', {attrs: {for: 'check2'}}, 'Tacos')
         ])
+      ])
+    , h('fieldset.mb2', [
+        h('label.block.mb1', 'Input + button')
+      , h('input.col-8.inline', {props: {type: 'text'}})
+      , h('button.btn--main.not-rounded.no-transform', 'Search')
       ])
     ])
   ])

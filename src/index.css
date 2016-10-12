@@ -7,12 +7,12 @@
 @import 'basscss-margin';
 @import 'basscss-padding';
 @import 'basscss-position';
-@import 'basscss-type-scale';
 @import 'basscss-typography';
 
 @import './color-variables.css';
 @import './resets.css';
 @import './brand-font.css';
+@import './lists.css';
 @import './button.css';
 @import './background-colors.css';
 @import './text-colors.css';

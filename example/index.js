@@ -11,6 +11,7 @@ import buttons from './buttons'
 import anchors from './anchors'
 import tables from './tables'
 import inputs from './inputs'
+import lists from './lists'
 
 const init = _ => { }
 
@@ -29,6 +30,8 @@ const view = _ =>
   , tables()
   , h('hr')
   , inputs()
+  , h('hr')
+  , lists()
   ])
 
 let container = document.querySelector('#container')

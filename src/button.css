@@ -8,11 +8,11 @@ button {
   border-radius: 5px;
   color: $blue;
   user-select: none;
-  background: $grey--1;
+  background: white;
 }
 
 button:hover {
-  background: $grey--2;
+  background: $grey--1;
 }
 
 button.btn--edit {
@@ -43,10 +43,16 @@ button:active {
   transform: translateY(1px);
 }
 
+.no-transform {
+  transform: none !important;
+}
+
+
+
 button:disabled {
   color: rgba(255,255,255,.7);
   background: grey;
   border-color: grey;
-  cursor: initial;
+  cursor: not-allowed;
 }
 

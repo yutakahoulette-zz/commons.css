@@ -1,0 +1,10 @@
+
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: .5em;
+}

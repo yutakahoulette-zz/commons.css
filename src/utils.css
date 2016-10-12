@@ -2,17 +2,6 @@
   font-size: 0.8em;
 }
 
-.fullHeight {
-  height: 100%;
-}
-
-.fullWidth {
-  width: 100%;
-}
-
-.fullMaxHeight {
-  max-height: 100%;
-}
 
 .verticallyCenter {
   position: relative;
@@ -32,4 +21,27 @@
   cursor: pointer;
 }
 
+.width--100 {
+  max-width: 100px;
+}
+
+.width--200 {
+  max-width: 200px;
+}
+
+.width--300 {
+  max-width: 300px;
+}
+
+.width--400 {
+  max-width: 400px;
+}
+
+.width--500 {
+  max-width: 500px;
+}
+
+.width--full {
+  width: 100%;
+}
 
