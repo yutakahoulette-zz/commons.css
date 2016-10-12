@@ -2,6 +2,10 @@
   border-color: $grey--5;
 }
 
+::selection {
+  background: $blue--light; 
+}
+
 img {
   max-width: 100%;
   height: auto;

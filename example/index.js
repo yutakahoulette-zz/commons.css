@@ -6,7 +6,7 @@ import render from 'flimflam-render'
 import snabbdom from 'snabbdom'
 
 import contents from './contents'
-import colors from './color-variables'
+import bgColors from './background-colors'
 import buttons from './buttons'
 import anchors from './anchors'
 import tables from './tables'
@@ -17,15 +17,15 @@ const init = _ => { }
 
 const view = _ => 
   h('div.container.p2', [
-    h('h1', 'CommitChange core styles')
+    h('h1.inline-block.bg--blue.p1.mb0', 'commons.css')
   , h('hr')
   , contents()
   , h('hr')
-  , colors()
+  , anchors()
   , h('hr')
+  , bgColors()
   , buttons()
   , h('hr')
-  , anchors()
   , h('hr')
   , tables()
   , h('hr')

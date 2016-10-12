@@ -32,13 +32,21 @@ module.exports = _ =>
       ])
     , h('fieldset.mb2', [
         h('label.block.mb1', 'Radios')
-      , h('div', [
-          h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
+        , h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
         , h('label', {attrs: {for: 'radio1'}}, 'Heads')
-        ])
-      , h('div', [
-          h('input', {props: {type: 'radio', id: 'radio2', name: 'radio'}})
+        , h('br')
+        , h('input', {props: {type: 'radio', id: 'radio2', name: 'radio'}})
         , h('label', {attrs: {for: 'radio2'}}, 'Tails')
+      ])
+    , h('fieldset.mb2', [
+        h('label.block.mb1', 'Radios (as toggles)')
+      , h('div.toggle', [
+          h('input', {props: {type: 'radio', id: 'toggle1', name: 'toggle'}})
+        , h('label', {attrs: {for: 'toggle1'}}, 'Daily')
+        , h('input', {props: {type: 'radio', id: 'toggle2', name: 'toggle'}})
+        , h('label', {attrs: {for: 'toggle2'}}, 'Weekly')
+        , h('input', {props: {type: 'radio', id: 'toggle3', name: 'toggle'}})
+        , h('label', {attrs: {for: 'toggle3'}}, 'Monthly')
         ])
       ])
     , h('fieldset.mb2', [

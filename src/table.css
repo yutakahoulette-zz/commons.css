@@ -7,13 +7,17 @@ th {
   text-align: left;
 }
 
-tr:not(:last-of-type) {
-  border-bottom: 1px solid $grey--4;
+tr:first-of-type {
+  border-bottom: 1px solid $grey--5;
+}
+
+tr:not(:first-of-type):not(:last-of-type) {
+  border-bottom: 1px solid $grey--3;
 }
 
 th:not(:last-of-type),
 td:not(:last-of-type) {
-  border-right: 1px solid $grey--4;
+  border-right: 1px solid $grey--3;
 }
 
 tr:nth-of-type(2n) {

@@ -81,12 +81,13 @@ input[type='radio'] + label {
   font-weight: normal;
   user-select: none;
   display: inline-block;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 
 input[type='checkbox'] + label:before,
 input[type='radio'] + label:before {
   content: '\2713';
+  text-align: center;
   padding: 1px;
   color: transparent;
   margin-right: .5em;
@@ -108,12 +109,48 @@ input[type='radio'] + label:hover:before {
   background-color: $green--light;
 }
 
+input[type='checkbox']:checked + label:before,
 input[type='radio']:checked + label:before {
   background-color: $green;
 }
 
 input[type='checkbox']:checked + label:before {
-  color: black;
-  text-align: center;
+  color: white;
 }
 
+.toggle {
+  display: inline-block;
+  border: 1px solid $grey--5;
+  border-radius: 5px;
+}
+
+.toggle input[type='radio'] + label:before {
+  display: none;
+}
+
+.toggle input[type='radio'] + label {
+  box-shadow: inset 0 0 5px rgba(0,0,0,.1);
+  padding: .5rem;
+  margin: 0;
+}
+
+.toggle input[type='radio'] + label:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+
+.toggle input[type='radio'] + label:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+
+.toggle input[type='radio'] + label:not(:last-of-type) {
+  border-right: 1px solid $grey--5;
+}
+
+.toggle input[type='radio'] + label:hover {
+  background-color: $green--light;
+}
+
+.toggle input[type='radio']:checked + label {
+  background-color: $green;
+  color: white;
+}
