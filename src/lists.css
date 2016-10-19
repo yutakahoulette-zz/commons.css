@@ -2,9 +2,16 @@
 
 ul,
 ol {
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 1.6em;
 }
 
+ul ul, 
+ul ol, 
+ol ul {
+  margin-top: .5em;
+
+}
 
 li {
   margin-bottom: .25em;

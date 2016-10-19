@@ -4,6 +4,9 @@
 .color--grey {
   color: $grey--6;
 }
+.color--white {
+  color: white;
+}
 .color--red {
   color: $red;
 }
@@ -11,3 +14,6 @@
   color: $blue;
 }
 
+.color--green {
+  color: $green;
+}

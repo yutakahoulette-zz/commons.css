@@ -1,0 +1,6 @@
+
+blockquote {
+  padding: .5em .5em .5em 1em;
+  border-left: 3px solid $grey--5;
+}
+

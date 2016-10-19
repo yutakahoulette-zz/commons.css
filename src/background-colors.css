@@ -1,3 +1,6 @@
+.bg--white {
+  background: white;
+}
 .bg--grey--1 {
   background: $grey--1;
 }
@@ -16,8 +19,11 @@
 .bg--grey--6 {
   background: $grey--6;
 }
-.bg--grey--trans {
-  background: $grey--trans;
+.bg--scrim--1 {
+  background: $scrim--1;
+}
+.bg--scrim--2 {
+  background: $scrim--2;
 }
 .bg--green {
   background: $green--light;

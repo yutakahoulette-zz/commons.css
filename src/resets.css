@@ -3,7 +3,7 @@
 }
 
 ::selection {
-  background: $blue--light; 
+  background: $grey--2; 
 }
 
 img {
@@ -57,7 +57,9 @@ blockquote {
 hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  border-top: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }

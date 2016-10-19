@@ -1,0 +1,44 @@
+ul.tabs--h,
+ul.tabs--v {
+  padding: 0;
+}
+
+ul.tabs--v li,
+ul.tabs--h li {
+  color: grey;
+  cursor: pointer;
+  padding: .25em .5em;
+}
+
+ul.tabs--h li {
+  border-bottom: 2px solid transparent;
+  line-height: 2em;
+  display: inline-block;
+}
+
+ul.tabs--h li.selected,  
+ul.tabs--v li.selected {
+  color: initial;
+}
+
+ul.tabs--h li:hover,
+ul.tabs--v li:hover {
+  color: initial;
+}
+
+ul.tabs--h li.selected {
+  border-bottom-color: $green;
+}
+
+ul.tabs--v li {
+  display: block;
+  line-height: 1;
+  margin-bottom: .5em;
+  border-left: 2px solid transparent;
+  border-bottom-width: 1px;
+}
+
+.tabs--v  li.selected {
+  border-left-color: $green;
+}
+

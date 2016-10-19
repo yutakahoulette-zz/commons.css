@@ -4,5 +4,6 @@ a {
 
 a:hover {
   color: $blue--dark;
+  text-decoration: underline;
 }
 

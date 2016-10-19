@@ -11,11 +11,10 @@ select {
   border-width: 1px;
   border-style: solid;
   border-radius: 0;
-  padding: 8px;
-  font-size: 16px;
+  padding: .5em;
+  line-height: 1.4em;
   width: 100%;
-  max-width: 400px;
-  box-shadow: inset 0 0 7px rgba(0,0,0,.08);
+  background-color: white;
 }
 
 form {
@@ -45,29 +44,30 @@ select {
 .prepend > span,
 .append > span {
   position: absolute;
-  top: 8px;
+  top: .5em;
   opacity: 0.7;
   z-index: -1;
 }
 
 .prepend > span {
-  left: 8px;
+  left: .5em;
 }
 
 .append > span {
-  right: 8px;
+  right: .5em;
 }
 
 .prepend input, 
 .prepend select {
-  padding-left: 20px;
+  background-color: transparent;
+  padding-left: 1.5em;
 }
 
 .append input, 
 .append select {
-  padding-right: 24px;
+  background-color: transparent;
+  padding-right: 1.5em;
 }
-
 
 
 input[type='checkbox'],
@@ -88,15 +88,14 @@ input[type='checkbox'] + label:before,
 input[type='radio'] + label:before {
   content: '\2713';
   text-align: center;
-  padding: 1px;
+  padding: 2px;
   color: transparent;
   margin-right: .5em;
   text-align: center;
-  box-shadow: inset 0 0 3px rgba(0,0,0,.08);
-  background-color: $grey--1;
+  background-color: white;
   display: inline-block;
-  width: 18px;
   line-height: 14px;
+  width: 20px;
   border: 1px $grey--6 solid;
 }
 
@@ -121,7 +120,9 @@ input[type='checkbox']:checked + label:before {
 .toggle {
   display: inline-block;
   border: 1px solid $grey--5;
-  border-radius: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: white;
 }
 
 .toggle input[type='radio'] + label:before {
@@ -129,17 +130,8 @@ input[type='checkbox']:checked + label:before {
 }
 
 .toggle input[type='radio'] + label {
-  box-shadow: inset 0 0 5px rgba(0,0,0,.1);
   padding: .5rem;
   margin: 0;
-}
-
-.toggle input[type='radio'] + label:first-of-type {
-  border-radius: 5px 0 0 5px;
-}
-
-.toggle input[type='radio'] + label:last-of-type {
-  border-radius: 0 5px 5px 0;
 }
 
 .toggle input[type='radio'] + label:not(:last-of-type) {

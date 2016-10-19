@@ -11,15 +11,24 @@
 
 @import './color-variables.css';
 @import './resets.css';
-@import './brand-font.css';
+@import './typography.css';
+@import './blockquotes.css';
 @import './lists.css';
 @import './button.css';
 @import './background-colors.css';
 @import './text-colors.css';
-@import './link.css';
+@import './anchors.css';
 @import './table.css';
 @import './utils.css';
 @import './form-elements.css';
 @import './container.css';
+@import './tabs.css';
+
+html {
+  font-family: 'Open Sans';
+}
+
+
+
 
 

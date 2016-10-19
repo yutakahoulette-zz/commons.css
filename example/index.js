@@ -6,32 +6,44 @@ import render from 'flimflam-render'
 import snabbdom from 'snabbdom'
 
 import contents from './contents'
-import bgColors from './background-colors'
-import buttons from './buttons'
+
 import anchors from './anchors'
-import tables from './tables'
-import inputs from './inputs'
+import bgColors from './background-colors'
+import blockquotes from './blockquotes'
+import buttons from './buttons'
+import formElements from './form-elements'
 import lists from './lists'
+
+import tables from './tables'
+import tabs from './tabs'
+import textColors from './text-colors'
+import utils from './utils'
 
 const init = _ => { }
 
 const view = _ => 
   h('div.container.p2', [
-    h('h1.inline-block.bg--blue.p1.mb0', 'commons.css')
+    h('h1.inline-block.bg--blue.p1.mb0.mt1', 'commons.css')
   , h('hr')
   , contents()
   , h('hr')
-  , anchors()
-  , h('hr')
   , bgColors()
+  , h('hr')
+  , blockquotes()
+  , h('hr')
   , buttons()
   , h('hr')
+  , formElements()
+  , h('hr')
+  , lists()
   , h('hr')
   , tables()
   , h('hr')
-  , inputs()
+  , textColors()
   , h('hr')
-  , lists()
+  , tabs()
+  , h('hr')
+  , utils()
   ])
 
 let container = document.querySelector('#container')

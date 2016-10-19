@@ -1,9 +1,10 @@
 import h from 'snabbdom/h'
+import header from './header'
 
 module.exports = _ =>
   h('div', [
-    h('h1', 'Tables')
-  , h('table', [
+    header('Tables', 'tables')
+  , h('table.w--full', [
       h('tr', [
         h('th', 'Name')
       , h('th', 'Year')

@@ -1,36 +1,30 @@
 import h from 'snabbdom/h'
+import header from './header'
 
 module.exports = _ =>    
   h('div', [
-    h('h2', 'Buttons')
-  , h('div', [
-      h('button', 'Click Me')
-    , h('pre.ml1.inline', '<button>')
-    ])
-  , h('div.mt3', [
-      h('button.btn--main', 'Click Me')
-    , h('pre.ml1.inline', "<button class='btn--main'>")
-    ])
-  , h('div.mt3', [
-      h('button.btn--danger', 'Click Me')
-    , h('pre.ml1.inline', "<button class='btn--danger'>")
-    ])
-  , h('div.mt3', [
-      h('button.btn--edit', 'Click Me')
-    , h('pre.ml1.inline', "<button class='btn--edit'>")
-    ])
-  , h('div.mt3', [
-      h('button', {props: {disabled : true}}, 'Click Me')
-    , h('pre.ml1.inline', '<button disabled>')
-    ])
-  , h('p.mt3', 'To change button styles, just add utility classes:')
-  , h('div.mt3', [
-      h('button.p2.h2', 'Click Me')
-    , h('pre.ml1.inline', "<button class='p2 h2'>")
-    ])
-  , h('div.mt3', [
-      h('button.small', 'Click Me')
-    , h('pre.ml1.inline', "<button class='small'>")
+    header('Buttons', 'buttons')
+  , h('div.mt2', [
+      h('div.col-4.inline-block.mb1', [
+        h('button', 'Learn more')
+      , h('pre', 'default')
+      ])
+    , h('div.col-4.inline-block.mb1', [
+        h('button.btn--main', 'Create')
+      , h('pre', ".btn--main")
+      ])
+    , h('div.col-4.inline-block.mb1', [
+        h('button.btn--danger', 'Delete')
+      , h('pre', ".btn--danger")
+      ])
+    , h('div.col-4.inline-block.mb1', [
+        h('button.btn--edit', 'Edit profile')
+      , h('pre', ".btn--edit")
+      ])
+    , h('div.col-4.inline-block.mb1', [
+        h('button', {props: {disabled : true}}, 'Loading...')
+      , h('pre', 'disabled')
+      ])
     ])
   ])
 

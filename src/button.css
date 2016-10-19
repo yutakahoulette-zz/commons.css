@@ -3,12 +3,14 @@ button {
   padding: 0.5em;
   outline: none;
   border-width: 1px;
+  transition: background ease 0.2s;
   border-color: $blue;
   border-style: solid;
   border-radius: 5px;
   color: $blue;
   user-select: none;
   background: white;
+  line-height: 1.4em;
 }
 
 button:hover {
@@ -22,7 +24,7 @@ button.btn--edit {
 button.btn--danger, 
 button.btn--main {
   color: white;
-  border-color: $grey--trans;
+  border-color: $scrim--1;
 }
 
 button.btn--main {

@@ -1,47 +1,21 @@
-.small {
-  font-size: 0.8em;
-}
 
+.o0 { opacity: 0; }
+.o1 { opacity: 1; }
 
-.verticallyCenter {
-  position: relative;
-  top: 50%;
-  transform: perspective(1px) translateY(-50%);
-}
+.pointer { cursor: pointer; }
 
-.o0 {
-  opacity: 0;
-}
+.w--50 { max-width: 50px; }
+.w--100 { max-width: 100px; }
+.w--200 { max-width: 200px; }
+.w--300 { max-width: 300px; }
+.w--400 { max-width: 400px; }
+.w--500 { max-width: 500px; }
+.w--600 { max-width: 600px; }
+.w--700 { max-width: 700px; }
+.w--800 { max-width: 800px; }
+.w--full { width: 100%; }
 
-.o1 {
-  opacity: 1;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.width--100 {
-  max-width: 100px;
-}
-
-.width--200 {
-  max-width: 200px;
-}
-
-.width--300 {
-  max-width: 300px;
-}
-
-.width--400 {
-  max-width: 400px;
-}
-
-.width--500 {
-  max-width: 500px;
-}
-
-.width--full {
-  width: 100%;
-}
+.sh--1 {box-shadow: 0 1px 3px 1px rgba(0,0,0,.1)};
+.sh--2 {box-shadow: 0 1.5px 6px 1px rgba(0,0,0,.2)};
+.sh--3 {box-shadow: 0 2px 10px 1px rgba(0,0,0,.3)};
 

@@ -11,11 +11,9 @@ module.exports = _ =>
     , 'for normalizing, and additional styles for:' 
     ])
   , h('div', [
-      h('a.inline-block.col-4.mb2', {props: {href: '#anchors'}}, 'Anchors')
-    , h('a.inline-block.col-4.mb2', {props: {href: '#background-colors'}}, 'Background colors')
+      h('a.inline-block.col-4.mb2', {props: {href: '#background-colors'}}, 'Background colors')
     , h('a.inline-block.col-4.mb2', {props: {href: '#blockquote'}}, 'Blockquotes')
     , h('a.inline-block.col-4.mb2', {props: {href: '#buttons'}}, 'Buttons')
-    , h('a.inline-block.col-4.mb2', {props: {href: '#containers'}}, 'Containers')
     , h('a.inline-block.col-4.mb2', {props: {href: '#form-elements'}}, 'Form Elements')
     , h('a.inline-block.col-4.mb2', {props: {href: '#lists'}}, 'Lists')
     , h('a.inline-block.col-4.mb2', {props: {href: '#tables'}}, 'Tables')
@@ -24,7 +22,7 @@ module.exports = _ =>
     , h('a.inline-block.col-4.mb2', {props: {href: '#utilities'}}, 'Utilities')
     ])
   , h('p.read', [
-      h('strong', 'common.css ')
+      h('strong', 'commons.css ')
     , 'aims to be performant, and easy to use by minimizing the number of class names that you have to keep track of. We encourage the use of combining existing classes in the markup to create new UIs instead of writing additional styles. Check out the '
     , h('a', {props: {href: '#examples'}}, 'examples')
     , '.'
