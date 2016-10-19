@@ -13,11 +13,11 @@ import blockquotes from './blockquotes'
 import buttons from './buttons'
 import formElements from './form-elements'
 import lists from './lists'
+import progress from './progress'
 
 import tables from './tables'
 import tabs from './tabs'
 import textColors from './text-colors'
-import utils from './utils'
 
 const init = _ => { }
 
@@ -26,24 +26,20 @@ const view = _ =>
     h('h1.inline-block.bg--blue.p1.mb0.mt1', 'commons.css')
   , h('hr')
   , contents()
-  , h('hr')
   , bgColors()
-  , h('hr')
   , blockquotes()
-  , h('hr')
   , buttons()
-  , h('hr')
   , formElements()
-  , h('hr')
   , lists()
-  , h('hr')
   , tables()
-  , h('hr')
   , textColors()
-  , h('hr')
   , tabs()
-  , h('hr')
-  , utils()
+  , progress()
+  , h('div.max-width-2', [
+      h('div.mb2.helpBox--green', [h('pre.m0', '.helpBox--green')])
+    , h('div.mb2.helpBox--yellow', [h('pre.m0', '.helpBox--yellow')])
+    , h('div.mb2.helpBox--red', [h('pre.m0', '.helpBox--red')])
+    ])
   ])
 
 let container = document.querySelector('#container')

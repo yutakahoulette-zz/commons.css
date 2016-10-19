@@ -20,6 +20,8 @@
 @import './anchors.css';
 @import './table.css';
 @import './utils.css';
+@import './widths.css';
+@import './shadows.css';
 @import './form-elements.css';
 @import './container.css';
 @import './tabs.css';
@@ -28,6 +30,46 @@ html {
   font-family: 'Open Sans';
 }
 
+
+.progress {
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  display: block;
+}
+
+.progress > span {
+  line-height: .5;
+  display: inline-block;
+  background: $green;
+}
+
+.progress > span:before {
+  content: '.';
+  visibility: hidden;
+}
+
+[class*='helpBox--'] {
+  padding: 1em;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+
+.helpBox--yellow {
+  background: $yellow--light;
+  border-color: $yellow;
+}
+
+.helpBox--green {
+  background: $green--light;
+  border-color: $green;
+}
+
+.helpBox--red {
+  background: $red--light;
+  border-color: $red;
+}
 
 
 

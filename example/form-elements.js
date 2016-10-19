@@ -5,7 +5,7 @@ module.exports = _ =>
   h('div', [
     header('Form Elements', 'form-elements')
   , h('div', [
-      h('div.mb2.p2.bg--grey--2.w--300', [
+      h('div.mb2.p2.bg--grey--2.max-width-1', [
         h('label.block.mb1', 'Text input')
       , h('input', {props: {type: 'text'}})
       ])
@@ -46,7 +46,7 @@ module.exports = _ =>
         "</span>")
       ])
     ])
-    , h('div.mb2.p2.bg--grey--2.w--300', [
+    , h('div.mb2.p2.bg--grey--2.max-width-1', [
         h('label.block.mb1', 'Textarea')
       , h('textarea', {props: {type: 'text'}})
       ])
