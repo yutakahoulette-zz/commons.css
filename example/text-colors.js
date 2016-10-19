@@ -4,8 +4,8 @@ import header from './header'
 module.exports = _ =>
   h('div', [
     header('Text colors', 'text-colors')
-  , h('div', [
-      h('pre.bg--grey--5.color--white.inline-block.mb0', '.color--white')
+  , h('div.bg--white.border.rounded.inline-block.p2', [
+      h('pre.bg--grey--5.color--white', '.color--white')
     , h('pre.color--black', '.color--black')
     , h('pre.color--grey', '.color--grey')
     , h('pre.color--blue', '.color--blue')

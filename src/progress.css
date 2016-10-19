@@ -1,0 +1,20 @@
+.progress {
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  display: block;
+  border-radius: .5em;
+  overflow: hidden;
+}
+
+.progress > span {
+  line-height: .5em;
+  display: inline-block;
+  background: $green;
+}
+
+.progress > span:before {
+  content: '.';
+  visibility: hidden;
+}
+

@@ -3,7 +3,8 @@
 }
 
 ::selection {
-  background: $blue--light; 
+  background: $grey--5; 
+  color: white;
 }
 
 img {
@@ -46,12 +47,6 @@ code, samp {
 
 pre {
   font-size: 87.5%;
-}
-
-blockquote {
-  font-size: 1.25rem;
-  font-style: italic;
-  margin-left: 0;
 }
 
 hr {

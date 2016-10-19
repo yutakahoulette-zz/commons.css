@@ -12,6 +12,8 @@ import bgColors from './background-colors'
 import blockquotes from './blockquotes'
 import buttons from './buttons'
 import formElements from './form-elements'
+import helpBoxes from './help-boxes'
+
 import lists from './lists'
 import progress from './progress'
 
@@ -30,16 +32,12 @@ const view = _ =>
   , blockquotes()
   , buttons()
   , formElements()
+  , helpBoxes()
   , lists()
+  , progress()
   , tables()
   , textColors()
   , tabs()
-  , progress()
-  , h('div.max-width-2', [
-      h('div.mb2.helpBox--green', [h('pre.m0', '.helpBox--green')])
-    , h('div.mb2.helpBox--yellow', [h('pre.m0', '.helpBox--yellow')])
-    , h('div.mb2.helpBox--red', [h('pre.m0', '.helpBox--red')])
-    ])
   ])
 
 let container = document.querySelector('#container')

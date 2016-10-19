@@ -15,6 +15,7 @@ select {
   line-height: 1.4em;
   width: 100%;
   background-color: white;
+  transition: border-color .2s ease-out;
 }
 
 form {
@@ -92,11 +93,12 @@ input[type='radio'] + label:before {
   color: transparent;
   margin-right: .5em;
   text-align: center;
-  background-color: white;
+  background: white;
   display: inline-block;
   line-height: 14px;
   width: 20px;
   border: 1px $grey--4 solid;
+  transition: background .1s ease-out;
 }
 
 input[type='radio'] + label:before {
@@ -105,12 +107,12 @@ input[type='radio'] + label:before {
 
 input[type='checkbox'] + label:hover:before,
 input[type='radio'] + label:hover:before {
-  background-color: $green--light;
+  background: $green--light;
 }
 
 input[type='checkbox']:checked + label:before,
 input[type='radio']:checked + label:before {
-  background-color: $green;
+  background: $green;
 }
 
 input[type='checkbox']:checked + label:before {
@@ -118,7 +120,7 @@ input[type='checkbox']:checked + label:before {
 }
 
 .toggle {
-  display: inline-block;
+  display: table;
   border: 1px solid $grey--4;
   border-radius: 3px;
   overflow: hidden;
@@ -130,9 +132,10 @@ input[type='checkbox']:checked + label:before {
 }
 
 .toggle input[type='radio'] + label {
-  padding: .5rem;
-  display: inline-block;
+  padding: .5em;
+  display: table-cell;
   margin: 0;
+  transition: background .1s ease-out, color .1s ease-out;
 }
 
 .toggle input[type='radio'] + label:not(:last-of-type) {
@@ -140,10 +143,10 @@ input[type='checkbox']:checked + label:before {
 }
 
 .toggle input[type='radio'] + label:hover {
-  background-color: $green--light;
+  background: $green--light;
 }
 
 .toggle input[type='radio']:checked + label {
-  background-color: $green;
+  background: $green;
   color: white;
 }

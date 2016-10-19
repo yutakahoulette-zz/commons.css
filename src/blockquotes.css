@@ -1,7 +1,8 @@
 
 blockquote {
-  padding: .5em .5em .5em 1.5em;
+  padding: .5em .5em .5em 1em;
   border-left: 3px solid $grey--5;
-  margin-left: 1em;
+  font-size: 1.2em;
+  margin-left: 0;
 }
 
