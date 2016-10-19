@@ -10,22 +10,15 @@ module.exports = _ =>
         , h('li', 'Two')
         , h('li', 'Three')
         , h('ul', [
-            h('li', 'One')
-          , h('li', 'Two')
-          , h('li', 'Three')
-          , h('ul', [
-              h('li', 'One')
-            , h('li', 'Two')
-            , h('li', 'Three')
+            h('li', 'いち')
+          , h('li', 'に')
+          , h('li', 'さん')
+          , h('ol', [
+              h('li', 'Uno')
+            , h('li', 'Dos')
+            , h('li', 'Tres')
             ])
           ])
-        ])
-      ])
-    , h('div.inline-block.col-6', [
-        h('ol', [
-          h('li', 'One')
-        , h('li', 'Two')
-        , h('li', 'Three')
         ])
       ])
   ])

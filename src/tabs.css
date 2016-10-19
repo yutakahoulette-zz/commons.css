@@ -3,6 +3,12 @@ ul.tabs--v {
   padding: 0;
 }
 
+ul.tabs--v li a,
+ul.tabs--h li a {
+  color: inherit;
+  text-decoration: none;
+}
+
 ul.tabs--v li,
 ul.tabs--h li {
   color: grey;
@@ -14,6 +20,7 @@ ul.tabs--h li {
   border-bottom: 2px solid transparent;
   line-height: 2em;
   display: inline-block;
+  margin-bottom: 0;
 }
 
 ul.tabs--h li.selected,  

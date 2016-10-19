@@ -80,7 +80,7 @@ input[type='radio'] + label {
   cursor: pointer;
   font-weight: normal;
   user-select: none;
-  display: inline-block;
+  display: block;
   margin-bottom: .25em;
 }
 
@@ -96,7 +96,7 @@ input[type='radio'] + label:before {
   display: inline-block;
   line-height: 14px;
   width: 20px;
-  border: 1px $grey--6 solid;
+  border: 1px $grey--4 solid;
 }
 
 input[type='radio'] + label:before {
@@ -119,7 +119,7 @@ input[type='checkbox']:checked + label:before {
 
 .toggle {
   display: inline-block;
-  border: 1px solid $grey--5;
+  border: 1px solid $grey--4;
   border-radius: 3px;
   overflow: hidden;
   background: white;
@@ -131,11 +131,12 @@ input[type='checkbox']:checked + label:before {
 
 .toggle input[type='radio'] + label {
   padding: .5rem;
+  display: inline-block;
   margin: 0;
 }
 
 .toggle input[type='radio'] + label:not(:last-of-type) {
-  border-right: 1px solid $grey--5;
+  border-right: 1px solid $grey--4;
 }
 
 .toggle input[type='radio'] + label:hover {

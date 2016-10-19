@@ -1,9 +1,9 @@
 * {
-  border-color: $grey--5;
+  border-color: $grey--4;
 }
 
 ::selection {
-  background: $grey--2; 
+  background: $blue--light; 
 }
 
 img {

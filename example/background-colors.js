@@ -10,7 +10,6 @@ module.exports = _ =>
   , h('pre.p1.bg--grey--3', '.bg--grey--3')
   , h('pre.p1.bg--grey--4', '.bg--grey--4')
   , h('pre.p1.bg--grey--5', '.bg--grey--5')
-  , h('pre.p1.bg--grey--6', '.bg--grey--6')
   , h('pre.p1.bg--scrim--1', '.bg--scrim--1 (transparent)')
   , h('pre.p1.bg--scrim--2.color--white', '.bg--srim--2 (transparent)')
   , h('pre.p1.bg--green', '.bg--green')
