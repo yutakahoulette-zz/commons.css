@@ -9,7 +9,7 @@ $green--light: color($green l(94%));
 
 $blue: #39aad6;
 $blue--dark: color($blue l(-10%));
-$blue--light: color($blue l(94%));
+$blue--light: color($blue l(96%));
 
 $yellow: rgb(239, 220, 94);
 $yellow--light: color($yellow l(93%)); 

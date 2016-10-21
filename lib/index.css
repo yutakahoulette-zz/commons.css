@@ -280,11 +280,8 @@
     Consolas,
     'Liberation Mono',
     monospace;
-}code, samp {
-  font-size: 87.5%;
-  padding: .125em;
 }pre {
-  font-size: 87.5%;
+  font-size: .85em;
 }hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -311,7 +308,7 @@
   margin-left: 0;
 }ul, ol {
   list-style-position: outside;
-  padding-left: 1.6em;
+  padding-left: 1.2em;
 }ul ul, ul ol, ol ul {
   margin-top: .5em;
 
@@ -381,7 +378,7 @@
 }.bg--pink {
   background: rgb(253, 234, 231); 
 }.bg--blue {
-  background: rgb(230, 244, 250); 
+  background: rgb(238, 248, 252); 
 }.bg--yellow {
   background: rgb(252, 248, 223);
 }.color--black {
@@ -542,7 +539,6 @@
   border-style: solid;
   width: 100%;
   display: block;
-  border-radius: .5em;
   overflow: hidden;
 }.progress > span {
   line-height: .5em;
