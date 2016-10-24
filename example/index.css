@@ -1,0 +1,19 @@
+.nav {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 250px;
+  overflow-y: auto;
+}
+
+.main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+

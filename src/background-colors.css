@@ -1,37 +1,37 @@
-.bg--white {
+.bg-white {
   background: white;
 }
-.bg--grey--1 {
-  background: $grey--1;
+.bg-grey-1 {
+  background: $grey-1;
 }
-.bg--grey--2 {
-  background: $grey--2;
+.bg-grey-2 {
+  background: $grey-2;
 }
-.bg--grey--3 {
-  background: $grey--3;
+.bg-grey-3 {
+  background: $grey-3;
 }
-.bg--grey--4 {
-  background: $grey--4;
+.bg-grey-4 {
+  background: $grey-4;
 }
-.bg--grey--5 {
-  background: $grey--5;
+.bg-grey-5 {
+  background: $grey-5;
 }
-.bg--scrim--1 {
-  background: $scrim--1;
+.bg-scrim-1 {
+  background: $scrim-1;
 }
-.bg--scrim--2 {
-  background: $scrim--2;
+.bg-scrim-2 {
+  background: $scrim-2;
 }
-.bg--green {
-  background: $green--light;
+.bg-lightGreen {
+  background: $green-light;
 }
-.bg--pink {
-  background: $red--light; 
+.bg-pink {
+  background: $red-light; 
 }
-.bg--blue {
-  background: $blue--light; 
+.bg-lightBlue {
+  background: $blue-light; 
 }
-.bg--yellow {
-  background: $yellow--light;
+.bg-lightYellow {
+  background: $yellow-light;
 }
 

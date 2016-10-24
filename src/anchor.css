@@ -3,7 +3,7 @@ a {
 }
 
 a:hover {
-  color: $blue--dark;
+  color: $blue-dark;
   text-decoration: underline;
 }
 

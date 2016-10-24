@@ -8,14 +8,17 @@ input:focus {
 textarea,
 input,
 select {
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid $grey-5;
   border-radius: 0;
   padding: .5em;
-  line-height: 1.4em;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
   width: 100%;
   background-color: white;
   transition: border-color .2s ease-out;
+  -webkit-appearance: none;
 }
 
 form {
@@ -76,6 +79,14 @@ input[type='radio'] {
   display: none;
 }
 
+input[type='checkbox'] + label:before {
+  content: '\2713';
+}
+
+input[type='radio'] + label:before {
+  content: '\2022';
+}
+
 input[type='checkbox'] + label,
 input[type='radio'] + label {
   cursor: pointer;
@@ -87,7 +98,6 @@ input[type='radio'] + label {
 
 input[type='checkbox'] + label:before,
 input[type='radio'] + label:before {
-  content: '\2713';
   text-align: center;
   padding: 2px;
   color: transparent;
@@ -95,9 +105,9 @@ input[type='radio'] + label:before {
   text-align: center;
   background: white;
   display: inline-block;
-  line-height: 14px;
-  width: 20px;
-  border: 1px $grey--4 solid;
+  line-height: 1em;
+  width: 1em;
+  border: 1px $grey-4 solid;
   transition: background .1s ease-out;
 }
 
@@ -107,7 +117,7 @@ input[type='radio'] + label:before {
 
 input[type='checkbox'] + label:hover:before,
 input[type='radio'] + label:hover:before {
-  background: $green--light;
+  background: $green-light;
 }
 
 input[type='checkbox']:checked + label:before,
@@ -115,13 +125,14 @@ input[type='radio']:checked + label:before {
   background: $green;
 }
 
+input[type='radio']:checked + label:before,
 input[type='checkbox']:checked + label:before {
   color: white;
 }
 
 .toggle {
   display: table;
-  border: 1px solid $grey--4;
+  border: 1px solid $grey-4;
   border-radius: 3px;
   overflow: hidden;
   background: white;
@@ -139,11 +150,11 @@ input[type='checkbox']:checked + label:before {
 }
 
 .toggle input[type='radio'] + label:not(:last-of-type) {
-  border-right: 1px solid $grey--4;
+  border-right: 1px solid $grey-4;
 }
 
 .toggle input[type='radio'] + label:hover {
-  background: $green--light;
+  background: $green-light;
 }
 
 .toggle input[type='radio']:checked + label {

@@ -5,17 +5,17 @@
 }
 
 .helpBox--yellow {
-  background: $yellow--light;
+  background: $yellow-light;
   border-color: $yellow;
 }
 
 .helpBox--green {
-  background: $green--light;
+  background: $green-light;
   border-color: $green;
 }
 
 .helpBox--red {
-  background: $red--light;
+  background: $red-light;
   border-color: $red;
 }
 

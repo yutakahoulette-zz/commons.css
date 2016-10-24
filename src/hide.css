@@ -1,0 +1,22 @@
+.hide{
+  position:absolute !important;
+  height:1px;
+  width:1px;
+  overflow:hidden;
+  clip:rect(1px, 1px, 1px, 1px);
+}
+
+@media (min-width: 480px) and (max-width: 780px){
+  .sm-hide{ display:none !important }
+}
+
+@media (min-width: 780px) and (max-width: 980px){
+  .md-hide{ display:none !important }
+}
+
+@media (min-width: 980px){
+  .lg-hide{ display:none !important }
+}
+
+.display-none{ display:none !important }
+

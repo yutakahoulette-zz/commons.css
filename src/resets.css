@@ -1,9 +1,9 @@
 * {
-  border-color: $grey--4;
+  box-sizing: border-box;
 }
 
 ::selection {
-  background: $grey--5; 
+  background: $grey-5; 
   color: white;
 }
 
@@ -52,6 +52,7 @@ hr {
   border-right: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
+  border-color: $grey-4;
 }
 
 table {

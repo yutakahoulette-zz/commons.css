@@ -1,5 +1,3 @@
-
-
 ul,
 ol {
   list-style-position: outside;
@@ -10,10 +8,14 @@ ul ul,
 ul ol, 
 ol ul {
   margin-top: .5em;
-
 }
 
 li {
   margin-bottom: .25em;
+}
+
+.list-reset{
+  list-style:none;
+  padding-left:0;
 }
 

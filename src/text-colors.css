@@ -1,19 +1,19 @@
-.color--black {
+.color-black {
   color: black;
 }
-.color--grey {
-  color: $grey--5;
+.color-grey {
+  color: $grey-5;
 }
-.color--white {
+.color-white {
   color: white;
 }
-.color--red {
+.color-red {
   color: $red;
 }
-.color--blue {
+.color-blue {
   color: $blue;
 }
 
-.color--green {
+.color-green {
   color: $green;
 }

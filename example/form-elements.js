@@ -4,12 +4,12 @@ import code from './code'
 
 module.exports = _ =>
   h('div', [
-    header('Form Elements', 'form-elements')
-  , h('div.bg--white.p2.border.rounded.max-width-2', [
-      h('p.mt0.bold', 'Text input')
-    , h('input', {props: {type: 'text'}})
+    header('form elements')
+  , h('div', [
+      h('p.mt-0.bold', 'Text input')
+    , h('input.max-width-300', {props: {type: 'text'}})
     , h('hr')
-    , h('p.bold', 'Number input with dollar prepended')
+    , h('p.bold.mt-2', 'Number input with dollar prepended')
     , h('span.prepend', [
         h('span', '$')
       , h('input', {props: {type: 'number'}})
@@ -21,7 +21,7 @@ module.exports = _ =>
   <input type='number'> 
 </span>`)
   , h('hr')
-  , h('p.bold', 'Select with caret appended')
+  , h('p.bold.mt-2', 'Select with caret appended')
   , h('span.append', [
       h('span', '▾')
     , h('select', [

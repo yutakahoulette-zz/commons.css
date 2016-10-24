@@ -15,7 +15,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _header2.default)('Anchors', 'anchors'), (0, _h2.default)('div', [(0, _h2.default)('a', { props: { href: 'https://en.wikipedia.org/wiki/Hyperlink' } }, "Hyperlink")])]);
 };
 
-},{"./header":8,"snabbdom/h":33}],2:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],2:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -29,10 +29,10 @@ var _header2 = _interopRequireDefault(_header);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('Background colors', 'background-colors'), (0, _h2.default)('pre.mt2.p1.bg--white', '.bg--white'), (0, _h2.default)('pre.p1.bg--grey--1', '.bg--grey--1'), (0, _h2.default)('pre.p1.bg--grey--2', '.bg--grey--2'), (0, _h2.default)('pre.p1.bg--grey--3', '.bg--grey--3'), (0, _h2.default)('pre.p1.bg--grey--4', '.bg--grey--4'), (0, _h2.default)('pre.p1.bg--grey--5', '.bg--grey--5'), (0, _h2.default)('pre.p1.bg--scrim--1', '.bg--scrim--1 (transparent)'), (0, _h2.default)('pre.p1.bg--scrim--2.color--white', '.bg--srim--2 (transparent)'), (0, _h2.default)('pre.p1.bg--green', '.bg--green'), (0, _h2.default)('pre.p1.bg--pink', '.bg--pink'), (0, _h2.default)('pre.p1.bg--blue', '.bg--blue'), (0, _h2.default)('pre.p1.mb3.bg--yellow', '.bg--yellow')]);
+  return (0, _h2.default)('div', [(0, _header2.default)('background colors'), (0, _h2.default)('pre.mt2.p-1.bg-white', '.bg-white'), (0, _h2.default)('pre.p-1.bg-grey-1', '.bg-grey-1'), (0, _h2.default)('pre.p-1.bg-grey-2', '.bg-grey-2'), (0, _h2.default)('pre.p-1.bg-grey-3', '.bg-grey-3'), (0, _h2.default)('pre.p-1.bg-grey-4', '.bg-grey-4'), (0, _h2.default)('pre.p-1.bg-grey-5', '.bg-grey-5'), (0, _h2.default)('pre.p-1.bg-scrim-1', '.bg-scrim-1 (transparent)'), (0, _h2.default)('pre.p-1.bg-scrim-2.color-white', '.bg-srim-2 (transparent)'), (0, _h2.default)('pre.p-1.bg-pink', '.bg-pink'), (0, _h2.default)('pre.p-1.bg-lightYellow', '.bg-lightYellow'), (0, _h2.default)('pre.p-1.bg-lightGreen', '.bg-lightGreen'), (0, _h2.default)('pre.p-1.bg-lightBlue', '.bg-lightBlue')]);
 };
 
-},{"./header":8,"snabbdom/h":33}],3:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],3:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -46,10 +46,10 @@ var _header2 = _interopRequireDefault(_header);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('Blockquotes', 'blockquotes'), (0, _h2.default)('blockquote', 'Mic check, mic check... one, two, three')]);
+  return (0, _h2.default)('div', [(0, _header2.default)('blockquotes'), (0, _h2.default)('blockquote', 'Mic check, mic check... one, two, three')]);
 };
 
-},{"./header":8,"snabbdom/h":33}],4:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],4:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -63,10 +63,17 @@ var _header2 = _interopRequireDefault(_header);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('Buttons', 'buttons'), (0, _h2.default)('div.mt2', [(0, _h2.default)('div.col-4.inline-block.mb1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-4.inline-block.mb1', [(0, _h2.default)('button.btn--main', 'Create'), (0, _h2.default)('pre', ".btn--main")]), (0, _h2.default)('div.col-4.inline-block.mb1', [(0, _h2.default)('button.btn--danger', 'Delete'), (0, _h2.default)('pre', ".btn--danger")]), (0, _h2.default)('div.col-4.inline-block.mb1', [(0, _h2.default)('button.btn--edit', 'Edit profile'), (0, _h2.default)('pre', ".btn--edit")]), (0, _h2.default)('div.col-4.inline-block.mb1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')])])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('buttons'), (0, _h2.default)('div', [(0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button.btn--main', 'Create'), (0, _h2.default)('pre', ".btn--main")]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button.btn--danger', 'Delete'), (0, _h2.default)('pre', ".btn--danger")]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button.btn--edit', 'Edit profile'), (0, _h2.default)('pre', ".btn--edit")]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')])])]);
 };
 
-},{"./header":8,"snabbdom/h":33}],5:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],5:[function(require,module,exports){
+"use strict";
+
+module.exports = function (txt) {
+  return txt.charAt(0).toUpperCase() + txt.slice(1);
+};
+
+},{}],6:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -76,23 +83,10 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (code) {
-  return (0, _h2.default)('pre.bg--blue.p2.inline-block.mb0', [(0, _h2.default)('code', code)]);
+  return (0, _h2.default)('pre.bg-lightBlue.p-2.inline-block.mb-1', [(0, _h2.default)('code', code)]);
 };
 
-},{"snabbdom/h":33}],6:[function(require,module,exports){
-'use strict';
-
-var _h = require('snabbdom/h');
-
-var _h2 = _interopRequireDefault(_h);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _h2.default)('p.read.mb3', [(0, _h2.default)('strong', 'commons.css'), ' is comprised of ', (0, _h2.default)('a', { props: { href: 'http://www.basscss.com/' } }, 'Basscss '), '(excluding the flexbox and type-scale modules) for low-level styling, ', (0, _h2.default)('a', { props: { href: 'https://github.com/filipelinhares/ress' } }, 'ress '), 'for normalizing, and additional styles for:']), (0, _h2.default)('div', [(0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#background-colors' } }, 'Background colors'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#blockquote' } }, 'Blockquotes'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#buttons' } }, 'Buttons'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#form-elements' } }, 'Form Elements'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#lists' } }, 'Lists'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#tables' } }, 'Tables'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#text-colors' } }, 'Text colors'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#type-scale' } }, 'Type scale'), (0, _h2.default)('a.inline-block.col-4.mb2', { props: { href: '#utilities' } }, 'Utilities')]), (0, _h2.default)('p.read', [(0, _h2.default)('strong', 'commons.css '), 'aims to be performant, and easy to use by minimizing the number of class names that you have to keep track of. We encourage the use of combining existing classes in the markup to create new UIs instead of writing additional styles. Check out the ', (0, _h2.default)('a', { props: { href: '#examples' } }, 'examples'), '.'])]);
-};
-
-},{"snabbdom/h":33}],7:[function(require,module,exports){
+},{"snabbdom/h":36}],7:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -110,23 +104,31 @@ var _code2 = _interopRequireDefault(_code);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('Form Elements', 'form-elements'), (0, _h2.default)('div.bg--white.p2.border.rounded.max-width-2', [(0, _h2.default)('p.mt0.bold', 'Text input'), (0, _h2.default)('input', { props: { type: 'text' } }), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Textarea'), (0, _h2.default)('textarea', { props: { type: 'text' } }), (0, _h2.default)('p.bold', 'Radio'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, 'Heads'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, 'Tails'), (0, _code2.default)('\n<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), (0, _h2.default)('p.bold', 'Checkboxes'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, 'Pizza'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, 'Tacos'), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), (0, _h2.default)('div.bg--grey--2.p2.inline-block.mb2', [(0, _h2.default)('label.block.mb1', 'Input with button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.no-transform.table-cell', 'Search')])])])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('form elements'), (0, _h2.default)('div', [(0, _h2.default)('p.mt-0.bold', 'Text input'), (0, _h2.default)('input.max-width-300', { props: { type: 'text' } }), (0, _h2.default)('hr'), (0, _h2.default)('p.bold.mt-2', 'Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold.mt-2', 'Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Textarea'), (0, _h2.default)('textarea', { props: { type: 'text' } }), (0, _h2.default)('p.bold', 'Radio'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, 'Heads'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, 'Tails'), (0, _code2.default)('\n<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), (0, _h2.default)('p.bold', 'Checkboxes'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, 'Pizza'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, 'Tacos'), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), (0, _h2.default)('div.bg--grey--2.p2.inline-block.mb2', [(0, _h2.default)('label.block.mb1', 'Input with button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.no-transform.table-cell', 'Search')])])])]);
 };
 
-},{"./code":5,"./header":8,"snabbdom/h":33}],8:[function(require,module,exports){
+},{"./code":6,"./header":8,"snabbdom/h":36}],8:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
 
 var _h2 = _interopRequireDefault(_h);
 
+var _hyphenate = require('./hyphenate');
+
+var _hyphenate2 = _interopRequireDefault(_hyphenate);
+
+var _capitalize = require('./capitalize');
+
+var _capitalize2 = _interopRequireDefault(_capitalize);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = function (text, id) {
-  return (0, _h2.default)('h3.w--full.inline-block.mb2.mt4', { props: { id: id } }, '# ' + text);
+module.exports = function (txt) {
+  return (0, _h2.default)('h3.inline-block.mb-2.mt-4', { props: { id: (0, _hyphenate2.default)(txt) } }, (0, _capitalize2.default)(txt));
 };
 
-},{"snabbdom/h":33}],9:[function(require,module,exports){
+},{"./capitalize":5,"./hyphenate":10,"snabbdom/h":36}],9:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -140,10 +142,17 @@ var _header2 = _interopRequireDefault(_header);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('Help Boxes', ''), (0, _h2.default)('div.max-width-1.bg--white.border.rounded.p2', [(0, _h2.default)('div.mb2.helpBox--green', [(0, _h2.default)('pre.m0', '.helpBox--green')]), (0, _h2.default)('div.mb2.helpBox--yellow', [(0, _h2.default)('pre.m0', '.helpBox--yellow')]), (0, _h2.default)('div.helpBox--red', [(0, _h2.default)('pre.m0', '.helpBox--red')])])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('help boxes'), (0, _h2.default)('div.max-width-1', [(0, _h2.default)('div.mb-2.helpBox--green', [(0, _h2.default)('pre.m-0', '.helpBox--green')]), (0, _h2.default)('div.mb-2.helpBox--yellow', [(0, _h2.default)('pre.m-0', '.helpBox--yellow')]), (0, _h2.default)('div.helpBox--red', [(0, _h2.default)('pre.m-0', '.helpBox--red')])])]);
 };
 
-},{"./header":8,"snabbdom/h":33}],10:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],10:[function(require,module,exports){
+'use strict';
+
+module.exports = function (txt) {
+  return txt.replace(/ /g, '-');
+};
+
+},{}],11:[function(require,module,exports){
 'use strict';
 
 var _ramda = require('ramda');
@@ -166,9 +175,13 @@ var _snabbdom = require('snabbdom');
 
 var _snabbdom2 = _interopRequireDefault(_snabbdom);
 
-var _contents = require('./contents');
+var _intro = require('./intro');
 
-var _contents2 = _interopRequireDefault(_contents);
+var _intro2 = _interopRequireDefault(_intro);
+
+var _nav = require('./nav');
+
+var _nav2 = _interopRequireDefault(_nav);
 
 var _anchors = require('./anchors');
 
@@ -216,11 +229,17 @@ var _textColors2 = _interopRequireDefault(_textColors);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var init = function init(_) {}; // npm
-
+// npm
+var init = function init(_) {};
 
 var view = function view(_) {
-  return (0, _h2.default)('div.container.p2', [(0, _h2.default)('h1.inline-block.bg--blue.p1.mb0.mt1', 'commons.css'), (0, _h2.default)('hr'), (0, _contents2.default)(), (0, _backgroundColors2.default)(), (0, _blockquotes2.default)(), (0, _buttons2.default)(), (0, _formElements2.default)(), (0, _helpBoxes2.default)(), (0, _lists2.default)(), (0, _progress2.default)(), (0, _tables2.default)(), (0, _textColors2.default)(), (0, _tabs2.default)()]);
+  return (0, _h2.default)('div.relative', [(0, _nav2.default)(), (0, _h2.default)('div.main.p-2', [(0, _intro2.default)(), (0, _backgroundColors2.default)(), (0, _blockquotes2.default)(), (0, _buttons2.default)(), (0, _formElements2.default)(), (0, _helpBoxes2.default)()
+  // , lists()
+  // , progress()
+  // , tables()
+  // , textColors()
+  // , tabs()
+  ])]);
 };
 
 var container = document.querySelector('#container');
@@ -229,7 +248,20 @@ var patch = _snabbdom2.default.init([require('snabbdom/modules/class'), require(
 
 (0, _flimflamRender2.default)({ patch: patch, container: container, view: view, state: init() });
 
-},{"./anchors":1,"./background-colors":2,"./blockquotes":3,"./buttons":4,"./contents":6,"./form-elements":7,"./help-boxes":9,"./lists":11,"./progress":12,"./tables":13,"./tabs":14,"./text-colors":15,"flimflam-render":16,"flyd":25,"ramda":32,"snabbdom":41,"snabbdom/h":33,"snabbdom/modules/attributes":36,"snabbdom/modules/class":37,"snabbdom/modules/eventlisteners":38,"snabbdom/modules/props":39,"snabbdom/modules/style":40}],11:[function(require,module,exports){
+},{"./anchors":1,"./background-colors":2,"./blockquotes":3,"./buttons":4,"./form-elements":7,"./help-boxes":9,"./intro":12,"./lists":13,"./nav":14,"./progress":15,"./tables":16,"./tabs":17,"./text-colors":18,"flimflam-render":19,"flyd":28,"ramda":35,"snabbdom":44,"snabbdom/h":36,"snabbdom/modules/attributes":39,"snabbdom/modules/class":40,"snabbdom/modules/eventlisteners":41,"snabbdom/modules/props":42,"snabbdom/modules/style":43}],12:[function(require,module,exports){
+'use strict';
+
+var _h = require('snabbdom/h');
+
+var _h2 = _interopRequireDefault(_h);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = function (_) {
+  return (0, _h2.default)('div', { props: { id: 'about' } }, [(0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'aims to be performant, and easy to use by minimizing the number of class names that you have to keep track of. We encourage the use of combining existing classes in the markup to create new UIs instead of writing additional styles. Check out the ', (0, _h2.default)('a', { props: { href: '#examples' } }, 'examples'), '.'])]);
+};
+
+},{"snabbdom/h":36}],13:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -246,7 +278,38 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _header2.default)('Lists', 'lists'), (0, _h2.default)('div.table.inline-block.bg--white.rounded.border.p2', [(0, _h2.default)('div.table-cell', [(0, _h2.default)('p.mt0.bold', 'Unordered'), (0, _h2.default)('ul', [(0, _h2.default)('li', 'Pizza'), (0, _h2.default)('li', 'Porphyry'), (0, _h2.default)('li', 'Pyroxenite'), (0, _h2.default)('ul', [(0, _h2.default)('li', 'Burrito'), (0, _h2.default)('li', 'Quartz monzonite'), (0, _h2.default)('li', 'Phonolite')])])]), (0, _h2.default)('div.table-cell.pl4.pr1', [(0, _h2.default)('p.mt0.bold', 'Ordered'), (0, _h2.default)('ol', [(0, _h2.default)('li', 'いち'), (0, _h2.default)('li', 'に'), (0, _h2.default)('li', 'さん')])])])]);
 };
 
-},{"./header":8,"snabbdom/h":33}],12:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],14:[function(require,module,exports){
+'use strict';
+
+var _h = require('snabbdom/h');
+
+var _h2 = _interopRequireDefault(_h);
+
+var _ramda = require('ramda');
+
+var _ramda2 = _interopRequireDefault(_ramda);
+
+var _capitalize = require('./capitalize');
+
+var _capitalize2 = _interopRequireDefault(_capitalize);
+
+var _hyphenate = require('./hyphenate');
+
+var _hyphenate2 = _interopRequireDefault(_hyphenate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var links = ['about', 'background colors', 'blockquotes', 'buttons', 'form elements', 'help boxes'];
+
+var link = function link(txt) {
+  return (0, _h2.default)('li', [(0, _h2.default)('a', { props: { href: '#' + (0, _hyphenate2.default)(txt) } }, (0, _capitalize2.default)(txt))]);
+};
+
+module.exports = function (_) {
+  return (0, _h2.default)('div.nav.p-2', [(0, _h2.default)('h4.mt-1', 'commons.css'), (0, _h2.default)('ul.tabs-v', _ramda2.default.map(link, links))]);
+};
+
+},{"./capitalize":5,"./hyphenate":10,"ramda":35,"snabbdom/h":36}],15:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -267,7 +330,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _header2.default)('Progress bar', 'progress'), (0, _h2.default)('div.p2.border.rounded.bg--white.inline-block', [(0, _h2.default)('span.progress.bg--grey--1.mb1', [(0, _h2.default)('span', { style: { width: '80%' } })]), (0, _code2.default)('<span class=\'progress\'>\n  <span style=\'width:80%;\'></span>\n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.italic', 'To change the height, just add a type-scale class.'), (0, _h2.default)('span.progress.bg--grey--1.h3.my1', [(0, _h2.default)('span', { style: { width: '20%' } })]), (0, _code2.default)('<span class=\'progress.h3\'>\n  <span style=\'width:20%;\'></span>\n</span>')])]);
 };
 
-},{"./code":5,"./header":8,"snabbdom/h":33}],13:[function(require,module,exports){
+},{"./code":6,"./header":8,"snabbdom/h":36}],16:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -284,7 +347,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _header2.default)('Tables', 'tables'), (0, _h2.default)('div.border.inline-block.rounded.bg--white.p2', [(0, _h2.default)('table', [(0, _h2.default)('tr', [(0, _h2.default)('th', 'Name'), (0, _h2.default)('th', 'Year'), (0, _h2.default)('th', 'Length')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Kraftwerk'), (0, _h2.default)('td', '1970'), (0, _h2.default)('td', '39:39')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Kraftwerk 2'), (0, _h2.default)('td', '1972'), (0, _h2.default)('td', '42:42')]), (0, _h2.default)('tr', [(0, _h2.default)('td', 'Ralf and Florian'), (0, _h2.default)('td', '1973'), (0, _h2.default)('td', '37:41')])])])]);
 };
 
-},{"./header":8,"snabbdom/h":33}],14:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],17:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -305,7 +368,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _header2.default)('Tabs', 'tabs'), (0, _h2.default)('div.p2.border.rounded.mb3.bg--white.inline-block', [(0, _h2.default)('p.bold.mt0', 'Horizontal tabs'), (0, _h2.default)('ul.tabs--h', [(0, _h2.default)('li.selected.mr1', 'Apple'), (0, _h2.default)('li.mr1', 'Kiwi'), (0, _h2.default)('li', 'Lychee')]), (0, _code2.default)('<ul class=\'tabs--h\'>\n  <li class=\'selected\'>Apple</li>\n  <li>Kiwi</li>\n  <li>Lychee</li>\n</ul>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold.mt0', 'Vertical tabs'), (0, _h2.default)('ul.tabs--v', [(0, _h2.default)('li.mr1', 'Apple'), (0, _h2.default)('li.selected.mr1', 'Kiwi'), (0, _h2.default)('li', 'Lychee')]), (0, _code2.default)('<ul class=\'tabs--v\'>\n  <li>Apple</li>\n  <li class=\'selected\'>Kiwi</li>\n  <li>Lychee</li>\n</ul>')])]);
 };
 
-},{"./code":5,"./header":8,"snabbdom/h":33}],15:[function(require,module,exports){
+},{"./code":6,"./header":8,"snabbdom/h":36}],18:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -322,7 +385,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div', [(0, _header2.default)('Text colors', 'text-colors'), (0, _h2.default)('div.bg--white.border.rounded.inline-block.p2', [(0, _h2.default)('pre.bg--grey--5.color--white', '.color--white'), (0, _h2.default)('pre.color--black', '.color--black'), (0, _h2.default)('pre.color--grey', '.color--grey'), (0, _h2.default)('pre.color--blue', '.color--blue'), (0, _h2.default)('pre.color--red', '.color--red'), (0, _h2.default)('pre.color--green', '.color--green')])]);
 };
 
-},{"./header":8,"snabbdom/h":33}],16:[function(require,module,exports){
+},{"./header":8,"snabbdom/h":36}],19:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -372,7 +435,7 @@ var isObj = function isObj(x) {
 module.exports = render;
 
 
-},{"flyd":17,"flyd/module/mergeall":18,"ramda":24}],17:[function(require,module,exports){
+},{"flyd":20,"flyd/module/mergeall":21,"ramda":27}],20:[function(require,module,exports){
 var curryN = require('ramda/src/curryN');
 
 'use strict';
@@ -673,7 +736,7 @@ module.exports = {
   immediate: immediate,
 };
 
-},{"ramda/src/curryN":19}],18:[function(require,module,exports){
+},{"ramda/src/curryN":22}],21:[function(require,module,exports){
 var flyd = require('../../lib');
 
 module.exports = function mergeAll(streams) {
@@ -698,7 +761,7 @@ module.exports = function mergeAll(streams) {
 };
 
 
-},{"../../lib":17}],19:[function(require,module,exports){
+},{"../../lib":20}],22:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -755,7 +818,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":20,"./internal/_curry1":21,"./internal/_curry2":22,"./internal/_curryN":23}],20:[function(require,module,exports){
+},{"./internal/_arity":23,"./internal/_curry1":24,"./internal/_curry2":25,"./internal/_curryN":26}],23:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   // jshint unused:vars
   switch (n) {
@@ -774,7 +837,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],21:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 /**
  * Optimized internal two-arity curry function.
  *
@@ -795,7 +858,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{}],22:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 
 
@@ -829,7 +892,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":21}],23:[function(require,module,exports){
+},{"./_curry1":24}],26:[function(require,module,exports){
 var _arity = require('./_arity');
 
 
@@ -869,7 +932,7 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":20}],24:[function(require,module,exports){
+},{"./_arity":23}],27:[function(require,module,exports){
 //  Ramda v0.19.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -9317,7 +9380,7 @@ module.exports = function _curryN(length, received, fn) {
 
 }.call(this));
 
-},{}],25:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 'use strict';
 
 var curryN = require('ramda/src/curryN');
@@ -9945,7 +10008,7 @@ StreamTransformer.prototype['@@transducer/step'] = function(s, v) { return v; };
 
 module.exports = flyd;
 
-},{"ramda/src/curryN":26}],26:[function(require,module,exports){
+},{"ramda/src/curryN":29}],29:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -10001,7 +10064,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":27,"./internal/_curry1":28,"./internal/_curry2":29,"./internal/_curryN":30}],27:[function(require,module,exports){
+},{"./internal/_arity":30,"./internal/_curry1":31,"./internal/_curry2":32,"./internal/_curryN":33}],30:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   /* eslint-disable no-unused-vars */
   switch (n) {
@@ -10020,7 +10083,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],28:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 var _isPlaceholder = require('./_isPlaceholder');
 
 
@@ -10042,7 +10105,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{"./_isPlaceholder":31}],29:[function(require,module,exports){
+},{"./_isPlaceholder":34}],32:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -10072,7 +10135,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":28,"./_isPlaceholder":31}],30:[function(require,module,exports){
+},{"./_curry1":31,"./_isPlaceholder":34}],33:[function(require,module,exports){
 var _arity = require('./_arity');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -10114,14 +10177,14 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":27,"./_isPlaceholder":31}],31:[function(require,module,exports){
+},{"./_arity":30,"./_isPlaceholder":34}],34:[function(require,module,exports){
 module.exports = function _isPlaceholder(a) {
   return a != null &&
          typeof a === 'object' &&
          a['@@functional/placeholder'] === true;
 };
 
-},{}],32:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 //  Ramda v0.22.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -18954,7 +19017,7 @@ module.exports = function _isPlaceholder(a) {
 
 }.call(this));
 
-},{}],33:[function(require,module,exports){
+},{}],36:[function(require,module,exports){
 var VNode = require('./vnode');
 var is = require('./is');
 
@@ -18990,7 +19053,7 @@ module.exports = function h(sel, b, c) {
   return VNode(sel, data, children, text, undefined);
 };
 
-},{"./is":35,"./vnode":42}],34:[function(require,module,exports){
+},{"./is":38,"./vnode":45}],37:[function(require,module,exports){
 function createElement(tagName){
   return document.createElement(tagName);
 }
@@ -19046,13 +19109,13 @@ module.exports = {
   setTextContent: setTextContent
 };
 
-},{}],35:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 module.exports = {
   array: Array.isArray,
   primitive: function(s) { return typeof s === 'string' || typeof s === 'number'; },
 };
 
-},{}],36:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 var booleanAttrs = ["allowfullscreen", "async", "autofocus", "autoplay", "checked", "compact", "controls", "declare",
                 "default", "defaultchecked", "defaultmuted", "defaultselected", "defer", "disabled", "draggable",
                 "enabled", "formnovalidate", "hidden", "indeterminate", "inert", "ismap", "itemscope", "loop", "multiple",
@@ -19097,7 +19160,7 @@ function updateAttrs(oldVnode, vnode) {
 
 module.exports = {create: updateAttrs, update: updateAttrs};
 
-},{}],37:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 function updateClass(oldVnode, vnode) {
   var cur, name, elm = vnode.elm,
       oldClass = oldVnode.data.class,
@@ -19122,7 +19185,7 @@ function updateClass(oldVnode, vnode) {
 
 module.exports = {create: updateClass, update: updateClass};
 
-},{}],38:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 function invokeHandler(handler, vnode, event) {
   if (typeof handler === "function") {
     // call function handler
@@ -19225,7 +19288,7 @@ module.exports = {
   destroy: updateEventListeners
 };
 
-},{}],39:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 function updateProps(oldVnode, vnode) {
   var key, cur, old, elm = vnode.elm,
       oldProps = oldVnode.data.props, props = vnode.data.props;
@@ -19250,7 +19313,7 @@ function updateProps(oldVnode, vnode) {
 
 module.exports = {create: updateProps, update: updateProps};
 
-},{}],40:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 var raf = (typeof window !== 'undefined' && window.requestAnimationFrame) || setTimeout;
 var nextFrame = function(fn) { raf(function() { raf(fn); }); };
 
@@ -19321,7 +19384,7 @@ function applyRemoveStyle(vnode, rm) {
 
 module.exports = {create: updateStyle, update: updateStyle, destroy: applyDestroyStyle, remove: applyRemoveStyle};
 
-},{}],41:[function(require,module,exports){
+},{}],44:[function(require,module,exports){
 // jshint newcap: false
 /* global require, module, document, Node */
 'use strict';
@@ -19583,11 +19646,11 @@ function init(modules, api) {
 
 module.exports = {init: init};
 
-},{"./htmldomapi":34,"./is":35,"./vnode":42}],42:[function(require,module,exports){
+},{"./htmldomapi":37,"./is":38,"./vnode":45}],45:[function(require,module,exports){
 module.exports = function(sel, data, children, text, elm) {
   var key = data === undefined ? undefined : data.key;
   return {sel: sel, data: data, children: children,
           text: text, elm: elm, key: key};
 };
 
-},{}]},{},[10]);
+},{}]},{},[11]);

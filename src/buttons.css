@@ -10,11 +10,11 @@ button {
   color: $blue;
   user-select: none;
   background: white;
-  line-height: 1.4em;
+  line-height: inherit;
 }
 
 button:hover {
-  background: $grey--1;
+  background: $grey-1;
 }
 
 button.btn--edit {
@@ -24,31 +24,26 @@ button.btn--edit {
 button.btn--danger, 
 button.btn--main {
   color: white;
-  border-color: $scrim--1;
+  border-color: $scrim-1;
 }
 
 button.btn--main {
   background: $green;
 }
 button.btn--main:hover {
-  background: $green--dark;
+  background: $green-dark;
 }
 
 button.btn--danger {
   background: $red;
 }
 button.btn--danger:hover {
-  background: $red--dark;
+  background: $red-dark;
 }
 
 button:active {
   transform: translateY(1px);
 }
-
-.no-transform {
-  transform: none !important;
-}
-
 
 
 button:disabled {

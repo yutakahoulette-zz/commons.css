@@ -1,5 +1,7 @@
 import h from 'snabbdom/h'
+import hyph from './hyphenate' 
+import cap from './capitalize' 
 
-module.exports = (text, id) =>
-  h('h3.w--full.inline-block.mb2.mt4', {props: {id}}, '# ' + text)
+module.exports = txt =>
+  h('h3.inline-block.mb-2.mt-4', {props: {id: hyph(txt)}}, cap(txt))
 

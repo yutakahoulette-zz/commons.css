@@ -1,18 +1,53 @@
 html {
   color: black;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.4;
   text-rendering: optimizeLegibility;
 }
 
-.small { font-size: 0.8em; }
-.nano { font-size: 0.7em; }
+small, .small { font-size: .8rem; }
+.nano { font-size: .75rem; }
 
-h1, .h1 { font-size: 3.5rem; }
-h2, .h2 { font-size: 3rem; }
+h1, .h1 { font-size: 3rem; }
+h2, .h2 { font-size: 2.5rem; }
 h3, .h3 { font-size: 2rem; }
 h4, .h4 { font-size: 1.5rem; }
 h5, .h5 { font-size: 1rem; }
 h6, .h6 { font-size: .75rem; }
+
+.font-family-inherit { font-family:inherit }
+.font-size-inherit { font-size:inherit }
+.text-decoration-none { text-decoration:none }
+
+.bold { font-weight: bold; }
+.regular { font-weight:normal }
+.italic { font-style:italic }
+.caps { text-transform:uppercase; letter-spacing: .2em; }
+
+.align-left { text-align:left }
+.center { text-align:center }
+.align-right { text-align:right }
+.justify { text-align:justify }
+
+.nowrap { white-space:nowrap }
+.break-word { word-wrap:break-word }
+
+.line-height-1 { line-height: 1 }
+.line-height-2 { line-height: 1.2 }
+.line-height-3 { line-height: 1.4 }
+.line-height-4 { line-height: 1.6 }
+.line-height-5 { line-height: 1.8 }
+.line-height-6 { line-height: 2 }
+
+.underline{ text-decoration:underline }
+
+.hover-underline:hover { text-decoration:underline }
+
+.truncate{
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
 
 

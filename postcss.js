@@ -3,13 +3,9 @@ module.exports = {
     'postcss-import'
   , 'precss'
   , 'postcss-color-function'
-  , 'postcss-custom-media'
-  , 'postcss-custom-properties'
-  , 'postcss-calc'
-  , 'postcss-remove-root'
   , 'autoprefixer']
 , 'local-plugins' : true
-, 'autoprefixers' : {browsers: 'last 3'}
+, 'autoprefixers' : {browsers: 'last 2'}
 , input: 'src/index.css'
 , dir: 'lib'
 }
