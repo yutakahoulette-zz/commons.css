@@ -1,0 +1,17 @@
+.progressBar {
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  display: block;
+}
+
+.progressBar > span {
+  line-height: .5;
+  display: inline-block;
+  background: $green;
+}
+
+.progressBar > span:before {
+  content: '.';
+  visibility: hidden;
+}

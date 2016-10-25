@@ -4,21 +4,18 @@ import code from './code'
 
 module.exports = _ =>
   h('div', [
-    header('Progress bar', 'progress')
-  , h('div.p2.border.rounded.bg--white.inline-block', [
-      h('span.progress.bg--grey--1.mb1', [ h('span', {style: {width: '80%'}}) ])
-    , code( 
-`<span class='progress'>
+    header('progress bar')
+  , h('span.progressBar', [ h('span', {style: {width: '80%'}}) ])
+  , code( 
+`<span class='progressBar'>
   <span style='width:80%;'></span>
 </span>`)
-    , h('hr')
-    , h('p.italic', 'To change the height, just add a type-scale class.')
-    , h('span.progress.bg--grey--1.h3.my1', [ h('span', {style: {width: '20%'}}) ])
-    , code( 
-`<span class='progress.h3'>
+  , h('p.mt-3', 'To change the height, just add a type-scale class')
+  , h('span.progressBar.h3', [ h('span', {style: {width: '20%'}}) ])
+  , code( 
+`<span class='progressBar.h3'>
   <span style='width:20%;'></span>
 </span>`)
     ])
-  ])
 
 

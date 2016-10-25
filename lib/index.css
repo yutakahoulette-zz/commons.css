@@ -1322,6 +1322,24 @@ li {
           transform: none !important;
 }
 
+.progressBar {
+  border-width: 1px;
+  border-style: solid;
+  width: 100%;
+  display: block;
+}
+
+.progressBar > span {
+  line-height: .5;
+  display: inline-block;
+  background: #5fb88d;
+}
+
+.progressBar > span:before {
+  content: '.';
+  visibility: hidden;
+}
+
 td, th {
   padding: .5em 1.5em .5em .5em;
 }

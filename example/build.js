@@ -237,8 +237,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var init = function init(_) {};
 
 var view = function view(_) {
-  return (0, _h2.default)('div.relative', [(0, _nav2.default)(), (0, _h2.default)('div.main.p-2', [(0, _intro2.default)(), (0, _backgroundColors2.default)(), (0, _blockquotes2.default)(), (0, _buttons2.default)(), (0, _formElements2.default)(), (0, _helpBoxes2.default)(), (0, _lists2.default)()
-  // , progress()
+  return (0, _h2.default)('div.relative', [(0, _nav2.default)(), (0, _h2.default)('div.main.p-2', [(0, _intro2.default)(), (0, _backgroundColors2.default)(), (0, _blockquotes2.default)(), (0, _buttons2.default)(), (0, _formElements2.default)(), (0, _helpBoxes2.default)(), (0, _lists2.default)(), (0, _progress2.default)()
   // , tables()
   // , textColors()
   // , tabs()
@@ -330,7 +329,7 @@ var _code2 = _interopRequireDefault(_code);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('Progress bar', 'progress'), (0, _h2.default)('div.p2.border.rounded.bg--white.inline-block', [(0, _h2.default)('span.progress.bg--grey--1.mb1', [(0, _h2.default)('span', { style: { width: '80%' } })]), (0, _code2.default)('<span class=\'progress\'>\n  <span style=\'width:80%;\'></span>\n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.italic', 'To change the height, just add a type-scale class.'), (0, _h2.default)('span.progress.bg--grey--1.h3.my1', [(0, _h2.default)('span', { style: { width: '20%' } })]), (0, _code2.default)('<span class=\'progress.h3\'>\n  <span style=\'width:20%;\'></span>\n</span>')])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('progress bar'), (0, _h2.default)('span.progressBar', [(0, _h2.default)('span', { style: { width: '80%' } })]), (0, _code2.default)('<span class=\'progressBar\'>\n  <span style=\'width:80%;\'></span>\n</span>'), (0, _h2.default)('p.mt-3', 'To change the height, just add a type-scale class'), (0, _h2.default)('span.progressBar.h3', [(0, _h2.default)('span', { style: { width: '20%' } })]), (0, _code2.default)('<span class=\'progressBar.h3\'>\n  <span style=\'width:20%;\'></span>\n</span>')]);
 };
 
 },{"./code":6,"./header":8,"snabbdom/h":36}],16:[function(require,module,exports){
