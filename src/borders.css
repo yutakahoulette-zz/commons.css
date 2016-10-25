@@ -1,3 +1,7 @@
+* {
+  border-color: $grey-4;
+}
+
 .border{
   border-style:solid;
   border-width: 1px;

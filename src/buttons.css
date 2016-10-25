@@ -17,10 +17,6 @@ button:hover {
   background: $grey-1;
 }
 
-button.btn--edit {
-  border-style: dashed;
-}
-
 button.btn--danger, 
 button.btn--main {
   color: white;

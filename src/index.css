@@ -9,6 +9,7 @@
 
 
 /* base: */
+@import './borders.css';
 @import './grid.css';
 @import './layout.css';
 @import './margin.css';
@@ -23,18 +24,18 @@
 @import './buttons.css';
 @import './form-elements.css';
 @import './helpboxes.css';
+@import './lists.css';
+@import './misc.css';
 
+@import './table.css';
+@import './tabs.css';
 @import './text-colors.css';
 @import './typography.css';
 
 
-/* @import './lists.css'; */
-/* @import './table.css'; */
 /* @import './utils.css'; */
-/* @import './widths.css'; */
 /* @import './shadows.css'; */
 /* @import './container.css'; */
-/* @import './tabs.css'; */
 /* @import './progress.css'; */
 
 html {

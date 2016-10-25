@@ -63,7 +63,7 @@ var _header2 = _interopRequireDefault(_header);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('buttons'), (0, _h2.default)('div', [(0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button.btn--main', 'Create'), (0, _h2.default)('pre', ".btn--main")]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button.btn--danger', 'Delete'), (0, _h2.default)('pre', ".btn--danger")]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button.btn--edit', 'Edit profile'), (0, _h2.default)('pre', ".btn--edit")]), (0, _h2.default)('div.col-4.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')])])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('buttons'), (0, _h2.default)('div', [(0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.btn--main', 'Create'), (0, _h2.default)('pre', ".btn--main")]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.btn--danger', 'Delete'), (0, _h2.default)('pre', ".btn--danger")]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')])])]);
 };
 
 },{"./header":8,"snabbdom/h":36}],5:[function(require,module,exports){
@@ -103,8 +103,12 @@ var _code2 = _interopRequireDefault(_code);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var label = function label(text) {
+  return (0, _h2.default)('strong.block.mb-1.mt-3', text);
+};
+
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('form elements'), (0, _h2.default)('div', [(0, _h2.default)('p.mt-0.bold', 'Text input'), (0, _h2.default)('input.max-width-300', { props: { type: 'text' } }), (0, _h2.default)('hr'), (0, _h2.default)('p.bold.mt-2', 'Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold.mt-2', 'Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Textarea'), (0, _h2.default)('textarea', { props: { type: 'text' } }), (0, _h2.default)('p.bold', 'Radio'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, 'Heads'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, 'Tails'), (0, _code2.default)('\n<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), (0, _h2.default)('hr'), (0, _h2.default)('p.bold', 'Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), (0, _h2.default)('p.bold', 'Checkboxes'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, 'Pizza'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, 'Tacos'), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), (0, _h2.default)('div.bg--grey--2.p2.inline-block.mb2', [(0, _h2.default)('label.block.mb1', 'Input with button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.no-transform.table-cell', 'Search')])])])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('form elements'), (0, _h2.default)('div', [(0, _h2.default)('strong.block.mb-1', 'Text input'), (0, _h2.default)('input.max-width-300.mb-1', { props: { type: 'text' } }), label('Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input.width-100', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), label('Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), label('Textarea'), (0, _h2.default)('textarea.max-width-300.mb-1', { props: { type: 'text' } }), label('Radio'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, 'Heads'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, 'Tails'), (0, _code2.default)('\n<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), label('Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), label('Checkboxes'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, 'Pizza'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, 'Tacos'), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), label('Input with button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.no-transform.table-cell', 'Search')]), (0, _code2.default)('<span class=\'table\'>\n  <span class=\'table-cell\'><input type=\'search\'></span>\n  <button class=\'btn--main rounded-right table-cell\'>Search</button>\n</span>')])]);
 };
 
 },{"./code":6,"./header":8,"snabbdom/h":36}],8:[function(require,module,exports){
@@ -142,7 +146,7 @@ var _header2 = _interopRequireDefault(_header);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('help boxes'), (0, _h2.default)('div.max-width-1', [(0, _h2.default)('div.mb-2.helpBox--green', [(0, _h2.default)('pre.m-0', '.helpBox--green')]), (0, _h2.default)('div.mb-2.helpBox--yellow', [(0, _h2.default)('pre.m-0', '.helpBox--yellow')]), (0, _h2.default)('div.helpBox--red', [(0, _h2.default)('pre.m-0', '.helpBox--red')])])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('help boxes'), (0, _h2.default)('div.max-width-300', [(0, _h2.default)('div.mb-2.helpBox--green', [(0, _h2.default)('pre.m-0', '.helpBox--green')]), (0, _h2.default)('div.mb-2.helpBox--yellow', [(0, _h2.default)('pre.m-0', '.helpBox--yellow')]), (0, _h2.default)('div.helpBox--red', [(0, _h2.default)('pre.m-0', '.helpBox--red')])])]);
 };
 
 },{"./header":8,"snabbdom/h":36}],10:[function(require,module,exports){
@@ -233,8 +237,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var init = function init(_) {};
 
 var view = function view(_) {
-  return (0, _h2.default)('div.relative', [(0, _nav2.default)(), (0, _h2.default)('div.main.p-2', [(0, _intro2.default)(), (0, _backgroundColors2.default)(), (0, _blockquotes2.default)(), (0, _buttons2.default)(), (0, _formElements2.default)(), (0, _helpBoxes2.default)()
-  // , lists()
+  return (0, _h2.default)('div.relative', [(0, _nav2.default)(), (0, _h2.default)('div.main.p-2', [(0, _intro2.default)(), (0, _backgroundColors2.default)(), (0, _blockquotes2.default)(), (0, _buttons2.default)(), (0, _formElements2.default)(), (0, _helpBoxes2.default)(), (0, _lists2.default)()
   // , progress()
   // , tables()
   // , textColors()
@@ -258,7 +261,7 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', { props: { id: 'about' } }, [(0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'aims to be performant, and easy to use by minimizing the number of class names that you have to keep track of. We encourage the use of combining existing classes in the markup to create new UIs instead of writing additional styles. Check out the ', (0, _h2.default)('a', { props: { href: '#examples' } }, 'examples'), '.'])]);
+  return (0, _h2.default)('div', { props: { id: 'about' } }, [(0, _h2.default)('p.mt-2', [(0, _h2.default)('strong', 'commons.css '), 'aims to be performant, and easy to use by minimizing the number of class names that you have to keep track of. We encourage the use of combining existing classes in the markup to create new UIs instead of writing additional styles. Check out the ', (0, _h2.default)('a', { props: { href: '#examples' } }, 'examples'), '.'])]);
 };
 
 },{"snabbdom/h":36}],13:[function(require,module,exports){
@@ -275,7 +278,7 @@ var _header2 = _interopRequireDefault(_header);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  return (0, _h2.default)('div', [(0, _header2.default)('Lists', 'lists'), (0, _h2.default)('div.table.inline-block.bg--white.rounded.border.p2', [(0, _h2.default)('div.table-cell', [(0, _h2.default)('p.mt0.bold', 'Unordered'), (0, _h2.default)('ul', [(0, _h2.default)('li', 'Pizza'), (0, _h2.default)('li', 'Porphyry'), (0, _h2.default)('li', 'Pyroxenite'), (0, _h2.default)('ul', [(0, _h2.default)('li', 'Burrito'), (0, _h2.default)('li', 'Quartz monzonite'), (0, _h2.default)('li', 'Phonolite')])])]), (0, _h2.default)('div.table-cell.pl4.pr1', [(0, _h2.default)('p.mt0.bold', 'Ordered'), (0, _h2.default)('ol', [(0, _h2.default)('li', 'いち'), (0, _h2.default)('li', 'に'), (0, _h2.default)('li', 'さん')])])])]);
+  return (0, _h2.default)('div', [(0, _header2.default)('lists'), (0, _h2.default)('p.m-0.bold', 'Unordered'), (0, _h2.default)('ul.mb-3', [(0, _h2.default)('li', 'Pizza'), (0, _h2.default)('li', 'Porphyry'), (0, _h2.default)('li', 'Pyroxenite'), (0, _h2.default)('ul', [(0, _h2.default)('li', 'Burrito'), (0, _h2.default)('li', 'Quartz monzonite'), (0, _h2.default)('li', 'Phonolite')])]), (0, _h2.default)('p.bold.m-0', 'Ordered'), (0, _h2.default)('ol', [(0, _h2.default)('li', 'いち'), (0, _h2.default)('li', 'に'), (0, _h2.default)('li', 'さん')])]);
 };
 
 },{"./header":8,"snabbdom/h":36}],14:[function(require,module,exports){
@@ -299,14 +302,14 @@ var _hyphenate2 = _interopRequireDefault(_hyphenate);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var links = ['about', 'background colors', 'blockquotes', 'buttons', 'form elements', 'help boxes'];
+var links = ['about', 'background colors', 'blockquotes', 'buttons', 'form elements', 'help boxes', 'lists'];
 
 var link = function link(txt) {
   return (0, _h2.default)('li', [(0, _h2.default)('a', { props: { href: '#' + (0, _hyphenate2.default)(txt) } }, (0, _capitalize2.default)(txt))]);
 };
 
 module.exports = function (_) {
-  return (0, _h2.default)('div.nav.p-2', [(0, _h2.default)('h4.mt-1', 'commons.css'), (0, _h2.default)('ul.tabs-v', _ramda2.default.map(link, links))]);
+  return (0, _h2.default)('div.nav.p-2', [(0, _h2.default)('h1.h5.mt-1.bg-lightBlue.p-1', 'commons.css'), (0, _h2.default)('ul.tabs--v', _ramda2.default.map(link, links))]);
 };
 
 },{"./capitalize":5,"./hyphenate":10,"ramda":35,"snabbdom/h":36}],15:[function(require,module,exports){

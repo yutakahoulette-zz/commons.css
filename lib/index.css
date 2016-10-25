@@ -504,6 +504,53 @@ a {
 
 /* base: */
 
+* {
+  border-color: rgb(219, 219, 219);
+}
+
+.border{
+  border-style:solid;
+  border-width: 1px;
+}
+
+.border-top{
+  border-top-style:solid;
+  border-top-width: 1px;
+}
+
+.border-right{
+  border-right-style:solid;
+  border-right-width: 1px;
+}
+
+.border-bottom{
+  border-bottom-style:solid;
+  border-bottom-width: 1px;
+}
+
+.border-left{
+  border-left-style:solid;
+  border-left-width: 1px;
+}
+
+.border-none{ border:0 }
+
+.rounded{ border-radius: 3px }
+
+.circle{ border-radius:50% }
+
+.pill { border-radius:.5em }
+
+.rounded-top{ border-radius: 3px 3px 0 0 }
+
+.rounded-right{ border-radius: 0 3px 3px 0 }
+
+.rounded-bottom{ border-radius: 0 0 3px 3px }
+
+.rounded-left{ border-radius: 3px 0 0 3px }
+
+.not-rounded{ border-radius:0 }
+
 .col{
   float:left;
 }
@@ -1042,10 +1089,6 @@ button:hover {
   background: rgb(250, 250, 250);
 }
 
-button.btn--edit {
-  border-style: dashed;
-}
-
 button.btn--danger, button.btn--main {
   color: white;
   border-color: rgba(0,0,0,.08);
@@ -1167,7 +1210,7 @@ input[type='checkbox'] + label, input[type='radio'] + label {
       -ms-user-select: none;
           user-select: none;
   display: block;
-  margin-bottom: .25em;
+  margin-bottom: .5em;
 }
 
 input[type='checkbox'] + label:before, input[type='radio'] + label:before {
@@ -1178,9 +1221,9 @@ input[type='checkbox'] + label:before, input[type='radio'] + label:before {
   text-align: center;
   background: white;
   display: inline-block;
-  line-height: 1em;
-  width: 1em;
-  border: 1px rgb(219, 219, 219) solid;
+  line-height: .75em;
+  width: .75em;
+  border: 1px rgb(153, 153, 153) solid;
   -webkit-transition: background .1s ease-out;
   transition: background .1s ease-out;
 }
@@ -1203,7 +1246,7 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 
 .toggle {
   display: table;
-  border: 1px solid rgb(219, 219, 219);
+  border: 1px solid rgb(153, 153, 153);
   border-radius: 3px;
   overflow: hidden;
   background: white;
@@ -1222,7 +1265,7 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 }
 
 .toggle input[type='radio'] + label:not(:last-of-type) {
-  border-right: 1px solid rgb(219, 219, 219);
+  border-right: 1px solid rgb(153, 153, 153);
 }
 
 .toggle input[type='radio'] + label:hover {
@@ -1253,6 +1296,93 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 .helpBox--red {
   background: rgb(253, 234, 231);
   border-color: #ef3b22;
+}
+
+ul, ol {
+  list-style-position: outside;
+  padding-left: 2em;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  padding-left: 1.2em;
+  margin-top: .5em;
+}
+
+li {
+  margin-bottom: .25em;
+}
+
+.list-reset{
+  list-style:none;
+  padding-left:0;
+}
+
+.no-transform {
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+
+td, th {
+  padding: .5em 1.5em .5em .5em;
+}
+
+td:last-of-type, th:last-of-type {
+  padding-right: .5em;
+}
+
+th {
+  text-align: left;
+}
+
+tr:not(:last-of-type) {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+ul.tabs--h, ul.tabs--v {
+  padding: 0;
+}
+
+ul.tabs--v li a, ul.tabs--h li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul.tabs--v li, ul.tabs--h li {
+  color: grey;
+  cursor: pointer;
+  padding: .25em .5em;
+}
+
+ul.tabs--h li {
+  border-bottom: 2px solid transparent;
+  line-height: 2em;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+ul.tabs--h li.selected, ul.tabs--v li.selected {
+  color: initial;
+}
+
+ul.tabs--h li:hover, ul.tabs--v li:hover {
+  color: initial;
+}
+
+ul.tabs--h li.selected {
+  border-bottom-color: #5fb88d;
+}
+
+ul.tabs--v li {
+  display: block;
+  line-height: 1;
+  margin-bottom: .5em;
+  border-left: 2px solid transparent;
+  border-bottom-width: 1px;
+}
+
+.tabs--v  li.selected {
+  border-left-color: #5fb88d;
 }
 
 .color-black {
@@ -1351,19 +1481,11 @@ h6, .h6 { font-size: .75rem; }
   white-space:nowrap;
 }
 
-/* @import './lists.css'; */
-
-/* @import './table.css'; */
-
 /* @import './utils.css'; */
-
-/* @import './widths.css'; */
 
 /* @import './shadows.css'; */
 
 /* @import './container.css'; */
-
-/* @import './tabs.css'; */
 
 /* @import './progress.css'; */
 

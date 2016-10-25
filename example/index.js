@@ -35,7 +35,7 @@ const view = _ =>
     , buttons()
     , formElements()
     , helpBoxes()
-    // , lists()
+    , lists()
     // , progress()
     // , tables()
     // , textColors()

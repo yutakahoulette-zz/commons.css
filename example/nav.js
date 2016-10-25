@@ -10,6 +10,7 @@ const links = [
 , 'buttons'
 , 'form elements'
 , 'help boxes'
+, 'lists'
 ]
 
 const link = txt => 
@@ -19,8 +20,8 @@ const link = txt =>
 
 module.exports = _ => 
   h('div.nav.p-2', [
-      h('h4.mt-1', 'commons.css')
-    , h('ul.tabs-v', 
+      h('h1.h5.mt-1.bg-lightBlue.p-1', 'commons.css')
+    , h('ul.tabs--v', 
         R.map(link, links)
       )
 
