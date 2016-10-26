@@ -12,6 +12,7 @@ const links = [
 , 'help boxes'
 , 'lists'
 , 'progress bar'
+, 'tables'
 ]
 
 const link = ID$ => txt => 

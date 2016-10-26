@@ -1,5 +1,8 @@
 import h from 'snabbdom/h'
+import hljs from 'highlight.js'
 
-module.exports = code =>
-h('pre.bg-lightBlue.p-2.inline-block.mb-1', [h('code', code)])
+const highlight = vnode => hljs.highlightBlock(vnode.elm)
+
+module.exports = (code, type='html') =>
+  h('pre.bg-grey-1.p-2.mb-3', [h(`code.${type}`, {hook: {postpatch: highlight}}, code)])
 

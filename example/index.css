@@ -1,4 +1,6 @@
 @import '../src';
+@import 'code.css';
+
 
 .nav {
   left: 0;

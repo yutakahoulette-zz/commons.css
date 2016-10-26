@@ -487,7 +487,6 @@ hr {
   border-right: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-color: rgb(219, 219, 219);
 }
 
 table {
@@ -966,19 +965,33 @@ a {
 
 .px-3 { padding-left: 2rem; padding-right: 2rem }
 
-.p-4 { padding: 4rem }
+.p-4 { padding: 3rem }
 
-.pt-4 { padding-top: 4rem }
+.pt-4 { padding-top: 3rem }
 
-.pr-4 { padding-right: 4rem }
+.pr-4 { padding-right: 3rem }
 
-.pb-4 { padding-bottom: 4rem }
+.pb-4 { padding-bottom: 3rem }
 
-.pl-4 { padding-left: 4rem }
+.pl-4 { padding-left: 3rem }
 
-.py-4 { padding-top: 4rem; padding-bottom: 4rem }
+.py-4 { padding-top: 3rem; padding-bottom: 3rem }
 
-.px-4 { padding-left: 4rem; padding-right: 4rem }
+.px-4 { padding-left: 3rem; padding-right: 3rem }
+
+.p-5 { padding: 4rem }
+
+.pt-5 { padding-top: 4rem }
+
+.pr-5 { padding-right: 4rem }
+
+.pb-5 { padding-bottom: 4rem }
+
+.pl-5 { padding-left: 4rem }
+
+.py-5 { padding-top: 4rem; padding-bottom: 4rem }
+
+.px-5 { padding-left: 4rem; padding-right: 4rem }
 
 .relative { position:relative }
 
@@ -1345,8 +1358,6 @@ li {
 }
 
 .progressBar {
-  border-width: 1px;
-  border-style: solid;
   width: 100%;
   display: block;
 }
@@ -1374,9 +1385,12 @@ th {
   text-align: left;
 }
 
-tr:not(:last-of-type) {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+tr:not(:first-of-type) {
+  border-top: 1px solid rgb(219, 219, 219);
+}
+
+tr:nth-of-type(2) {
+  border-top: 1px solid rgb(153, 153, 153);
 }
 
 ul.tabs--h, ul.tabs--v {
@@ -1531,6 +1545,22 @@ h6, .h6 { font-size: .75rem; }
 
 html {
   font-family: 'Open Sans';
+}
+
+.hljs-tag {
+  color: rgba(0,0,0,0.4);
+}
+
+.hljs-name {
+  color: black;
+}
+
+.hljs-attr {
+  color: rgb(62, 142, 103);
+}
+
+.hljs-string {
+  color: rgb(33, 125, 161);
 }
 
 .nav {

@@ -3,11 +3,13 @@ $red-dark: color($red l(-10%));
 $red-light: color($red l(95%));
 
 $green: #5fb88d;
+$green-darker: color($green l(-15%));
 $green-dark: color($green l(-10%));
 $green-light: color($green l(94%));
 
 
 $blue: #39aad6;
+$blue-darker: color($blue l(-15%));
 $blue-dark: color($blue l(-10%));
 $blue-light: color($blue l(96%));
 

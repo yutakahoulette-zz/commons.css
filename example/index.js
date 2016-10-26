@@ -44,7 +44,7 @@ const view = state =>
     , helpBoxes()
     , lists()
     , progress()
-    // , tables()
+    , tables()
     // , textColors()
     // , tabs()
     ])

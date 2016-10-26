@@ -47,8 +47,8 @@ module.exports = _ => {
     , h('label', {attrs: {for: 'radio1'}}, 'Heads')
     , h('input', {props: {type: 'radio', id: 'radio2', name: 'radio'}})
     , h('label', {attrs: {for: 'radio2'}}, 'Tails')
-    , code(`
-<input type='radio' id='radio1' name='radio'>
+    , code(
+`<input type='radio' id='radio1' name='radio'>
 <label for='radio1'>Heads</label>
 <input type='radio' id='radio2' name='radio'>
 <label for='radio2'>Tails</label>`)
