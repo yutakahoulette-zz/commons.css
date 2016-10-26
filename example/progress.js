@@ -15,13 +15,13 @@ module.exports = _ => {
   , h('span.progressBar.h3.bg-grey-3', [ h('span', {style: {width: '20%'}}) ])
   , code( 
 `<span class='progressBar.h3.bg-grey-3'>
-  <span style='width:20%;'></span>
+  <span style='width: 20%'></span>
 </span>`)
   , h('p.mt-3', 'To change the border-radius, just add a border class')
   , h('span.progressBar.h2.bg-grey-3.pill.overflow-hidden', [ h('span', {style: {width: '20%'}}) ])
   , code( 
 `<span class='progressBar.h2.bg-grey-3.pill.overflow-hidden'>
-  <span style='width:20%;'></span>
+  <span style='width: 20%'></span>
 </span>`)
     ])
   return section('progress-bar', content)

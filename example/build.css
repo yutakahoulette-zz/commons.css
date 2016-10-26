@@ -435,6 +435,12 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+}
+
 ::-moz-selection {
   background: rgb(153, 153, 153); 
   color: white;
@@ -459,6 +465,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
+}
+
+p {
+  line-height: 1.6;
 }
 
 p, dl, ol, ul, pre, blockquote {
@@ -1079,11 +1089,11 @@ a:hover {
 }
 
 .bg-lightGreen {
-  background: rgb(234, 246, 240);
+  background: rgb(237, 247, 242);
 }
 
 .bg-pink {
-  background: rgb(253, 234, 231); 
+  background: rgb(254, 238, 236); 
 }
 
 .bg-lightBlue {
@@ -1091,7 +1101,7 @@ a:hover {
 }
 
 .bg-lightYellow {
-  background: rgb(252, 248, 223);
+  background: rgb(253, 250, 232);
 }
 
 blockquote {
@@ -1268,7 +1278,7 @@ input[type='radio'] + label:before {
 }
 
 input[type='checkbox'] + label:hover:before, input[type='radio'] + label:hover:before {
-  background: rgb(234, 246, 240);
+  background: rgb(237, 247, 242);
 }
 
 input[type='checkbox']:checked + label:before, input[type='radio']:checked + label:before {
@@ -1304,7 +1314,7 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 }
 
 .toggle input[type='radio'] + label:hover {
-  background: rgb(234, 246, 240);
+  background: rgb(237, 247, 242);
 }
 
 .toggle input[type='radio']:checked + label {
@@ -1319,17 +1329,17 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 }
 
 .helpBox--yellow {
-  background: rgb(252, 248, 223);
+  background: rgb(253, 250, 232);
   border-color: rgb(239, 220, 94);
 }
 
 .helpBox--green {
-  background: rgb(234, 246, 240);
+  background: rgb(237, 247, 242);
   border-color: #5fb88d;
 }
 
 .helpBox--red {
-  background: rgb(253, 234, 231);
+  background: rgb(254, 238, 236);
   border-color: #ef3b22;
 }
 
@@ -1372,6 +1382,14 @@ li {
   content: '.';
   visibility: hidden;
 }
+
+.sh-1 {box-shadow: 0 1px 3px 1px rgba(0,0,0,.1)}
+
+.sh-2 {box-shadow: 0 1.5px 6px 1px rgba(0,0,0,.2)}
+
+.sh-3 {box-shadow: 0 2px 10px 1px rgba(0,0,0,.3)}
+
+.sh-4 {box-shadow: 0 3px 12px 1px rgba(0,0,0,.4)}
 
 td, th {
   padding: .5em 1.5em .5em .5em;
@@ -1463,29 +1481,6 @@ ul.tabs--v li {
   color: #5fb88d;
 }
 
-html {
-  color: black;
-  font-size: 16px;
-  line-height: 1.4;
-  text-rendering: optimizeLegibility;
-}
-
-small, .small { font-size: .8rem; }
-
-.nano { font-size: .75rem; }
-
-h1, .h1 { font-size: 3rem; }
-
-h2, .h2 { font-size: 2.5rem; }
-
-h3, .h3 { font-size: 2rem; }
-
-h4, .h4 { font-size: 1.5rem; }
-
-h5, .h5 { font-size: 1rem; }
-
-h6, .h6 { font-size: .75rem; }
-
 .font-family-inherit { font-family:inherit }
 
 .font-size-inherit { font-size:inherit }
@@ -1499,6 +1494,17 @@ h6, .h6 { font-size: .75rem; }
 .italic { font-style:italic }
 
 .caps { text-transform:uppercase; letter-spacing: .2em; }
+
+.underline{ text-decoration:underline }
+
+.hover-underline:hover { text-decoration:underline }
+
+.truncate{
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
 
 .align-left { text-align:left }
 
@@ -1524,24 +1530,23 @@ h6, .h6 { font-size: .75rem; }
 
 .line-height-6 { line-height: 2 }
 
-.underline{ text-decoration:underline }
+h1, .h1 { font-size: 3rem; }
 
-.hover-underline:hover { text-decoration:underline }
+h2, .h2 { font-size: 2.5rem; }
 
-.truncate{
-  max-width:100%;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-}
+h3, .h3 { font-size: 2rem; }
+
+h4, .h4 { font-size: 1.5rem; }
+
+h5, .h5 { font-size: 1rem; }
+
+h6, .h6 { font-size: .75rem; }
+
+small, .small { font-size: .75rem; }
 
 /* @import './utils.css'; */
 
-/* @import './shadows.css'; */
-
 /* @import './container.css'; */
-
-/* @import './progress.css'; */
 
 html {
   font-family: 'Open Sans';
@@ -1555,11 +1560,11 @@ html {
   color: black;
 }
 
-.hljs-attr {
+.hljs-selector-class, .hljs-attr {
   color: rgb(62, 142, 103);
 }
 
-.hljs-string {
+.hljs-attribute, .hljs-string {
   color: rgb(33, 125, 161);
 }
 
@@ -1567,13 +1572,15 @@ html {
   left: 0;
   top: 0;
   position: absolute;
-  width: 250px;
+  width: 220px;
   overflow-y: auto;
+  border-right: 1px solid rgb(219, 219, 219);
+  height: 100%;
 }
 
 .main {
-  width: calc(100% - 250px);
-  margin-left: 250px;
+  width: calc(100% - 220px);
+  margin-left: 220px;
   overflow-y: auto;
   height: 100%;
   padding-bottom: 100px;

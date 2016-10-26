@@ -10,19 +10,19 @@ import intro from './intro'
 
 import nav from './nav'
 
-import anchors from './anchors'
 import bgColors from './background-colors'
 import blockquote from './blockquotes'
 import buttons from './buttons'
 import formElements from './form-elements'
 import helpBoxes from './help-boxes'
-
 import lists from './lists'
 import progress from './progress'
-
+import shadows from './shadows'
 import tables from './tables'
 import tabs from './tabs'
 import textColors from './text-colors'
+import typeScale from './type-scale'
+import typography from './typography'
 
 window.log = (text, $) => flyd.map(x => console.log(text, x), $)
 
@@ -35,7 +35,7 @@ const init = _ => {
 const view = state => 
   h('div.relative', [
     nav(state)
-  , h('div.main.p-2', [
+  , h('div.main.px-3.pt-2', [
       intro()
     , bgColors()
     , blockquote()
@@ -44,9 +44,12 @@ const view = state =>
     , helpBoxes()
     , lists()
     , progress()
+    , shadows()
     , tables()
-    // , textColors()
-    // , tabs()
+    , tabs()
+    , textColors()
+    , typeScale()
+    , typography()
     ])
   ])
 

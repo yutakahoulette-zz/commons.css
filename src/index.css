@@ -27,16 +27,16 @@
 @import './misc.css';
 @import './progress.css';
 
+@import './shadows.css';
 @import './table.css';
 @import './tabs.css';
 @import './text-colors.css';
 @import './typography.css';
+@import './type-scale.css';
 
 
 /* @import './utils.css'; */
-/* @import './shadows.css'; */
 /* @import './container.css'; */
-/* @import './progress.css'; */
 
 html {
   font-family: 'Open Sans';

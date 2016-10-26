@@ -12,19 +12,22 @@ const links = [
 , 'help boxes'
 , 'lists'
 , 'progress bar'
+, 'shadows'
 , 'tables'
+, 'tabs'
+, 'text colors'
+, 'type-scale'
 ]
 
 const link = ID$ => txt => 
   h('li', {class: {'is-selected': hyph(txt) === ID$()}}, [
-    h('a', {props: {href: '#' + hyph(txt)}}, cap(txt))
+    h('a.block', {props: {href: '#' + hyph(txt)}}, cap(txt))
   ])
 
 module.exports = state => 
-  h('div.nav.p-2', [
-      h('h1.h5.mt-1.bg-lightBlue.p-1', 'commons.css')
-    , h('ul.tabs--v', 
-        R.map(link(state.ID$), links)
+  h('div.nav.p-2.bg-grey-1', [
+      h('ul.tabs--v', 
+          R.map(link(state.ID$), links)
       )
 
 
