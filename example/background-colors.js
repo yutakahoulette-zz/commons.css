@@ -1,9 +1,10 @@
 import h from 'snabbdom/h'
-import header from './header'
+import title from './title'
+import section from './section'
 
-module.exports = _ =>
-  h('div', [
-    header('background colors')
+module.exports = _ => {
+  const content = h('div', [
+    title('Background colors')
   , h('pre.mt2.p-1.bg-white', '.bg-white')
   , h('pre.p-1.bg-grey-1', '.bg-grey-1')
   , h('pre.p-1.bg-grey-2', '.bg-grey-2')
@@ -17,3 +18,5 @@ module.exports = _ =>
   , h('pre.p-1.bg-lightGreen', '.bg-lightGreen')
   , h('pre.p-1.bg-lightBlue', '.bg-lightBlue')
   ])
+  return section('background-colors', content)
+}

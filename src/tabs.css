@@ -11,7 +11,7 @@ ul.tabs--h li a {
 
 ul.tabs--v li,
 ul.tabs--h li {
-  color: grey;
+  color: $grey-5;
   cursor: pointer;
   padding: .25em .5em;
 }
@@ -23,8 +23,8 @@ ul.tabs--h li {
   margin-bottom: 0;
 }
 
-ul.tabs--h li.selected,  
-ul.tabs--v li.selected {
+ul.tabs--h li.is-selected,  
+ul.tabs--v li.is-selected {
   color: initial;
 }
 
@@ -33,7 +33,7 @@ ul.tabs--v li:hover {
   color: initial;
 }
 
-ul.tabs--h li.selected {
+ul.tabs--h li.is-selected {
   border-bottom-color: $green;
 }
 
@@ -45,7 +45,7 @@ ul.tabs--v li {
   border-bottom-width: 1px;
 }
 
-.tabs--v  li.selected {
+.tabs--v  li.is-selected {
   border-left-color: $green;
 }
 

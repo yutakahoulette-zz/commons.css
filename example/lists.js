@@ -1,9 +1,10 @@
 import h from 'snabbdom/h'
-import header from './header'
+import title from './title'
+import section from './section'
 
-module.exports = _ =>
-  h('div', [
-      header('lists')
+module.exports = _ => {
+  const content = h('div', [
+      title('Lists')
     , h('p.m-0.bold', 'Unordered')
     , h('ul.mb-3', [
         h('li', 'Pizza')
@@ -22,3 +23,5 @@ module.exports = _ =>
         , h('li', 'さん')
       ])
   ])
+  return section('lists', content)
+}

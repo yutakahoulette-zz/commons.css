@@ -4,6 +4,7 @@ import h from 'snabbdom/h'
 import flyd from 'flyd'
 import render from 'flimflam-render'
 import snabbdom from 'snabbdom'
+import url$ from 'flyd-url'
 
 import intro from './intro'
 
@@ -23,11 +24,17 @@ import tables from './tables'
 import tabs from './tabs'
 import textColors from './text-colors'
 
-const init = _ => { }
+window.log = (text, $) => flyd.map(x => console.log(text, x), $)
 
-const view = _ => 
+const init = _ => {
+  return {
+    ID$: flyd.map(x => x.hash && x.hash.replace('#', ''), url$)
+  }
+}
+
+const view = state => 
   h('div.relative', [
-    nav()
+    nav(state)
   , h('div.main.p-2', [
       intro()
     , bgColors()

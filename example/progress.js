@@ -1,10 +1,11 @@
 import h from 'snabbdom/h'
-import header from './header'
 import code from './code'
+import title from './title'
+import section from './section'
 
-module.exports = _ =>
-  h('div', [
-    header('progress bar')
+module.exports = _ => {
+  const content = h('div', [
+    title('Progress bar')
   , h('span.progressBar', [ h('span', {style: {width: '80%'}}) ])
   , code( 
 `<span class='progressBar'>
@@ -17,5 +18,7 @@ module.exports = _ =>
   <span style='width:20%;'></span>
 </span>`)
     ])
+  return section('progress-bar', content)
+}
 
 

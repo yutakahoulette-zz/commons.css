@@ -4,9 +4,10 @@
   "description": "CommitChange styles",
   "style": "lib/index.css",
   "scripts": {
-    "build-css": "postcss -c postcss.js -l",
-    "watch-css": "postcss -c postcss.js -w -l",
-    "watch-example": "watchify example/index.js -o example/build.js -t [babelify --presets es2015] -v"
+    "build-lib-css": "postcss -c postcss-lib.js -w -l",
+    "watch-example-css": "postcss -c postcss-example.js -w -l",
+    "build-example-css": "postcss -c postcss-example.js -l",
+    "watch-js": "budo example/index.js --dir example  --live -- -t [babelify --presets es2015]"
   },
   "repository": {
     "type": "git",
@@ -23,13 +24,13 @@
     "babel-preset-es2015": "^6.16.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
+    "budo": "^9.2.1",
     "normalize.css": "^5.0.0",
     "postcss": "^5.2.4",
     "postcss-cli": "^2.6.0",
     "postcss-color-function": "^2.0.1",
     "postcss-import": "^8.1.2",
-    "precss": "^1.4.0",
-    "watchify": "^3.7.0"
+    "precss": "^1.4.0"
   },
   "dependencies": {
     "flimflam-render": "^0.1.4",

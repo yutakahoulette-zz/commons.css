@@ -1,13 +1,15 @@
 import h from 'snabbdom/h'
-import header from './header'
+import title from './title'
+import section from './section'
 
-module.exports = _ =>
-  h('div', [
-    header('help boxes')
+module.exports = _ => {
+  const content = h('div', [
+    title('Help boxes')
   , h('div.max-width-300', [
       h('div.mb-2.helpBox--green', [h('pre.m-0', '.helpBox--green')])
     , h('div.mb-2.helpBox--yellow', [h('pre.m-0', '.helpBox--yellow')])
     , h('div.helpBox--red', [h('pre.m-0', '.helpBox--red')])
     ])
   ])
-
+  return section('help-boxes', content)
+}
