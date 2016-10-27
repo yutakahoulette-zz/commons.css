@@ -50,7 +50,7 @@ const scroll = ID$ => v => {
     R.map(a => {
       let scrollTop = main.scrollTop
       let distance = scrollTop - a.top
-      if(distance < 30 && distance > -30 && ID$ != a.id) {
+      if(distance < 20 && distance > -20 && ID$ != a.id) {
         window.location.hash = a.id
       }
     }, sectionsData)
