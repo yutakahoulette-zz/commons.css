@@ -4,8 +4,8 @@ import section from './section'
 
 module.exports = _ => {
   const content = h('div', [
-    title('Blockquotes')
+    title('Blockquote')
   , h('blockquote', 'Mic check, mic check... one, two, three')
   ])
-  return section ('blockquotes', content)
+  return section ('blockquote', content)
 }

@@ -1,4 +1,14 @@
-.inline       { display:inline }
+import h from 'snabbdom/h'
+import title from './title'
+import code from './code'
+import section from './section'
+
+
+module.exports = _ => {
+  const content = h('div', [
+    title('Layout')
+  , code(
+`.inline       { display:inline }
 .block        { display:block }
 .inline-block { display:inline-block }
 .table        { display:table }
@@ -8,12 +18,12 @@
 .overflow-scroll { overflow:scroll }
 .overflow-auto   { overflow:auto }
 
+.clearfix:after { clear:both }
 .clearfix:before,
 .clearfix:after {
   content:" ";
   display:table
 }
-.clearfix:after { clear:both }
 
 .left  { float:left }
 .right { float:right }
@@ -32,5 +42,9 @@
 .width-300  { width: 300px }
 .width-full { width: 100% }
 
-.height-full { height: 100% }
+.height-full { height: 100% }`, 'css')
+  ])
+  return section('layout', content)
+}
+
 

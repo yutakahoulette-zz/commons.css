@@ -4,7 +4,7 @@ import section from './section'
 
 module.exports = _ => {
   const content = h('div', [
-    title('Tables')
+    title('Table')
   , h('table', [
       h('tr', [
         h('th', 'Name')
@@ -28,5 +28,5 @@ module.exports = _ => {
       ])
     ])
   ])
-  return section('tables', content)
+  return section('table', content)
 }

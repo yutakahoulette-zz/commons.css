@@ -1,10 +1,20 @@
-.m-0  { margin:0 }
-.mt-0 { margin-top:0 }
-.mr-0 { margin-right:0 }
-.mb-0 { margin-bottom:0 }
-.ml-0 { margin-left:0 }
-.mx-0 { margin-left:0; margin-right:0 }
-.my-0 { margin-top:0; margin-bottom:0 }
+import h from 'snabbdom/h'
+import title from './title'
+import code from './code'
+import section from './section'
+
+
+module.exports = _ => {
+  const content = h('div', [
+    title('Margin')
+  , code(
+`.m-0  { margin: 0 }
+.mt-0 { margin-top: 0 }
+.mr-0 { margin-right: 0 }
+.mb-0 { margin-bottom: 0 }
+.ml-0 { margin-left: 0 }
+.mx-0 { margin-left: 0; margin-right: 0 }
+.my-0 { margin-top: 0; margin-bottom: 0 }
 
 .m-1  { margin: .5rem }
 .mt-1 { margin-top: .5rem }
@@ -46,7 +56,10 @@
 .mx-5 { margin-left: 3rem; margin-right: 3rem }
 .my-5 { margin-top: 3rem; margin-bottom: 3rem }
 
-.ml-auto { margin-left:auto }
-.mr-auto { margin-right:auto }
-.mx-auto { margin-left:auto; margin-right:auto; }
+.ml-auto { margin-left: auto }
+.mr-auto { margin-right: auto }
+.mx-auto { margin-left: auto; margin-right: auto; }`, 'css')
+  ])
+  return section('margin', content)
+}
 

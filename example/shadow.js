@@ -4,12 +4,12 @@ import section from './section'
 
 module.exports = _ => {
   const content = h('div', [
-    title('Shadows')
+    title('Shadow')
   , h('pre.p-3.sh-1', '.sh-1')
   , h('pre.p-3.sh-2', '.sh-2')
   , h('pre.p-3.sh-3', '.sh-3')
   , h('pre.p-3.sh-4', '.sh-4')
   ])
-  return section('shadows', content)
+  return section('shadow', content)
 }
 

@@ -1,10 +1,11 @@
 import h from 'snabbdom/h'
 import title from './title'
+import code from './code'
 import section from './section'
 
 module.exports = _ => {
   const content = h('div', [
-      title('Lists')
+      title('List')
     , h('p.m-0.bold', 'Unordered')
     , h('ul.mb-3', [
         h('li', 'Pizza')
@@ -17,11 +18,16 @@ module.exports = _ => {
         ])
       ])
     , h('p.bold.m-0', 'Ordered')
-    , h('ol', [
+    , h('ol.mb-3', [
           h('li', 'いち')
         , h('li', 'に')
         , h('li', 'さん')
       ])
+    , code(
+`.list-reset {
+  list-style: none;
+  padding-left: 0;
+}`, 'css')
   ])
-  return section('lists', content)
+  return section('list', content)
 }

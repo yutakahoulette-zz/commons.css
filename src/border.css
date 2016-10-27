@@ -39,7 +39,7 @@
 
 .rounded{ border-radius: 5px }
 .circle{ border-radius:50% }
-.pill { border-radius:.5em }
+.pill { border-radius:1em }
 
 .rounded-top{ border-radius: 5px 5px 0 0 }
 .rounded-right{ border-radius: 0 5px 5px 0 }

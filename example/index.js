@@ -6,24 +6,31 @@ import render from 'flimflam-render'
 import snabbdom from 'snabbdom'
 import url$ from 'flyd-url'
 
-import about from './about'
-import align from './align'
-
 import nav from './nav'
 
-import bgColors from './background-colors'
-import blockquote from './blockquotes'
-import borders from './borders'
-import buttons from './buttons'
-import formElements from './form-elements'
-import helpBoxes from './help-boxes'
-import lists from './lists'
+import about from './about'
+import align from './align'
+import bgColor from './background-color'
+import blockquote from './blockquote'
+import border from './border'
+import button from './button'
+import cursor from './cursor'
+import form from './form'
+import grid from './grid'
+import helpBox from './help-box'
+import hide from './hide'
+import layout from './layout'
+import list from './list'
 import opacity from './opacity'
-import progress from './progress'
-import shadows from './shadows'
-import tables from './tables'
+import margin from './margin'
+import misc from './misc'
+import padding from './padding'
+import position from './position'
+import progressBar from './progress-bar'
+import shadow from './shadow'
+import table from './table'
 import tabs from './tabs'
-import textColors from './text-colors'
+import textColor from './text-color'
 import typeScale from './type-scale'
 import typography from './typography'
 
@@ -35,7 +42,21 @@ const init = _ => {
   }
 }
 
-const scroll = ID$ => _ => {
+const scroll = ID$ => v => {
+  const main = v.elm.querySelector('.main')  
+  const sectionsData = R.map(x => ({top: x.offsetTop, id: x.id}), main.querySelectorAll('section'))
+
+  main.addEventListener('scroll', _ => {
+    R.map(a => {
+      let scrollTop = main.scrollTop
+      let distance = scrollTop - a.top
+      if(distance < 30 && distance > -30 && ID$ != a.id) {
+        window.location.hash = a.id
+      }
+    }, sectionsData)
+  })
+
+  // to handle anchor scrolling on page load
   if(ID$()) {
     window.location.hash = '' 
     window.location.hash = ID$()
@@ -49,19 +70,27 @@ const view = state =>
   , h('div.main.px-3', [
       about()
     , align()
-    , bgColors()
+    , bgColor()
     , blockquote()
-    , borders()
-    , buttons()
-    , formElements()
-    , helpBoxes()
-    , lists()
+    , border()
+    , button()
+    , cursor()
+    , form()
+    , grid()
+    , helpBox()
+    , hide()
+    , layout()
+    , list()
+    , margin()
+    , misc()
     , opacity()
-    , progress()
-    , shadows()
-    , tables()
+    , padding()
+    , position()
+    , progressBar()
+    , shadow()
+    , table()
     , tabs()
-    , textColors()
+    , textColor()
     , typeScale()
     , typography()
     ])

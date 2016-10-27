@@ -4,7 +4,7 @@ import section from './section'
 
 module.exports = _ => {
   const content = h('div', [
-    title('Buttons')
+    title('Button')
   , h('div', [
       h('div.col-6.inline-block.mb-1', [
         h('button', 'Learn more')
@@ -24,6 +24,6 @@ module.exports = _ => {
       ])
     ])
   ])
-  return section('buttons', content)
+  return section('button', content)
 }
 

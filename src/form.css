@@ -92,7 +92,7 @@ input[type='radio'] + label {
   cursor: pointer;
   font-weight: normal;
   user-select: none;
-  display: block;
+  display: inline-block;
   margin-bottom: .5em;
 }
 

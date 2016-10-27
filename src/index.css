@@ -4,12 +4,11 @@
 /* that this file gets listed first */
 @import './color-variables.css';
 
-@import './resets.css';
-
+@import './reset.css';
 
 /* base: */
-@import './alignment.css';
-@import './borders.css';
+@import './align.css';
+@import './border.css';
 @import './grid.css';
 @import './layout.css';
 @import './margin.css';
@@ -19,25 +18,21 @@
 @import './opacity.css';
 
 @import './anchor.css';
-@import './background-colors.css';
+@import './background-color.css';
 @import './blockquote.css';
-@import './buttons.css';
-@import './form-elements.css';
-@import './helpboxes.css';
-@import './lists.css';
+@import './button.css';
+@import './cursor.css';
+@import './form.css';
+@import './helpbox.css';
+@import './list.css';
 @import './misc.css';
-@import './progress.css';
-
-@import './shadows.css';
+@import './progress-bar.css';
+@import './shadow.css';
 @import './table.css';
-@import './tabs.css';
-@import './text-colors.css';
-@import './typography.css';
+@import './tab.css';
+@import './text-color.css';
 @import './type-scale.css';
-
-
-/* @import './utils.css'; */
-/* @import './container.css'; */
+@import './typography.css';
 
 html {
   font-family: 'Open Sans';

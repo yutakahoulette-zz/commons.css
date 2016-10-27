@@ -1,10 +1,20 @@
-.p-0  { padding: 0 }
-.pt-0 { padding-top: 0 }
-.pr-0 { padding-right: 0 }
-.pb-0 { padding-bottom: 0 }
-.pl-0 { padding-left: 0 }
-.px-0 { padding-left: 0; padding-right: 0 }
-.py-0 { padding-top: 0;  padding-bottom: 0 }
+import h from 'snabbdom/h'
+import title from './title'
+import code from './code'
+import section from './section'
+
+
+module.exports = _ => {
+  const content = h('div', [
+    title('Padding')
+  , code(
+`.p-0  { padding:0 }
+.pt-0 { padding-top:0 }
+.pr-0 { padding-right:0 }
+.pb-0 { padding-bottom:0 }
+.pl-0 { padding-left:0 }
+.px-0 { padding-left:0; padding-right:0 }
+.py-0 { padding-top:0;  padding-bottom:0 }
 
 .p-1  { padding: .5rem }
 .pt-1 { padding-top: .5rem }
@@ -44,5 +54,9 @@
 .pb-5 { padding-bottom: 4rem }
 .pl-5 { padding-left: 4rem }
 .py-5 { padding-top: 4rem; padding-bottom: 4rem }
-.px-5 { padding-left: 4rem; padding-right: 4rem }
+.px-5 { padding-left: 4rem; padding-right: 4rem }`, 'css')
+  ])
+  return section('padding', content)
+}
+
 

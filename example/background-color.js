@@ -4,7 +4,7 @@ import section from './section'
 
 module.exports = _ => {
   const content = h('div', [
-    title('Background colors')
+    title('Background color')
   , h('pre.mt2.p-1.bg-white', '.bg-white')
   , h('pre.p-1.bg-grey-1', '.bg-grey-1')
   , h('pre.p-1.bg-grey-2', '.bg-grey-2')
@@ -18,5 +18,5 @@ module.exports = _ => {
   , h('pre.p-1.bg-lightGreen', '.bg-lightGreen')
   , h('pre.p-1.bg-lightBlue', '.bg-lightBlue')
   ])
-  return section('background-colors', content)
+  return section('background-color', content)
 }

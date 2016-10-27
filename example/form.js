@@ -7,7 +7,7 @@ const label = text => h('strong.block.mb-1.mt-3', text)
 
 module.exports = _ => {
   const content = h('div', [
-      title('Form elements')
+      title('Form')
     , h('div', [
         h('strong.block.mb-1', 'Text input')
       , h('input.max-width-300.mb-1', {props: {type: 'text'}})
@@ -45,11 +45,13 @@ module.exports = _ => {
     , label('Radio')
     , h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
     , h('label', {attrs: {for: 'radio1'}}, 'Heads')
+    , h('br')
     , h('input', {props: {type: 'radio', id: 'radio2', name: 'radio'}})
     , h('label', {attrs: {for: 'radio2'}}, 'Tails')
     , code(
 `<input type='radio' id='radio1' name='radio'>
 <label for='radio1'>Heads</label>
+<br>
 <input type='radio' id='radio2' name='radio'>
 <label for='radio2'>Tails</label>`)
     , label('Radio toggles')
@@ -73,11 +75,13 @@ module.exports = _ => {
     , label('Checkboxes')
     , h('input', {props: {type: 'checkbox', id: 'check1', name: 'check'}})
     , h('label', {attrs: {for: 'check1'}}, 'Pizza')
+    , h('br')
     , h('input', {props: {type: 'checkbox', id: 'check2', name: 'check'}})
     , h('label', {attrs: {for: 'check2'}}, 'Tacos')
     , code(
 `<input type='checkbox' id='check1' name='check'>
 <label for='check1'>Pizza</label>
+<br>
 <input type='checkbox' id='check2' name='check'>
 <label for='check2'>Tacos</label>`)
     , label('Input with button')
@@ -92,5 +96,5 @@ module.exports = _ => {
 </span>`)
     ])
   ])
-  return section('form-elements', content)
+  return section('form', content)
 }
