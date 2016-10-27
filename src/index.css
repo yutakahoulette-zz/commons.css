@@ -7,8 +7,8 @@
 @import './resets.css';
 
 
-
 /* base: */
+@import './alignment.css';
 @import './borders.css';
 @import './grid.css';
 @import './layout.css';
@@ -16,6 +16,7 @@
 @import './padding.css';
 @import './position.css';
 @import './hide.css';
+@import './opacity.css';
 
 @import './anchor.css';
 @import './background-colors.css';

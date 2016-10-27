@@ -5,18 +5,22 @@ import hyph from './hyphenate'
 
 const links = [
   'about'
+, 'align'
 , 'background colors'
 , 'blockquotes'
+, 'borders'
 , 'buttons'
 , 'form elements'
 , 'help boxes'
 , 'lists'
+, 'opacity'
 , 'progress bar'
 , 'shadows'
 , 'tables'
 , 'tabs'
 , 'text colors'
 , 'type-scale'
+, 'typography'
 ]
 
 const link = ID$ => txt => 

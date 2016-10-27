@@ -1,19 +1,19 @@
 $red: #ef3b22; 
 $red-dark: color($red l(-10%));
-$red-light: color($red l(96%));
+$red-light: color($red l(97%));
 
 $green: #5fb88d;
-$green-light: color($green l(95%));
+$green-light: color($green l(97%));
 $green-dark: color($green l(-10%));
 $green-darker: color($green l(-15%));
 
 $blue: #39aad6;
-$blue-light: color($blue l(96%));
+$blue-light: color($blue l(97%));
 $blue-dark: color($blue l(-10%));
 $blue-darker: color($blue l(-15%));
 
 $yellow: rgb(239, 220, 94);
-$yellow-light: color($yellow l(95%)); 
+$yellow-light: color($yellow l(97%)); 
 
 $grey-1: color(black l(98%));
 $grey-2: color(black l(96%));

@@ -18,9 +18,9 @@ module.exports = _ => {
   <span style='width: 20%'></span>
 </span>`)
   , h('p.mt-3', 'To change the border-radius, just add a border class')
-  , h('span.progressBar.h2.bg-grey-3.pill.overflow-hidden', [ h('span', {style: {width: '20%'}}) ])
+  , h('span.progressBar.h2.bg-grey-3.pill', [ h('span', {style: {width: '20%'}}) ])
   , code( 
-`<span class='progressBar.h2.bg-grey-3.pill.overflow-hidden'>
+`<span class='progressBar.h2.bg-grey-3.pill'>
   <span style='width: 20%'></span>
 </span>`)
     ])

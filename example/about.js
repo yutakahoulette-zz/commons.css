@@ -1,8 +1,7 @@
 import h from 'snabbdom/h'
-import section from './section'
 
-module.exports = state => {
-  const content = h('div.mt-1', [
+module.exports = state => 
+ h('div.pt-3.pb-4.border-bottom', {props: {id: 'about'}}, [
       h('h1.mt-0.mb-4.bg-lightBlue.p-3', 'commons.css')
     , h('p', [
         h('strong', 'commons.css ')
@@ -12,5 +11,3 @@ module.exports = state => {
     ])
   ])
 
-  return section('about', content)
-}

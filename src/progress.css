@@ -1,6 +1,7 @@
 .progressBar {
   width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .progressBar > span {

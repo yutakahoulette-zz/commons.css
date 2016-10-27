@@ -6,16 +6,19 @@ import render from 'flimflam-render'
 import snabbdom from 'snabbdom'
 import url$ from 'flyd-url'
 
-import intro from './intro'
+import about from './about'
+import align from './align'
 
 import nav from './nav'
 
 import bgColors from './background-colors'
 import blockquote from './blockquotes'
+import borders from './borders'
 import buttons from './buttons'
 import formElements from './form-elements'
 import helpBoxes from './help-boxes'
 import lists from './lists'
+import opacity from './opacity'
 import progress from './progress'
 import shadows from './shadows'
 import tables from './tables'
@@ -43,14 +46,17 @@ const scroll = ID$ => _ => {
 const view = state => 
   h('div.relative', {hook: {insert: scroll(state.ID$)}}, [
     nav(state)
-  , h('div.main.px-3.pt-2', [
-      intro()
+  , h('div.main.px-3', [
+      about()
+    , align()
     , bgColors()
     , blockquote()
+    , borders()
     , buttons()
     , formElements()
     , helpBoxes()
     , lists()
+    , opacity()
     , progress()
     , shadows()
     , tables()

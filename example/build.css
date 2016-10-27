@@ -487,6 +487,7 @@ code, pre, samp {
 
 pre {
   font-size: .85em;
+  overflow: auto;
 }
 
 hr {
@@ -513,8 +514,24 @@ a {
 
 /* base: */
 
+.align-baseline { vertical-align:baseline }
+
+.align-top { vertical-align:top }
+
+.align-middle { vertical-align:middle }
+
+.align-bottom { vertical-align:bottom }
+
 * {
   border-color: rgb(219, 219, 219);
+}
+
+.border-color-red {
+  border-color: #ef3b22;
+}
+
+.border-color-green {
+  border-color: #5fb88d;
 }
 
 .border{
@@ -544,19 +561,19 @@ a {
 
 .border-none{ border:0 }
 
-.rounded{ border-radius: 3px }
+.rounded{ border-radius: 5px }
 
 .circle{ border-radius:50% }
 
 .pill { border-radius:.5em }
 
-.rounded-top{ border-radius: 3px 3px 0 0 }
+.rounded-top{ border-radius: 5px 5px 0 0 }
 
-.rounded-right{ border-radius: 0 3px 3px 0 }
+.rounded-right{ border-radius: 0 5px 5px 0 }
 
-.rounded-bottom{ border-radius: 0 0 3px 3px }
+.rounded-bottom{ border-radius: 0 0 5px 5px }
 
-.rounded-left{ border-radius: 3px 0 0 3px }
+.rounded-left{ border-radius: 5px 0 0 5px }
 
 .not-rounded{ border-radius:0 }
 
@@ -1047,6 +1064,16 @@ a {
 
 .display-none{ display:none !important }
 
+.opacity-0 {opacity: 0}
+
+.opacity-025 {opacity: .25}
+
+.opacity-05 {opacity: .5}
+
+.opacity-075 {opacity: .75}
+
+.opacity-1 {opacity: 1}
+
 a {
   color: #39aad6;
 }
@@ -1089,19 +1116,19 @@ a:hover {
 }
 
 .bg-lightGreen {
-  background: rgb(237, 247, 242);
+  background: rgb(244, 250, 247);
 }
 
 .bg-pink {
-  background: rgb(254, 238, 236); 
+  background: rgb(254, 242, 241); 
 }
 
 .bg-lightBlue {
-  background: rgb(238, 248, 252); 
+  background: rgb(242, 250, 252); 
 }
 
 .bg-lightYellow {
-  background: rgb(253, 250, 232);
+  background: rgb(254, 252, 241);
 }
 
 blockquote {
@@ -1278,7 +1305,7 @@ input[type='radio'] + label:before {
 }
 
 input[type='checkbox'] + label:hover:before, input[type='radio'] + label:hover:before {
-  background: rgb(237, 247, 242);
+  background: rgb(244, 250, 247);
 }
 
 input[type='checkbox']:checked + label:before, input[type='radio']:checked + label:before {
@@ -1314,7 +1341,7 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 }
 
 .toggle input[type='radio'] + label:hover {
-  background: rgb(237, 247, 242);
+  background: rgb(244, 250, 247);
 }
 
 .toggle input[type='radio']:checked + label {
@@ -1324,22 +1351,22 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 
 [class*='helpBox--'] {
   padding: .75em;
-  border-left-width: 3px;
+  border-left-width: 2px;
   border-left-style: solid;
 }
 
 .helpBox--yellow {
-  background: rgb(253, 250, 232);
+  background: rgb(254, 252, 241);
   border-color: rgb(239, 220, 94);
 }
 
 .helpBox--green {
-  background: rgb(237, 247, 242);
+  background: rgb(244, 250, 247);
   border-color: #5fb88d;
 }
 
 .helpBox--red {
-  background: rgb(254, 238, 236);
+  background: rgb(254, 242, 241);
   border-color: #ef3b22;
 }
 
@@ -1370,6 +1397,7 @@ li {
 .progressBar {
   width: 100%;
   display: block;
+  overflow: hidden;
 }
 
 .progressBar > span {
@@ -1493,6 +1521,8 @@ ul.tabs--v li {
 
 .italic { font-style:italic }
 
+.strike { text-decoration: line-through}
+
 .caps { text-transform:uppercase; letter-spacing: .2em; }
 
 .underline{ text-decoration:underline }
@@ -1572,15 +1602,15 @@ html {
   left: 0;
   top: 0;
   position: absolute;
-  width: 220px;
+  width: 200px;
   overflow-y: auto;
   border-right: 1px solid rgb(219, 219, 219);
   height: 100%;
 }
 
 .main {
-  width: calc(100% - 220px);
-  margin-left: 220px;
+  width: calc(100% - 200px);
+  margin-left: 200px;
   overflow-y: auto;
   height: 100%;
   padding-bottom: 100px;

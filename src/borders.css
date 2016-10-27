@@ -2,6 +2,14 @@
   border-color: $grey-4;
 }
 
+.border-color-red {
+  border-color: $red;
+}
+
+.border-color-green {
+  border-color: $green;
+}
+
 .border{
   border-style:solid;
   border-width: 1px;
@@ -29,14 +37,14 @@
 
 .border-none{ border:0 }
 
-.rounded{ border-radius: 3px }
+.rounded{ border-radius: 5px }
 .circle{ border-radius:50% }
 .pill { border-radius:.5em }
 
-.rounded-top{ border-radius: 3px 3px 0 0 }
-.rounded-right{ border-radius: 0 3px 3px 0 }
-.rounded-bottom{ border-radius: 0 0 3px 3px }
-.rounded-left{ border-radius: 3px 0 0 3px }
+.rounded-top{ border-radius: 5px 5px 0 0 }
+.rounded-right{ border-radius: 0 5px 5px 0 }
+.rounded-bottom{ border-radius: 0 0 5px 5px }
+.rounded-left{ border-radius: 5px 0 0 5px }
 
 .not-rounded{ border-radius:0 }
 

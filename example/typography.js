@@ -3,6 +3,8 @@ import title from './title'
 import section from './section'
 import code from './code'
 
+const lineHeightP = x => h(`pre.line-height-${x}.bg-grey-1`, ` .line-height-${x}`)
+
 module.exports = _ => {
   const content = h('div', [
     title('Typography')
@@ -11,29 +13,26 @@ module.exports = _ => {
   , h('p.caps', 'caps')
   , h('p.underline', 'underline')
   , h('p.hover-underline', 'hover underline')
-  , h('div.width-100.truncate', 'Helloooooooooooooooooo')
-  , h('p.line-height-1.bg-grey-1', 'line-height 1')
-  , h('p.line-height-2.bg-grey-1', 'line-height 2')
-  , h('p.line-height-3.bg-grey-1', 'line-height 3')
-  , h('p.line-height-4.bg-grey-1', 'line-height 4')
-  , h('p.line-height-5.bg-grey-1', 'line-height 5')
-  , h('p.line-height-6.bg-grey-1', 'line-height 6')
+  , h('p.strike', 'strike')
+  , h('div.width-100.truncate', 'Truncateeeeeeeeeeeeeeeeee')
   , code(
 `<p class='bold'>bold</p>
 <p class='italic'>italic</p>
 <p class='caps'>caps</p>
-<p class='underline'>underlin</p>
-<p class='hover-underline'>hover-underline</p>
-<p class='width-100 truncate'>Helloooooooooooooooooo</p>
-<p class='line-height-1.bg-grey-1'>line-height 1</p>
-<p class='line-height-2.bg-grey-1'>line-height 2</p>
-<p class='line-height-3.bg-grey-1'>line-height 3</p>
-<p class='line-height-4.bg-grey-1'>line-height 4</p>
-<p class='line-height-5.bg-grey-1'>line-height 5</p>
-<p class='line-height-6.bg-grey-1'>line-height 6</p>
+<p class='underline'>underline</p>
+<p class='strike'>strike</p>
+<p class='hover-underline'>hover underline</p>
+<p class='truncate width-100'>Truncateeeeeeeeeeeeeeeeee</p>
 `)
   , code(
-`.font-family-inherit  { font-family: inherit }
+`.line-height-1 { line-height: 1 }
+.line-height-2 { line-height: 1.2 }
+.line-height-3 { line-height: 1.4 }
+.line-height-4 { line-height: 1.6 }
+.line-height-5 { line-height: 1.8 }
+.line-height-6 { line-height: 2 }
+
+.font-family-inherit  { font-family: inherit }
 .font-size-inherit    { font-size: inherit }
 
 .text-decoration-none { text-decoration: none }

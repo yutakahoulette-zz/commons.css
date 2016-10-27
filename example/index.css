@@ -5,15 +5,15 @@
   left: 0;
   top: 0;
   position: absolute;
-  width: 220px;
+  width: 200px;
   overflow-y: auto;
   border-right: 1px solid $grey-4;
   height: 100%;
 }
 
 .main {
-  width: calc(100% - 220px);
-  margin-left: 220px;
+  width: calc(100% - 200px);
+  margin-left: 200px;
   overflow-y: auto;
   height: 100%;
   padding-bottom: 100px;

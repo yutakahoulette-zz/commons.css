@@ -5,9 +5,11 @@
 .bold { font-weight: bold; }
 .regular { font-weight:normal }
 .italic { font-style:italic }
+.strike { text-decoration: line-through}
 .caps { text-transform:uppercase; letter-spacing: .2em; }
 .underline{ text-decoration:underline }
 .hover-underline:hover { text-decoration:underline }
+
 .truncate{
   max-width:100%;
   overflow:hidden;
@@ -29,7 +31,5 @@
 .line-height-4 { line-height: 1.6 }
 .line-height-5 { line-height: 1.8 }
 .line-height-6 { line-height: 2 }
-
-
 
 
