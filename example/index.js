@@ -32,8 +32,16 @@ const init = _ => {
   }
 }
 
+const scroll = ID$ => _ => {
+  if(ID$()) {
+    window.location.hash = '' 
+    window.location.hash = ID$()
+  }
+}
+
+
 const view = state => 
-  h('div.relative', [
+  h('div.relative', {hook: {insert: scroll(state.ID$)}}, [
     nav(state)
   , h('div.main.px-3.pt-2', [
       intro()
