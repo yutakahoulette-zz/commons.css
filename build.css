@@ -437,7 +437,7 @@ template {
 
 html {
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
 
@@ -465,10 +465,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
-}
-
-p {
-  line-height: 1.6;
 }
 
 p, dl, ol, ul, pre, blockquote {
@@ -526,14 +522,6 @@ a {
   border-color: rgb(219, 219, 219);
 }
 
-.border-color-red {
-  border-color: #ef3b22;
-}
-
-.border-color-green {
-  border-color: #5fb88d;
-}
-
 .border{
   border-style:solid;
   border-width: 1px;
@@ -561,19 +549,19 @@ a {
 
 .border-none{ border:0 }
 
-.rounded{ border-radius: 5px }
+.rounded{ border-radius: 3px }
 
 .circle{ border-radius:50% }
 
 .pill { border-radius:1em }
 
-.rounded-top{ border-radius: 5px 5px 0 0 }
+.rounded-top{ border-radius: 3px 3px 0 0 }
 
-.rounded-right{ border-radius: 0 5px 5px 0 }
+.rounded-right{ border-radius: 0 3px 3px 0 }
 
-.rounded-bottom{ border-radius: 0 0 5px 5px }
+.rounded-bottom{ border-radius: 0 0 3px 3px }
 
-.rounded-left{ border-radius: 5px 0 0 5px }
+.rounded-left{ border-radius: 3px 0 0 3px }
 
 .not-rounded{ border-radius:0 }
 
@@ -929,15 +917,6 @@ a {
 
 .opacity-1 {opacity: 1}
 
-a {
-  color: #39aad6;
-}
-
-a:hover {
-  color: rgb(37, 141, 182);
-  text-decoration: underline;
-}
-
 .bg-white {
   background: white;
 }
@@ -970,22 +949,6 @@ a:hover {
   background: rgba(0,0,0,.5);
 }
 
-.bg-lightGreen {
-  background: rgb(244, 250, 247);
-}
-
-.bg-pink {
-  background: rgb(254, 242, 241); 
-}
-
-.bg-lightBlue {
-  background: rgb(242, 250, 252); 
-}
-
-.bg-lightYellow {
-  background: rgb(254, 252, 241);
-}
-
 blockquote {
   padding: .5em .5em .5em 1em;
   border-left: 3px solid rgb(153, 153, 153);
@@ -995,46 +958,34 @@ blockquote {
 
 button {
   font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  height: auto;
+  margin: 0;
   padding: 0.5em;
   outline: none;
   border-width: 1px;
-  -webkit-transition: background ease 0.2s;
-  transition: background ease 0.2s;
-  border-color: #39aad6;
   border-style: solid;
-  border-radius: 5px;
-  color: #39aad6;
+  border-radius: 3px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background: white;
-  line-height: inherit;
+  background: none;
 }
 
-button:hover {
-  background: rgb(250, 250, 250);
+button:not(:disabled):hover {
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
 }
 
-button.btn--danger, button.btn--main {
+button:disabled {
+  cursor: not-allowed;
+  background:   rgb(153, 153, 153);
+  border-color: rgb(153, 153, 153);
   color: white;
-  border-color: rgba(0,0,0,.08);
-}
-
-button.btn--main {
-  background: #5fb88d;
-}
-
-button.btn--main:hover {
-  background: rgb(70, 160, 116);
-}
-
-button.btn--danger {
-  background: #ef3b22;
-}
-
-button.btn--danger:hover {
-  background: rgb(209, 38, 16);
 }
 
 button:active {
@@ -1042,11 +993,16 @@ button:active {
           transform: translateY(1px);
 }
 
-button:disabled {
-  color: rgba(255,255,255,.7);
-  background: grey;
-  border-color: grey;
-  cursor: not-allowed;
+.color-black {
+  color: black;
+}
+
+.color-grey {
+  color: rgb(153, 153, 153);
+}
+
+.color-white {
+  color: white;
 }
 
 .cursor-pointer { cursor: pointer }
@@ -1057,7 +1013,6 @@ button:disabled {
 
 textarea:focus, select:focus, input:focus {
   outline: none;
-  border-color: #5fb88d;
 }
 
 textarea, input, select {
@@ -1073,10 +1028,6 @@ textarea, input, select {
   -webkit-transition: border-color .2s ease-out;
   transition: border-color .2s ease-out;
   -webkit-appearance: none;
-}
-
-form {
-  display: inline-block;
 }
 
 fieldset {
@@ -1127,14 +1078,6 @@ input[type='checkbox'], input[type='radio'] {
   display: none;
 }
 
-input[type='checkbox'] + label:before {
-  content: '\2713';
-}
-
-input[type='radio'] + label:before {
-  content: '\2022';
-}
-
 input[type='checkbox'] + label, input[type='radio'] + label {
   cursor: pointer;
   font-weight: normal;
@@ -1165,14 +1108,6 @@ input[type='radio'] + label:before {
   border-radius: 50%;
 }
 
-input[type='checkbox'] + label:hover:before, input[type='radio'] + label:hover:before {
-  background: rgb(244, 250, 247);
-}
-
-input[type='checkbox']:checked + label:before, input[type='radio']:checked + label:before {
-  background: #5fb88d;
-}
-
 input[type='radio']:checked + label:before, input[type='checkbox']:checked + label:before {
   color: white;
 }
@@ -1201,12 +1136,7 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
   border-right: 1px solid rgb(153, 153, 153);
 }
 
-.toggle input[type='radio'] + label:hover {
-  background: rgb(244, 250, 247);
-}
-
 .toggle input[type='radio']:checked + label {
-  background: #5fb88d;
   color: white;
 }
 
@@ -1214,21 +1144,6 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
   padding: .75em;
   border-left-width: 2px;
   border-left-style: solid;
-}
-
-.helpBox--yellow {
-  background: rgb(254, 252, 241);
-  border-color: rgb(239, 220, 94);
-}
-
-.helpBox--green {
-  background: rgb(244, 250, 247);
-  border-color: #5fb88d;
-}
-
-.helpBox--red {
-  background: rgb(254, 242, 241);
-  border-color: #ef3b22;
 }
 
 ul, ol {
@@ -1256,7 +1171,7 @@ li {
 }
 
 .container {
-  max-width: 990px;
+  max-width: 980px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1270,7 +1185,6 @@ li {
 .progressBar > span {
   line-height: .5;
   display: inline-block;
-  background: #5fb88d;
 }
 
 .progressBar > span:before {
@@ -1336,44 +1250,12 @@ ul.tabs--h li:hover, ul.tabs--v li:hover {
   color: initial;
 }
 
-ul.tabs--h li.is-selected {
-  border-bottom-color: #5fb88d;
-}
-
 ul.tabs--v li {
   display: block;
   line-height: 1;
   margin-bottom: .5em;
   border-left: 2px solid transparent;
   border-bottom-width: 1px;
-}
-
-.tabs--v  li.is-selected {
-  border-left-color: #5fb88d;
-}
-
-.color-black {
-  color: black;
-}
-
-.color-grey {
-  color: rgb(153, 153, 153);
-}
-
-.color-white {
-  color: white;
-}
-
-.color-red {
-  color: #ef3b22;
-}
-
-.color-blue {
-  color: #39aad6;
-}
-
-.color-green {
-  color: #5fb88d;
 }
 
 h1, .h1 { font-size: 3rem; }
@@ -1441,10 +1323,6 @@ small, .small { font-size: .75rem; }
 
 .line-height-6 { line-height: 2 }
 
-html {
-  font-family: 'Open Sans';
-}
-
 .hljs-tag {
   color: rgba(0,0,0,0.4);
 }
@@ -1461,19 +1339,87 @@ html {
   color: rgb(33, 125, 161);
 }
 
+/* brand font */
+
+html { font-family: 'Open Sans' }
+
+/* brand color for anchor */
+
+a { color: #39aad6 }
+
+/* brand colors for button */
+
+button {
+  border-color: #39aad6;
+  color:        #39aad6;
+}
+
+.btn--main {
+  background:  #5fb88d;
+  border-color: #5fb88d;
+  color: white;
+}
+
+/* brand colors for form elements */
+
+textarea:focus, select:focus, input:focus { border-color: #5fb88d }
+
+input[type='checkbox'] + label:hover:before, input[type='radio'] + label:hover:before { background: rgb(244, 250, 247) }
+
+input[type='checkbox']:checked + label:before, input[type='radio']:checked + label:before { background: #5fb88d }
+
+/* unicode character for checkmark  */
+
+input[type='checkbox'] + label:before { content: '\2713' }
+
+/* unicode character for dot */
+
+input[type='radio'] + label:before { content: '\2022' }
+
+.toggle input[type='radio'] + label:hover { background: rgb(244, 250, 247) }
+
+.toggle input[type='radio']:checked + label { background: #5fb88d }
+
+/* brand colors for help box */
+
+.helpBox--success {
+  background: rgb(244, 250, 247);
+  border-color: #5fb88d;
+}
+
+.helpBox--warn {
+  background: rgb(254, 252, 241);
+  border-color: rgb(239, 220, 94);
+}
+
+.helpBox--error {
+  background: rgb(254, 242, 241);
+  border-color: #ef3b22;
+}
+
+/* brand background color for progress bar */
+
+.progressBar > span { background: #5fb88d }
+
+/* brand border color for tab */
+
+.tabs--h li.is-selected { border-bottom-color: #5fb88d }
+
+.tabs--v li.is-selected { border-left-color: #5fb88d }
+
 .nav {
   left: 0;
   top: 0;
   position: absolute;
-  width: 200px;
+  width: 170px;
   overflow-y: auto;
   border-right: 1px solid rgb(219, 219, 219);
   height: 100%;
 }
 
 .main {
-  width: calc(100% - 200px);
-  margin-left: 200px;
+  width: calc(100% - 170px);
+  margin-left: 170px;
   overflow-y: auto;
   height: 100%;
   padding-bottom: 100px;
@@ -1482,4 +1428,6 @@ html {
 body {
   overflow: hidden;
 }
+
+
 
