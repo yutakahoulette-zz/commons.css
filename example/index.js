@@ -39,7 +39,14 @@ window.log = (text, $) => flyd.map(x => console.log(text, x), $)
 
 const init = _ => {
   return {
-    ID$: flyd.map(x => x.hash && x.hash.replace('#', ''), url$)
+    ID$: flyd.map(x => {
+      if(x.hash) {
+        return x.hash.replace('#', '')
+      }
+      if(x.search) {
+        return x.search.split('=')[1]
+      }
+    }, url$)
   }
 }
 
@@ -48,20 +55,16 @@ const scroll = ID$ => v => {
   const sectionsData = R.map(x => ({top: x.offsetTop, id: x.id}), main.querySelectorAll('section'))
 
   main.addEventListener('scroll', _ => {
-    R.map(a => {
-      let scrollTop = main.scrollTop
-      let distance = scrollTop - a.top
-      if(distance < 20 && distance > -20 && ID$ != a.id) {
-      window.location.hash = a.id
+    let scrollTop = main.scrollTop
+    R.reduce((a, b) => {
+      if(scrollTop >= a.top && scrollTop <= b.top & ID$ != a.id) {
+        window.history.pushState('', 'section', `?section=${a.id}`)
       }
-    }, sectionsData)
+      return b
+    }, {}, sectionsData)
   })
 
-  // to handle anchor scrolling on page load
-  if(ID$()) {
-    window.location.hash = '' 
-    window.location.hash = ID$()
-  }
+  window.location.hash = ID$()
 }
 
 
