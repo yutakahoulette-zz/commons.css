@@ -2,10 +2,12 @@ import h from 'snabbdom/h'
 import title from './title'
 import section from './section'
 import code from './code'
+import warn from './brand-warn'
 
 module.exports = _ => {
   const content = h('div', [
     title('Tabs')
+  , warn()
   , h('p.bold', 'Horizontal tabs')
   , h('ul.tabs--h', [
         h('li.is-selected.mr-1', 'Apple')

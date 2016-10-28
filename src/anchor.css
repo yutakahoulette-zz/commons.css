@@ -1,9 +1,0 @@
-a {
-  color: $blue;
-}
-
-a:hover {
-  color: $blue-dark;
-  text-decoration: underline;
-}
-

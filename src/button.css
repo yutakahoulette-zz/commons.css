@@ -1,51 +1,31 @@
 button {
   font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  height: auto;
+  margin: 0;
   padding: 0.5em;
   outline: none;
   border-width: 1px;
-  transition: background ease 0.2s;
-  border-color: $blue;
   border-style: solid;
-  border-radius: 5px;
-  color: $blue;
+  border-radius: 3px;
   user-select: none;
-  background: white;
-  line-height: inherit;
+  background: none;
 }
 
-button:hover {
-  background: $grey-1;
+button:not(:disabled):hover {
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
 }
-
-button.btn--danger, 
-button.btn--main {
-  color: white;
-  border-color: $scrim-1;
-}
-
-button.btn--main {
-  background: $green;
-}
-button.btn--main:hover {
-  background: $green-dark;
-}
-
-button.btn--danger {
-  background: $red;
-}
-button.btn--danger:hover {
-  background: $red-dark;
+button:disabled {
+  cursor: not-allowed;
+  background:   $grey-5;
+  border-color: $grey-5;
 }
 
 button:active {
   transform: translateY(1px);
-}
-
-
-button:disabled {
-  color: rgba(255,255,255,.7);
-  background: grey;
-  border-color: grey;
-  cursor: not-allowed;
 }
 

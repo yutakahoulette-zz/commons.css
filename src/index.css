@@ -17,8 +17,7 @@
 @import './hide.css';
 @import './opacity.css';
 
-@import './anchor.css';
-@import './background-color.css';
+@import './background.css';
 @import './blockquote.css';
 @import './button.css';
 @import './cursor.css';
@@ -34,8 +33,5 @@
 @import './type-scale.css';
 @import './typography.css';
 
-html {
-  font-family: 'Open Sans';
-}
 
 

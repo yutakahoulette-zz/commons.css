@@ -7,6 +7,7 @@
     "build-lib-css": "postcss -c postcss-lib.js -w -l",
     "watch-example-css": "postcss -c postcss-example.js -w -l",
     "build-example": "mkdir -p example/dist && cp example/build.css example/dist/build.css && cp example/index.html  example/dist/index.html && browserify example/index.js -o example/dist/index.js -t [babelify --presets es2015]",
+    "gh-pages": "git subtree push --prefix example/dist origin gh-pages",
     "watch-js": "budo example/index.js --dir example  --live -- -t [babelify --presets es2015]"
   },
   "repository": {

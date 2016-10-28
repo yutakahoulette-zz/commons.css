@@ -1,16 +1,15 @@
 import h from 'snabbdom/h'
 import title from './title'
 import section from './section'
+import greyWarn from './grey-warn'
 
 module.exports = _ => {
   const content = h('div', [
     title('Text color')
-  , h('pre.bg-grey-5.color-white.inline-block.m-0', '.color-white')
+  , greyWarn()
+  , h('pre.color-white.bg-grey-5.inline-block.mb-0', '.color-white')
   , h('pre.color-black', '.color-black')
   , h('pre.color-grey', '.color-grey')
-  , h('pre.color-blue', '.color-blue')
-  , h('pre.color-red', '.color-red')
-  , h('pre.color-green', '.color-green')
   ])
   return section('text-color', content)
 }

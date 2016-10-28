@@ -1,0 +1,74 @@
+/* brand font */
+html { font-family: 'Open Sans' }
+
+
+/* brand color for anchor */
+a { color: $blue }
+
+
+/* brand colors for button */
+button {
+  border-color: $blue;
+  color:        $blue;
+}
+button:disabled,
+.btn--danger,
+.btn--main { 
+  color: white;
+}
+.btn--main {
+  background:  $green;
+  border-color: $green;
+}
+.btn--danger {
+  background: $red;
+  border-color: $red;
+}
+
+
+/* brand colors for form elements */
+textarea:focus,
+select:focus,
+input:focus { border-color: $green }
+
+input[type='checkbox'] + label:hover:before,
+input[type='radio'] + label:hover:before { background: $green-light }
+
+input[type='checkbox']:checked + label:before,
+input[type='radio']:checked + label:before { background: $green } 
+
+/* unicode character for checkmark  */
+input[type='checkbox'] + label:before { content: '\2713' }
+
+/* unicode character for dot */
+input[type='radio'] + label:before { content: '\2022' }
+
+.toggle input[type='radio'] + label:hover { background: $green-light }
+
+.toggle input[type='radio']:checked + label { background: $green }
+
+
+/* brand colors for help box */
+.helpBox--success {
+  background: $green-light;
+  border-color: $green;
+}
+.helpBox--warn {
+  background: $yellow-light;
+  border-color: $yellow;
+}
+.helpBox--error {
+  background: $red-light;
+  border-color: $red;
+}
+
+
+/* brand background color for progress bar */
+.progressBar > span { background: $green }
+
+
+/* brand border color for tab */
+.tabs--h li.is-selected { border-bottom-color: $green }
+.tabs--v li.is-selected { border-left-color: $green }
+
+

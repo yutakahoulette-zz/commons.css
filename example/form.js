@@ -2,12 +2,14 @@ import h from 'snabbdom/h'
 import code from './code'
 import title from './title'
 import section from './section'
+import warn from './brand-warn'
 
 const label = text => h('strong.block.mb-1.mt-3', text)
 
 module.exports = _ => {
   const content = h('div', [
       title('Form')
+    , warn()
     , h('div', [
         h('strong.block.mb-1', 'Text input')
       , h('input.max-width-300.mb-1', {props: {type: 'text'}})

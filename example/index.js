@@ -10,7 +10,8 @@ import nav from './nav'
 
 import about from './about'
 import align from './align'
-import bgColor from './background-color'
+import background from './background'
+import branding from './branding'
 import blockquote from './blockquote'
 import border from './border'
 import button from './button'
@@ -51,7 +52,7 @@ const scroll = ID$ => v => {
       let scrollTop = main.scrollTop
       let distance = scrollTop - a.top
       if(distance < 20 && distance > -20 && ID$ != a.id) {
-        window.location.hash = a.id
+      window.location.hash = a.id
       }
     }, sectionsData)
   })
@@ -70,7 +71,8 @@ const view = state =>
   , h('div.main.px-3', [
       about()
     , align()
-    , bgColor()
+    , background()
+    , branding()
     , blockquote()
     , border()
     , button()

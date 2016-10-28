@@ -7,7 +7,6 @@
 .progressBar > span {
   line-height: .5;
   display: inline-block;
-  background: $green;
 }
 
 .progressBar > span:before {

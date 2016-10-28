@@ -22,16 +22,4 @@
 .bg-scrim-2 {
   background: $scrim-2;
 }
-.bg-lightGreen {
-  background: $green-light;
-}
-.bg-pink {
-  background: $red-light; 
-}
-.bg-lightBlue {
-  background: $blue-light; 
-}
-.bg-lightYellow {
-  background: $yellow-light;
-}
 

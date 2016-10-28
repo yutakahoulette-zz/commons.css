@@ -33,9 +33,6 @@ ul.tabs--v li:hover {
   color: initial;
 }
 
-ul.tabs--h li.is-selected {
-  border-bottom-color: $green;
-}
 
 ul.tabs--v li {
   display: block;
@@ -43,9 +40,5 @@ ul.tabs--v li {
   margin-bottom: .5em;
   border-left: 2px solid transparent;
   border-bottom-width: 1px;
-}
-
-.tabs--v  li.is-selected {
-  border-left-color: $green;
 }
 

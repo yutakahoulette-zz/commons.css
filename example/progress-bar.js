@@ -2,10 +2,12 @@ import h from 'snabbdom/h'
 import code from './code'
 import title from './title'
 import section from './section'
+import warn from './brand-warn'
 
 module.exports = _ => {
   const content = h('div', [
     title('Progress bar')
+  , warn()
   , h('span.progressBar.bg-grey-3', [ h('span', {style: {width: '80%'}}) ])
   , code( 
 `<span class='progressBar.bg-grey-3'>

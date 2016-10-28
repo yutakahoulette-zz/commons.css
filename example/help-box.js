@@ -5,10 +5,10 @@ import section from './section'
 module.exports = _ => {
   const content = h('div', [
     title('Help box')
-  , h('div.max-width-300', [
-      h('div.mb-2.helpBox--green', [h('pre.m-0', '.helpBox--green')])
-    , h('div.mb-2.helpBox--yellow', [h('pre.m-0', '.helpBox--yellow')])
-    , h('div.helpBox--red', [h('pre.m-0', '.helpBox--red')])
+  , h('div', [
+      h('div.mb-2.helpBox--success', [h('pre.m-0', '.helpBox--success')])
+    , h('div.mb-2.helpBox--warn', [h('pre.m-0', '.helpBox--warn')])
+    , h('div.helpBox--error', [h('pre.m-0', '.helpBox--error')])
     ])
   ])
   return section('help-box', content)

@@ -12,7 +12,7 @@ module.exports = _ => {
 }
 
 .container {
-  max-width: 990px;
+  max-width: 980px;
   margin-left: auto;
   margin-right: auto;
 }`, 'css')
