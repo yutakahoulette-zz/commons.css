@@ -15,6 +15,7 @@ import branding from './branding'
 import blockquote from './blockquote'
 import border from './border'
 import button from './button'
+import color from './color'
 import cursor from './cursor'
 import form from './form'
 import grid from './grid'
@@ -31,7 +32,6 @@ import progressBar from './progress-bar'
 import shadow from './shadow'
 import table from './table'
 import tabs from './tabs'
-import textColor from './text-color'
 import typeScale from './type-scale'
 import typography from './typography'
 
@@ -76,6 +76,7 @@ const view = state =>
     , blockquote()
     , border()
     , button()
+    , color()
     , cursor()
     , form()
     , grid()
@@ -92,7 +93,6 @@ const view = state =>
     , shadow()
     , table()
     , tabs()
-    , textColor()
     , typeScale()
     , typography()
     ])

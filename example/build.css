@@ -985,11 +985,24 @@ button:disabled {
   cursor: not-allowed;
   background:   rgb(153, 153, 153);
   border-color: rgb(153, 153, 153);
+  color: white;
 }
 
 button:active {
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
+}
+
+.color-black {
+  color: black;
+}
+
+.color-grey {
+  color: rgb(153, 153, 153);
+}
+
+.color-white {
+  color: white;
 }
 
 .cursor-pointer { cursor: pointer }
@@ -1245,18 +1258,6 @@ ul.tabs--v li {
   border-bottom-width: 1px;
 }
 
-.color-black {
-  color: black;
-}
-
-.color-grey {
-  color: rgb(153, 153, 153);
-}
-
-.color-white {
-  color: white;
-}
-
 h1, .h1 { font-size: 3rem; }
 
 h2, .h2 { font-size: 2.5rem; }
@@ -1353,18 +1354,10 @@ button {
   color:        #39aad6;
 }
 
-button:disabled, .btn--danger, .btn--main { 
-  color: white;
-}
-
 .btn--main {
   background:  #5fb88d;
   border-color: #5fb88d;
-}
-
-.btn--danger {
-  background: #ef3b22;
-  border-color: #ef3b22;
+  color: white;
 }
 
 /* brand colors for form elements */

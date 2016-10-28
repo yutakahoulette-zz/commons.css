@@ -11,6 +11,7 @@ const links = [
 , 'border'
 , 'button'
 , 'branding'
+, 'color'
 , 'cursor'
 , 'form'
 , 'grid'
@@ -27,7 +28,6 @@ const links = [
 , 'shadow'
 , 'table'
 , 'tabs'
-, 'text color'
 , 'type-scale'
 , 'typography'
 ]

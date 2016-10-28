@@ -20,6 +20,7 @@
 @import './background.css';
 @import './blockquote.css';
 @import './button.css';
+@import './color.css';
 @import './cursor.css';
 @import './form.css';
 @import './helpbox.css';
@@ -29,7 +30,6 @@
 @import './shadow.css';
 @import './table.css';
 @import './tabs.css';
-@import './text-color.css';
 @import './type-scale.css';
 @import './typography.css';
 

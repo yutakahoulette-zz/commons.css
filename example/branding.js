@@ -15,18 +15,10 @@ button {
   border-color: $blue;
   color:        $blue;
 }
-button:disabled,
-.btn--danger,
-.btn--main { 
-  color: white;
-}
 .btn--main {
   background:  $green;
   border-color: $green;
-}
-.btn--danger {
-  background: $red;
-  border-color: $red;
+  color: white;
 }
 
 textarea:focus,

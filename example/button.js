@@ -13,16 +13,29 @@ module.exports = _ => {
       , h('pre', 'default')
       ])
     , h('div.col-6.inline-block.mb-1', [
-        h('button.btn--main', 'Create')
-      , h('pre', ".btn--main")
-      ])
-    , h('div.col-6.inline-block.mb-1', [
-        h('button.btn--danger', 'Delete')
-      , h('pre', ".btn--danger")
-      ])
-    , h('div.col-6.inline-block.mb-1', [
         h('button', {props: {disabled : true}}, 'Loading...')
       , h('pre', 'disabled')
+      ])
+    , h('p.mb-3', [
+        'Instead of creating additional BEM style classes for buttons, such as '
+      , h('pre.inline.bg-grey-2', '.btn--large') 
+      , ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.' 
+      ])
+    , h('div.col-6.inline-block.mb-1', [
+        h('button.h3.caps', 'Large caps')
+      , h('pre', 'button.h3.caps')
+      ])
+    , h('div.col-6.inline-block.mb-1', [
+        h('button.p-2.bold', 'Bold and padded')
+      , h('pre', 'button.p-2')
+      ])
+    , h('div.col-6.inline-block.mb-1', [
+        h('button.pill.line-height-1', 'Pill shaped')
+      , h('pre', 'button.pill.line-height-1')
+      ])
+    , h('div.col-6.inline-block.mb-1', [
+        h('button.not-rounded.sh-2', 'Shadow')
+      , h('pre', 'button.not-rounded.sh-1')
       ])
     ])
   ])
