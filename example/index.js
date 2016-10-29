@@ -39,10 +39,7 @@ window.log = (text, $) => flyd.map(x => console.log(text, x), $)
 
 const init = _ => {
   return {
-    ID$: flyd.map(x => {
-      if(x.search) return x.search.split('=')[1] 
-      if(x.hash)   return x.hash.replace('#', '') 
-    }, url$)
+    ID$: flyd.map(x => x.hash && x.hash.replace('#', ''), url$)
   }
 }
 
@@ -58,16 +55,17 @@ const scroll = ID$ => v => {
   , R.map(x => ({top: x.offsetTop, id: x.id}))
   )(sections)
 
-  const inRange = scrollTop => x => {
+  const inRange = (scrollTop, ID$) => x => {
     if(scrollTop >= x.top && scrollTop <= x.bottom && ID$ != x.id)
-      return window.history.pushState('', '', `?section=${x.id}`)
+    ID$(x.id)
   }
 
   main.addEventListener('scroll', _ => {
     let scrollTop = main.scrollTop
-    R.map(inRange(scrollTop), data)
+    R.map(inRange(scrollTop, ID$), data)
   })
 
+  window.location.hash = '' 
   window.location.hash = ID$()
 }
 
