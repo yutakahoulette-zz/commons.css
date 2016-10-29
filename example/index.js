@@ -40,28 +40,32 @@ window.log = (text, $) => flyd.map(x => console.log(text, x), $)
 const init = _ => {
   return {
     ID$: flyd.map(x => {
-      if(x.hash) {
-        return x.hash.replace('#', '')
-      }
-      if(x.search) {
-        return x.search.split('=')[1]
-      }
+      if(x.search) return x.search.split('=')[1] 
+      if(x.hash)   return x.hash.replace('#', '') 
     }, url$)
   }
 }
 
 const scroll = ID$ => v => {
   const main = v.elm.querySelector('.main')  
-  const sectionsData = R.map(x => ({top: x.offsetTop, id: x.id}), main.querySelectorAll('section'))
+  const sections = main.querySelectorAll('section') 
+  const len = R.length(sections) - 1
+
+  const data = R.compose(
+    R.adjust(R.assoc('bottom', main.scrollHeight), len)
+  , R.remove(0, 1)
+  , R.scan((a, b) => {a.bottom = b.top; return b}, {})
+  , R.map(x => ({top: x.offsetTop, id: x.id}))
+  )(sections)
+
+  const inRange = scrollTop => x => {
+    if(scrollTop >= x.top && scrollTop <= x.bottom && ID$ != x.id)
+      return window.history.pushState('', '', `?section=${x.id}`)
+  }
 
   main.addEventListener('scroll', _ => {
     let scrollTop = main.scrollTop
-    R.reduce((a, b) => {
-      if(scrollTop >= a.top && scrollTop <= b.top & ID$ != a.id) {
-        window.history.pushState('', 'section', `?section=${a.id}`)
-      }
-      return b
-    }, {}, sectionsData)
+    R.map(inRange(scrollTop), data)
   })
 
   window.location.hash = ID$()
