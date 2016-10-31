@@ -43,17 +43,17 @@ const init = _ => {
   }
 }
 
+const mapWithIndex = R.addIndex(R.map)
+
 const scroll = ID$ => v => {
   const main = v.elm.querySelector('.main')  
   const sections = main.querySelectorAll('section') 
-  const len = R.length(sections) - 1
+  const lastIndex = R.length(sections) - 1
 
-  const data = R.compose(
-    R.adjust(R.assoc('bottom', main.scrollHeight), len)
-  , R.remove(0, 1)
-  , R.scan((a, b) => {a.bottom = b.top; return b}, {})
-  , R.map(x => ({top: x.offsetTop, id: x.id}))
-  )(sections)
+  const data = mapWithIndex((elm, i) => ({
+      top: elm.offsetTop
+    , bottom: sections[i+1] ? sections[i+1].offsetTop : main.scrollHeight 
+    , id: elm.id}), sections)
 
   const inRange = (scrollTop, ID$) => x => {
     if(scrollTop >= x.top && scrollTop <= x.bottom && ID$ != x.id)
@@ -77,9 +77,9 @@ const view = state =>
       about()
     , align()
     , background()
-    , branding()
     , blockquote()
     , border()
+    , branding()
     , button()
     , color()
     , cursor()
