@@ -15,12 +15,4 @@ $blue-darker: color($blue l(-15%));
 $yellow: rgb(239, 220, 94);
 $yellow-light: color($yellow l(97%)); 
 
-$grey-1: color(black l(98%));
-$grey-2: color(black l(96%));
-$grey-3: color(black l(92%));
-$grey-4: color(black l(86%));
-$grey-5: color(black l(60%));
-
-$scrim-1: rgba(0,0,0,.08);
-$scrim-2: rgba(0,0,0,.5);
 
