@@ -442,12 +442,12 @@ html {
 }
 
 ::-moz-selection {
-  background: rgb(153, 153, 153); 
+  background: rgb(128, 128, 128); 
   color: white;
 }
 
 ::selection {
-  background: rgb(153, 153, 153); 
+  background: rgb(128, 128, 128); 
   color: white;
 }
 
@@ -938,7 +938,7 @@ a {
 }
 
 .bg-grey-5 {
-  background: rgb(153, 153, 153);
+  background: rgb(128, 128, 128);
 }
 
 .bg-scrim-1 {
@@ -951,7 +951,7 @@ a {
 
 blockquote {
   padding: .5em .5em .5em 1em;
-  border-left: 3px solid rgb(153, 153, 153);
+  border-left: 3px solid rgb(128, 128, 128);
   font-size: 1.2em;
   margin-left: 0;
 }
@@ -996,7 +996,7 @@ button:active {
 }
 
 .color-grey {
-  color: rgb(153, 153, 153);
+  color: rgb(128, 128, 128);
 }
 
 .color-white {
@@ -1014,7 +1014,7 @@ textarea:focus, select:focus, input:focus {
 }
 
 textarea, input, select {
-  border: 1px solid rgb(153, 153, 153);
+  border: 1px solid rgb(128, 128, 128);
   border-radius: 0;
   padding: .5em;
   line-height: inherit;
@@ -1097,7 +1097,7 @@ input[type='checkbox'] + label:before, input[type='radio'] + label:before {
   display: inline-block;
   line-height: .75em;
   width: .75em;
-  border: 1px rgb(153, 153, 153) solid;
+  border: 1px rgb(128, 128, 128) solid;
   -webkit-transition: background .1s ease-out;
   transition: background .1s ease-out;
 }
@@ -1112,7 +1112,7 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 
 .toggle {
   display: table;
-  border: 1px solid rgb(153, 153, 153);
+  border: 1px solid rgb(128, 128, 128);
   border-radius: 3px;
   overflow: hidden;
   background: white;
@@ -1131,7 +1131,7 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 }
 
 .toggle input[type='radio'] + label:not(:last-of-type) {
-  border-right: 1px solid rgb(153, 153, 153);
+  border-right: 1px solid rgb(128, 128, 128);
 }
 
 .toggle input[type='radio']:checked + label {
@@ -1215,7 +1215,7 @@ tr:not(:first-of-type) {
 }
 
 tr:nth-of-type(2) {
-  border-top: 1px solid rgb(153, 153, 153);
+  border-top: 1px solid rgb(128, 128, 128);
 }
 
 ul.tabs--h, ul.tabs--v {
@@ -1228,7 +1228,7 @@ ul.tabs--v li a, ul.tabs--h li a {
 }
 
 ul.tabs--v li, ul.tabs--h li {
-  color: rgb(153, 153, 153);
+  color: rgb(128, 128, 128);
   cursor: pointer;
   padding: .25em .5em;
 }
