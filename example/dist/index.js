@@ -8,7 +8,7 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (state) {
-  return (0, _h2.default)('section.pt-3.pb-4.border-bottom', { props: { id: 'about' } }, [(0, _h2.default)('h1.mt-0.mb-4', 'commons.css'), (0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'aims to be performant, and easy to use by minimizing the number of class names that you have to keep track of. We encourage the use of combining existing classes in the markup to create new UIs instead of writing additional styles. Check out the ', (0, _h2.default)('a', { props: { href: '#examples' } }, 'examples'), '.'])]);
+    return (0, _h2.default)('section.pt-3.pb-4.border-bottom', { props: { id: 'about' } }, [(0, _h2.default)('h1.mt-0.mb-4', 'commons.css'), (0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'is comprised of ', (0, _h2.default)('a', { props: { href: 'https://necolas.github.io/normalize.css' } }, 'Normalize.css'), ', utility classes heavily inspired by ', (0, _h2.default)('a', { props: { href: 'http://basscss.com' } }, 'Basscss'), ', and styles for a handful of core UI components.'])]);
 };
 
 },{"snabbdom/h":226}],2:[function(require,module,exports){
@@ -156,7 +156,7 @@ var _section2 = _interopRequireDefault(_section);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Branding'), (0, _code2.default)('html { font-family: \'Open Sans\' }\n\na { color: $blue }\n\nbutton {\n  border-color: $blue;\n  color:        $blue;\n}\n.btn--main {\n  background:  $green;\n  border-color: $green;\n  color: white;\n}\n\ntextarea:focus,\nselect:focus,\ninput:focus { \n  border-color: $green;\n}\ninput[type=\'checkbox\'] + label:hover:before,\ninput[type=\'radio\'] + label:hover:before { \n  background: $green-light;\n}\ninput[type=\'checkbox\']:checked + label:before,\ninput[type=\'radio\']:checked + label:before { \n  background: $green;\n} \ninput[type=\'checkbox\'] + label:before { \n  content: \'\\2713\';\n}\ninput[type=\'radio\'] + label:before { \n  content: \'\\2022\'; \n}\n.toggle input[type=\'radio\'] + label:hover { \n  background: $green-light; \n}\n.toggle input[type=\'radio\']:checked + label { \n  background: $green;\n}\n\n.helpBox--success {\n  background: $green-light;\n  border-color: $green;\n}\n.helpBox--warn {\n  background: $yellow-light;\n  border-color: $yellow;\n}\n.helpBox--error {\n  background: $red-light;\n  border-color: $red;\n}\n\n.progressBar > span { background: $green }\n\n.tabs--h li.is-selected { border-bottom-color: $green }\n.tabs--v li.is-selected { border-left-color: $green }', 'css')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Branding'), (0, _h2.default)('div.helpBox--error.mb-3', 'These branding styles are not included in commons.css. They are added for reference and demonstration purposes.'), (0, _code2.default)('html { font-family: \'Open Sans\' }\n\na { color: $blue }\n\nbutton {\n  border-color: $blue;\n  color:        $blue;\n}\n.btn--main {\n  background:  $green;\n  border-color: $green;\n  color: white;\n}\n\ntextarea:focus,\nselect:focus,\ninput:focus { \n  border-color: $green;\n}\ninput[type=\'checkbox\'] + label:hover:before,\ninput[type=\'radio\'] + label:hover:before { \n  background: $green-light;\n}\ninput[type=\'checkbox\']:checked + label:before,\ninput[type=\'radio\']:checked + label:before { \n  background: $green;\n} \ninput[type=\'checkbox\'] + label:before { \n  content: \'\\2713\';\n}\ninput[type=\'radio\'] + label:before { \n  content: \'\\2022\'; \n}\n.toggle input[type=\'radio\'] + label:hover { \n  background: $green-light; \n}\n.toggle input[type=\'radio\']:checked + label { \n  background: $green;\n}\n\n.helpBox--success {\n  background: $green-light;\n  border-color: $green;\n}\n.helpBox--warn {\n  background: $yellow-light;\n  border-color: $yellow;\n}\n.helpBox--error {\n  background: $red-light;\n  border-color: $red;\n}\n\n.progressBar > span { background: $green }\n\n.tabs--h li.is-selected { border-bottom-color: $green }\n.tabs--v li.is-selected { border-left-color: $green }', 'css')]);
   return (0, _section2.default)('branding', content);
 };
 
@@ -182,7 +182,7 @@ var _brandWarn2 = _interopRequireDefault(_brandWarn);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Button'), (0, _brandWarn2.default)(), (0, _h2.default)('div', [(0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')]), (0, _h2.default)('p.mb-3', ['Instead of creating additional BEM style classes for buttons, such as ', (0, _h2.default)('pre.inline.bg-grey-2', '.btn--large'), ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.']), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.h3.caps', 'Large caps'), (0, _h2.default)('pre', 'button.h3.caps')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.p-2.bold', 'Bold and padded'), (0, _h2.default)('pre', 'button.p-2')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.pill.line-height-1', 'Pill shaped'), (0, _h2.default)('pre', 'button.pill.line-height-1')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.not-rounded.sh-2', 'Shadow'), (0, _h2.default)('pre', 'button.not-rounded.sh-1')])])]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Button'), (0, _brandWarn2.default)(), (0, _h2.default)('div', [(0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')]), (0, _h2.default)('p.mb-3', ['Instead of creating additional BEM style classes for buttons, such as ', (0, _h2.default)('pre.inline.bg-grey-2', '.btn--large'), ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.']), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.h4.caps', 'Large caps'), (0, _h2.default)('pre', 'button.h4.caps')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.p-2.bold', 'Bold and padded'), (0, _h2.default)('pre', 'button.p-2.bold')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.pill.line-height-1', 'Pill shaped'), (0, _h2.default)('pre', 'button.pill.line-height-1')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.not-rounded.sh-2', 'Shadow'), (0, _h2.default)('pre', 'button.not-rounded.sh-1')])])]);
   return (0, _section2.default)('button', content);
 };
 
@@ -551,24 +551,32 @@ var init = function init(_) {
   };
 };
 
+var mapWithIndex = _ramda2.default.addIndex(_ramda2.default.map);
+
 var scroll = function scroll(ID$) {
   return function (v) {
     var main = v.elm.querySelector('.main');
-    var sectionsData = _ramda2.default.map(function (x) {
-      return { top: x.offsetTop, id: x.id };
-    }, main.querySelectorAll('section'));
+    var sections = main.querySelectorAll('section');
+    var lastIndex = _ramda2.default.length(sections) - 1;
+
+    var data = mapWithIndex(function (elm, i) {
+      return {
+        top: elm.offsetTop,
+        bottom: sections[i + 1] ? sections[i + 1].offsetTop : main.scrollHeight,
+        id: elm.id };
+    }, sections);
+
+    var inRange = function inRange(scrollTop, ID$) {
+      return function (x) {
+        if (scrollTop >= x.top && scrollTop <= x.bottom && ID$ != x.id) ID$(x.id);
+      };
+    };
 
     main.addEventListener('scroll', function (_) {
-      _ramda2.default.map(function (a) {
-        var scrollTop = main.scrollTop;
-        var distance = scrollTop - a.top;
-        if (distance < 20 && distance > -20 && ID$ != a.id) {
-          window.location.hash = a.id;
-        }
-      }, sectionsData);
+      var scrollTop = main.scrollTop;
+      _ramda2.default.map(inRange(scrollTop, ID$), data);
     });
 
-    // to handle anchor scrolling on page load
     if (ID$()) {
       window.location.hash = '';
       window.location.hash = ID$();
@@ -577,7 +585,7 @@ var scroll = function scroll(ID$) {
 };
 
 var view = function view(state) {
-  return (0, _h2.default)('div.relative', { hook: { insert: scroll(state.ID$) } }, [(0, _nav2.default)(state), (0, _h2.default)('div.main.px-3', [(0, _about2.default)(), (0, _align2.default)(), (0, _background2.default)(), (0, _branding2.default)(), (0, _blockquote2.default)(), (0, _border2.default)(), (0, _button2.default)(), (0, _color2.default)(), (0, _cursor2.default)(), (0, _form2.default)(), (0, _grid2.default)(), (0, _helpBox2.default)(), (0, _hide2.default)(), (0, _layout2.default)(), (0, _list2.default)(), (0, _margin2.default)(), (0, _misc2.default)(), (0, _opacity2.default)(), (0, _padding2.default)(), (0, _position2.default)(), (0, _progressBar2.default)(), (0, _shadow2.default)(), (0, _table2.default)(), (0, _tabs2.default)(), (0, _typeScale2.default)(), (0, _typography2.default)()])]);
+  return (0, _h2.default)('div.relative', { hook: { insert: scroll(state.ID$) } }, [(0, _nav2.default)(state), (0, _h2.default)('div.main', [(0, _h2.default)('div.max-width-700.px-3', [(0, _about2.default)(), (0, _align2.default)(), (0, _background2.default)(), (0, _blockquote2.default)(), (0, _border2.default)(), (0, _branding2.default)(), (0, _button2.default)(), (0, _color2.default)(), (0, _cursor2.default)(), (0, _form2.default)(), (0, _grid2.default)(), (0, _helpBox2.default)(), (0, _hide2.default)(), (0, _layout2.default)(), (0, _list2.default)(), (0, _margin2.default)(), (0, _misc2.default)(), (0, _opacity2.default)(), (0, _padding2.default)(), (0, _position2.default)(), (0, _progressBar2.default)(), (0, _shadow2.default)(), (0, _table2.default)(), (0, _tabs2.default)(), (0, _typeScale2.default)(), (0, _typography2.default)()])])]);
 };
 
 var container = document.querySelector('#container');
@@ -711,7 +719,7 @@ var _hyphenate2 = _interopRequireDefault(_hyphenate);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var links = ['about', 'align', 'background', 'blockquote', 'border', 'button', 'branding', 'color', 'cursor', 'form', 'grid', 'help box', 'hide', 'layout', 'list', 'margin', 'misc', 'opacity', 'padding', 'position', 'progress bar', 'shadow', 'table', 'tabs', 'type-scale', 'typography'];
+var links = ['about', 'align', 'background', 'blockquote', 'border', 'branding', 'button', 'color', 'cursor', 'form', 'grid', 'help box', 'hide', 'layout', 'list', 'margin', 'misc', 'opacity', 'padding', 'position', 'progress bar', 'shadow', 'table', 'tabs', 'type-scale', 'typography'];
 
 var link = function link(ID$) {
   return function (txt) {

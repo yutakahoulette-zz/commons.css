@@ -21,9 +21,7 @@ button:not(:disabled):hover {
 }
 button:disabled {
   cursor: not-allowed;
-  background:   $grey-5;
-  border-color: $grey-5;
-  color: white;
+  opacity: 0.5;
 }
 
 button:active {

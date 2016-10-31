@@ -22,12 +22,12 @@ module.exports = _ => {
       , ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.' 
       ])
     , h('div.col-6.inline-block.mb-1', [
-        h('button.h3.caps', 'Large caps')
-      , h('pre', 'button.h3.caps')
+        h('button.h4.caps', 'Large caps')
+      , h('pre', 'button.h4.caps')
       ])
     , h('div.col-6.inline-block.mb-1', [
         h('button.p-2.bold', 'Bold and padded')
-      , h('pre', 'button.p-2')
+      , h('pre', 'button.p-2.bold')
       ])
     , h('div.col-6.inline-block.mb-1', [
         h('button.pill.line-height-1', 'Pill shaped')

@@ -5,9 +5,11 @@ module.exports = state =>
       h('h1.mt-0.mb-4', 'commons.css')
     , h('p', [
         h('strong', 'commons.css ')
-      , 'aims to be performant, and easy to use by minimizing the number of class names that you have to keep track of. We encourage the use of combining existing classes in the markup to create new UIs instead of writing additional styles. Check out the '
-      , h('a', {props: {href: '#examples'}}, 'examples')
-      , '.'
-    ])
+      , 'is comprised of '
+      , h('a', {props: {href: 'https://necolas.github.io/normalize.css'}}, 'Normalize.css')
+      , ', utility classes heavily inspired by '
+      , h('a', {props: {href: 'http://basscss.com'}}, 'Basscss')
+      , ', and styles for a handful of core UI components.' 
+      ])
   ])
 

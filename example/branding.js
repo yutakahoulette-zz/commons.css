@@ -6,6 +6,7 @@ import section from './section'
 module.exports = _ => {
   const content = h('div', [
     title('Branding')
+  , h('div.helpBox--error.mb-3', 'These branding styles are not included in commons.css. They are added for reference and demonstration purposes.') 
   , code(
 `html { font-family: 'Open Sans' }
 

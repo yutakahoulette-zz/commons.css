@@ -983,9 +983,7 @@ button:not(:disabled):hover {
 
 button:disabled {
   cursor: not-allowed;
-  background:   rgb(153, 153, 153);
-  border-color: rgb(153, 153, 153);
-  color: white;
+  opacity: 0.5;
 }
 
 button:active {

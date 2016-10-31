@@ -65,41 +65,45 @@ const scroll = ID$ => v => {
     R.map(inRange(scrollTop, ID$), data)
   })
 
-  window.location.hash = '' 
-  window.location.hash = ID$()
+  if(ID$()) {
+    window.location.hash = '' 
+    window.location.hash = ID$()
+  }
 }
 
 
 const view = state => 
   h('div.relative', {hook: {insert: scroll(state.ID$)}}, [
     nav(state)
-  , h('div.main.px-3', [
-      about()
-    , align()
-    , background()
-    , blockquote()
-    , border()
-    , branding()
-    , button()
-    , color()
-    , cursor()
-    , form()
-    , grid()
-    , helpBox()
-    , hide()
-    , layout()
-    , list()
-    , margin()
-    , misc()
-    , opacity()
-    , padding()
-    , position()
-    , progressBar()
-    , shadow()
-    , table()
-    , tabs()
-    , typeScale()
-    , typography()
+  , h('div.main', [
+      h('div.max-width-700.px-3', [
+        about()
+      , align()
+      , background()
+      , blockquote()
+      , border()
+      , branding()
+      , button()
+      , color()
+      , cursor()
+      , form()
+      , grid()
+      , helpBox()
+      , hide()
+      , layout()
+      , list()
+      , margin()
+      , misc()
+      , opacity()
+      , padding()
+      , position()
+      , progressBar()
+      , shadow()
+      , table()
+      , tabs()
+      , typeScale()
+      , typography()
+      ])
     ])
   ])
 
