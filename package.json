@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/CommitChange/styles#readme",
   "devDependencies": {
+    "@commitchange/color-variables": "0.0.1",
     "@commitchange/grey-scale-variables": "0.0.1",
     "autoprefixer": "^6.5.0",
     "babel-preset-es2015": "^6.16.0",

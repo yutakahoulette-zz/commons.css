@@ -1,10 +1,6 @@
 @import 'normalize.css';
 @import '@commitchange/grey-scale-variables';
 
-/* the other files use color variables so it's important */ 
-/* that this file gets listed first */
-@import './color-variables.css';
-
 @import './reset.css';
 
 /* base: */

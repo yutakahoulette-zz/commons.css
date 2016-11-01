@@ -1,4 +1,5 @@
 @import '../src';
+@import '@commitchange/color-variables';
 @import 'code.css';
 @import 'branding.css';
 
