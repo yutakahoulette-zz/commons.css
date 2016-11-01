@@ -427,10 +427,6 @@ template {
   display: none;
 }
 
-/* the other files use color variables so it's important */
-
-/* that this file gets listed first */
-
 * {
   box-sizing: border-box;
 }
