@@ -427,10 +427,6 @@ template {
   display: none;
 }
 
-/* the other files use color variables so it's important */
-
-/* that this file gets listed first */
-
 * {
   box-sizing: border-box;
 }
@@ -1212,10 +1208,6 @@ th {
 
 tr:not(:first-of-type) {
   border-top: 1px solid rgb(219, 219, 219);
-}
-
-tr:nth-of-type(2) {
-  border-top: 1px solid rgb(128, 128, 128);
 }
 
 ul.tabs--h, ul.tabs--v {
