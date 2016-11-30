@@ -683,7 +683,11 @@ a {
 
 .max-width-full { max-width: 100% }
 
+.width-50 { width: 50px }
+
 .width-100  { width: 100px }
+
+.width-150 { width: 150px }
 
 .width-200  { width: 200px }
 
@@ -952,7 +956,7 @@ blockquote {
   margin-left: 0;
 }
 
-button {
+.btn, button {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -973,18 +977,33 @@ button {
   background: none;
 }
 
-button:not(:disabled):hover {
+.btn, button:hover {
   box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
 }
 
-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
+.buttons { display: inline-block; }
+
+.buttons:before
+.buttons:after {
+  content: '';
+  display: table;
 }
 
-button:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+.buttons:after { clear: both; }
+
+.buttons [class*=btn], .buttons button {
+  border-right-width: 0;
+  float: left;
+  border-radius: 0;
+}
+
+.buttons [class*=btn]:last-of-type, .buttons button:last-of-type {
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px;
+}
+
+.buttons [class*=btn]:first-of-type, .buttons button:first-of-type {
+  border-radius: 3px 0 0 3px;
 }
 
 .color-black {
@@ -1004,6 +1023,11 @@ button:active {
 .cursor-not-allowed { cursor: not-allowed }
 
 .cursor-initial { cursor: initial }
+
+.disabled, *:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
 
 textarea:focus, select:focus, input:focus {
   outline: none;
@@ -1030,10 +1054,20 @@ fieldset {
 
 label {
   font-weight: bold;
+  margin-bottom: .25rem;
+  display: block;
+  font-size: .9rem;
+  color: rgba(0,0,0,.7);
 }
 
 select {
   cursor: pointer;
+  -moz-appearance: none;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
 
 .prepend, .append {
@@ -1159,15 +1193,21 @@ li {
   padding-left:0;
 }
 
-.no-transform {
-  -webkit-transform: none !important;
-          transform: none !important;
-}
+.no-transform { -webkit-transform: none !important; transform: none !important }
+
+.no-select { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
 
 .container {
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.vertically-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .progressBar {
@@ -1212,6 +1252,7 @@ tr:not(:first-of-type) {
 
 ul.tabs--h, ul.tabs--v {
   padding: 0;
+  cursor: default;
 }
 
 ul.tabs--v li a, ul.tabs--h li a {
@@ -1313,6 +1354,8 @@ small, .small { font-size: .75rem; }
 
 .line-height-6 { line-height: 2 }
 
+/* add to commons.css: */
+
 .hljs-tag {
   color: rgba(0,0,0,0.4);
 }
@@ -1331,7 +1374,7 @@ small, .small { font-size: .75rem; }
 
 /* brand font */
 
-html { font-family: 'Open Sans' }
+html { font-family: 'open sans' }
 
 /* brand color for anchor */
 
@@ -1339,15 +1382,24 @@ a { color: #39aad6 }
 
 /* brand colors for button */
 
-button {
+.btn, button {
   border-color: #39aad6;
   color:        #39aad6;
+}
+
+.btn:active, button:active {
+  background: rgb(250, 250, 250);
 }
 
 .btn--main {
   background:  #5fb88d;
   border-color: #5fb88d;
   color: white;
+}
+
+.btn--main:active {
+  background: rgb(70, 160, 116);
+  border-color: rgb(70, 160, 116);
 }
 
 /* brand colors for form elements */
@@ -1418,6 +1470,5 @@ input[type='radio'] + label:before { content: '\2022' }
 body {
   overflow: hidden;
 }
-
 
 
