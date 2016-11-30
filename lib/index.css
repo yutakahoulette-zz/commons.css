@@ -683,7 +683,11 @@ a {
 
 .max-width-full { max-width: 100% }
 
+.width-50 { width: 50px }
+
 .width-100  { width: 100px }
+
+.width-150 { width: 150px }
 
 .width-200  { width: 200px }
 
@@ -952,7 +956,7 @@ blockquote {
   margin-left: 0;
 }
 
-button {
+.btn, button {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -973,18 +977,33 @@ button {
   background: none;
 }
 
-button:not(:disabled):hover {
+.btn, button:hover {
   box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
 }
 
-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
+.buttons { display: inline-block; }
+
+.buttons:before
+.buttons:after {
+  content: '';
+  display: table;
 }
 
-button:active {
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+.buttons:after { clear: both; }
+
+.buttons [class*=btn], .buttons button {
+  border-right-width: 0;
+  float: left;
+  border-radius: 0;
+}
+
+.buttons [class*=btn]:last-of-type, .buttons button:last-of-type {
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px;
+}
+
+.buttons [class*=btn]:first-of-type, .buttons button:first-of-type {
+  border-radius: 3px 0 0 3px;
 }
 
 .color-black {
@@ -1005,6 +1024,11 @@ button:active {
 
 .cursor-initial { cursor: initial }
 
+.disabled, *:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 textarea:focus, select:focus, input:focus {
   outline: none;
 }
@@ -1019,7 +1043,6 @@ textarea, input, select {
   margin: 0;
   width: 100%;
   background-color: white;
-  -webkit-transition: border-color .2s ease-out;
   transition: border-color .2s ease-out;
   -webkit-appearance: none;
 }
@@ -1030,10 +1053,20 @@ fieldset {
 
 label {
   font-weight: bold;
+  margin-bottom: .25rem;
+  display: block;
+  font-size: .9rem;
+  color: rgba(0,0,0,.7);
 }
 
 select {
   cursor: pointer;
+  -moz-appearance: none;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
 
 .prepend, .append {
@@ -1094,7 +1127,6 @@ input[type='checkbox'] + label:before, input[type='radio'] + label:before {
   line-height: .75em;
   width: .75em;
   border: 1px rgb(128, 128, 128) solid;
-  -webkit-transition: background .1s ease-out;
   transition: background .1s ease-out;
 }
 
@@ -1122,7 +1154,6 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
   padding: .5em;
   display: table-cell;
   margin: 0;
-  -webkit-transition: background .1s ease-out, color .1s ease-out;
   transition: background .1s ease-out, color .1s ease-out;
 }
 
@@ -1159,15 +1190,20 @@ li {
   padding-left:0;
 }
 
-.no-transform {
-  -webkit-transform: none !important;
-          transform: none !important;
-}
+.no-transform { transform: none !important }
+
+.no-select { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
 
 .container {
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.vertically-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .progressBar {
@@ -1212,6 +1248,7 @@ tr:not(:first-of-type) {
 
 ul.tabs--h, ul.tabs--v {
   padding: 0;
+  cursor: default;
 }
 
 ul.tabs--v li a, ul.tabs--h li a {
@@ -1312,6 +1349,11 @@ small, .small { font-size: .75rem; }
 .line-height-5 { line-height: 1.8 }
 
 .line-height-6 { line-height: 2 }
+
+/* add to commons.css: */
+
+
+
 
 
 

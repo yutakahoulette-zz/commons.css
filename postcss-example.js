@@ -5,7 +5,7 @@ module.exports = {
   , 'postcss-color-function'
   , 'autoprefixer']
 , 'local-plugins' : true
-, 'autoprefixers' : {browsers: 'last 2'}
+, 'autoprefixer' : {browsers: 'last 2 versions'}
 , input: 'example/index.css'
 , output: 'example/build.css'
 }

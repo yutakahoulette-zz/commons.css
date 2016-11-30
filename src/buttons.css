@@ -1,0 +1,52 @@
+.btn,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  height: auto;
+  margin: 0;
+  padding: 0.5em;
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  user-select: none;
+  background: none;
+}
+
+.btn,
+button:hover {
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
+}
+
+.buttons { display: inline-block; }
+
+.buttons:before
+.buttons:after {
+  content: '';
+  display: table;
+}
+
+.buttons:after { clear: both; }
+
+.buttons [class*=btn],
+.buttons button {
+  border-right-width: 0;
+  float: left;
+  border-radius: 0;
+}
+
+.buttons [class*=btn]:last-of-type,
+.buttons button:last-of-type {
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px;
+}
+
+.buttons [class*=btn]:first-of-type,
+.buttons button:first-of-type {
+  border-radius: 3px 0 0 3px;
+}
+

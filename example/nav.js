@@ -13,6 +13,7 @@ const links = [
 , 'button'
 , 'color'
 , 'cursor'
+, 'disabled'
 , 'form'
 , 'grid'
 , 'help box'

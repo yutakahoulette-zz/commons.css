@@ -11,7 +11,7 @@ module.exports = function (state) {
     return (0, _h2.default)('section.pt-3.pb-4.border-bottom', { props: { id: 'about' } }, [(0, _h2.default)('h1.mt-0.mb-4', 'commons.css'), (0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'is comprised of ', (0, _h2.default)('a', { props: { href: 'https://necolas.github.io/normalize.css' } }, 'Normalize.css'), ', utility classes heavily inspired by ', (0, _h2.default)('a', { props: { href: 'http://basscss.com' } }, 'Basscss'), ', and styles for a handful of core UI components.'])]);
 };
 
-},{"snabbdom/h":226}],2:[function(require,module,exports){
+},{"snabbdom/h":227}],2:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -47,7 +47,7 @@ module.exports = function (_) {
   return (0, _section2.default)('align', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"ramda":225,"snabbdom/h":226}],3:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"ramda":226,"snabbdom/h":227}],3:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -73,7 +73,7 @@ module.exports = function (_) {
   return (0, _section2.default)('background', content);
 };
 
-},{"./grey-warn":14,"./section":29,"./title":33,"snabbdom/h":226}],4:[function(require,module,exports){
+},{"./grey-warn":15,"./section":30,"./title":34,"snabbdom/h":227}],4:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -91,11 +91,11 @@ var _section2 = _interopRequireDefault(_section);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Blockquote'), (0, _h2.default)('blockquote', 'Mic check, mic check... one, two, three')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('blockquote'), (0, _h2.default)('blockquote', 'mic check, mic check... one, two, three')]);
   return (0, _section2.default)('blockquote', content);
 };
 
-},{"./section":29,"./title":33,"snabbdom/h":226}],5:[function(require,module,exports){
+},{"./section":30,"./title":34,"snabbdom/h":227}],5:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -121,7 +121,7 @@ module.exports = function (_) {
   return (0, _section2.default)('border', content);
 };
 
-},{"./section":29,"./title":33,"snabbdom/h":226}],6:[function(require,module,exports){
+},{"./section":30,"./title":34,"snabbdom/h":227}],6:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -134,7 +134,7 @@ module.exports = function (_) {
     return (0, _h2.default)('div.helpBox--warn.mb-3', ['Some of these elements have ', (0, _h2.default)('a', { props: { href: '#branding' } }, 'branding styles '), 'added for demonstration purposes.']);
 };
 
-},{"snabbdom/h":226}],7:[function(require,module,exports){
+},{"snabbdom/h":227}],7:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -156,11 +156,11 @@ var _section2 = _interopRequireDefault(_section);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Branding'), (0, _h2.default)('div.helpBox--error.mb-3', 'These branding styles are not included in commons.css. They are added just to this page for reference and demonstration purposes.'), (0, _code2.default)('html { font-family: \'Open Sans\' }\n\na { color: $blue }\n\nbutton {\n  border-color: $blue;\n  color:        $blue;\n}\n.btn--main {\n  background:  $green;\n  border-color: $green;\n  color: white;\n}\n\ntextarea:focus,\nselect:focus,\ninput:focus { \n  border-color: $green;\n}\ninput[type=\'checkbox\'] + label:hover:before,\ninput[type=\'radio\'] + label:hover:before { \n  background: $green-light;\n}\ninput[type=\'checkbox\']:checked + label:before,\ninput[type=\'radio\']:checked + label:before { \n  background: $green;\n} \ninput[type=\'checkbox\'] + label:before { \n  content: \'\\2713\';\n}\ninput[type=\'radio\'] + label:before { \n  content: \'\\2022\'; \n}\n.toggle input[type=\'radio\'] + label:hover { \n  background: $green-light; \n}\n.toggle input[type=\'radio\']:checked + label { \n  background: $green;\n}\n\n.helpBox--success {\n  background: $green-light;\n  border-color: $green;\n}\n.helpBox--warn {\n  background: $yellow-light;\n  border-color: $yellow;\n}\n.helpBox--error {\n  background: $red-light;\n  border-color: $red;\n}\n\n.progressBar > span { background: $green }\n\n.tabs--h li.is-selected { border-bottom-color: $green }\n.tabs--v li.is-selected { border-left-color: $green }', 'css')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Branding'), (0, _h2.default)('div.helpBox--error.mb-3', 'These branding styles are not included in commons.css. They are added just to this page for reference and demonstration purposes.'), (0, _code2.default)('html { font-family: \'Open Sans\' }\n\na { color: $blue }\n\n.btn,\nbutton {\n  border-color: $blue;\n  color:        $blue;\n}\n.btn:active,\nbutton:active {\n  background: $grey-1;\n}\n.btn--main {\n  background:  $green;\n  border-color: $green;\n  color: white;\n}\n.btn--main:active {\n  background: $green-dark;\n  border-color: $green-dark;\n}\n\ntextarea:focus,\nselect:focus,\ninput:focus { \n  border-color: $green;\n}\ninput[type=\'checkbox\'] + label:hover:before,\ninput[type=\'radio\'] + label:hover:before { \n  background: $green-light;\n}\ninput[type=\'checkbox\']:checked + label:before,\ninput[type=\'radio\']:checked + label:before { \n  background: $green;\n} \ninput[type=\'checkbox\'] + label:before { \n  content: \'\\2713\';\n}\ninput[type=\'radio\'] + label:before { \n  content: \'\\2022\'; \n}\n.toggle input[type=\'radio\'] + label:hover { \n  background: $green-light; \n}\n.toggle input[type=\'radio\']:checked + label { \n  background: $green;\n}\n\n.helpBox--success {\n  background: $green-light;\n  border-color: $green;\n}\n.helpBox--warn {\n  background: $yellow-light;\n  border-color: $yellow;\n}\n.helpBox--error {\n  background: $red-light;\n  border-color: $red;\n}\n\n.progressBar > span { background: $green }\n\n.tabs--h li.is-selected { border-bottom-color: $green }\n.tabs--v li.is-selected { border-left-color: $green }', 'css')]);
   return (0, _section2.default)('branding', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],8:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],8:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -179,14 +179,18 @@ var _brandWarn = require('./brand-warn');
 
 var _brandWarn2 = _interopRequireDefault(_brandWarn);
 
+var _code = require('./code');
+
+var _code2 = _interopRequireDefault(_code);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Button'), (0, _brandWarn2.default)(), (0, _h2.default)('div', [(0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')]), (0, _h2.default)('p.mb-3', ['Instead of creating additional BEM style classes for buttons, such as ', (0, _h2.default)('pre.inline.bg-grey-2', '.btn--large'), ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.']), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.h4.caps', 'Large caps'), (0, _h2.default)('pre', 'button.h4.caps')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.p-2.bold', 'Bold and padded'), (0, _h2.default)('pre', 'button.p-2.bold')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.pill.line-height-1', 'Pill shaped'), (0, _h2.default)('pre', 'button.pill.line-height-1')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.not-rounded.sh-2', 'Shadow'), (0, _h2.default)('pre', 'button.not-rounded.sh-1')])])]);
-  return (0, _section2.default)('button', content);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Buttons'), (0, _brandWarn2.default)(), (0, _h2.default)('p.mb-3', 'If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the .btn class'), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('pre', 'default')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('pre', 'disabled')]), (0, _h2.default)('p.mb-3', ['Instead of creating additional BEM style classes for buttons, such as ', (0, _h2.default)('pre.inline.bg-grey-2', '.btn--large'), ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.']), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.h4.caps', 'Large caps'), (0, _h2.default)('pre', 'button.h4.caps')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.p-2.bold', 'Bold and padded'), (0, _h2.default)('pre', 'button.p-2.bold')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.pill.line-height-1', 'Pill shaped'), (0, _h2.default)('pre', 'button.pill.line-height-1')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.not-rounded.sh-2', 'Shadow'), (0, _h2.default)('pre', 'button.not-rounded.sh-1')]), (0, _h2.default)('p.my-3', 'To create a connected group of buttons, wrap your buttons or .btn classes in an element with the .buttons class'), (0, _h2.default)('div.buttons', [(0, _h2.default)('button', 'Guitar'), (0, _h2.default)('button', 'Bass'), (0, _h2.default)('button', 'Gong'), (0, _h2.default)('button', 'Tuba')]), (0, _code2.default)('<div class=\'buttons\'>\n  <button>Guitar</button>\n  <button>Bass</button>\n  <button>Gong</button>\n  <button>Tuba</button>\n</div>')]);
+  return (0, _section2.default)('buttons', content);
 };
 
-},{"./brand-warn":6,"./section":29,"./title":33,"snabbdom/h":226}],9:[function(require,module,exports){
+},{"./brand-warn":6,"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],9:[function(require,module,exports){
 "use strict";
 
 module.exports = function (txt) {
@@ -215,7 +219,7 @@ module.exports = function (code) {
   return (0, _h2.default)('pre.bg-grey-1.p-2.mb-3', [(0, _h2.default)('code.' + type, { hook: { insert: highlight } }, code)]);
 };
 
-},{"highlight.js":54,"snabbdom/h":226}],11:[function(require,module,exports){
+},{"highlight.js":55,"snabbdom/h":227}],11:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -241,7 +245,7 @@ module.exports = function (_) {
   return (0, _section2.default)('color', content);
 };
 
-},{"./grey-warn":14,"./section":29,"./title":33,"snabbdom/h":226}],12:[function(require,module,exports){
+},{"./grey-warn":15,"./section":30,"./title":34,"snabbdom/h":227}],12:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -267,7 +271,33 @@ module.exports = function (_) {
   return (0, _section2.default)('cursor', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],13:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],13:[function(require,module,exports){
+'use strict';
+
+var _h = require('snabbdom/h');
+
+var _h2 = _interopRequireDefault(_h);
+
+var _title = require('./title');
+
+var _title2 = _interopRequireDefault(_title);
+
+var _code = require('./code');
+
+var _code2 = _interopRequireDefault(_code);
+
+var _section = require('./section');
+
+var _section2 = _interopRequireDefault(_section);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = function (_) {
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Disabled'), (0, _code2.default)('.disabled, \n*:disabled {\n  pointer-events: none;\n  opacity: 0.5;\n}', 'css')]);
+  return (0, _section2.default)('disabled', content);
+};
+
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],14:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -297,11 +327,11 @@ var label = function label(text) {
 };
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Form'), (0, _brandWarn2.default)(), (0, _h2.default)('div', [(0, _h2.default)('strong.block.mb-1', 'Text input'), (0, _h2.default)('input.max-width-300.mb-1', { props: { type: 'text' } }), label('Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input.width-100', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), label('Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), label('Textarea'), (0, _h2.default)('textarea.max-width-300.mb-1', { props: { type: 'text' } }), label('Radio'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, 'Heads'), (0, _h2.default)('br'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, 'Tails'), (0, _code2.default)('<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<br>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), label('Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), label('Checkboxes'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, 'Pizza'), (0, _h2.default)('br'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, 'Tacos'), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<br>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), label('Input + button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.no-transform.table-cell', 'Search')]), (0, _code2.default)('<span class=\'table\'>\n  <span class=\'table-cell\'><input type=\'search\'></span>\n  <button class=\'btn--main rounded-right table-cell\'>Search</button>\n</span>'), (0, _h2.default)('p', 'To modify form elements, add padding or type-scale utility classes, and elements will scale consistently:'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell', [(0, _h2.default)('input.py-3', { props: { type: 'search' } })]), (0, _h2.default)('button.py-3.btn--main.rounded-right.no-transform.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', [(0, _h2.default)('pre.bg-grey-2.inline', '.py-3'), ' class added to input and button']), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell', [(0, _h2.default)('input.h3', { props: { type: 'search' } })]), (0, _h2.default)('button.h3.btn--main.rounded-right.no-transform.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', [(0, _h2.default)('pre.bg-grey-2.inline', '.h3'), ' class added to input and button'])])]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Form'), (0, _brandWarn2.default)(), (0, _h2.default)('div', [(0, _h2.default)('strong.block.mb-1', 'Text input'), (0, _h2.default)('input.max-width-300.mb-1', { props: { type: 'text' } }), label('Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input.width-100', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), label('Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', '▾'), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), label('Textarea'), (0, _h2.default)('textarea.max-width-300.mb-1', { props: { type: 'text' } }), label('Radio'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, 'Heads'), (0, _h2.default)('br'), (0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, 'Tails'), (0, _code2.default)('<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<br>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), label('Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), label('Checkboxes'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, 'Pizza'), (0, _h2.default)('br'), (0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, 'Tacos'), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<br>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), label('Input + button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.table-cell', 'Search')]), (0, _code2.default)('<span class=\'table\'>\n  <span class=\'table-cell\'><input type=\'search\'></span>\n  <button class=\'btn--main rounded-right table-cell\'>Search</button>\n</span>'), (0, _h2.default)('p', 'To modify form elements, add padding or type-scale utility classes, and elements will scale consistently:'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input.py-3', { props: { type: 'search' } })]), (0, _h2.default)('button.py-3.btn--main.rounded-right.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', [(0, _h2.default)('pre.bg-grey-2.inline', '.py-3'), ' class added to input and button']), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input.h3', { props: { type: 'search' } })]), (0, _h2.default)('button.h3.btn--main.rounded-right.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', [(0, _h2.default)('pre.bg-grey-2.inline', '.h3'), ' class added to input and button'])])]);
   return (0, _section2.default)('form', content);
 };
 
-},{"./brand-warn":6,"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],14:[function(require,module,exports){
+},{"./brand-warn":6,"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],15:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -314,7 +344,7 @@ module.exports = function (_) {
   return (0, _h2.default)('div.helpBox--warn.mb-3', 'To keep this library neutral, only grey-scale color styles are provided.');
 }, (0, _h2.default)('pre.bg-grey-5.color-white.inline-block.m-0', '.color-white');
 
-},{"snabbdom/h":226}],15:[function(require,module,exports){
+},{"snabbdom/h":227}],16:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -340,7 +370,7 @@ module.exports = function (_) {
   return (0, _section2.default)('grid', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],16:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],17:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -366,7 +396,7 @@ module.exports = function (_) {
   return (0, _section2.default)('help-box', content);
 };
 
-},{"./brand-warn":6,"./section":29,"./title":33,"snabbdom/h":226}],17:[function(require,module,exports){
+},{"./brand-warn":6,"./section":30,"./title":34,"snabbdom/h":227}],18:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -392,14 +422,14 @@ module.exports = function (_) {
   return (0, _section2.default)('hide', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],18:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],19:[function(require,module,exports){
 'use strict';
 
 module.exports = function (txt) {
   return txt.replace(/ /g, '-');
 };
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 'use strict';
 
 var _ramda = require('ramda');
@@ -465,6 +495,10 @@ var _color2 = _interopRequireDefault(_color);
 var _cursor = require('./cursor');
 
 var _cursor2 = _interopRequireDefault(_cursor);
+
+var _disabled = require('./disabled');
+
+var _disabled2 = _interopRequireDefault(_disabled);
 
 var _form = require('./form');
 
@@ -536,12 +570,12 @@ var _typography2 = _interopRequireDefault(_typography);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// npm
 window.log = function (text, $) {
   return _flyd2.default.map(function (x) {
     return console.log(text, x);
   }, $);
-}; // npm
-
+};
 
 var init = function init(_) {
   return {
@@ -585,7 +619,7 @@ var scroll = function scroll(ID$) {
 };
 
 var view = function view(state) {
-  return (0, _h2.default)('div.relative', { hook: { insert: scroll(state.ID$) } }, [(0, _nav2.default)(state), (0, _h2.default)('div.main', [(0, _h2.default)('div.max-width-700.px-3', [(0, _about2.default)(), (0, _align2.default)(), (0, _background2.default)(), (0, _blockquote2.default)(), (0, _border2.default)(), (0, _branding2.default)(), (0, _button2.default)(), (0, _color2.default)(), (0, _cursor2.default)(), (0, _form2.default)(), (0, _grid2.default)(), (0, _helpBox2.default)(), (0, _hide2.default)(), (0, _layout2.default)(), (0, _list2.default)(), (0, _margin2.default)(), (0, _misc2.default)(), (0, _opacity2.default)(), (0, _padding2.default)(), (0, _position2.default)(), (0, _progressBar2.default)(), (0, _shadow2.default)(), (0, _table2.default)(), (0, _tabs2.default)(), (0, _typeScale2.default)(), (0, _typography2.default)()])])]);
+  return (0, _h2.default)('div.relative', { hook: { insert: scroll(state.ID$) } }, [(0, _nav2.default)(state), (0, _h2.default)('div.main', [(0, _h2.default)('div.max-width-700.px-3', [(0, _about2.default)(), (0, _align2.default)(), (0, _background2.default)(), (0, _blockquote2.default)(), (0, _border2.default)(), (0, _branding2.default)(), (0, _button2.default)(), (0, _color2.default)(), (0, _cursor2.default)(), (0, _disabled2.default)(), (0, _form2.default)(), (0, _grid2.default)(), (0, _helpBox2.default)(), (0, _hide2.default)(), (0, _layout2.default)(), (0, _list2.default)(), (0, _margin2.default)(), (0, _misc2.default)(), (0, _opacity2.default)(), (0, _padding2.default)(), (0, _position2.default)(), (0, _progressBar2.default)(), (0, _shadow2.default)(), (0, _table2.default)(), (0, _tabs2.default)(), (0, _typeScale2.default)(), (0, _typography2.default)()])])]);
 };
 
 var container = document.querySelector('#container');
@@ -594,7 +628,7 @@ var patch = _snabbdom2.default.init([require('snabbdom/modules/class'), require(
 
 (0, _flimflamRender2.default)({ patch: patch, container: container, view: view, state: init() });
 
-},{"./about":1,"./align":2,"./background":3,"./blockquote":4,"./border":5,"./branding":7,"./button":8,"./color":11,"./cursor":12,"./form":13,"./grid":15,"./help-box":16,"./hide":17,"./layout":20,"./list":21,"./margin":22,"./misc":23,"./nav":24,"./opacity":25,"./padding":26,"./position":27,"./progress-bar":28,"./shadow":30,"./table":31,"./tabs":32,"./type-scale":34,"./typography":35,"flimflam-render":36,"flyd":46,"flyd-url":45,"ramda":225,"snabbdom":234,"snabbdom/h":226,"snabbdom/modules/attributes":229,"snabbdom/modules/class":230,"snabbdom/modules/eventlisteners":231,"snabbdom/modules/props":232,"snabbdom/modules/style":233}],20:[function(require,module,exports){
+},{"./about":1,"./align":2,"./background":3,"./blockquote":4,"./border":5,"./branding":7,"./button":8,"./color":11,"./cursor":12,"./disabled":13,"./form":14,"./grid":16,"./help-box":17,"./hide":18,"./layout":21,"./list":22,"./margin":23,"./misc":24,"./nav":25,"./opacity":26,"./padding":27,"./position":28,"./progress-bar":29,"./shadow":31,"./table":32,"./tabs":33,"./type-scale":35,"./typography":36,"flimflam-render":37,"flyd":47,"flyd-url":46,"ramda":226,"snabbdom":235,"snabbdom/h":227,"snabbdom/modules/attributes":230,"snabbdom/modules/class":231,"snabbdom/modules/eventlisteners":232,"snabbdom/modules/props":233,"snabbdom/modules/style":234}],21:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -616,11 +650,11 @@ var _section2 = _interopRequireDefault(_section);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Layout'), (0, _code2.default)('.inline       { display:inline }\n.block        { display:block }\n.inline-block { display:inline-block }\n.table        { display:table }\n.table-cell   { display:table-cell }\n\n.overflow-hidden { overflow:hidden }\n.overflow-scroll { overflow:scroll }\n.overflow-auto   { overflow:auto }\n\n.clearfix:after { clear:both }\n.clearfix:before,\n.clearfix:after {\n  content:" ";\n  display:table\n}\n\n.left  { float:left }\n.right { float:right }\n\n.max-width-100  { max-width: 100px }\n.max-width-200  { max-width: 200px }\n.max-width-300  { max-width: 300px }\n.max-width-400  { max-width: 400px }\n.max-width-500  { max-width: 500px }\n.max-width-600  { max-width: 600px }\n.max-width-700  { max-width: 700px }\n.max-width-full { max-width: 100% }\n\n.width-100  { width: 100px }\n.width-200  { width: 200px }\n.width-300  { width: 300px }\n.width-full { width: 100% }\n\n.height-full { height: 100% }', 'css')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Layout'), (0, _code2.default)('.inline       { display:inline }\n.block        { display:block }\n.inline-block { display:inline-block }\n.table        { display:table }\n.table-cell   { display:table-cell }\n\n.overflow-hidden { overflow:hidden }\n.overflow-scroll { overflow:scroll }\n.overflow-auto   { overflow:auto }\n\n.clearfix:after { clear:both }\n.clearfix:before,\n.clearfix:after {\n  content:" ";\n  display:table\n}\n\n.left  { float:left }\n.right { float:right }\n\n.max-width-100  { max-width: 100px }\n.max-width-200  { max-width: 200px }\n.max-width-300  { max-width: 300px }\n.max-width-400  { max-width: 400px }\n.max-width-500  { max-width: 500px }\n.max-width-600  { max-width: 600px }\n.max-width-700  { max-width: 700px }\n.max-width-full { max-width: 100% }\n\n.width-50 { width: 50px }\n.width-100  { width: 100px }\n.width-150 { width: 150px }\n.width-200  { width: 200px }\n.width-300  { width: 300px }\n.width-full { width: 100% }\n\n.height-full { height: 100% }', 'css')]);
   return (0, _section2.default)('layout', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],21:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],22:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -646,7 +680,7 @@ module.exports = function (_) {
   return (0, _section2.default)('list', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],22:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],23:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -672,7 +706,7 @@ module.exports = function (_) {
   return (0, _section2.default)('margin', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],23:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],24:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -694,11 +728,11 @@ var _section2 = _interopRequireDefault(_section);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Misc'), (0, _code2.default)('.no-transform {\n  transform: none !important;\n}\n\n.container {\n  max-width: 980px;\n  margin-left: auto;\n  margin-right: auto;\n}', 'css')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Misc'), (0, _code2.default)('.no-transform { transform: none !important }\n\n.no-select { user-select: none }\n\n.container {\n  max-width: 980px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.vertically-center {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n}', 'css')]);
   return (0, _section2.default)('misc', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],24:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],25:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -719,7 +753,7 @@ var _hyphenate2 = _interopRequireDefault(_hyphenate);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var links = ['about', 'align', 'background', 'blockquote', 'border', 'branding', 'button', 'color', 'cursor', 'form', 'grid', 'help box', 'hide', 'layout', 'list', 'margin', 'misc', 'opacity', 'padding', 'position', 'progress bar', 'shadow', 'table', 'tabs', 'type-scale', 'typography'];
+var links = ['about', 'align', 'background', 'blockquote', 'border', 'branding', 'button', 'color', 'cursor', 'disabled', 'form', 'grid', 'help box', 'hide', 'layout', 'list', 'margin', 'misc', 'opacity', 'padding', 'position', 'progress bar', 'shadow', 'table', 'tabs', 'type-scale', 'typography'];
 
 var link = function link(ID$) {
   return function (txt) {
@@ -731,7 +765,7 @@ module.exports = function (state) {
   return (0, _h2.default)('div.nav.p-2.bg-grey-1', [(0, _h2.default)('ul.tabs--v', _ramda2.default.map(link(state.ID$), links))]);
 };
 
-},{"./capitalize":9,"./hyphenate":18,"ramda":225,"snabbdom/h":226}],25:[function(require,module,exports){
+},{"./capitalize":9,"./hyphenate":19,"ramda":226,"snabbdom/h":227}],26:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -757,7 +791,7 @@ module.exports = function (_) {
   return (0, _section2.default)('opacity', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],26:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],27:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -783,7 +817,7 @@ module.exports = function (_) {
   return (0, _section2.default)('padding', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],27:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],28:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -809,7 +843,7 @@ module.exports = function (_) {
   return (0, _section2.default)('position', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],28:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],29:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -839,7 +873,7 @@ module.exports = function (_) {
   return (0, _section2.default)('progress-bar', content);
 };
 
-},{"./brand-warn":6,"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],29:[function(require,module,exports){
+},{"./brand-warn":6,"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],30:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -852,7 +886,7 @@ module.exports = function (thisID, content) {
   return (0, _h2.default)('section.border-bottom.pb-5.pt-1', { props: { id: thisID } }, [content]);
 };
 
-},{"snabbdom/h":226}],30:[function(require,module,exports){
+},{"snabbdom/h":227}],31:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -874,7 +908,7 @@ module.exports = function (_) {
   return (0, _section2.default)('shadow', content);
 };
 
-},{"./section":29,"./title":33,"snabbdom/h":226}],31:[function(require,module,exports){
+},{"./section":30,"./title":34,"snabbdom/h":227}],32:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -896,7 +930,7 @@ module.exports = function (_) {
   return (0, _section2.default)('table', content);
 };
 
-},{"./section":29,"./title":33,"snabbdom/h":226}],32:[function(require,module,exports){
+},{"./section":30,"./title":34,"snabbdom/h":227}],33:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -926,7 +960,7 @@ module.exports = function (_) {
   return (0, _section2.default)('tabs', content);
 };
 
-},{"./brand-warn":6,"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],33:[function(require,module,exports){
+},{"./brand-warn":6,"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],34:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -939,7 +973,7 @@ module.exports = function (txt) {
   return (0, _h2.default)('h3.mt-0.pt-2', txt);
 };
 
-},{"snabbdom/h":226}],34:[function(require,module,exports){
+},{"snabbdom/h":227}],35:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -961,7 +995,7 @@ module.exports = function (_) {
   return (0, _section2.default)('type-scale', content);
 };
 
-},{"./section":29,"./title":33,"snabbdom/h":226}],35:[function(require,module,exports){
+},{"./section":30,"./title":34,"snabbdom/h":227}],36:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -991,7 +1025,7 @@ module.exports = function (_) {
   return (0, _section2.default)('typography', content);
 };
 
-},{"./code":10,"./section":29,"./title":33,"snabbdom/h":226}],36:[function(require,module,exports){
+},{"./code":10,"./section":30,"./title":34,"snabbdom/h":227}],37:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -1041,7 +1075,7 @@ var isObj = function isObj(x) {
 module.exports = render;
 
 
-},{"flyd":37,"flyd/module/mergeall":38,"ramda":44}],37:[function(require,module,exports){
+},{"flyd":38,"flyd/module/mergeall":39,"ramda":45}],38:[function(require,module,exports){
 var curryN = require('ramda/src/curryN');
 
 'use strict';
@@ -1342,7 +1376,7 @@ module.exports = {
   immediate: immediate,
 };
 
-},{"ramda/src/curryN":39}],38:[function(require,module,exports){
+},{"ramda/src/curryN":40}],39:[function(require,module,exports){
 var flyd = require('../../lib');
 
 module.exports = function mergeAll(streams) {
@@ -1367,7 +1401,7 @@ module.exports = function mergeAll(streams) {
 };
 
 
-},{"../../lib":37}],39:[function(require,module,exports){
+},{"../../lib":38}],40:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -1424,7 +1458,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":40,"./internal/_curry1":41,"./internal/_curry2":42,"./internal/_curryN":43}],40:[function(require,module,exports){
+},{"./internal/_arity":41,"./internal/_curry1":42,"./internal/_curry2":43,"./internal/_curryN":44}],41:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   // jshint unused:vars
   switch (n) {
@@ -1443,7 +1477,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],41:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 /**
  * Optimized internal two-arity curry function.
  *
@@ -1464,7 +1498,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{}],42:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 
 
@@ -1498,7 +1532,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":41}],43:[function(require,module,exports){
+},{"./_curry1":42}],44:[function(require,module,exports){
 var _arity = require('./_arity');
 
 
@@ -1538,7 +1572,7 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":40}],44:[function(require,module,exports){
+},{"./_arity":41}],45:[function(require,module,exports){
 //  Ramda v0.19.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -9986,7 +10020,7 @@ module.exports = function _curryN(length, received, fn) {
 
 }.call(this));
 
-},{}],45:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -10019,7 +10053,7 @@ poll();
 module.exports = stream;
 
 
-},{"flyd":46,"url":236}],46:[function(require,module,exports){
+},{"flyd":47,"url":237}],47:[function(require,module,exports){
 'use strict';
 
 var curryN = require('ramda/src/curryN');
@@ -10647,7 +10681,7 @@ StreamTransformer.prototype['@@transducer/step'] = function(s, v) { return v; };
 
 module.exports = flyd;
 
-},{"ramda/src/curryN":47}],47:[function(require,module,exports){
+},{"ramda/src/curryN":48}],48:[function(require,module,exports){
 var _arity = require('./internal/_arity');
 var _curry1 = require('./internal/_curry1');
 var _curry2 = require('./internal/_curry2');
@@ -10703,7 +10737,7 @@ module.exports = _curry2(function curryN(length, fn) {
   return _arity(length, _curryN(length, [], fn));
 });
 
-},{"./internal/_arity":48,"./internal/_curry1":49,"./internal/_curry2":50,"./internal/_curryN":51}],48:[function(require,module,exports){
+},{"./internal/_arity":49,"./internal/_curry1":50,"./internal/_curry2":51,"./internal/_curryN":52}],49:[function(require,module,exports){
 module.exports = function _arity(n, fn) {
   /* eslint-disable no-unused-vars */
   switch (n) {
@@ -10722,7 +10756,7 @@ module.exports = function _arity(n, fn) {
   }
 };
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 var _isPlaceholder = require('./_isPlaceholder');
 
 
@@ -10744,7 +10778,7 @@ module.exports = function _curry1(fn) {
   };
 };
 
-},{"./_isPlaceholder":52}],50:[function(require,module,exports){
+},{"./_isPlaceholder":53}],51:[function(require,module,exports){
 var _curry1 = require('./_curry1');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -10774,7 +10808,7 @@ module.exports = function _curry2(fn) {
   };
 };
 
-},{"./_curry1":49,"./_isPlaceholder":52}],51:[function(require,module,exports){
+},{"./_curry1":50,"./_isPlaceholder":53}],52:[function(require,module,exports){
 var _arity = require('./_arity');
 var _isPlaceholder = require('./_isPlaceholder');
 
@@ -10816,14 +10850,14 @@ module.exports = function _curryN(length, received, fn) {
   };
 };
 
-},{"./_arity":48,"./_isPlaceholder":52}],52:[function(require,module,exports){
+},{"./_arity":49,"./_isPlaceholder":53}],53:[function(require,module,exports){
 module.exports = function _isPlaceholder(a) {
   return a != null &&
          typeof a === 'object' &&
          a['@@functional/placeholder'] === true;
 };
 
-},{}],53:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 /*
 Syntax highlighting with language autodetection.
 https://highlightjs.org/
@@ -11643,7 +11677,7 @@ https://highlightjs.org/
   return hljs;
 }));
 
-},{}],54:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 var hljs = require('./highlight');
 
 hljs.registerLanguage('1c', require('./languages/1c'));
@@ -11814,7 +11848,7 @@ hljs.registerLanguage('xquery', require('./languages/xquery'));
 hljs.registerLanguage('zephir', require('./languages/zephir'));
 
 module.exports = hljs;
-},{"./highlight":53,"./languages/1c":55,"./languages/abnf":56,"./languages/accesslog":57,"./languages/actionscript":58,"./languages/ada":59,"./languages/apache":60,"./languages/applescript":61,"./languages/arduino":62,"./languages/armasm":63,"./languages/asciidoc":64,"./languages/aspectj":65,"./languages/autohotkey":66,"./languages/autoit":67,"./languages/avrasm":68,"./languages/awk":69,"./languages/axapta":70,"./languages/bash":71,"./languages/basic":72,"./languages/bnf":73,"./languages/brainfuck":74,"./languages/cal":75,"./languages/capnproto":76,"./languages/ceylon":77,"./languages/clojure":79,"./languages/clojure-repl":78,"./languages/cmake":80,"./languages/coffeescript":81,"./languages/coq":82,"./languages/cos":83,"./languages/cpp":84,"./languages/crmsh":85,"./languages/crystal":86,"./languages/cs":87,"./languages/csp":88,"./languages/css":89,"./languages/d":90,"./languages/dart":91,"./languages/delphi":92,"./languages/diff":93,"./languages/django":94,"./languages/dns":95,"./languages/dockerfile":96,"./languages/dos":97,"./languages/dsconfig":98,"./languages/dts":99,"./languages/dust":100,"./languages/ebnf":101,"./languages/elixir":102,"./languages/elm":103,"./languages/erb":104,"./languages/erlang":106,"./languages/erlang-repl":105,"./languages/excel":107,"./languages/fix":108,"./languages/fortran":109,"./languages/fsharp":110,"./languages/gams":111,"./languages/gauss":112,"./languages/gcode":113,"./languages/gherkin":114,"./languages/glsl":115,"./languages/go":116,"./languages/golo":117,"./languages/gradle":118,"./languages/groovy":119,"./languages/haml":120,"./languages/handlebars":121,"./languages/haskell":122,"./languages/haxe":123,"./languages/hsp":124,"./languages/htmlbars":125,"./languages/http":126,"./languages/inform7":127,"./languages/ini":128,"./languages/irpf90":129,"./languages/java":130,"./languages/javascript":131,"./languages/json":132,"./languages/julia":133,"./languages/kotlin":134,"./languages/lasso":135,"./languages/ldif":136,"./languages/less":137,"./languages/lisp":138,"./languages/livecodeserver":139,"./languages/livescript":140,"./languages/lsl":141,"./languages/lua":142,"./languages/makefile":143,"./languages/markdown":144,"./languages/mathematica":145,"./languages/matlab":146,"./languages/maxima":147,"./languages/mel":148,"./languages/mercury":149,"./languages/mipsasm":150,"./languages/mizar":151,"./languages/mojolicious":152,"./languages/monkey":153,"./languages/moonscript":154,"./languages/nginx":155,"./languages/nimrod":156,"./languages/nix":157,"./languages/nsis":158,"./languages/objectivec":159,"./languages/ocaml":160,"./languages/openscad":161,"./languages/oxygene":162,"./languages/parser3":163,"./languages/perl":164,"./languages/pf":165,"./languages/php":166,"./languages/pony":167,"./languages/powershell":168,"./languages/processing":169,"./languages/profile":170,"./languages/prolog":171,"./languages/protobuf":172,"./languages/puppet":173,"./languages/purebasic":174,"./languages/python":175,"./languages/q":176,"./languages/qml":177,"./languages/r":178,"./languages/rib":179,"./languages/roboconf":180,"./languages/rsl":181,"./languages/ruby":182,"./languages/ruleslanguage":183,"./languages/rust":184,"./languages/scala":185,"./languages/scheme":186,"./languages/scilab":187,"./languages/scss":188,"./languages/smali":189,"./languages/smalltalk":190,"./languages/sml":191,"./languages/sqf":192,"./languages/sql":193,"./languages/stan":194,"./languages/stata":195,"./languages/step21":196,"./languages/stylus":197,"./languages/subunit":198,"./languages/swift":199,"./languages/taggerscript":200,"./languages/tap":201,"./languages/tcl":202,"./languages/tex":203,"./languages/thrift":204,"./languages/tp":205,"./languages/twig":206,"./languages/typescript":207,"./languages/vala":208,"./languages/vbnet":209,"./languages/vbscript":211,"./languages/vbscript-html":210,"./languages/verilog":212,"./languages/vhdl":213,"./languages/vim":214,"./languages/x86asm":215,"./languages/xl":216,"./languages/xml":217,"./languages/xquery":218,"./languages/yaml":219,"./languages/zephir":220}],55:[function(require,module,exports){
+},{"./highlight":54,"./languages/1c":56,"./languages/abnf":57,"./languages/accesslog":58,"./languages/actionscript":59,"./languages/ada":60,"./languages/apache":61,"./languages/applescript":62,"./languages/arduino":63,"./languages/armasm":64,"./languages/asciidoc":65,"./languages/aspectj":66,"./languages/autohotkey":67,"./languages/autoit":68,"./languages/avrasm":69,"./languages/awk":70,"./languages/axapta":71,"./languages/bash":72,"./languages/basic":73,"./languages/bnf":74,"./languages/brainfuck":75,"./languages/cal":76,"./languages/capnproto":77,"./languages/ceylon":78,"./languages/clojure":80,"./languages/clojure-repl":79,"./languages/cmake":81,"./languages/coffeescript":82,"./languages/coq":83,"./languages/cos":84,"./languages/cpp":85,"./languages/crmsh":86,"./languages/crystal":87,"./languages/cs":88,"./languages/csp":89,"./languages/css":90,"./languages/d":91,"./languages/dart":92,"./languages/delphi":93,"./languages/diff":94,"./languages/django":95,"./languages/dns":96,"./languages/dockerfile":97,"./languages/dos":98,"./languages/dsconfig":99,"./languages/dts":100,"./languages/dust":101,"./languages/ebnf":102,"./languages/elixir":103,"./languages/elm":104,"./languages/erb":105,"./languages/erlang":107,"./languages/erlang-repl":106,"./languages/excel":108,"./languages/fix":109,"./languages/fortran":110,"./languages/fsharp":111,"./languages/gams":112,"./languages/gauss":113,"./languages/gcode":114,"./languages/gherkin":115,"./languages/glsl":116,"./languages/go":117,"./languages/golo":118,"./languages/gradle":119,"./languages/groovy":120,"./languages/haml":121,"./languages/handlebars":122,"./languages/haskell":123,"./languages/haxe":124,"./languages/hsp":125,"./languages/htmlbars":126,"./languages/http":127,"./languages/inform7":128,"./languages/ini":129,"./languages/irpf90":130,"./languages/java":131,"./languages/javascript":132,"./languages/json":133,"./languages/julia":134,"./languages/kotlin":135,"./languages/lasso":136,"./languages/ldif":137,"./languages/less":138,"./languages/lisp":139,"./languages/livecodeserver":140,"./languages/livescript":141,"./languages/lsl":142,"./languages/lua":143,"./languages/makefile":144,"./languages/markdown":145,"./languages/mathematica":146,"./languages/matlab":147,"./languages/maxima":148,"./languages/mel":149,"./languages/mercury":150,"./languages/mipsasm":151,"./languages/mizar":152,"./languages/mojolicious":153,"./languages/monkey":154,"./languages/moonscript":155,"./languages/nginx":156,"./languages/nimrod":157,"./languages/nix":158,"./languages/nsis":159,"./languages/objectivec":160,"./languages/ocaml":161,"./languages/openscad":162,"./languages/oxygene":163,"./languages/parser3":164,"./languages/perl":165,"./languages/pf":166,"./languages/php":167,"./languages/pony":168,"./languages/powershell":169,"./languages/processing":170,"./languages/profile":171,"./languages/prolog":172,"./languages/protobuf":173,"./languages/puppet":174,"./languages/purebasic":175,"./languages/python":176,"./languages/q":177,"./languages/qml":178,"./languages/r":179,"./languages/rib":180,"./languages/roboconf":181,"./languages/rsl":182,"./languages/ruby":183,"./languages/ruleslanguage":184,"./languages/rust":185,"./languages/scala":186,"./languages/scheme":187,"./languages/scilab":188,"./languages/scss":189,"./languages/smali":190,"./languages/smalltalk":191,"./languages/sml":192,"./languages/sqf":193,"./languages/sql":194,"./languages/stan":195,"./languages/stata":196,"./languages/step21":197,"./languages/stylus":198,"./languages/subunit":199,"./languages/swift":200,"./languages/taggerscript":201,"./languages/tap":202,"./languages/tcl":203,"./languages/tex":204,"./languages/thrift":205,"./languages/tp":206,"./languages/twig":207,"./languages/typescript":208,"./languages/vala":209,"./languages/vbnet":210,"./languages/vbscript":212,"./languages/vbscript-html":211,"./languages/verilog":213,"./languages/vhdl":214,"./languages/vim":215,"./languages/x86asm":216,"./languages/xl":217,"./languages/xml":218,"./languages/xquery":219,"./languages/yaml":220,"./languages/zephir":221}],56:[function(require,module,exports){
 module.exports = function(hljs){
   var IDENT_RE_RU = '[a-zA-Zа-яА-Я][a-zA-Z0-9_а-яА-Я]*';
   var OneS_KEYWORDS = 'возврат дата для если и или иначе иначеесли исключение конецесли ' +
@@ -11893,7 +11927,7 @@ module.exports = function(hljs){
     ]
   };
 };
-},{}],56:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 module.exports = function(hljs) {
     var regexes = {
         ruleDeclaration: "^[a-zA-Z][a-zA-Z0-9-]*",
@@ -11964,7 +11998,7 @@ module.exports = function(hljs) {
       ]
     };
 };
-},{}],57:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -12002,7 +12036,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],58:[function(require,module,exports){
+},{}],59:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z_$][a-zA-Z0-9_$]*';
   var IDENT_FUNC_RETURN_TYPE_RE = '([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)';
@@ -12076,7 +12110,7 @@ module.exports = function(hljs) {
     illegal: /#/
   };
 };
-},{}],59:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
 module.exports = // We try to support full Ada2012
 //
 // We highlight all appearances of types, keywords, literals (string, char, number, bool)
@@ -12249,7 +12283,7 @@ function(hljs) {
         ]
     };
 };
-},{}],60:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 module.exports = function(hljs) {
   var NUMBER = {className: 'number', begin: '[\\$%]\\d+'};
   return {
@@ -12295,7 +12329,7 @@ module.exports = function(hljs) {
     illegal: /\S/
   };
 };
-},{}],61:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 module.exports = function(hljs) {
   var STRING = hljs.inherit(hljs.QUOTE_STRING_MODE, {illegal: ''});
   var PARAMS = {
@@ -12381,7 +12415,7 @@ module.exports = function(hljs) {
     illegal: '//|->|=>|\\[\\['
   };
 };
-},{}],62:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 module.exports = function(hljs) {
   var CPP = hljs.getLanguage('cpp').exports;
 	return {
@@ -12481,7 +12515,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],63:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 module.exports = function(hljs) {
     //local labels: %?[FB]?[AT]?\d{1,2}\w+
   return {
@@ -12573,7 +12607,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],64:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['adoc'],
@@ -12761,7 +12795,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],65:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 module.exports = function (hljs) {
   var KEYWORDS =
     'false synchronized int abstract float private char boolean static null if const ' +
@@ -12905,7 +12939,7 @@ module.exports = function (hljs) {
     ]
   };
 };
-},{}],66:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 module.exports = function(hljs) {
   var BACKTICK_ESCAPE = {
     begin: /`[\s\S]/
@@ -12953,7 +12987,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],67:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 module.exports = function(hljs) {
     var KEYWORDS = 'ByRef Case Const ContinueCase ContinueLoop ' +
         'Default Dim Do Else ElseIf EndFunc EndIf EndSelect ' +
@@ -13089,7 +13123,7 @@ module.exports = function(hljs) {
         ]
     }
 };
-},{}],68:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -13151,7 +13185,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],69:[function(require,module,exports){
+},{}],70:[function(require,module,exports){
 module.exports = function(hljs) {
   var VARIABLE = {
     className: 'variable',
@@ -13204,7 +13238,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],70:[function(require,module,exports){
+},{}],71:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: 'false int abstract private char boolean static null if for true ' +
@@ -13235,7 +13269,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],71:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 module.exports = function(hljs) {
   var VAR = {
     className: 'variable',
@@ -13310,7 +13344,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],72:[function(require,module,exports){
+},{}],73:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -13361,7 +13395,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],73:[function(require,module,exports){
+},{}],74:[function(require,module,exports){
 module.exports = function(hljs){
   return {
     contains: [
@@ -13390,7 +13424,7 @@ module.exports = function(hljs){
     ]
   };
 };
-},{}],74:[function(require,module,exports){
+},{}],75:[function(require,module,exports){
 module.exports = function(hljs){
   var LITERAL = {
     className: 'literal',
@@ -13427,7 +13461,7 @@ module.exports = function(hljs){
     ]
   };
 };
-},{}],75:[function(require,module,exports){
+},{}],76:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS =
     'div mod in and or not xor asserterror begin case do downto else end exit for if of repeat then to ' +
@@ -13507,7 +13541,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],76:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['capnp'],
@@ -13556,7 +13590,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],77:[function(require,module,exports){
+},{}],78:[function(require,module,exports){
 module.exports = function(hljs) {
   // 2.3. Identifiers and keywords
   var KEYWORDS =
@@ -13623,7 +13657,7 @@ module.exports = function(hljs) {
     ].concat(EXPRESSIONS)
   };
 };
-},{}],78:[function(require,module,exports){
+},{}],79:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -13638,7 +13672,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],79:[function(require,module,exports){
+},{}],80:[function(require,module,exports){
 module.exports = function(hljs) {
   var keywords = {
     'builtin-name':
@@ -13733,7 +13767,7 @@ module.exports = function(hljs) {
     contains: [LIST, STRING, HINT, HINT_COL, COMMENT, KEY, COLLECTION, NUMBER, LITERAL]
   }
 };
-},{}],80:[function(require,module,exports){
+},{}],81:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['cmake.in'],
@@ -13771,7 +13805,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],81:[function(require,module,exports){
+},{}],82:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -13910,7 +13944,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],82:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -13977,7 +14011,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],83:[function(require,module,exports){
+},{}],84:[function(require,module,exports){
 module.exports = function cos (hljs) {
 
   var STRINGS = {
@@ -14101,7 +14135,7 @@ module.exports = function cos (hljs) {
     ]
   };
 };
-},{}],84:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 module.exports = function(hljs) {
   var CPP_PRIMITIVE_TYPES = {
     className: 'keyword',
@@ -14267,7 +14301,7 @@ module.exports = function(hljs) {
     }
   };
 };
-},{}],85:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 module.exports = function(hljs) {
   var RESOURCES = 'primitive rsc_template';
 
@@ -14361,7 +14395,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],86:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 module.exports = function(hljs) {
   var NUM_SUFFIX = '(_[uif](8|16|32|64))?';
   var CRYSTAL_IDENT_RE = '[a-zA-Z_]\\w*[!?=]?';
@@ -14538,7 +14572,7 @@ module.exports = function(hljs) {
     contains: CRYSTAL_DEFAULT_CONTAINS
   };
 };
-},{}],87:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -14705,7 +14739,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],88:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: false,
@@ -14727,7 +14761,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],89:[function(require,module,exports){
+},{}],90:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z-][a-zA-Z0-9_-]*';
   var RULE = {
@@ -14832,7 +14866,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],90:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 module.exports = /**
  * Known issues:
  *
@@ -15090,7 +15124,7 @@ function(hljs) {
     ]
   };
 };
-},{}],91:[function(require,module,exports){
+},{}],92:[function(require,module,exports){
 module.exports = function (hljs) {
   var SUBST = {
     className: 'subst',
@@ -15191,7 +15225,7 @@ module.exports = function (hljs) {
     ]
   }
 };
-},{}],92:[function(require,module,exports){
+},{}],93:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS =
     'exports register file shl array record property for mod while set ally label uses raise not ' +
@@ -15263,7 +15297,7 @@ module.exports = function(hljs) {
     ].concat(COMMENT_MODES)
   };
 };
-},{}],93:[function(require,module,exports){
+},{}],94:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['patch'],
@@ -15303,7 +15337,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],94:[function(require,module,exports){
+},{}],95:[function(require,module,exports){
 module.exports = function(hljs) {
   var FILTER = {
     begin: /\|[A-Za-z]+:?/,
@@ -15367,7 +15401,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],95:[function(require,module,exports){
+},{}],96:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['bind', 'zone'],
@@ -15396,7 +15430,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],96:[function(require,module,exports){
+},{}],97:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['docker'],
@@ -15418,7 +15452,7 @@ module.exports = function(hljs) {
     illegal: '</'
   }
 };
-},{}],97:[function(require,module,exports){
+},{}],98:[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMENT = hljs.COMMENT(
     /^\s*@?rem\b/, /$/,
@@ -15470,7 +15504,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],98:[function(require,module,exports){
+},{}],99:[function(require,module,exports){
 module.exports = function(hljs) {
   var QUOTED_PROPERTY = {
     className: 'string',
@@ -15517,7 +15551,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],99:[function(require,module,exports){
+},{}],100:[function(require,module,exports){
 module.exports = function(hljs) {
   var STRINGS = {
     className: 'string',
@@ -15641,7 +15675,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],100:[function(require,module,exports){
+},{}],101:[function(require,module,exports){
 module.exports = function(hljs) {
   var EXPRESSION_KEYWORDS = 'if eq ne lt lte gt gte select default math sep';
   return {
@@ -15673,7 +15707,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],101:[function(require,module,exports){
+},{}],102:[function(require,module,exports){
 module.exports = function(hljs) {
     var commentMode = hljs.COMMENT(/\(\*/, /\*\)/);
 
@@ -15706,7 +15740,7 @@ module.exports = function(hljs) {
         ]
     };
 };
-},{}],102:[function(require,module,exports){
+},{}],103:[function(require,module,exports){
 module.exports = function(hljs) {
   var ELIXIR_IDENT_RE = '[a-zA-Z_][a-zA-Z0-9_]*(\\!|\\?)?';
   var ELIXIR_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?';
@@ -15803,7 +15837,7 @@ module.exports = function(hljs) {
     contains: ELIXIR_DEFAULT_CONTAINS
   };
 };
-},{}],103:[function(require,module,exports){
+},{}],104:[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMENT = {
     variants: [
@@ -15886,7 +15920,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],104:[function(require,module,exports){
+},{}],105:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     subLanguage: 'xml',
@@ -15901,7 +15935,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],105:[function(require,module,exports){
+},{}],106:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -15947,7 +15981,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],106:[function(require,module,exports){
+},{}],107:[function(require,module,exports){
 module.exports = function(hljs) {
   var BASIC_ATOM_RE = '[a-z\'][a-zA-Z0-9_\']*';
   var FUNCTION_NAME_RE = '(' + BASIC_ATOM_RE + ':' + BASIC_ATOM_RE + '|' + BASIC_ATOM_RE + ')';
@@ -16093,7 +16127,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],107:[function(require,module,exports){
+},{}],108:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['xlsx', 'xls'],
@@ -16141,7 +16175,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],108:[function(require,module,exports){
+},{}],109:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -16170,7 +16204,7 @@ module.exports = function(hljs) {
     case_insensitive: true
   };
 };
-},{}],109:[function(require,module,exports){
+},{}],110:[function(require,module,exports){
 module.exports = function(hljs) {
   var PARAMS = {
     className: 'params',
@@ -16241,7 +16275,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],110:[function(require,module,exports){
+},{}],111:[function(require,module,exports){
 module.exports = function(hljs) {
   var TYPEPARAM = {
     begin: '<', end: '>',
@@ -16300,7 +16334,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],111:[function(require,module,exports){
+},{}],112:[function(require,module,exports){
 module.exports = function (hljs) {
   var KEYWORDS = {
     'keyword':
@@ -16454,7 +16488,7 @@ module.exports = function (hljs) {
     ]
   };
 };
-},{}],112:[function(require,module,exports){
+},{}],113:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword: 'and bool break call callexe checkinterrupt clear clearg closeall cls comlog compile ' +
@@ -16676,7 +16710,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],113:[function(require,module,exports){
+},{}],114:[function(require,module,exports){
 module.exports = function(hljs) {
     var GCODE_IDENT_RE = '[A-Z_][A-Z0-9_.]*';
     var GCODE_CLOSE_RE = '\\%';
@@ -16743,7 +16777,7 @@ module.exports = function(hljs) {
         ].concat(GCODE_CODE)
     };
 };
-},{}],114:[function(require,module,exports){
+},{}],115:[function(require,module,exports){
 module.exports = function (hljs) {
   return {
     aliases: ['feature'],
@@ -16780,7 +16814,7 @@ module.exports = function (hljs) {
     ]
   };
 };
-},{}],115:[function(require,module,exports){
+},{}],116:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -16897,7 +16931,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],116:[function(require,module,exports){
+},{}],117:[function(require,module,exports){
 module.exports = function(hljs) {
   var GO_KEYWORDS = {
     keyword:
@@ -16951,7 +16985,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],117:[function(require,module,exports){
+},{}],118:[function(require,module,exports){
 module.exports = function(hljs) {
     return {
       keywords: {
@@ -16974,7 +17008,7 @@ module.exports = function(hljs) {
       ]
     }
 };
-},{}],118:[function(require,module,exports){
+},{}],119:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -17009,7 +17043,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],119:[function(require,module,exports){
+},{}],120:[function(require,module,exports){
 module.exports = function(hljs) {
     return {
         keywords: {
@@ -17103,7 +17137,7 @@ module.exports = function(hljs) {
         illegal: /#|<\//
     }
 };
-},{}],120:[function(require,module,exports){
+},{}],121:[function(require,module,exports){
 module.exports = // TODO support filter tags like :javascript, support inline HTML
 function(hljs) {
   return {
@@ -17210,7 +17244,7 @@ function(hljs) {
     ]
   };
 };
-},{}],121:[function(require,module,exports){
+},{}],122:[function(require,module,exports){
 module.exports = function(hljs) {
   var BUILT_INS = {'builtin-name': 'each in with if else unless bindattr action collection debugger log outlet template unbound view yield'};
   return {
@@ -17244,7 +17278,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],122:[function(require,module,exports){
+},{}],123:[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMENT = {
     variants: [
@@ -17366,7 +17400,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],123:[function(require,module,exports){
+},{}],124:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z_$][a-zA-Z0-9_$]*';
   var IDENT_FUNC_RETURN_TYPE_RE = '([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)';
@@ -17424,7 +17458,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],124:[function(require,module,exports){
+},{}],125:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -17470,7 +17504,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],125:[function(require,module,exports){
+},{}],126:[function(require,module,exports){
 module.exports = function(hljs) {
   var BUILT_INS = 'action collection component concat debugger each each-in else get hash if input link-to loc log mut outlet partial query-params render textarea unbound unless with yield view';
 
@@ -17541,7 +17575,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],126:[function(require,module,exports){
+},{}],127:[function(require,module,exports){
 module.exports = function(hljs) {
   var VERSION = 'HTTP/[0-9\\.]+';
   return {
@@ -17582,7 +17616,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],127:[function(require,module,exports){
+},{}],128:[function(require,module,exports){
 module.exports = function(hljs) {
   var START_BRACKET = '\\[';
   var END_BRACKET = '\\]';
@@ -17639,7 +17673,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],128:[function(require,module,exports){
+},{}],129:[function(require,module,exports){
 module.exports = function(hljs) {
   var STRING = {
     className: "string",
@@ -17705,7 +17739,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],129:[function(require,module,exports){
+},{}],130:[function(require,module,exports){
 module.exports = function(hljs) {
   var PARAMS = {
     className: 'params',
@@ -17781,7 +17815,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],130:[function(require,module,exports){
+},{}],131:[function(require,module,exports){
 module.exports = function(hljs) {
   var GENERIC_IDENT_RE = hljs.UNDERSCORE_IDENT_RE + '(<' + hljs.UNDERSCORE_IDENT_RE + '(\\s*,\\s*' + hljs.UNDERSCORE_IDENT_RE + ')*>)?';
   var KEYWORDS =
@@ -17888,7 +17922,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],131:[function(require,module,exports){
+},{}],132:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[A-Za-z$_][0-9A-Za-z$_]*';
   var KEYWORDS = {
@@ -18059,7 +18093,7 @@ module.exports = function(hljs) {
     illegal: /#(?!!)/
   };
 };
-},{}],132:[function(require,module,exports){
+},{}],133:[function(require,module,exports){
 module.exports = function(hljs) {
   var LITERALS = {literal: 'true false null'};
   var TYPES = [
@@ -18096,7 +18130,7 @@ module.exports = function(hljs) {
     illegal: '\\S'
   };
 };
-},{}],133:[function(require,module,exports){
+},{}],134:[function(require,module,exports){
 module.exports = function(hljs) {
   // Since there are numerous special names in Julia, it is too much trouble
   // to maintain them by hand. Hence these names (i.e. keywords, literals and
@@ -18274,7 +18308,7 @@ module.exports = function(hljs) {
 
   return DEFAULT;
 };
-},{}],134:[function(require,module,exports){
+},{}],135:[function(require,module,exports){
 module.exports = function (hljs) {
   var KEYWORDS = {
     keyword:
@@ -18448,7 +18482,7 @@ module.exports = function (hljs) {
     ]
   };
 };
-},{}],135:[function(require,module,exports){
+},{}],136:[function(require,module,exports){
 module.exports = function(hljs) {
   var LASSO_IDENT_RE = '[a-zA-Z_][\\w.]*';
   var LASSO_ANGLE_RE = '<\\?(lasso(script)?|=)';
@@ -18611,7 +18645,7 @@ module.exports = function(hljs) {
     ].concat(LASSO_CODE)
   };
 };
-},{}],136:[function(require,module,exports){
+},{}],137:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -18634,7 +18668,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],137:[function(require,module,exports){
+},{}],138:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE        = '[\\w-]+'; // yes, Less identifiers may begin with a digit
   var INTERP_IDENT_RE = '(' + IDENT_RE + '|@{' + IDENT_RE + '})';
@@ -18774,7 +18808,7 @@ module.exports = function(hljs) {
     contains: RULES
   };
 };
-},{}],138:[function(require,module,exports){
+},{}],139:[function(require,module,exports){
 module.exports = function(hljs) {
   var LISP_IDENT_RE = '[a-zA-Z_\\-\\+\\*\\/\\<\\=\\>\\&\\#][a-zA-Z0-9_\\-\\+\\*\\/\\<\\=\\>\\&\\#!]*';
   var MEC_RE = '\\|[^]*?\\|';
@@ -18877,7 +18911,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],139:[function(require,module,exports){
+},{}],140:[function(require,module,exports){
 module.exports = function(hljs) {
   var VARIABLE = {
     begin: '\\b[gtps][A-Z]+[A-Za-z0-9_\\-]*\\b|\\$_[A-Z]+',
@@ -19034,7 +19068,7 @@ module.exports = function(hljs) {
     illegal: ';$|^\\[|^=|&|{'
   };
 };
-},{}],140:[function(require,module,exports){
+},{}],141:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -19183,7 +19217,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],141:[function(require,module,exports){
+},{}],142:[function(require,module,exports){
 module.exports = function(hljs) {
 
     var LSL_STRING_ESCAPE_CHARS = {
@@ -19266,7 +19300,7 @@ module.exports = function(hljs) {
         ]
     };
 };
-},{}],142:[function(require,module,exports){
+},{}],143:[function(require,module,exports){
 module.exports = function(hljs) {
   var OPENING_LONG_BRACKET = '\\[=*\\[';
   var CLOSING_LONG_BRACKET = '\\]=*\\]';
@@ -19322,7 +19356,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],143:[function(require,module,exports){
+},{}],144:[function(require,module,exports){
 module.exports = function(hljs) {
   var VARIABLE = {
     className: 'variable',
@@ -19367,7 +19401,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],144:[function(require,module,exports){
+},{}],145:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['md', 'mkdown', 'mkd'],
@@ -19475,7 +19509,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],145:[function(require,module,exports){
+},{}],146:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['mma'],
@@ -19533,7 +19567,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],146:[function(require,module,exports){
+},{}],147:[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMON_CONTAINS = [
     hljs.C_NUMBER_MODE,
@@ -19621,7 +19655,7 @@ module.exports = function(hljs) {
     ].concat(COMMON_CONTAINS)
   };
 };
-},{}],147:[function(require,module,exports){
+},{}],148:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = 'if then else elseif for thru do while unless step in and or not';
   var LITERALS = 'true false unknown inf minf ind und %e %i %pi %phi %gamma';
@@ -20027,7 +20061,7 @@ module.exports = function(hljs) {
     illegal: /@/
   }
 };
-},{}],148:[function(require,module,exports){
+},{}],149:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords:
@@ -20252,7 +20286,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],149:[function(require,module,exports){
+},{}],150:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -20334,7 +20368,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],150:[function(require,module,exports){
+},{}],151:[function(require,module,exports){
 module.exports = function(hljs) {
     //local labels: %?[FB]?[AT]?\d{1,2}\w+
   return {
@@ -20420,7 +20454,7 @@ module.exports = function(hljs) {
     illegal: '\/'
   };
 };
-},{}],151:[function(require,module,exports){
+},{}],152:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords:
@@ -20439,7 +20473,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],152:[function(require,module,exports){
+},{}],153:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     subLanguage: 'xml',
@@ -20464,7 +20498,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],153:[function(require,module,exports){
+},{}],154:[function(require,module,exports){
 module.exports = function(hljs) {
   var NUMBER = {
     className: 'number', relevance: 0,
@@ -20539,7 +20573,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],154:[function(require,module,exports){
+},{}],155:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -20651,7 +20685,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],155:[function(require,module,exports){
+},{}],156:[function(require,module,exports){
 module.exports = function(hljs) {
   var VAR = {
     className: 'variable',
@@ -20744,7 +20778,7 @@ module.exports = function(hljs) {
     illegal: '[^\\s\\}]'
   };
 };
-},{}],156:[function(require,module,exports){
+},{}],157:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['nim'],
@@ -20799,7 +20833,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],157:[function(require,module,exports){
+},{}],158:[function(require,module,exports){
 module.exports = function(hljs) {
   var NIX_KEYWORDS = {
     keyword:
@@ -20848,7 +20882,7 @@ module.exports = function(hljs) {
     contains: EXPRESSIONS
   };
 };
-},{}],158:[function(require,module,exports){
+},{}],159:[function(require,module,exports){
 module.exports = function(hljs) {
   var CONSTANTS = {
     className: 'variable',
@@ -20934,7 +20968,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],159:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 module.exports = function(hljs) {
   var API_CLASS = {
     className: 'built_in',
@@ -21025,7 +21059,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],160:[function(require,module,exports){
+},{}],161:[function(require,module,exports){
 module.exports = function(hljs) {
   /* missing support for heredoc-like string (OCaml 4.0.2+) */
   return {
@@ -21096,7 +21130,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],161:[function(require,module,exports){
+},{}],162:[function(require,module,exports){
 module.exports = function(hljs) {
 	var SPECIAL_VARS = {
 		className: 'keyword',
@@ -21153,7 +21187,7 @@ module.exports = function(hljs) {
 		]
 	}
 };
-},{}],162:[function(require,module,exports){
+},{}],163:[function(require,module,exports){
 module.exports = function(hljs) {
   var OXYGENE_KEYWORDS = 'abstract add and array as asc aspect assembly async begin break block by case class concat const copy constructor continue '+
     'create default delegate desc distinct div do downto dynamic each else empty end ensure enum equals event except exit extension external false '+
@@ -21223,7 +21257,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],163:[function(require,module,exports){
+},{}],164:[function(require,module,exports){
 module.exports = function(hljs) {
   var CURLY_SUBCOMMENT = hljs.COMMENT(
     '{',
@@ -21271,7 +21305,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],164:[function(require,module,exports){
+},{}],165:[function(require,module,exports){
 module.exports = function(hljs) {
   var PERL_KEYWORDS = 'getpwent getservent quotemeta msgrcv scalar kill dbmclose undef lc ' +
     'ma syswrite tr send umask sysopen shmwrite vec qx utime local oct semctl localtime ' +
@@ -21428,7 +21462,7 @@ module.exports = function(hljs) {
     contains: PERL_DEFAULT_CONTAINS
   };
 };
-},{}],165:[function(require,module,exports){
+},{}],166:[function(require,module,exports){
 module.exports = function(hljs) {
   var MACRO = {
     className: 'variable',
@@ -21480,7 +21514,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],166:[function(require,module,exports){
+},{}],167:[function(require,module,exports){
 module.exports = function(hljs) {
   var VARIABLE = {
     begin: '\\$+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*'
@@ -21607,7 +21641,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],167:[function(require,module,exports){
+},{}],168:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -21698,7 +21732,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],168:[function(require,module,exports){
+},{}],169:[function(require,module,exports){
 module.exports = function(hljs) {
   var BACKTICK_ESCAPE = {
     begin: '`[\\s\\S]',
@@ -21779,7 +21813,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],169:[function(require,module,exports){
+},{}],170:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -21827,7 +21861,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],170:[function(require,module,exports){
+},{}],171:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -21857,7 +21891,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],171:[function(require,module,exports){
+},{}],172:[function(require,module,exports){
 module.exports = function(hljs) {
 
   var ATOM = {
@@ -21945,7 +21979,7 @@ module.exports = function(hljs) {
     ])
   };
 };
-},{}],172:[function(require,module,exports){
+},{}],173:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -21981,7 +22015,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],173:[function(require,module,exports){
+},{}],174:[function(require,module,exports){
 module.exports = function(hljs) {
 
   var PUPPET_KEYWORDS = {
@@ -22096,7 +22130,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],174:[function(require,module,exports){
+},{}],175:[function(require,module,exports){
 module.exports = // Base deafult colors in PB IDE: background: #FFFFDF; foreground: #000000;
 
 function(hljs) {
@@ -22154,7 +22188,7 @@ function(hljs) {
     ]
   };
 };
-},{}],175:[function(require,module,exports){
+},{}],176:[function(require,module,exports){
 module.exports = function(hljs) {
   var PROMPT = {
     className: 'meta',  begin: /^(>>>|\.\.\.) /
@@ -22246,7 +22280,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],176:[function(require,module,exports){
+},{}],177:[function(require,module,exports){
 module.exports = function(hljs) {
   var Q_KEYWORDS = {
   keyword:
@@ -22269,7 +22303,7 @@ module.exports = function(hljs) {
      ]
   };
 };
-},{}],177:[function(require,module,exports){
+},{}],178:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
       keyword:
@@ -22438,7 +22472,7 @@ module.exports = function(hljs) {
     illegal: /#/
   };
 };
-},{}],178:[function(require,module,exports){
+},{}],179:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '([a-zA-Z]|\\.[a-zA-Z.])[a-zA-Z0-9._]*';
 
@@ -22508,7 +22542,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],179:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords:
@@ -22535,7 +22569,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],180:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENTIFIER = '[a-zA-Z-_][^\\n{]+\\{';
 
@@ -22602,7 +22636,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],181:[function(require,module,exports){
+},{}],182:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -22638,7 +22672,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],182:[function(require,module,exports){
+},{}],183:[function(require,module,exports){
 module.exports = function(hljs) {
   var RUBY_METHOD_RE = '[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?';
   var RUBY_KEYWORDS = {
@@ -22814,7 +22848,7 @@ module.exports = function(hljs) {
     contains: COMMENT_MODES.concat(IRB_DEFAULT).concat(RUBY_DEFAULT_CONTAINS)
   };
 };
-},{}],183:[function(require,module,exports){
+},{}],184:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -22875,7 +22909,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],184:[function(require,module,exports){
+},{}],185:[function(require,module,exports){
 module.exports = function(hljs) {
   var NUM_SUFFIX = '([uif](8|16|32|64|size))\?';
   var KEYWORDS =
@@ -22979,7 +23013,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],185:[function(require,module,exports){
+},{}],186:[function(require,module,exports){
 module.exports = function(hljs) {
 
   var ANNOTATION = { className: 'meta', begin: '@[A-Za-z]+' };
@@ -23094,7 +23128,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],186:[function(require,module,exports){
+},{}],187:[function(require,module,exports){
 module.exports = function(hljs) {
   var SCHEME_IDENT_RE = '[^\\(\\)\\[\\]\\{\\}",\'`;#|\\\\\\s]+';
   var SCHEME_SIMPLE_NUMBER_RE = '(\\-|\\+)?\\d+([./]\\d+)?';
@@ -23235,7 +23269,7 @@ module.exports = function(hljs) {
     contains: [SHEBANG, NUMBER, STRING, QUOTED_IDENT, QUOTED_LIST, LIST].concat(COMMENT_MODES)
   };
 };
-},{}],187:[function(require,module,exports){
+},{}],188:[function(require,module,exports){
 module.exports = function(hljs) {
 
   var COMMON_CONTAINS = [
@@ -23289,7 +23323,7 @@ module.exports = function(hljs) {
     ].concat(COMMON_CONTAINS)
   };
 };
-},{}],188:[function(require,module,exports){
+},{}],189:[function(require,module,exports){
 module.exports = function(hljs) {
   var IDENT_RE = '[a-zA-Z-][a-zA-Z0-9_-]*';
   var VARIABLE = {
@@ -23387,7 +23421,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],189:[function(require,module,exports){
+},{}],190:[function(require,module,exports){
 module.exports = function(hljs) {
   var smali_instr_low_prio = ['add', 'and', 'cmp', 'cmpg', 'cmpl', 'const', 'div', 'double', 'float', 'goto', 'if', 'int', 'long', 'move', 'mul', 'neg', 'new', 'nop', 'not', 'or', 'rem', 'return', 'shl', 'shr', 'sput', 'sub', 'throw', 'ushr', 'xor'];
   var smali_instr_high_prio = ['aget', 'aput', 'array', 'check', 'execute', 'fill', 'filled', 'goto/16', 'goto/32', 'iget', 'instance', 'invoke', 'iput', 'monitor', 'packed', 'sget', 'sparse'];
@@ -23443,7 +23477,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],190:[function(require,module,exports){
+},{}],191:[function(require,module,exports){
 module.exports = function(hljs) {
   var VAR_IDENT_RE = '[a-z][a-zA-Z0-9_]*';
   var CHAR = {
@@ -23493,7 +23527,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],191:[function(require,module,exports){
+},{}],192:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['ml'],
@@ -23559,7 +23593,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],192:[function(require,module,exports){
+},{}],193:[function(require,module,exports){
 module.exports = function(hljs) {
   var CPP = hljs.getLanguage('cpp').exports;
 
@@ -24020,7 +24054,7 @@ module.exports = function(hljs) {
     illegal: /#/
   };
 };
-},{}],193:[function(require,module,exports){
+},{}],194:[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMENT_MODE = hljs.COMMENT('--', '$');
   return {
@@ -24180,7 +24214,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],194:[function(require,module,exports){
+},{}],195:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     contains: [
@@ -24263,7 +24297,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],195:[function(require,module,exports){
+},{}],196:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['do', 'ado'],
@@ -24301,7 +24335,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],196:[function(require,module,exports){
+},{}],197:[function(require,module,exports){
 module.exports = function(hljs) {
   var STEP21_IDENT_RE = '[A-Z_][A-Z0-9_.]*';
   var STEP21_KEYWORDS = {
@@ -24348,7 +24382,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],197:[function(require,module,exports){
+},{}],198:[function(require,module,exports){
 module.exports = function(hljs) {
 
   var VARIABLE = {
@@ -24802,7 +24836,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],198:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 module.exports = function(hljs) {
   var DETAILS = {
     className: 'string',
@@ -24836,7 +24870,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],199:[function(require,module,exports){
+},{}],200:[function(require,module,exports){
 module.exports = function(hljs) {
   var SWIFT_KEYWORDS = {
       keyword: '__COLUMN__ __FILE__ __FUNCTION__ __LINE__ as as! as? associativity ' +
@@ -24953,7 +24987,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],200:[function(require,module,exports){
+},{}],201:[function(require,module,exports){
 module.exports = function(hljs) {
 
   var COMMENT = {
@@ -24997,7 +25031,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],201:[function(require,module,exports){
+},{}],202:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -25033,7 +25067,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],202:[function(require,module,exports){
+},{}],203:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['tk'],
@@ -25094,7 +25128,7 @@ module.exports = function(hljs) {
     ]
   }
 };
-},{}],203:[function(require,module,exports){
+},{}],204:[function(require,module,exports){
 module.exports = function(hljs) {
   var COMMAND = {
     className: 'tag',
@@ -25156,7 +25190,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],204:[function(require,module,exports){
+},{}],205:[function(require,module,exports){
 module.exports = function(hljs) {
   var BUILT_IN_TYPES = 'bool byte i16 i32 i64 double string binary';
   return {
@@ -25191,7 +25225,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],205:[function(require,module,exports){
+},{}],206:[function(require,module,exports){
 module.exports = function(hljs) {
   var TPID = {
     className: 'number',
@@ -25275,7 +25309,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],206:[function(require,module,exports){
+},{}],207:[function(require,module,exports){
 module.exports = function(hljs) {
   var PARAMS = {
     className: 'params',
@@ -25341,7 +25375,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],207:[function(require,module,exports){
+},{}],208:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = {
     keyword:
@@ -25450,7 +25484,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],208:[function(require,module,exports){
+},{}],209:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     keywords: {
@@ -25500,7 +25534,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],209:[function(require,module,exports){
+},{}],210:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['vb'],
@@ -25556,7 +25590,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],210:[function(require,module,exports){
+},{}],211:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     subLanguage: 'xml',
@@ -25568,7 +25602,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],211:[function(require,module,exports){
+},{}],212:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     aliases: ['vbs'],
@@ -25607,7 +25641,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],212:[function(require,module,exports){
+},{}],213:[function(require,module,exports){
 module.exports = function(hljs) {
   var SV_KEYWORDS = {
     keyword:
@@ -25706,7 +25740,7 @@ module.exports = function(hljs) {
     ]
   }; // return
 };
-},{}],213:[function(require,module,exports){
+},{}],214:[function(require,module,exports){
 module.exports = function(hljs) {
   // Regular expression for VHDL numeric literals.
 
@@ -25767,7 +25801,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],214:[function(require,module,exports){
+},{}],215:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     lexemes: /[!#@\w]+/,
@@ -25873,7 +25907,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],215:[function(require,module,exports){
+},{}],216:[function(require,module,exports){
 module.exports = function(hljs) {
   return {
     case_insensitive: true,
@@ -26009,7 +26043,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],216:[function(require,module,exports){
+},{}],217:[function(require,module,exports){
 module.exports = function(hljs) {
   var BUILTIN_MODULES =
     'ObjectLoader Animate MovieCredits Slides Filters Shading Materials LensFlare Mapping VLCAudioVideo ' +
@@ -26082,7 +26116,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],217:[function(require,module,exports){
+},{}],218:[function(require,module,exports){
 module.exports = function(hljs) {
   var XML_IDENT_RE = '[A-Za-z0-9\\._:-]+';
   var TAG_INTERNALS = {
@@ -26185,7 +26219,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],218:[function(require,module,exports){
+},{}],219:[function(require,module,exports){
 module.exports = function(hljs) {
   var KEYWORDS = 'for let if while then else return where group by xquery encoding version' +
     'module namespace boundary-space preserve strip default collation base-uri ordering' +
@@ -26256,7 +26290,7 @@ module.exports = function(hljs) {
     contains: CONTAINS
   };
 };
-},{}],219:[function(require,module,exports){
+},{}],220:[function(require,module,exports){
 module.exports = function(hljs) {
   var LITERALS = {literal: '{ } true false yes no Yes No True False null'};
 
@@ -26340,7 +26374,7 @@ module.exports = function(hljs) {
     keywords: LITERALS
   };
 };
-},{}],220:[function(require,module,exports){
+},{}],221:[function(require,module,exports){
 module.exports = function(hljs) {
   var STRING = {
     className: 'string',
@@ -26447,7 +26481,7 @@ module.exports = function(hljs) {
     ]
   };
 };
-},{}],221:[function(require,module,exports){
+},{}],222:[function(require,module,exports){
 (function (global){
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 ;(function(root) {
@@ -26984,7 +27018,7 @@ module.exports = function(hljs) {
 }(this));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],222:[function(require,module,exports){
+},{}],223:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -27070,7 +27104,7 @@ var isArray = Array.isArray || function (xs) {
   return Object.prototype.toString.call(xs) === '[object Array]';
 };
 
-},{}],223:[function(require,module,exports){
+},{}],224:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -27157,13 +27191,13 @@ var objectKeys = Object.keys || function (obj) {
   return res;
 };
 
-},{}],224:[function(require,module,exports){
+},{}],225:[function(require,module,exports){
 'use strict';
 
 exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
-},{"./decode":222,"./encode":223}],225:[function(require,module,exports){
+},{"./decode":223,"./encode":224}],226:[function(require,module,exports){
 //  Ramda v0.22.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -35996,7 +36030,7 @@ exports.encode = exports.stringify = require('./encode');
 
 }.call(this));
 
-},{}],226:[function(require,module,exports){
+},{}],227:[function(require,module,exports){
 var VNode = require('./vnode');
 var is = require('./is');
 
@@ -36032,7 +36066,7 @@ module.exports = function h(sel, b, c) {
   return VNode(sel, data, children, text, undefined);
 };
 
-},{"./is":228,"./vnode":235}],227:[function(require,module,exports){
+},{"./is":229,"./vnode":236}],228:[function(require,module,exports){
 function createElement(tagName){
   return document.createElement(tagName);
 }
@@ -36088,13 +36122,13 @@ module.exports = {
   setTextContent: setTextContent
 };
 
-},{}],228:[function(require,module,exports){
+},{}],229:[function(require,module,exports){
 module.exports = {
   array: Array.isArray,
   primitive: function(s) { return typeof s === 'string' || typeof s === 'number'; },
 };
 
-},{}],229:[function(require,module,exports){
+},{}],230:[function(require,module,exports){
 var booleanAttrs = ["allowfullscreen", "async", "autofocus", "autoplay", "checked", "compact", "controls", "declare",
                 "default", "defaultchecked", "defaultmuted", "defaultselected", "defer", "disabled", "draggable",
                 "enabled", "formnovalidate", "hidden", "indeterminate", "inert", "ismap", "itemscope", "loop", "multiple",
@@ -36139,7 +36173,7 @@ function updateAttrs(oldVnode, vnode) {
 
 module.exports = {create: updateAttrs, update: updateAttrs};
 
-},{}],230:[function(require,module,exports){
+},{}],231:[function(require,module,exports){
 function updateClass(oldVnode, vnode) {
   var cur, name, elm = vnode.elm,
       oldClass = oldVnode.data.class,
@@ -36164,7 +36198,7 @@ function updateClass(oldVnode, vnode) {
 
 module.exports = {create: updateClass, update: updateClass};
 
-},{}],231:[function(require,module,exports){
+},{}],232:[function(require,module,exports){
 function invokeHandler(handler, vnode, event) {
   if (typeof handler === "function") {
     // call function handler
@@ -36267,7 +36301,7 @@ module.exports = {
   destroy: updateEventListeners
 };
 
-},{}],232:[function(require,module,exports){
+},{}],233:[function(require,module,exports){
 function updateProps(oldVnode, vnode) {
   var key, cur, old, elm = vnode.elm,
       oldProps = oldVnode.data.props, props = vnode.data.props;
@@ -36292,7 +36326,7 @@ function updateProps(oldVnode, vnode) {
 
 module.exports = {create: updateProps, update: updateProps};
 
-},{}],233:[function(require,module,exports){
+},{}],234:[function(require,module,exports){
 var raf = (typeof window !== 'undefined' && window.requestAnimationFrame) || setTimeout;
 var nextFrame = function(fn) { raf(function() { raf(fn); }); };
 
@@ -36363,7 +36397,7 @@ function applyRemoveStyle(vnode, rm) {
 
 module.exports = {create: updateStyle, update: updateStyle, destroy: applyDestroyStyle, remove: applyRemoveStyle};
 
-},{}],234:[function(require,module,exports){
+},{}],235:[function(require,module,exports){
 // jshint newcap: false
 /* global require, module, document, Node */
 'use strict';
@@ -36625,14 +36659,14 @@ function init(modules, api) {
 
 module.exports = {init: init};
 
-},{"./htmldomapi":227,"./is":228,"./vnode":235}],235:[function(require,module,exports){
+},{"./htmldomapi":228,"./is":229,"./vnode":236}],236:[function(require,module,exports){
 module.exports = function(sel, data, children, text, elm) {
   var key = data === undefined ? undefined : data.key;
   return {sel: sel, data: data, children: children,
           text: text, elm: elm, key: key};
 };
 
-},{}],236:[function(require,module,exports){
+},{}],237:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -37366,7 +37400,7 @@ Url.prototype.parseHost = function() {
   if (host) this.hostname = host;
 };
 
-},{"./util":237,"punycode":221,"querystring":224}],237:[function(require,module,exports){
+},{"./util":238,"punycode":222,"querystring":225}],238:[function(require,module,exports){
 'use strict';
 
 module.exports = {
@@ -37384,4 +37418,4 @@ module.exports = {
   }
 };
 
-},{}]},{},[19]);
+},{}]},{},[20]);

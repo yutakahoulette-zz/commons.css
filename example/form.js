@@ -88,8 +88,8 @@ module.exports = _ => {
 <label for='check2'>Tacos</label>`)
     , label('Input + button')
     , h('span.table', [
-        h('span.table-cell', [ h('input', {props: {type: 'search'}}) ])
-      , h('button.btn--main.rounded-right.no-transform.table-cell', 'Search')
+        h('span.table-cell.align-middle', [ h('input', {props: {type: 'search'}}) ])
+      , h('button.btn--main.rounded-right.table-cell', 'Search')
       ])
     , code(
 `<span class='table'>
@@ -98,13 +98,13 @@ module.exports = _ => {
 </span>`)
     , h('p', 'To modify form elements, add padding or type-scale utility classes, and elements will scale consistently:') 
     , h('span.table', [
-        h('span.table-cell', [ h('input.py-3', {props: {type: 'search'}}) ])
-      , h('button.py-3.btn--main.rounded-right.no-transform.table-cell', 'Search')
+        h('span.table-cell.align-middle', [ h('input.py-3', {props: {type: 'search'}}) ])
+      , h('button.py-3.btn--main.rounded-right.table-cell', 'Search')
       ])
     , h('p.mt-1.mb-3', [h('pre.bg-grey-2.inline', '.py-3'), ' class added to input and button'])
     , h('span.table', [
-        h('span.table-cell', [ h('input.h3', {props: {type: 'search'}}) ])
-      , h('button.h3.btn--main.rounded-right.no-transform.table-cell', 'Search')
+        h('span.table-cell.align-middle', [ h('input.h3', {props: {type: 'search'}}) ])
+      , h('button.h3.btn--main.rounded-right.table-cell', 'Search')
       ])
     , h('p.mt-1.mb-3', [h('pre.bg-grey-2.inline', '.h3'), ' class added to input and button'])
     ])

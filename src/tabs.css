@@ -1,6 +1,7 @@
 ul.tabs--h,
 ul.tabs--v {
   padding: 0;
+  cursor: default;
 }
 
 ul.tabs--v li a,

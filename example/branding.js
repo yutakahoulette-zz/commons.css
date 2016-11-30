@@ -12,14 +12,23 @@ module.exports = _ => {
 
 a { color: $blue }
 
+.btn,
 button {
   border-color: $blue;
   color:        $blue;
+}
+.btn:active,
+button:active {
+  background: $grey-1;
 }
 .btn--main {
   background:  $green;
   border-color: $green;
   color: white;
+}
+.btn--main:active {
+  background: $green-dark;
+  border-color: $green-dark;
 }
 
 textarea:focus,

@@ -37,7 +37,9 @@ module.exports = _ => {
 .max-width-700  { max-width: 700px }
 .max-width-full { max-width: 100% }
 
+.width-50 { width: 50px }
 .width-100  { width: 100px }
+.width-150 { width: 150px }
 .width-200  { width: 200px }
 .width-300  { width: 300px }
 .width-full { width: 100% }

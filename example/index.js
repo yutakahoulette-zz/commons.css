@@ -17,6 +17,7 @@ import border from './border'
 import button from './button'
 import color from './color'
 import cursor from './cursor'
+import disabled from './disabled'
 import form from './form'
 import grid from './grid'
 import helpBox from './help-box'
@@ -86,6 +87,7 @@ const view = state =>
       , button()
       , color()
       , cursor()
+      , disabled()
       , form()
       , grid()
       , helpBox()

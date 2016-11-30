@@ -1,6 +1,6 @@
 {
   "name": "@commitchange/commons.css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Normalize.css + utils + core UI components",
   "style": "lib/index.css",
   "scripts": {
