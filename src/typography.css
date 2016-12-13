@@ -3,7 +3,7 @@
 .text-decoration-none { text-decoration:none }
 
 .bold { font-weight: bold; }
-.regular { font-weight:normal }
+.normal { font-weight:normal }
 .italic { font-style:italic }
 .strike { text-decoration: line-through}
 .caps { text-transform:uppercase; letter-spacing: .2em; }

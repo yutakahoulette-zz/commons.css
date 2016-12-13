@@ -2,7 +2,7 @@
 button {
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
+  font-weight: bold;
   line-height: inherit;
   -webkit-appearance: none;
   vertical-align: middle;
@@ -15,6 +15,7 @@ button {
   border-radius: 3px;
   user-select: none;
   background: none;
+  display: inline-block;
 }
 
 .btn,

@@ -9,6 +9,7 @@ module.exports = _ => {
   const content = h('div', [
     title('Typography')
   , h('p.bold.mt-3', 'bold')
+  , h('p.normal', 'normal')
   , h('p.italic', 'italic')
   , h('p.caps', 'caps')
   , h('p.underline', 'underline')
@@ -17,6 +18,7 @@ module.exports = _ => {
   , h('div.width-100.truncate', 'Truncateeeeeeeeeeeeeeeeee')
   , code(
 `<p class='bold'>bold</p>
+<p class='normal'>normal</p>
 <p class='italic'>italic</p>
 <p class='caps'>caps</p>
 <p class='underline'>underline</p>

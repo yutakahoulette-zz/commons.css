@@ -1,11 +1,6 @@
 td,
 th {
-  padding: .5em 1.5em .5em .5em;
-}
-
-td:last-of-type,
-th:last-of-type {
-  padding-right: .5em;
+  padding: .5em 1em;
 }
 
 th {
@@ -15,4 +10,15 @@ th {
 tr:not(:first-of-type) {
   border-top: 1px solid $grey-4;
 }
+
+
+@media (max-width: 480px) {
+  table {
+    font-size: 14px;
+  }
+  td, th {
+    padding: .5em;
+  }
+}
+
 

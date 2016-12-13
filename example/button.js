@@ -6,7 +6,7 @@ import code from './code'
 
 module.exports = _ => {
   const content = h('div', [
-    title('Buttons')
+    title('Button')
   , warn()
   , h('p.mb-3', 'If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the .btn class')
   , h('div.col-6.inline-block.mb-1', [
@@ -53,6 +53,6 @@ module.exports = _ => {
   <button>Tuba</button>
 </div>`)
   ])
-  return section('buttons', content)
+  return section('button', content)
 }
 

@@ -1,4 +1,5 @@
 .cursor-pointer { cursor: pointer }
 .cursor-not-allowed { cursor: not-allowed }
 .cursor-initial { cursor: initial }
+.cursor-default { cursor: default; }
 

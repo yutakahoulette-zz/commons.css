@@ -10,6 +10,7 @@ module.exports = _ => {
   , code(
 `.cursor-pointer     { cursor: pointer }
 .cursor-not-allowed { cursor: not-allowed }
+.cursor-default { cursor: default }
 .cursor-initial     { cursor: initial }`, 'css')
   ])
   return section('cursor', content)

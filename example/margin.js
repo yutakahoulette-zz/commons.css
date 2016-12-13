@@ -2,11 +2,13 @@ import h from 'snabbdom/h'
 import title from './title'
 import code from './code'
 import section from './section'
+import responsiveText from './responsive-text' 
 
 
 module.exports = _ => {
   const content = h('div', [
     title('Margin')
+  , h('p.helpBox--success', responsiveText) 
   , code(
 `.m-0  { margin: 0 }
 .mt-0 { margin-top: 0 }

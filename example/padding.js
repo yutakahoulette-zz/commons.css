@@ -2,11 +2,13 @@ import h from 'snabbdom/h'
 import title from './title'
 import code from './code'
 import section from './section'
+import responsiveText from './responsive-text' 
 
 
 module.exports = _ => {
   const content = h('div', [
     title('Padding')
+  , h('p.helpBox--success', responsiveText) 
   , code(
 `.p-0  { padding:0 }
 .pt-0 { padding-top:0 }

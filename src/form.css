@@ -12,7 +12,7 @@ select {
   padding: .5em;
   line-height: inherit;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 16px;
   margin: 0;
   width: 100%;
   background-color: white;
@@ -30,6 +30,7 @@ label {
   display: block;
   font-size: .9rem;
   color: rgba(0,0,0,.7);
+  line-height: 1.2;
 }
 
 select {
@@ -78,7 +79,6 @@ select:-moz-focusring {
   padding-right: 1.5em;
 }
 
-
 input[type='checkbox'],
 input[type='radio'] {
   display: none;
@@ -88,6 +88,8 @@ input[type='checkbox'] + label,
 input[type='radio'] + label {
   cursor: pointer;
   font-weight: normal;
+  font-size: 16px;
+  color: initial;
   user-select: none;
   display: inline-block;
   margin-bottom: .5em;
