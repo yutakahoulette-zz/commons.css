@@ -54,7 +54,7 @@
 .py-5 { padding-top: 4rem; padding-bottom: 4rem }
 .px-5 { padding-left: 4rem; padding-right: 4rem }
 
-@media (min-width: 480px){
+@media (max-width: 480px){
   .sm-p-05  { padding: .25rem }
   .sm-pt-05 { padding-top:.25rem }
   .sm-pr-05 { padding-right:.25rem }
