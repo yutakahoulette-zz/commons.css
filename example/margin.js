@@ -50,13 +50,13 @@ module.exports = _ => {
 .mx-4 { margin-left: 3rem; margin-right: 3rem }
 .my-4 { margin-top: 3rem; margin-bottom: 3rem }
 
-.m-5  { margin: 3rem }
-.mt-5 { margin-top: 3rem }
-.mr-5 { margin-right: 3rem }
-.mb-5 { margin-bottom: 3rem }
-.ml-5 { margin-left: 3rem }
-.mx-5 { margin-left: 3rem; margin-right: 3rem }
-.my-5 { margin-top: 3rem; margin-bottom: 3rem }
+.m-5  { margin: 4rem }
+.mt-5 { margin-top: 4rem }
+.mr-5 { margin-right: 4rem }
+.mb-5 { margin-bottom: 4rem }
+.ml-5 { margin-left: 4rem }
+.mx-5 { margin-left: 4rem; margin-right: 4rem }
+.my-5 { margin-top: 4rem; margin-bottom: 4rem }
 
 .ml-auto { margin-left: auto }
 .mr-auto { margin-right: auto }
