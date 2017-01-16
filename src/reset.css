@@ -6,11 +6,6 @@ html {
   font-size: 16px;
 }
 
-::selection {
-  background: $grey-5; 
-  color: white;
-}
-
 img {
   max-width: 100%;
   height: auto;

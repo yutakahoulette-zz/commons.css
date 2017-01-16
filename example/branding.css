@@ -12,10 +12,6 @@ button {
   border-color: $blue;
   color:        $blue;
 }
-.btn:active,
-button:active {
-  background: $grey-1;
-}
 .btn--main {
   background:  $green;
   border-color: $green;

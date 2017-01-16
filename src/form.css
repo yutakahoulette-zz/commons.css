@@ -7,7 +7,7 @@ input:focus {
 textarea,
 input,
 select {
-  border: 1px solid $grey-5;
+  border: 1px solid grey;
   border-radius: 0;
   padding: .5em;
   line-height: inherit;
@@ -106,7 +106,7 @@ input[type='radio'] + label:before {
   display: inline-block;
   line-height: .75em;
   width: .75em;
-  border: 1px $grey-5 solid;
+  border: 1px grey solid;
   transition: background .1s ease-out;
 }
 
@@ -121,7 +121,7 @@ input[type='checkbox']:checked + label:before {
 
 .toggle {
   display: table;
-  border: 1px solid $grey-5;
+  border: 1px solid grey;
   border-radius: 3px;
   overflow: hidden;
   background: white;
@@ -139,7 +139,7 @@ input[type='checkbox']:checked + label:before {
 }
 
 .toggle input[type='radio'] + label:not(:last-of-type) {
-  border-right: 1px solid $grey-5;
+  border-right: 1px solid grey;
 }
 
 .toggle input[type='radio']:checked + label {

@@ -1,5 +1,3 @@
-@import '@commitchange/grey-scale-variables';
-
 @import './reset.css';
 
 /* base: */
@@ -13,10 +11,8 @@
 @import './hide.css';
 @import './opacity.css';
 
-@import './background.css';
 @import './blockquote.css';
 @import './buttons.css';
-@import './color.css';
 @import './cursor.css';
 @import './disabled.css';
 @import './form.css';

@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import '../src';
 @import '@commitchange/color-variables';
+@import '@commitchange/grey-scale-variables';
 @import 'code.css';
 @import 'branding.css';
 
@@ -8,13 +9,13 @@ html { line-height: 1.6; }
 
 body { overflow: hidden; }
 
+
 .nav {
   left: 0;
   top: 0;
   position: absolute;
   width: 170px;
   overflow-y: auto;
-  border-right: 1px solid $grey-4;
   height: 100%;
 }
 
@@ -26,5 +27,15 @@ body { overflow: hidden; }
   padding-bottom: 100px;
 }
 
+.bg-grey-1 { background: $grey-1; }
+.bg-grey-2 { background: $grey-2; }
+.bg-grey-3 { background: $grey-3; }
+.bg-grey-4 { background: $grey-4; }
+.bg-grey-5 { background: $grey-5; }
+
+
+* {
+  border-color: $grey-4;
+}
 
 

@@ -10,12 +10,10 @@ import nav from './nav'
 
 import about from './about'
 import align from './align'
-import background from './background'
 import branding from './branding'
 import blockquote from './blockquote'
 import border from './border'
 import button from './button'
-import color from './color'
 import cursor from './cursor'
 import disabled from './disabled'
 import form from './form'
@@ -80,12 +78,10 @@ const view = state =>
       h('div.max-width-700.px-3', [
         about()
       , align()
-      , background()
       , blockquote()
       , border()
       , branding()
       , button()
-      , color()
       , cursor()
       , disabled()
       , form()

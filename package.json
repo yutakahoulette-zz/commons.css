@@ -1,14 +1,13 @@
 {
   "name": "@commitchange/commons.css",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "utils + core UI components",
   "style": "lib/index.css",
   "scripts": {
-    "build-lib-css": "postcss -c postcss-lib.js -l",
-    "watch-example-css": "postcss -c postcss-example.js -w -l",
-    "build-example": "mkdir -p example/dist && cp example/build.css example/dist/build.css && cp example/index.html  example/dist/index.html && browserify example/index.js -o example/dist/index.js -t babelify",
-    "gh-pages": "git subtree push --prefix example/dist origin gh-pages",
-    "watch-js": "budo example/index.js --dir example  --live -- -t babelify"
+    "postcss": "postcss -c postcss-example.js -w -l",
+    "budo": "budo example/index.js --dir example  --live -- -t babelify",
+    "build": "postcss -c postcss-lib.js -l && mkdir -p example/dist && cp example/build.css example/dist/build.css && cp example/index.html  example/dist/index.html && browserify example/index.js -o example/dist/index.js -t babelify",
+    "gh-pages": "git subtree push --prefix example/dist origin gh-pages"
   },
   "repository": {
     "type": "git",
