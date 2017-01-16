@@ -1,7 +1,12 @@
+@import 'normalize.css';
 @import '../src';
 @import '@commitchange/color-variables';
 @import 'code.css';
 @import 'branding.css';
+
+html { line-height: 1.6; }
+
+body { overflow: hidden; }
 
 .nav {
   left: 0;
@@ -21,8 +26,5 @@
   padding-bottom: 100px;
 }
 
-body {
-  overflow: hidden;
-}
 
 

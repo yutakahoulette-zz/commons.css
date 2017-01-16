@@ -8,7 +8,7 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (state) {
-    return (0, _h2.default)('section.pt-3.pb-4.border-bottom', { props: { id: 'about' } }, [(0, _h2.default)('h1.mt-0.mb-4', 'commons.css'), (0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'is comprised of ', (0, _h2.default)('a', { props: { href: 'https://necolas.github.io/normalize.css' } }, 'Normalize.css'), ', utility classes heavily inspired by ', (0, _h2.default)('a', { props: { href: 'http://basscss.com' } }, 'Basscss'), ', and styles for a handful of core UI components.'])]);
+    return (0, _h2.default)('section.pt-3.pb-4.border-bottom', { props: { id: 'about' } }, [(0, _h2.default)('h1.mt-0.mb-4', 'commons.css'), (0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'is comprised of utility classes heavily inspired by ', (0, _h2.default)('a', { props: { href: 'http://basscss.com' } }, 'Basscss'), ', and styles for a handful of core UI components.'])]);
 };
 
 },{"snabbdom/h":228}],2:[function(require,module,exports){

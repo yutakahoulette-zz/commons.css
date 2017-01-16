@@ -5,9 +5,7 @@ module.exports = state =>
       h('h1.mt-0.mb-4', 'commons.css')
     , h('p', [
         h('strong', 'commons.css ')
-      , 'is comprised of '
-      , h('a', {props: {href: 'https://necolas.github.io/normalize.css'}}, 'Normalize.css')
-      , ', utility classes heavily inspired by '
+      , 'is comprised of utility classes heavily inspired by '
       , h('a', {props: {href: 'http://basscss.com'}}, 'Basscss')
       , ', and styles for a handful of core UI components.' 
       ])

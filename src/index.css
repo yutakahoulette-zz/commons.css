@@ -1,4 +1,3 @@
-@import 'normalize.css';
 @import '@commitchange/grey-scale-variables';
 
 @import './reset.css';
@@ -30,6 +29,5 @@
 @import './tabs.css';
 @import './type-scale.css';
 @import './typography.css';
-
 
 

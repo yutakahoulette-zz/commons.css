@@ -1,4 +1,4 @@
-includes Normalize.css + utility classes + styles for core UI components:
+includes utility classes + styles for core UI components:
 
 **docs:** http://docs.commitchange.com/commons.css/
 
@@ -46,7 +46,6 @@ package.json
     "postcss": "5.2.4",
     "postcss-cli": "2.6.0",
     "postcss-import": "8.1.2",
-    "precss": "1.4.0",
     "@commitchange/commons.css": "0.0.1"
   }
   etc...
@@ -56,7 +55,7 @@ package.json
 postcss-config.js
 ```javascript
 module.exports = {
-  use: ['postcss-import', 'precss']
+  use: ['postcss-import']
 , 'local-plugins' : true
 , input: 'index.css'
 , output: 'build.css'
