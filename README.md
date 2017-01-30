@@ -1,6 +1,6 @@
 includes utility classes + styles for core UI components:
 
-**docs:** http://yutakahoulette/commons.css/
+**docs:** [http://yutakahoulette/commons.css/](http://yutakahoulette/commons.css/)
 
 to use: `npm install --save --save-dev commons.css`
 
