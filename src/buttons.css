@@ -2,7 +2,6 @@
 button {
   font-family: inherit;
   font-size: inherit;
-  font-weight: bold;
   line-height: inherit;
   -webkit-appearance: none;
   vertical-align: middle;
@@ -16,11 +15,6 @@ button {
   user-select: none;
   background: none;
   display: inline-block;
-}
-
-.btn:hover,
-button:hover {
-  box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
 }
 
 .buttons { display: inline-block; }
