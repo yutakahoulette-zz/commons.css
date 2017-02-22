@@ -11,6 +11,7 @@ import nav from './nav'
 import about from './about'
 import align from './align'
 import branding from './branding'
+import background from './background'
 import blockquote from './blockquote'
 import border from './border'
 import button from './button'
@@ -73,11 +74,12 @@ const scroll = ID$ => v => {
 
 const view = state => 
   h('div.relative', {hook: {insert: scroll(state.ID$)}}, [
-    nav(state)
-  , h('div.main', [
+    h('div.main', [
       h('div.max-width-700.px-3', [
         about()
+      , nav(state)
       , align()
+      , background()
       , blockquote()
       , border()
       , branding()

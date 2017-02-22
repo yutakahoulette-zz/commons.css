@@ -76,7 +76,7 @@ select:-moz-focusring {
 .append input, 
 .append select {
   background-color: transparent;
-  padding-right: 1.5em;
+  padding-right: 2em;
 }
 
 input[type='checkbox'],
@@ -104,8 +104,8 @@ input[type='radio'] + label:before {
   text-align: center;
   background: white;
   display: inline-block;
-  line-height: .75em;
-  width: .75em;
+  line-height: 1em;
+  width: 1em;
   border: 1px grey solid;
   transition: background .1s ease-out;
 }

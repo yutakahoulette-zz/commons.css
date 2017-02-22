@@ -14,12 +14,8 @@ module.exports = _ => {
   .sm-hide { display:none !important }
 }
 
-@media (max-width: 780px) {
+@media (min-width: 480px) and (max-width: 780px) {
   .md-hide { display:none !important }
-}
-
-@media (max-width: 980px){
-  .lg-hide { display:none !important }
 }`, 'css')
   ])
   return section('hide', content)

@@ -26,7 +26,7 @@ module.exports = _ => {
 </span>`)
     , label('Select with caret appended')
     , h('span.append', [
-        h('span', '▾')
+        h('span', [h('icon.material-icons', 'arrow_drop_down')])
       , h('select', [
           h('option', {props: {disabled: 'true', selected: 'true'}}, 'Select One')
         , h('option', 'Coffee')

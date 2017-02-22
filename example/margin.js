@@ -4,7 +4,6 @@ import code from './code'
 import section from './section'
 import responsiveText from './responsive-text' 
 
-
 module.exports = _ => {
   const content = h('div', [
     title('Margin')

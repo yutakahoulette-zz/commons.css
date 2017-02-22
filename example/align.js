@@ -11,7 +11,7 @@ const klasses = [
 , '.align-bottom']
 
 const cell = klass =>
-    h(`pre.table-cell${klass}`, klass)
+    h(`span.table-cell${klass}`, klass)
   
 
 module.exports = _ => {

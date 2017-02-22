@@ -12,15 +12,16 @@ body { overflow: hidden; }
 .nav {
   left: 0;
   top: 0;
+  border-right: 1px solid $grey-4;
   position: absolute;
-  width: 170px;
+  width: 160px;
   overflow-y: auto;
   height: 100%;
 }
 
 .main {
-  width: calc(100% - 170px);
-  margin-left: 170px;
+  width: calc(100% - 160px);
+  margin-left: 160px;
   overflow-y: auto;
   height: 100%;
   padding-bottom: 100px;
@@ -35,6 +36,19 @@ body { overflow: hidden; }
 
 * {
   border-color: $grey-4;
+}
+
+@media (max-width: 500px) {
+  .nav { display: none; }
+
+  .main {
+    width: 100%; 
+    margin-left: 0; 
+  }
+  .main > .px-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 

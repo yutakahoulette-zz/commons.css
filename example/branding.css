@@ -35,10 +35,15 @@ input[type='checkbox']:checked + label:before,
 input[type='radio']:checked + label:before { background: $green } 
 
 /* unicode character for checkmark  */
-input[type='checkbox'] + label:before { content: '\2713' }
+input[type='checkbox'] + label:before { 
+  font-family: 'Material Icons';
+  content: '\E876';
+}
 
-/* unicode character for dot */
-input[type='radio'] + label:before { content: '\2022' }
+input[type='radio'] + label:before { content: 'M'; }
+
+input[type='radio']:checked + label:before { color:  transparent;
+}
 
 .toggle input[type='radio'] + label:hover { background: $green-light }
 

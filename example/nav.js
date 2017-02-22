@@ -6,6 +6,7 @@ import hyph from './hyphenate'
 const links = [
   'about'
 , 'align'
+, 'background'
 , 'blockquote'
 , 'border'
 , 'branding'
@@ -41,7 +42,5 @@ module.exports = state =>
       h('ul.tabs--v', 
           R.map(link(state.ID$), links)
       )
-
-
   ])
 

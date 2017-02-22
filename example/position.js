@@ -19,11 +19,17 @@ module.exports = _ => {
 .z-1 { z-index: 1 }
 .z-2 { z-index: 2 }
 .z-3 { z-index: 3 }
-.z-4 { z-index: 4 }`, 'css')
+.z-4 { z-index: 4 }
+
+.fit-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}`, 'css')
   ])
   return section('position', content)
 }
-
-
 
 

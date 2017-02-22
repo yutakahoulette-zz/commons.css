@@ -4,6 +4,11 @@
 .table        { display:table }
 .table-cell   { display:table-cell }
 
+.middle-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .overflow-hidden { overflow:hidden }
 .overflow-scroll { overflow:scroll }
 .overflow-auto   { overflow:auto }
