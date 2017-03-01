@@ -58,6 +58,69 @@
 .mr-auto { margin-right:auto }
 .mx-auto { margin-left:auto; margin-right:auto; }
 
+
+@media (max-width: 780px){
+  .md-m-0  { margin:0 }
+  .md-mt-0 { margin-top:0 }
+  .md-mr-0 { margin-right:0 }
+  .md-mb-0 { margin-bottom:0 }
+  .md-ml-0 { margin-left:0 }
+  .md-mx-0 { margin-left:0; margin-right:0 }
+  .md-my-0 { margin-top:0; margin-bottom:0 }
+
+  .md-m-05  { margin:.25rem }
+  .md-mt-05 { margin-top:.25rem }
+  .md-mr-05 { margin-right:.25rem }
+  .md-mb-05 { margin-bottom:.25rem }
+  .md-ml-05 { margin-left:.25rem }
+  .md-mx-05 { margin-left:.25rem; margin-right:.25rem }
+  .md-my-05 { margin-top:.25rem; margin-bottom:.25rem }
+
+  .md-m-1  { margin: .5rem }
+  .md-mt-1 { margin-top: .5rem }
+  .md-mr-1 { margin-right: .5rem }
+  .md-mb-1 { margin-bottom: .5rem }
+  .md-ml-1 { margin-left: .5rem }
+  .md-mx-1 { margin-left: .5rem; margin-right: .5rem }
+  .md-my-1 { margin-top: .5rem; margin-bottom: .5rem }
+
+  .md-m-2  { margin: 1rem }
+  .md-mt-2 { margin-top: 1rem }
+  .md-mr-2 { margin-right: 1rem }
+  .md-mb-2 { margin-bottom: 1rem }
+  .md-ml-2 { margin-left: 1rem }
+  .md-mx-2 { margin-left: 1rem; margin-right: 1rem }
+  .md-my-2 { margin-top: 1rem; margin-bottom: 1rem }
+
+  .md-m-3  { margin: 2rem }
+  .md-mt-3 { margin-top: 2rem }
+  .md-mr-3 { margin-right: 2rem }
+  .md-mb-3 { margin-bottom: 2rem }
+  .md-ml-3 { margin-left: 2rem }
+  .md-mx-3 { margin-left: 2rem; margin-right: 2rem }
+  .md-my-3 { margin-top: 2rem; margin-bottom: 2rem }
+
+  .md-m-4  { margin: 3rem }
+  .md-mt-4 { margin-top: 3rem }
+  .md-mr-4 { margin-right: 3rem }
+  .md-mb-4 { margin-bottom: 3rem }
+  .md-ml-4 { margin-left: 3rem }
+  .md-mx-4 { margin-left: 3rem; margin-right: 3rem }
+  .md-my-4 { margin-top: 3rem; margin-bottom: 3rem }
+
+  .md-m-5  { margin: 4rem }
+  .md-mt-5 { margin-top: 4rem }
+  .md-mr-5 { margin-right: 4rem }
+  .md-mb-5 { margin-bottom: 4rem }
+  .md-ml-5 { margin-left: 4rem }
+  .md-mx-5 { margin-left: 4rem; margin-right: 4rem }
+  .md-my-5 { margin-top: 4rem; margin-bottom: 4rem }
+
+  .md-ml-auto { margin-left:auto }
+  .md-mr-auto { margin-right:auto }
+  .md-mx-auto { margin-left:auto; margin-right:auto; }
+}
+
 @media (max-width: 480px){
   .sm-m-0  { margin:0 }
   .sm-mt-0 { margin-top:0 }
@@ -118,67 +181,5 @@
   .sm-ml-auto { margin-left:auto }
   .sm-mr-auto { margin-right:auto }
   .sm-mx-auto { margin-left:auto; margin-right:auto; }
-}
-
-@media (min-width: 480px) and (max-width: 780px){
-  .md-m-0  { margin:0 }
-  .md-mt-0 { margin-top:0 }
-  .md-mr-0 { margin-right:0 }
-  .md-mb-0 { margin-bottom:0 }
-  .md-ml-0 { margin-left:0 }
-  .md-mx-0 { margin-left:0; margin-right:0 }
-  .md-my-0 { margin-top:0; margin-bottom:0 }
-
-  .md-m-05  { margin:.25rem }
-  .md-mt-05 { margin-top:.25rem }
-  .md-mr-05 { margin-right:.25rem }
-  .md-mb-05 { margin-bottom:.25rem }
-  .md-ml-05 { margin-left:.25rem }
-  .md-mx-05 { margin-left:.25rem; margin-right:.25rem }
-  .md-my-05 { margin-top:.25rem; margin-bottom:.25rem }
-
-  .md-m-1  { margin: .5rem }
-  .md-mt-1 { margin-top: .5rem }
-  .md-mr-1 { margin-right: .5rem }
-  .md-mb-1 { margin-bottom: .5rem }
-  .md-ml-1 { margin-left: .5rem }
-  .md-mx-1 { margin-left: .5rem; margin-right: .5rem }
-  .md-my-1 { margin-top: .5rem; margin-bottom: .5rem }
-
-  .md-m-2  { margin: 1rem }
-  .md-mt-2 { margin-top: 1rem }
-  .md-mr-2 { margin-right: 1rem }
-  .md-mb-2 { margin-bottom: 1rem }
-  .md-ml-2 { margin-left: 1rem }
-  .md-mx-2 { margin-left: 1rem; margin-right: 1rem }
-  .md-my-2 { margin-top: 1rem; margin-bottom: 1rem }
-
-  .md-m-3  { margin: 2rem }
-  .md-mt-3 { margin-top: 2rem }
-  .md-mr-3 { margin-right: 2rem }
-  .md-mb-3 { margin-bottom: 2rem }
-  .md-ml-3 { margin-left: 2rem }
-  .md-mx-3 { margin-left: 2rem; margin-right: 2rem }
-  .md-my-3 { margin-top: 2rem; margin-bottom: 2rem }
-
-  .md-m-4  { margin: 3rem }
-  .md-mt-4 { margin-top: 3rem }
-  .md-mr-4 { margin-right: 3rem }
-  .md-mb-4 { margin-bottom: 3rem }
-  .md-ml-4 { margin-left: 3rem }
-  .md-mx-4 { margin-left: 3rem; margin-right: 3rem }
-  .md-my-4 { margin-top: 3rem; margin-bottom: 3rem }
-
-  .md-m-5  { margin: 4rem }
-  .md-mt-5 { margin-top: 4rem }
-  .md-mr-5 { margin-right: 4rem }
-  .md-mb-5 { margin-bottom: 4rem }
-  .md-ml-5 { margin-left: 4rem }
-  .md-mx-5 { margin-left: 4rem; margin-right: 4rem }
-  .md-my-5 { margin-top: 4rem; margin-bottom: 4rem }
-
-  .md-ml-auto { margin-left:auto }
-  .md-mr-auto { margin-right:auto }
-  .md-mx-auto { margin-left:auto; margin-right:auto; }
 }
 

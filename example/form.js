@@ -4,14 +4,14 @@ import title from './title'
 import section from './section'
 import warn from './brand-warn'
 
-const label = text => h('strong.block.mb-1.mt-3', text)
+const label = text => h('label.mt-2', text)
 
 module.exports = _ => {
   const content = h('div', [
       title('Form')
     , warn()
     , h('div', [
-        h('strong.block.mb-1', 'Text input')
+        label('Text input')
       , h('input.max-width-300.mb-1', {props: {type: 'text'}})
       , label('Number input with dollar prepended')
       , h('span.prepend', [
@@ -45,11 +45,14 @@ module.exports = _ => {
     , label('Textarea')
     , h('textarea.max-width-300.mb-1', {props: {type: 'text'}})
     , label('Radio')
-    , h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
-    , h('label', {attrs: {for: 'radio1'}}, 'Heads')
-    , h('br')
-    , h('input', {props: {type: 'radio', id: 'radio2', name: 'radio'}})
-    , h('label', {attrs: {for: 'radio2'}}, 'Tails')
+    , h('div.mb-1', [
+        h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
+      , h('label', {attrs: {for: 'radio1'}}, [h('span', 'Heads')])
+      ])
+    , h('div.mb-1', [
+        h('input', {props: {type: 'radio', id: 'radio2', name: 'radio'}})
+      , h('label', {attrs: {for: 'radio2'}}, [h('span', 'Tails')])
+      ])
     , code(
 `<input type='radio' id='radio1' name='radio'>
 <label for='radio1'>Heads</label>
@@ -75,11 +78,14 @@ module.exports = _ => {
   <label for='toggle3'>Monthly</label>
 </span>`)
     , label('Checkboxes')
-    , h('input', {props: {type: 'checkbox', id: 'check1', name: 'check'}})
-    , h('label', {attrs: {for: 'check1'}}, 'Pizza')
-    , h('br')
-    , h('input', {props: {type: 'checkbox', id: 'check2', name: 'check'}})
-    , h('label', {attrs: {for: 'check2'}}, 'Tacos')
+    , h('div.mb-1', [
+        h('input', {props: {type: 'checkbox', id: 'check1', name: 'check'}})
+      , h('label', {attrs: {for: 'check1'}}, [h('span', 'Pizza')])
+      ])
+    , h('div.mb-1', [
+        h('input', {props: {type: 'checkbox', id: 'check2', name: 'check'}})
+      , h('label', {attrs: {for: 'check2'}}, [h('span', 'Tacos')])
+      ])
     , code(
 `<input type='checkbox' id='check1' name='check'>
 <label for='check1'>Pizza</label>

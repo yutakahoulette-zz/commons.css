@@ -10,10 +10,11 @@ const demo = h('div.border.p-3.md-p-2.sm-p-1.mb-1', '.p-3.md-p-2.sm-p-1')
 module.exports = _ => {
   const content = h('div', [
     title('Padding')
-  , h('p.helpBox--success', responsiveText) 
   , demo
+  , h('p.helpBox--success', responsiveText) 
   , code(
-`.p-0  { padding:0 }
+`
+.p-0  { padding:0 }
 .pt-0 { padding-top:0 }
 .pr-0 { padding-right:0 }
 .pb-0 { padding-bottom:0 }

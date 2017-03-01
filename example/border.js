@@ -4,7 +4,7 @@ import section from './section'
 
 const snippet = (klass, text) => {
   return h('span', [
-    h(`pre.p-1.inline-block.mt-0${klass}`, text || klass)
+    h(`div.p-1.mb-2.inline-block${klass}`, text || klass)
   , h('br')
   ])
 }

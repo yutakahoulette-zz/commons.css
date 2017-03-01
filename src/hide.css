@@ -8,3 +8,7 @@
   .md-hide { display:none !important }
 }
 
+@media (min-width: 780px){
+  .lg-hide { display:none !important }
+}
+
