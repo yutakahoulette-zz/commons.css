@@ -9,6 +9,7 @@ import url$ from 'flyd-url'
 import nav from './nav'
 
 import about from './about'
+import aspect from './aspect'
 import align from './align'
 import branding from './branding'
 import background from './background'
@@ -76,9 +77,10 @@ const view = state =>
   h('div.relative', {hook: {insert: scroll(state.ID$)}}, [
     h('div.main', [
       h('div.max-width-700.px-3', [
-        about()
-      , nav(state)
+        nav(state)
+      , about()
       , align()
+      , aspect()
       , background()
       , blockquote()
       , border()

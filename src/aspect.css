@@ -1,0 +1,27 @@
+.aspect { position: relative }
+
+.aspect:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.aspect > div:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.aspect-1x1:before { padding-top: 100%; }
+
+.aspect-1x2:before { padding-top: 200%; }
+.aspect-2x1:before { padding-top: 50%; }
+
+.aspect-2x3:before { padding-top: 150%; }
+.aspect-3x2:before { padding-top: 66.6666666%; }
+
+.aspect-3x4:before { padding-top: 133.3333333%; }
+.aspect-4x3:before { padding-top: 75%; }
+

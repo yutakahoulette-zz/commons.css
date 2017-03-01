@@ -6,6 +6,7 @@ import hyph from './hyphenate'
 const links = [
   'about'
 , 'align'
+, 'aspect'
 , 'background'
 , 'blockquote'
 , 'border'
