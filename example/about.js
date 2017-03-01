@@ -9,5 +9,6 @@ module.exports = state =>
       , h('a', {props: {href: 'http://basscss.com'}}, 'Basscss')
       , ', and styles for a handful of core UI components.' 
       ])
+  , h('pre.bg-grey-1.inline-block.p-1.mt-2', 'npm install commons.css')
   ])
 

@@ -1,17 +1,19 @@
 includes utility classes + styles for core UI components:
 
-**docs:** [http://yutakahoulette/commons.css/](http://yutakahoulette.com/commons.css/)
+**docs:** [http://yutakahoulette.com/commons.css/](http://yutakahoulette.com/commons.css/)
 
 to use: `npm install --save --save-dev commons.css`
 
 module list:
 
 - align
+- aspect
 - background
 - blockquote
 - border
 - button
 - cursor
+- dissabled
 - form
 - grid
 - help box
