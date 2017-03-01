@@ -1,5 +1,17 @@
 .hide { display:none !important }
 
+.hover-child-hide,
+.hover-parent-hide:hover .hover-child-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover-child-show,
+.hover-parent-hide:hover .hover-child-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 @media (max-width: 480px) {
   .sm-hide { display:none !important }
 }

@@ -24,9 +24,9 @@ module.exports = _ => {
 .fit-absolute {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  right: 0;
 }`, 'css')
   ])
   return section('position', content)

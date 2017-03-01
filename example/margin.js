@@ -64,7 +64,15 @@ module.exports = _ => {
 
 .ml-auto { margin-left: auto }
 .mr-auto { margin-right: auto }
-.mx-auto { margin-left: auto; margin-right: auto; }`, 'css')
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.m-neg-05 { margin: -.25rem; }
+.m-neg-1 { margin: -.5rem; }
+.m-neg-2 { margin: -1rem; }
+.m-neg-3 { margin: -2rem; }
+.m-neg-4 { margin: -3rem; }
+.m-neg-5 { margin: -4rem; }
+`, 'css')
   ])
   return section('margin', content)
 }
