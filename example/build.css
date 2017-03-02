@@ -452,10 +452,6 @@ p, dl, ol, ul, pre, blockquote {
   margin-bottom: 1em;
 }
 
-code, pre, samp {
-  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
-}
-
 pre {
   font-size: .85em;
   overflow: auto;
@@ -480,6 +476,7 @@ a, button {
 a { text-decoration: none; }
 
 fieldset {
+  border: none;
   padding: 0;
   margin: 0;
 }
@@ -538,6 +535,12 @@ textarea { resize: vertical; }
 .rounded-left{ border-radius: 3px 0 0 3px }
 
 .not-rounded{ border-radius:0 }
+
+.border-width-1 { border-width: .5rem; }
+
+.border-width-2 { border-width: 1rem; }
+
+.border-width-3 { border-width: 2rem; }
 
 .col       { float:left }
 
@@ -1298,7 +1301,7 @@ blockquote {
 
 .disabled, *:disabled {
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 textarea, input, select {
@@ -1623,11 +1626,17 @@ small, .small { font-size: .75rem; }
 
 .strike { text-decoration: line-through}
 
-.caps { text-transform:uppercase; letter-spacing: .2em; }
+.capitalize { text-transform:capitalize; }
+
+.uppercase { text-transform:uppercase; }
 
 .underline{ text-decoration:underline }
 
 .hover-underline:hover { text-decoration:underline }
+
+.code, code, pre, samp {
+  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
+}
 
 .truncate{
   max-width:100%;
@@ -1660,15 +1669,11 @@ small, .small { font-size: .75rem; }
 
 .line-height-6 { line-height: 2 }
 
-.hljs-tag {
-  color: rgba(0,0,0,0.4);
-}
+.hljs-tag { color: rgba(0,0,0,0.4); }
 
-.hljs-name {
-  color: black;
-}
+.hljs-name { color: black; }
 
-.hljs-selector-class, .hljs-attr {
+.hljs-selector-pseudo, .hljs-selector-class, .hljs-attr {
   color: rgb(62, 142, 103);
 }
 

@@ -36,3 +36,7 @@
 
 .not-rounded{ border-radius:0 }
 
+.border-width-1 { border-width: .5rem; }
+.border-width-2 { border-width: 1rem; }
+.border-width-3 { border-width: 2rem; }
+

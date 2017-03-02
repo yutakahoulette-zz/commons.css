@@ -33,12 +33,6 @@ blockquote {
   margin-bottom: 1em;
 }
 
-code,
-pre,
-samp {
-  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
-}
-
 pre {
   font-size: .85em;
   overflow: auto;
@@ -64,6 +58,7 @@ button {
 a { text-decoration: none; }
 
 fieldset {
+  border: none;
   padding: 0;
   margin: 0;
 }

@@ -6,9 +6,17 @@
 .normal { font-weight:normal }
 .italic { font-style:italic }
 .strike { text-decoration: line-through}
-.caps { text-transform:uppercase; letter-spacing: .2em; }
+.capitalize { text-transform:capitalize; }
+.uppercase { text-transform:uppercase; }
 .underline{ text-decoration:underline }
 .hover-underline:hover { text-decoration:underline }
+
+.code,
+code,
+pre,
+samp {
+  font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
+}
 
 .truncate{
   max-width:100%;

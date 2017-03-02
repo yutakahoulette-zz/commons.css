@@ -11,20 +11,24 @@ module.exports = _ => {
   , h('p.bold.mt-3', 'bold')
   , h('p.normal', 'normal')
   , h('p.italic', 'italic')
-  , h('p.caps', 'caps')
+  , h('p.capitalize', 'capitalize')
+  , h('p.uppercase', 'uppercase')
   , h('p.underline', 'underline')
   , h('p.hover-underline', 'hover underline')
   , h('p.strike', 'strike')
   , h('div.width-100.truncate', 'Truncateeeeeeeeeeeeeeeeee')
+  , h('p.code', 'const greet = text => alert(text)')
   , code(
 `<p class='bold'>bold</p>
 <p class='normal'>normal</p>
 <p class='italic'>italic</p>
-<p class='caps'>caps</p>
+<p class='capitalize'>capitalize</p>
+<p class='uppercase'>uppercase</p>
 <p class='underline'>underline</p>
 <p class='strike'>strike</p>
 <p class='hover-underline'>hover underline</p>
 <p class='truncate width-100'>Truncateeeeeeeeeeeeeeeeee</p>
+<p class='code'>const greet = text => alert(text)</p>
 `)
   , code(
 `.line-height-1 { line-height: 1 }
