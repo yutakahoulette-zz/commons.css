@@ -11,7 +11,7 @@ const klasses = [
 , '.align-bottom']
 
 const cell = klass =>
-    h(`span.table-cell${klass}`, klass)
+    h(`span.code.table-cell${klass}`, klass)
   
 
 module.exports = _ => {
@@ -21,10 +21,10 @@ module.exports = _ => {
   , code(
 `<div class='table bg-grey-1'>
   <p class='py-3.opacity-0'>x</p>
-  <pre class='table-cell.align-baseline'>.align-baseline</pre>
-  <pre class='table-cell.align-top'>.align-top</pre>
-  <pre class='table-cell.align-middle'>.align-middle</pre>
-  <pre class='table-cell.align-bottom'>.align-bottom</pre>
+  <span class='table-cell.align-baseline'>.align-baseline</span>
+  <span class='table-cell.align-top'>.align-top</span>
+  <span class='table-cell.align-middle'>.align-middle</span>
+  <span class='table-cell.align-bottom'>.align-bottom</span>
 </div>`)
   ])
   return section('align', content)

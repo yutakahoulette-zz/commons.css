@@ -6,7 +6,7 @@ import responsiveText from './responsive-text'
 
 
 const demo = 
-  h('div.p-2.border.mb-3.md-mb-2.sm-mb-1', '.mb-3.md-mb-2.sm-mb-1')
+  h('div.code.p-2.border.mb-3.md-mb-2.sm-mb-1', '.mb-3.md-mb-2.sm-mb-1')
 
 module.exports = _ => {
   const content = h('div', [

@@ -8,14 +8,14 @@ module.exports = _ => {
   const content = h('div', [
     title('Button')
   , warn()
-  , h('p.mb-3', 'If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the .btn class')
+  , h('p.mb-3', ['If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the ',  h('span.code', '.btn'),  ' class'])
   , h('div.col-6.inline-block.mb-1', [
       h('button', 'Learn more')
-    , h('div.mt-1', 'default')
+    , h('div.mt-1.code', 'default')
     ])
   , h('div.col-6.inline-block.mb-1', [
       h('button', {props: {disabled : true}}, 'Loading...')
-    , h('div.mt-1', 'disabled')
+    , h('div.mt-1.code', '.disabled')
     ])
   , h('p.mb-3', [
       'Instead of creating additional BEM style classes for buttons, such as '
@@ -23,20 +23,20 @@ module.exports = _ => {
     , ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.' 
     ])
   , h('div.col-6.inline-block.mb-1', [
-      h('button.h4.caps', 'Large caps')
-    , h('div.mt-1', 'button.h4.caps')
+      h('button.h4.uppercase', 'Large upppercase')
+    , h('div.mt-1.code', 'button.h4.uppercase')
     ])
   , h('div.col-6.inline-block.mb-1', [
       h('button.p-2.bold', 'Bold and padded')
-    , h('div.mt-1', 'button.p-2.bold')
+    , h('div.mt-1.code', 'button.p-2.bold')
     ])
-  , h('div.col-6.inline-block.mb-1', [
+  , h('div.col-6.inline-block.my-1', [
       h('button.pill.line-height-1', 'Pill shaped')
-    , h('div.mt-1', 'button.pill.line-height-1')
+    , h('div.mt-1.code', 'button.pill.line-height-1')
     ])
-  , h('div.col-6.inline-block.mb-1', [
+  , h('div.col-6.inline-block.my-1', [
       h('button.not-rounded.sh-2', 'Shadow')
-    , h('div.mt-1', 'button.not-rounded.sh-1')
+    , h('div.mt-1.code', 'button.not-rounded.sh-1')
     ])
   , h('p.my-3', 'To create a connected group of buttons, wrap your buttons or .btn classes in an element with the .buttons class')
   , h('div.buttons', [

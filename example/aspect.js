@@ -15,7 +15,7 @@ const aspects = [
 ]
 
 const box = aspect => 
-  h(`div.mb-1.aspect.aspect-${aspect}.col-5.md-col-8.sm-col-12`, [h('div.p-2.border', `.aspect.aspect-${aspect}`)])
+  h(`div.mb-1.aspect.aspect-${aspect}.col-5.md-col-8.sm-col-12`, [h('div.p-2.border.code', `.aspect.aspect-${aspect}`)])
 
 const demo = h('div.mt-2', R.map(box, aspects))
   

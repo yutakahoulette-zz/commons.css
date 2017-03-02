@@ -25,14 +25,14 @@
 
 .border-none{ border:0 }
 
-.rounded{ border-radius: 3px }
-.circle{ border-radius:50% }
-.pill { border-radius:1em }
+.rounded{ border-radius: 5px }
+.circle{ border-radius:100% }
+.pill { border-radius:9999px }
 
-.rounded-top{ border-radius: 3px 3px 0 0 }
-.rounded-right{ border-radius: 0 3px 3px 0 }
-.rounded-bottom{ border-radius: 0 0 3px 3px }
-.rounded-left{ border-radius: 3px 0 0 3px }
+.rounded-top{ border-radius: 5px 5px 0 0 }
+.rounded-right{ border-radius: 0 5px 5px 0 }
+.rounded-bottom{ border-radius: 0 0 5px 5px }
+.rounded-left{ border-radius: 5px 0 0 5px }
 
 .not-rounded{ border-radius:0 }
 

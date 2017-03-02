@@ -3,16 +3,15 @@ import title from './title'
 import code from './code'
 import section from './section'
 
-const demo = h('div', [
+const demo = h('div.code', [
   h('div.sm-hide.p-2.border.mb-1', '.sm-hide')
 , h('div.md-hide.p-2.border.mb-1', '.md-hide')
 , h('div.lg-hide.p-2.border.mb-1', '.lg-hide')
-, h('div.my-1.p-2.border.hover-parent-hide', [
-    '.hover-parent-hide'
-  , h('div.hover-child-show.border.p-2', '.hover-child-show')
-  , h('div.hover-child-hide.border.p-2', '.hover-child-hide')
+, h('div.my-1.p-2.border.hover-hide-parent', [
+    '.hover-hide-parent'
+  , h('div.hover-show-child.border.p-2.mt-2', '.hover-show-child')
+  , h('div.hover-hide-child.border.p-2.mt-2', '.hover-hide-child')
   ])
-
 ])
 
 module.exports = _ => {
@@ -22,16 +21,14 @@ module.exports = _ => {
   , code(`
 .hide { display:none !important }
 
-.hover-child-hide,
-.hover-parent-hide:hover .hover-child-show {
-  opacity: 1;
-  visibility: visible;
+.hover-hide-child,
+.hover-hide-parent:hover .hover-show-child {
+  display: none;
 }
 
-.hover-child-show,
-.hover-parent-hide:hover .hover-child-hide {
-  opacity: 0;
-  visibility: hidden;
+.hover-show-child,
+.hover-hide-parent:hover .hover-hide-child {
+  display: block;
 }
 
 @media (max-width: 480px) {

@@ -9,6 +9,11 @@ module.exports = state =>
       , h('a', {props: {href: 'http://basscss.com'}}, 'Basscss')
       , ', and styles for a handful of core UI components.' 
       ])
-  , h('pre.bg-grey-1.inline-block.p-1.mt-2', 'npm install commons.css')
+  , h('p.code.bg-grey-1.inline-block.p-1.mt-2', 'npm install commons.css')
+  , h('p', [ h('a', {props: {href: 'https://github.com/yutakahoulette/commons.css'}}, 'View on Github.')])
+  , h('p.mt-3', {hook: {insert: x => x.elm.innerHTML = star}})
   ])
 
+const star = `
+<a class="github-button" href="https://github.com/yutakahoulette/commons.css" aria-label="Star yutakahoulette/commons.css on GitHub">Star</a>
+`

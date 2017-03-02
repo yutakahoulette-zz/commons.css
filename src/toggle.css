@@ -1,0 +1,18 @@
+.toggle-show-parent input[type=checkbox] + label:before,
+.toggle-show-parent input[type=checkbox]:checked + label *:first-of-type,
+.toggle-show-parent input[type=checkbox] + label  *:last-of-type,
+.toggle-show-parent input[type=checkbox] ~ .toggle-show-child { 
+  display: none;
+}
+
+.toggle-show-parent input[type=checkbox] + label { 
+  margin-bottom: 0;
+}
+
+.toggle-show-parent input[type=checkbox] + label  *:first-of-type,
+.toggle-show-parent input[type=checkbox]:checked + label  *:last-of-type,
+.toggle-show-parent input[type=checkbox]:checked ~ .toggle-show-child { 
+  display: block;
+} 
+
+

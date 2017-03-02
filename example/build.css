@@ -453,7 +453,6 @@ p, dl, ol, ul, pre, blockquote {
 }
 
 pre {
-  font-size: .85em;
   overflow: auto;
 }
 
@@ -520,19 +519,19 @@ textarea { resize: vertical; }
 
 .border-none{ border:0 }
 
-.rounded{ border-radius: 3px }
+.rounded{ border-radius: 5px }
 
-.circle{ border-radius:50% }
+.circle{ border-radius:100% }
 
-.pill { border-radius:1em }
+.pill { border-radius:9999px }
 
-.rounded-top{ border-radius: 3px 3px 0 0 }
+.rounded-top{ border-radius: 5px 5px 0 0 }
 
-.rounded-right{ border-radius: 0 3px 3px 0 }
+.rounded-right{ border-radius: 0 5px 5px 0 }
 
-.rounded-bottom{ border-radius: 0 0 3px 3px }
+.rounded-bottom{ border-radius: 0 0 5px 5px }
 
-.rounded-left{ border-radius: 3px 0 0 3px }
+.rounded-left{ border-radius: 5px 0 0 5px }
 
 .not-rounded{ border-radius:0 }
 
@@ -1166,14 +1165,12 @@ textarea { resize: vertical; }
 
 .hide { display:none !important }
 
-.hover-child-hide, .hover-parent-hide:hover .hover-child-show {
-  opacity: 1;
-  visibility: visible;
+.hover-hide-child, .hover-hide-parent:hover .hover-show-child {
+  display: none;
 }
 
-.hover-child-show, .hover-parent-hide:hover .hover-child-hide {
-  opacity: 0;
-  visibility: hidden;
+.hover-show-child, .hover-hide-parent:hover .hover-hide-child {
+  display: block;
 }
 
 @media (max-width: 480px) {
@@ -1578,6 +1575,18 @@ ul.tabs--v li {
   border-bottom-width: 1px;
 }
 
+.toggle-show-parent input[type=checkbox] + label:before, .toggle-show-parent input[type=checkbox]:checked + label *:first-of-type, .toggle-show-parent input[type=checkbox] + label  *:last-of-type, .toggle-show-parent input[type=checkbox] ~ .toggle-show-child { 
+  display: none;
+}
+
+.toggle-show-parent input[type=checkbox] + label { 
+  margin-bottom: 0;
+}
+
+.toggle-show-parent input[type=checkbox] + label  *:first-of-type, .toggle-show-parent input[type=checkbox]:checked + label  *:last-of-type, .toggle-show-parent input[type=checkbox]:checked ~ .toggle-show-child { 
+  display: block;
+}
+
 h1, .h1 { font-size: 3rem; }
 
 h2, .h2 { font-size: 2.5rem; }
@@ -1634,7 +1643,7 @@ small, .small { font-size: .75rem; }
 
 .hover-underline:hover { text-decoration:underline }
 
-.code, code, pre, samp {
+.code, pre {
   font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
 }
 
@@ -1681,9 +1690,10 @@ small, .small { font-size: .75rem; }
   color: rgb(33, 125, 161);
 }
 
-/* brand font */
-
-html { font-family: 'open sans' }
+body {
+  font-family: 
+-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
 
 /* brand color for anchor */
 

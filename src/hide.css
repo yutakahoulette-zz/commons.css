@@ -1,15 +1,13 @@
 .hide { display:none !important }
 
-.hover-child-hide,
-.hover-parent-hide:hover .hover-child-show {
-  opacity: 1;
-  visibility: visible;
+.hover-hide-child,
+.hover-hide-parent:hover .hover-show-child {
+  display: none;
 }
 
-.hover-child-show,
-.hover-parent-hide:hover .hover-child-hide {
-  opacity: 0;
-  visibility: hidden;
+.hover-show-child,
+.hover-hide-parent:hover .hover-hide-child {
+  display: block;
 }
 
 @media (max-width: 480px) {

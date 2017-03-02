@@ -5,7 +5,7 @@ import section from './section'
 import responsiveText from './responsive-text' 
 
 
-const demo = h('div.border.p-3.md-p-2.sm-p-1.mb-1', '.p-3.md-p-2.sm-p-1')
+const demo = h('div.border.code.p-3.md-p-2.sm-p-1.mb-1', '.p-3.md-p-2.sm-p-1')
 
 module.exports = _ => {
   const content = h('div', [

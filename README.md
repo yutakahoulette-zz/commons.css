@@ -29,6 +29,7 @@ module list:
 - shadow
 - table
 - tabs
+- toggle-scale
 - type-scale
 - typography
 

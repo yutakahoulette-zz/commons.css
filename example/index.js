@@ -11,7 +11,6 @@ import nav from './nav'
 import about from './about'
 import aspect from './aspect'
 import align from './align'
-import branding from './branding'
 import background from './background'
 import blockquote from './blockquote'
 import border from './border'
@@ -33,6 +32,7 @@ import progressBar from './progress-bar'
 import shadow from './shadow'
 import table from './table'
 import tabs from './tabs'
+import toggle from './toggle'
 import typeScale from './type-scale'
 import typography from './typography'
 
@@ -84,7 +84,6 @@ const view = state =>
       , background()
       , blockquote()
       , border()
-      , branding()
       , button()
       , cursor()
       , disabled()
@@ -103,6 +102,7 @@ const view = state =>
       , shadow()
       , table()
       , tabs()
+      , toggle()
       , typeScale()
       , typography()
       ])

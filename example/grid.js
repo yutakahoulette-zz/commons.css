@@ -4,7 +4,7 @@ import code from './code'
 import section from './section'
 import responsiveText from './responsive-text' 
 
-const demo = h('div.clearfix', [
+const demo = h('div.clearfix.code', [
   h('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12')
 , h('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12')
 , h('div.border.p-2.col.col-4.md-col-12', '.col-4.md-col-12')

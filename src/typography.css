@@ -12,9 +12,7 @@
 .hover-underline:hover { text-decoration:underline }
 
 .code,
-code,
-pre,
-samp {
+pre {
   font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
 }
 

@@ -10,7 +10,6 @@ const links = [
 , 'background'
 , 'blockquote'
 , 'border'
-, 'branding'
 , 'button'
 , 'cursor'
 , 'disabled'
@@ -29,6 +28,7 @@ const links = [
 , 'shadow'
 , 'table'
 , 'tabs'
+, 'toggle-show'
 , 'type-scale'
 , 'typography'
 ]
