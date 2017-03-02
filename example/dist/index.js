@@ -8,8 +8,12 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (state) {
-    return (0, _h2.default)('section.pt-3.pb-4.border-bottom', { props: { id: 'about' } }, [(0, _h2.default)('h1.mt-0.mb-4', 'commons.css'), (0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'is comprised of utility classes heavily inspired by ', (0, _h2.default)('a', { props: { href: 'http://basscss.com' } }, 'Basscss'), ', and styles for a handful of core UI components.']), (0, _h2.default)('pre.bg-grey-1.inline-block.p-1.mt-2', 'npm install commons.css')]);
+    return (0, _h2.default)('section.pt-3.pb-4.border-bottom', { props: { id: 'about' } }, [(0, _h2.default)('h1.mt-0.mb-4', 'commons.css'), (0, _h2.default)('p', [(0, _h2.default)('strong', 'commons.css '), 'is comprised of utility classes heavily inspired by ', (0, _h2.default)('a', { props: { href: 'http://basscss.com' } }, 'Basscss'), ', and styles for a handful of core UI components.']), (0, _h2.default)('p.code.bg-grey-1.inline-block.p-1.mt-2', 'npm install commons.css'), (0, _h2.default)('p', [(0, _h2.default)('a', { props: { href: 'https://github.com/yutakahoulette/commons.css' } }, 'View on Github.')]), (0, _h2.default)('p.mt-3', { hook: { insert: function insert(x) {
+                return x.elm.innerHTML = star;
+            } } })]);
 };
+
+var star = '\n<a class="github-button" href="https://github.com/yutakahoulette/commons.css" aria-label="Star yutakahoulette/commons.css on GitHub">Star</a>\n';
 
 },{"snabbdom/h":237}],2:[function(require,module,exports){
 'use strict';
@@ -39,15 +43,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var klasses = ['.align-baseline', '.align-top', '.align-middle', '.align-bottom'];
 
 var cell = function cell(klass) {
-  return (0, _h2.default)('span.table-cell' + klass, klass);
+  return (0, _h2.default)('span.code.table-cell' + klass, klass);
 };
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Align'), (0, _h2.default)('div.table.bg-grey-1.col-12.my-3', _ramda2.default.concat([(0, _h2.default)('p.py-3.opacity-0', 'x')], _ramda2.default.map(cell, klasses))), (0, _code2.default)('<div class=\'table bg-grey-1\'>\n  <p class=\'py-3.opacity-0\'>x</p>\n  <pre class=\'table-cell.align-baseline\'>.align-baseline</pre>\n  <pre class=\'table-cell.align-top\'>.align-top</pre>\n  <pre class=\'table-cell.align-middle\'>.align-middle</pre>\n  <pre class=\'table-cell.align-bottom\'>.align-bottom</pre>\n</div>')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Align'), (0, _h2.default)('div.table.bg-grey-1.col-12.my-3', _ramda2.default.concat([(0, _h2.default)('p.py-3.opacity-0', 'x')], _ramda2.default.map(cell, klasses))), (0, _code2.default)('<div class=\'table bg-grey-1\'>\n  <p class=\'py-3.opacity-0\'>x</p>\n  <span class=\'table-cell.align-baseline\'>.align-baseline</span>\n  <span class=\'table-cell.align-top\'>.align-top</span>\n  <span class=\'table-cell.align-middle\'>.align-middle</span>\n  <span class=\'table-cell.align-bottom\'>.align-bottom</span>\n</div>')]);
   return (0, _section2.default)('align', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"ramda":236,"snabbdom/h":237}],3:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"ramda":236,"snabbdom/h":237}],3:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -75,7 +79,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var aspects = ['1x1', '1x2', '2x1', '2x3', '3x2', '3x4', '4x3'];
 
 var box = function box(aspect) {
-  return (0, _h2.default)('div.mb-1.aspect.aspect-' + aspect + '.col-5.md-col-8.sm-col-12', [(0, _h2.default)('div.p-2.border', '.aspect.aspect-' + aspect)]);
+  return (0, _h2.default)('div.mb-1.aspect.aspect-' + aspect + '.col-5.md-col-8.sm-col-12', [(0, _h2.default)('div.p-2.border.code', '.aspect.aspect-' + aspect)]);
 };
 
 var demo = (0, _h2.default)('div.mt-2', _ramda2.default.map(box, aspects));
@@ -85,7 +89,7 @@ module.exports = function (_) {
   return (0, _section2.default)('aspect', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"ramda":236,"snabbdom/h":237}],4:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"ramda":236,"snabbdom/h":237}],4:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -111,7 +115,7 @@ module.exports = function (_) {
   return (0, _section2.default)('background', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],5:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],5:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -133,7 +137,7 @@ module.exports = function (_) {
   return (0, _section2.default)('blockquote', content);
 };
 
-},{"./section":30,"./title":34,"snabbdom/h":237}],6:[function(require,module,exports){
+},{"./section":29,"./title":33,"snabbdom/h":237}],6:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -151,15 +155,15 @@ var _section2 = _interopRequireDefault(_section);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var snippet = function snippet(klass, text) {
-  return (0, _h2.default)('span', [(0, _h2.default)('div.p-1.mb-2.inline-block' + klass, text || klass), (0, _h2.default)('br')]);
+  return (0, _h2.default)('span', [(0, _h2.default)('div.code.p-1.mb-2.inline-block' + klass, text || klass), (0, _h2.default)('br')]);
 };
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Border'), (0, _h2.default)('div', [snippet('.border'), snippet('.border-top'), snippet('.border-right'), snippet('.border-bottom'), snippet('.border-left'), snippet('.border-none'), snippet('.bg-grey-4.pill', '.pill (1em)'), snippet('.bg-grey-4.rounded', '.rounded (3px)'), snippet('.bg-grey-4.rounded-right', '.rounded-right'), snippet('.bg-grey-4.rounded-top', '.rounded-top'), snippet('.bg-grey-4.rounded-right', '.rounded-right'), snippet('.bg-grey-4.rounded-bottom', '.rounded-bottom'), snippet('.bg-grey-4.rounded-left', '.rounded-left'), snippet('.bg-grey-4.not-rounded', '.not-rounded'), (0, _h2.default)('pre.bg-grey-4.inline-block.center.circle.mt-0', { style: { lineHeight: '75px', width: '75px' } }, '.circle')])]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Border'), (0, _h2.default)('div', [snippet('.border'), snippet('.border-top'), snippet('.border-right'), snippet('.border-bottom'), snippet('.border-left'), snippet('.border.border-width-1'), snippet('.border-top.border-width-2'), snippet('.border-bottom.border-width-3'), snippet('.border-none'), snippet('.bg-grey-4.pill', '.pill'), snippet('.bg-grey-4.rounded', '.rounded'), snippet('.bg-grey-4.rounded-right', '.rounded-right'), snippet('.bg-grey-4.rounded-top', '.rounded-top'), snippet('.bg-grey-4.rounded-right', '.rounded-right'), snippet('.bg-grey-4.rounded-bottom', '.rounded-bottom'), snippet('.bg-grey-4.rounded-left', '.rounded-left'), snippet('.bg-grey-4.not-rounded', '.not-rounded'), (0, _h2.default)('pre.bg-grey-4.inline-block.center.circle.mt-0', { style: { lineHeight: '75px', width: '75px' } }, '.circle')])]);
   return (0, _section2.default)('border', content);
 };
 
-},{"./section":30,"./title":34,"snabbdom/h":237}],7:[function(require,module,exports){
+},{"./section":29,"./title":33,"snabbdom/h":237}],7:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -169,36 +173,10 @@ var _h2 = _interopRequireDefault(_h);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-    return (0, _h2.default)('div.helpBox--warn.mb-3', ['Some of these elements have ', (0, _h2.default)('a', { props: { href: '#branding' } }, 'branding styles '), 'added for demonstration purposes.']);
+    return (0, _h2.default)('div.helpBox--warn.mb-3', 'Some of these elements have branding styles added for demonstration purposes.');
 };
 
 },{"snabbdom/h":237}],8:[function(require,module,exports){
-'use strict';
-
-var _h = require('snabbdom/h');
-
-var _h2 = _interopRequireDefault(_h);
-
-var _title = require('./title');
-
-var _title2 = _interopRequireDefault(_title);
-
-var _code = require('./code');
-
-var _code2 = _interopRequireDefault(_code);
-
-var _section = require('./section');
-
-var _section2 = _interopRequireDefault(_section);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Branding'), (0, _h2.default)('div.helpBox--error.mb-3', 'These branding styles are not included in commons.css. They are added just to this page for reference and demonstration purposes.'), (0, _code2.default)('html { font-family: \'Open Sans\' }\n\na { color: $blue }\n\n.btn,\nbutton {\n  border-color: $blue;\n  color:        $blue;\n}\n.btn:active,\nbutton:active {\n  background: $grey-1;\n}\n.btn--main {\n  background:  $green;\n  border-color: $green;\n  color: white;\n}\n.btn--main:active {\n  background: $green-dark;\n  border-color: $green-dark;\n}\n\ntextarea:focus,\nselect:focus,\ninput:focus { \n  border-color: $green;\n}\ninput[type=\'checkbox\'] + label:hover:before,\ninput[type=\'radio\'] + label:hover:before { \n  background: $green-light;\n}\ninput[type=\'checkbox\']:checked + label:before,\ninput[type=\'radio\']:checked + label:before { \n  background: $green;\n} \ninput[type=\'checkbox\'] + label:before { \n  content: \'\\2713\';\n}\ninput[type=\'radio\'] + label:before { \n  content: \'\\2022\'; \n}\n.toggle input[type=\'radio\'] + label:hover { \n  background: $green-light; \n}\n.toggle input[type=\'radio\']:checked + label { \n  background: $green;\n}\n\n.helpBox--success {\n  background: $green-light;\n  border-color: $green;\n}\n.helpBox--warn {\n  background: $yellow-light;\n  border-color: $yellow;\n}\n.helpBox--error {\n  background: $red-light;\n  border-color: $red;\n}\n\n.progressBar > span { background: $green }\n\n.tabs--h li.is-selected { border-bottom-color: $green }\n.tabs--v li.is-selected { border-left-color: $green }', 'css')]);
-  return (0, _section2.default)('branding', content);
-};
-
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],9:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -224,18 +202,18 @@ var _code2 = _interopRequireDefault(_code);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Button'), (0, _brandWarn2.default)(), (0, _h2.default)('p.mb-3', 'If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the .btn class'), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('div.mt-1', 'default')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('div.mt-1', 'disabled')]), (0, _h2.default)('p.mb-3', ['Instead of creating additional BEM style classes for buttons, such as ', (0, _h2.default)('div.inline.bg-grey-2', '.btn--large'), ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.']), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.h4.caps', 'Large caps'), (0, _h2.default)('div.mt-1', 'button.h4.caps')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.p-2.bold', 'Bold and padded'), (0, _h2.default)('div.mt-1', 'button.p-2.bold')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.pill.line-height-1', 'Pill shaped'), (0, _h2.default)('div.mt-1', 'button.pill.line-height-1')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.not-rounded.sh-2', 'Shadow'), (0, _h2.default)('div.mt-1', 'button.not-rounded.sh-1')]), (0, _h2.default)('p.my-3', 'To create a connected group of buttons, wrap your buttons or .btn classes in an element with the .buttons class'), (0, _h2.default)('div.buttons', [(0, _h2.default)('button', 'Guitar'), (0, _h2.default)('button', 'Bass'), (0, _h2.default)('button', 'Gong'), (0, _h2.default)('button', 'Tuba')]), (0, _code2.default)('<div class=\'buttons\'>\n  <button>Guitar</button>\n  <button>Bass</button>\n  <button>Gong</button>\n  <button>Tuba</button>\n</div>')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Button'), (0, _brandWarn2.default)(), (0, _h2.default)('p.mb-3', ['If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the ', (0, _h2.default)('span.code', '.btn'), ' class']), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', 'Learn more'), (0, _h2.default)('div.mt-1.code', 'default')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button', { props: { disabled: true } }, 'Loading...'), (0, _h2.default)('div.mt-1.code', '.disabled')]), (0, _h2.default)('p.mb-3', ['Instead of creating additional BEM style classes for buttons, such as ', (0, _h2.default)('div.inline.bg-grey-2', '.btn--large'), ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.']), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.h4.uppercase', 'Large upppercase'), (0, _h2.default)('div.mt-1.code', 'button.h4.uppercase')]), (0, _h2.default)('div.col-6.inline-block.mb-1', [(0, _h2.default)('button.p-2.bold', 'Bold and padded'), (0, _h2.default)('div.mt-1.code', 'button.p-2.bold')]), (0, _h2.default)('div.col-6.inline-block.my-1', [(0, _h2.default)('button.pill.line-height-1', 'Pill shaped'), (0, _h2.default)('div.mt-1.code', 'button.pill.line-height-1')]), (0, _h2.default)('div.col-6.inline-block.my-1', [(0, _h2.default)('button.not-rounded.sh-2', 'Shadow'), (0, _h2.default)('div.mt-1.code', 'button.not-rounded.sh-1')]), (0, _h2.default)('p.my-3', 'To create a connected group of buttons, wrap your buttons or .btn classes in an element with the .buttons class'), (0, _h2.default)('div.buttons', [(0, _h2.default)('button', 'Guitar'), (0, _h2.default)('button', 'Bass'), (0, _h2.default)('button', 'Gong'), (0, _h2.default)('button', 'Tuba')]), (0, _code2.default)('<div class=\'buttons\'>\n  <button>Guitar</button>\n  <button>Bass</button>\n  <button>Gong</button>\n  <button>Tuba</button>\n</div>')]);
   return (0, _section2.default)('button', content);
 };
 
-},{"./brand-warn":7,"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],10:[function(require,module,exports){
+},{"./brand-warn":7,"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],9:[function(require,module,exports){
 "use strict";
 
 module.exports = function (txt) {
   return txt.charAt(0).toUpperCase() + txt.slice(1);
 };
 
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -257,7 +235,7 @@ module.exports = function (code) {
   return (0, _h2.default)('pre.bg-grey-1.p-2.mb-3', [(0, _h2.default)('code.' + type, { hook: { insert: highlight } }, code.trim())]);
 };
 
-},{"highlight.js":62,"snabbdom/h":237}],12:[function(require,module,exports){
+},{"highlight.js":62,"snabbdom/h":237}],11:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -283,7 +261,7 @@ module.exports = function (_) {
   return (0, _section2.default)('cursor', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],13:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],12:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -305,11 +283,11 @@ var _section2 = _interopRequireDefault(_section);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Disabled'), (0, _code2.default)('.disabled, \n*:disabled {\n  pointer-events: none;\n  opacity: 0.5;\n}', 'css')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Disabled'), (0, _h2.default)('button.disabled', 'loading...'), (0, _code2.default)('.disabled, \n*:disabled {\n  pointer-events: none;\n  opacity: 0.75;\n}', 'css')]);
   return (0, _section2.default)('disabled', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],14:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],13:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -339,11 +317,11 @@ var label = function label(text) {
 };
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Form'), (0, _brandWarn2.default)(), (0, _h2.default)('div', [label('Text input'), (0, _h2.default)('input.max-width-300.mb-1', { props: { type: 'text' } }), label('Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input.width-100', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), label('Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', [(0, _h2.default)('icon.material-icons', 'arrow_drop_down')]), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), label('Textarea'), (0, _h2.default)('textarea.max-width-300.mb-1', { props: { type: 'text' } }), label('Radio'), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, [(0, _h2.default)('span', 'Heads')])]), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, [(0, _h2.default)('span', 'Tails')])]), (0, _code2.default)('<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<br>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), label('Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), label('Checkboxes'), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, [(0, _h2.default)('span', 'Pizza')])]), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, [(0, _h2.default)('span', 'Tacos')])]), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<br>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), label('Input + button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.table-cell', 'Search')]), (0, _code2.default)('<span class=\'table\'>\n  <span class=\'table-cell\'><input type=\'search\'></span>\n  <button class=\'btn--main rounded-right table-cell\'>Search</button>\n</span>'), (0, _h2.default)('p', 'To modify form elements, add padding or type-scale utility classes, and elements will scale consistently:'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input.py-3', { props: { type: 'search' } })]), (0, _h2.default)('button.py-3.btn--main.rounded-right.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', '.py-3 class added to input and button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input.h3', { props: { type: 'search' } })]), (0, _h2.default)('button.h3.btn--main.rounded-right.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', '.h3 class added to input and button')])]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Form'), (0, _brandWarn2.default)(), (0, _h2.default)('div', [label('Text input'), (0, _h2.default)('input.max-width-300.mb-1', { props: { type: 'text' } }), label('Number input with dollar prepended'), (0, _h2.default)('span.prepend', [(0, _h2.default)('span', '$'), (0, _h2.default)('input.width-100', { props: { type: 'number' } })]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'prepend\'>\n  <span>$</span>\n  <input type=\'number\'> \n</span>'), label('Select with caret appended'), (0, _h2.default)('span.append', [(0, _h2.default)('span', [(0, _h2.default)('icon.material-icons', 'arrow_drop_down')]), (0, _h2.default)('select', [(0, _h2.default)('option', { props: { disabled: 'true', selected: 'true' } }, 'Select One'), (0, _h2.default)('option', 'Coffee'), (0, _h2.default)('option', 'Tea')])]), (0, _h2.default)('br'), (0, _code2.default)('<span class=\'append\'>\n  <span>\u25BE</span>\n  <select>\n    <option>Coffee</option>\n    <option>Tea</option>\n  </select>\n</span>'), label('Textarea'), (0, _h2.default)('textarea.max-width-300.mb-1', { props: { type: 'text' } }), label('Radio'), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'radio', id: 'radio1', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio1' } }, [(0, _h2.default)('span', 'Heads')])]), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'radio', id: 'radio2', name: 'radio' } }), (0, _h2.default)('label', { attrs: { for: 'radio2' } }, [(0, _h2.default)('span', 'Tails')])]), (0, _code2.default)('<input type=\'radio\' id=\'radio1\' name=\'radio\'>\n<label for=\'radio1\'>Heads</label>\n<br>\n<input type=\'radio\' id=\'radio2\' name=\'radio\'>\n<label for=\'radio2\'>Tails</label>'), label('Radio toggles'), (0, _h2.default)('div.toggle', [(0, _h2.default)('input', { props: { type: 'radio', id: 'toggle1', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle1' } }, 'Daily'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle2', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle2' } }, 'Weekly'), (0, _h2.default)('input', { props: { type: 'radio', id: 'toggle3', name: 'toggle' } }), (0, _h2.default)('label', { attrs: { for: 'toggle3' } }, 'Monthly')]), (0, _code2.default)('<span class=\'toggle\'>\n  <input type=\'radio\' id=\'toggle1\' name=\'toggle\'>\n  <label for=\'toggle1\'>Daily</label>\n  <input type=\'radio\' id=\'toggle2\' name=\'toggle\'>\n  <label for=\'toggle2\'>Weekly</label>\n  <input type=\'radio\' id=\'toggle3\' name=\'toggle\'>\n  <label for=\'toggle3\'>Monthly</label>\n</span>'), label('Checkboxes'), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'checkbox', id: 'check1', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check1' } }, [(0, _h2.default)('span', 'Pizza')])]), (0, _h2.default)('div.mb-1', [(0, _h2.default)('input', { props: { type: 'checkbox', id: 'check2', name: 'check' } }), (0, _h2.default)('label', { attrs: { for: 'check2' } }, [(0, _h2.default)('span', 'Tacos')])]), (0, _code2.default)('<input type=\'checkbox\' id=\'check1\' name=\'check\'>\n<label for=\'check1\'>Pizza</label>\n<br>\n<input type=\'checkbox\' id=\'check2\' name=\'check\'>\n<label for=\'check2\'>Tacos</label>'), label('Input + button'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input', { props: { type: 'search' } })]), (0, _h2.default)('button.btn--main.rounded-right.table-cell', 'Search')]), (0, _code2.default)('<span class=\'table\'>\n  <span class=\'table-cell\'><input type=\'search\'></span>\n  <button class=\'btn--main rounded-right table-cell\'>Search</button>\n</span>'), (0, _h2.default)('p', 'To modify form elements, add padding or type-scale utility classes, and elements will scale consistently:'), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input.py-3', { props: { type: 'search' } })]), (0, _h2.default)('button.py-3.btn--main.rounded-right.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', [(0, _h2.default)('span.code', '.py-3'), 'class added to input and button']), (0, _h2.default)('span.table', [(0, _h2.default)('span.table-cell.align-middle', [(0, _h2.default)('input.h3', { props: { type: 'search' } })]), (0, _h2.default)('button.h3.btn--main.rounded-right.table-cell', 'Search')]), (0, _h2.default)('p.mt-1.mb-3', [(0, _h2.default)('span.code', '.h3'), ' class added to input and button'])])]);
   return (0, _section2.default)('form', content);
 };
 
-},{"./brand-warn":7,"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],15:[function(require,module,exports){
+},{"./brand-warn":7,"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],14:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -368,14 +346,14 @@ var _responsiveText2 = _interopRequireDefault(_responsiveText);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var demo = (0, _h2.default)('div.clearfix', [(0, _h2.default)('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12'), (0, _h2.default)('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12'), (0, _h2.default)('div.border.p-2.col.col-4.md-col-12', '.col-4.md-col-12')]);
+var demo = (0, _h2.default)('div.clearfix.code', [(0, _h2.default)('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12'), (0, _h2.default)('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12'), (0, _h2.default)('div.border.p-2.col.col-4.md-col-12', '.col-4.md-col-12')]);
 
 module.exports = function (_) {
   var content = (0, _h2.default)('div', [(0, _title2.default)('Grid'), demo, (0, _h2.default)('p.helpBox--success', _responsiveText2.default), (0, _code2.default)('.col       { float: left }\n.col-right { float: right }\n.col-1  { width: 8.33333% }\n.col-2  { width: 16.66667% }\n.col-3  { width: 25% }\n.col-4  { width: 33.33333% }\n.col-5  { width: 41.66667% }\n.col-6  { width: 50% }\n.col-7  { width: 58.33333% }\n.col-8  { width: 66.66667% }\n.col-9  { width: 75% }\n.col-10 { width: 83.33333% }\n.col-11 { width: 91.66667% }\n.col-12 { width: 100% }', 'css')]);
   return (0, _section2.default)('grid', content);
 };
 
-},{"./code":11,"./responsive-text":29,"./section":30,"./title":34,"snabbdom/h":237}],16:[function(require,module,exports){
+},{"./code":10,"./responsive-text":28,"./section":29,"./title":33,"snabbdom/h":237}],15:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -401,7 +379,7 @@ module.exports = function (_) {
   return (0, _section2.default)('help-box', content);
 };
 
-},{"./brand-warn":7,"./section":30,"./title":34,"snabbdom/h":237}],17:[function(require,module,exports){
+},{"./brand-warn":7,"./section":29,"./title":33,"snabbdom/h":237}],16:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -422,21 +400,21 @@ var _section2 = _interopRequireDefault(_section);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var demo = (0, _h2.default)('div', [(0, _h2.default)('div.sm-hide.p-2.border.mb-1', '.sm-hide'), (0, _h2.default)('div.md-hide.p-2.border.mb-1', '.md-hide'), (0, _h2.default)('div.lg-hide.p-2.border.mb-1', '.lg-hide'), (0, _h2.default)('div.my-1.p-2.border.hover-parent-hide', ['.hover-parent-hide', (0, _h2.default)('div.hover-child-show.border.p-2', '.hover-child-show'), (0, _h2.default)('div.hover-child-hide.border.p-2', '.hover-child-hide')])]);
+var demo = (0, _h2.default)('div.code', [(0, _h2.default)('div.sm-hide.p-2.border.mb-1', '.sm-hide'), (0, _h2.default)('div.md-hide.p-2.border.mb-1', '.md-hide'), (0, _h2.default)('div.lg-hide.p-2.border.mb-1', '.lg-hide'), (0, _h2.default)('div.my-1.p-2.border.hover-hide-parent', ['.hover-hide-parent', (0, _h2.default)('div.hover-show-child.border.p-2.mt-2', '.hover-show-child'), (0, _h2.default)('div.hover-hide-child.border.p-2.mt-2', '.hover-hide-child')])]);
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Hide'), demo, (0, _code2.default)('\n.hide { display:none !important }\n\n.hover-child-hide,\n.hover-parent-hide:hover .hover-child-show {\n  opacity: 1;\n  visibility: visible;\n}\n\n.hover-child-show,\n.hover-parent-hide:hover .hover-child-hide {\n  opacity: 0;\n  visibility: hidden;\n}\n\n@media (max-width: 480px) {\n  .sm-hide { display:none !important }\n}\n\n@media (min-width: 480px) and (max-width: 780px){\n  .md-hide { display:none !important }\n}\n\n@media (min-width: 780px){\n  .lg-hide { display:none !important }\n}\n', 'css')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Hide'), demo, (0, _code2.default)('\n.hide { display:none !important }\n\n.hover-hide-child,\n.hover-hide-parent:hover .hover-show-child {\n  display: none;\n}\n\n.hover-show-child,\n.hover-hide-parent:hover .hover-hide-child {\n  display: block;\n}\n\n@media (max-width: 480px) {\n  .sm-hide { display:none !important }\n}\n\n@media (min-width: 480px) and (max-width: 780px){\n  .md-hide { display:none !important }\n}\n\n@media (min-width: 780px){\n  .lg-hide { display:none !important }\n}\n', 'css')]);
   return (0, _section2.default)('hide', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],18:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],17:[function(require,module,exports){
 'use strict';
 
 module.exports = function (txt) {
   return txt.replace(/ /g, '-');
 };
 
-},{}],19:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 'use strict';
 
 var _ramda = require('ramda');
@@ -478,10 +456,6 @@ var _aspect2 = _interopRequireDefault(_aspect);
 var _align = require('./align');
 
 var _align2 = _interopRequireDefault(_align);
-
-var _branding = require('./branding');
-
-var _branding2 = _interopRequireDefault(_branding);
 
 var _background = require('./background');
 
@@ -567,6 +541,10 @@ var _tabs = require('./tabs');
 
 var _tabs2 = _interopRequireDefault(_tabs);
 
+var _toggle = require('./toggle');
+
+var _toggle2 = _interopRequireDefault(_toggle);
+
 var _typeScale = require('./type-scale');
 
 var _typeScale2 = _interopRequireDefault(_typeScale);
@@ -626,7 +604,7 @@ var scroll = function scroll(ID$) {
 };
 
 var view = function view(state) {
-  return (0, _h2.default)('div.relative', { hook: { insert: scroll(state.ID$) } }, [(0, _h2.default)('div.main', [(0, _h2.default)('div.max-width-700.px-3', [(0, _nav2.default)(state), (0, _about2.default)(), (0, _align2.default)(), (0, _aspect2.default)(), (0, _background2.default)(), (0, _blockquote2.default)(), (0, _border2.default)(), (0, _branding2.default)(), (0, _button2.default)(), (0, _cursor2.default)(), (0, _disabled2.default)(), (0, _form2.default)(), (0, _grid2.default)(), (0, _helpBox2.default)(), (0, _hide2.default)(), (0, _layout2.default)(), (0, _list2.default)(), (0, _margin2.default)(), (0, _misc2.default)(), (0, _opacity2.default)(), (0, _padding2.default)(), (0, _position2.default)(), (0, _progressBar2.default)(), (0, _shadow2.default)(), (0, _table2.default)(), (0, _tabs2.default)(), (0, _typeScale2.default)(), (0, _typography2.default)()])])]);
+  return (0, _h2.default)('div.relative', { hook: { insert: scroll(state.ID$) } }, [(0, _h2.default)('div.main', [(0, _h2.default)('div.max-width-700.px-3', [(0, _nav2.default)(state), (0, _about2.default)(), (0, _align2.default)(), (0, _aspect2.default)(), (0, _background2.default)(), (0, _blockquote2.default)(), (0, _border2.default)(), (0, _button2.default)(), (0, _cursor2.default)(), (0, _disabled2.default)(), (0, _form2.default)(), (0, _grid2.default)(), (0, _helpBox2.default)(), (0, _hide2.default)(), (0, _layout2.default)(), (0, _list2.default)(), (0, _margin2.default)(), (0, _misc2.default)(), (0, _opacity2.default)(), (0, _padding2.default)(), (0, _position2.default)(), (0, _progressBar2.default)(), (0, _shadow2.default)(), (0, _table2.default)(), (0, _tabs2.default)(), (0, _toggle2.default)(), (0, _typeScale2.default)(), (0, _typography2.default)()])])]);
 };
 
 var container = document.querySelector('#container');
@@ -635,7 +613,7 @@ var patch = _snabbdom2.default.init([require('snabbdom/modules/class'), require(
 
 (0, _flimflamRender2.default)({ patch: patch, container: container, view: view, state: init() });
 
-},{"./about":1,"./align":2,"./aspect":3,"./background":4,"./blockquote":5,"./border":6,"./branding":8,"./button":9,"./cursor":12,"./disabled":13,"./form":14,"./grid":15,"./help-box":16,"./hide":17,"./layout":20,"./list":21,"./margin":22,"./misc":23,"./nav":24,"./opacity":25,"./padding":26,"./position":27,"./progress-bar":28,"./shadow":31,"./table":32,"./tabs":33,"./type-scale":35,"./typography":36,"flimflam-render":37,"flyd":54,"flyd-url":46,"ramda":236,"snabbdom":245,"snabbdom/h":237,"snabbdom/modules/attributes":240,"snabbdom/modules/class":241,"snabbdom/modules/eventlisteners":242,"snabbdom/modules/props":243,"snabbdom/modules/style":244}],20:[function(require,module,exports){
+},{"./about":1,"./align":2,"./aspect":3,"./background":4,"./blockquote":5,"./border":6,"./button":8,"./cursor":11,"./disabled":12,"./form":13,"./grid":14,"./help-box":15,"./hide":16,"./layout":19,"./list":20,"./margin":21,"./misc":22,"./nav":23,"./opacity":24,"./padding":25,"./position":26,"./progress-bar":27,"./shadow":30,"./table":31,"./tabs":32,"./toggle":34,"./type-scale":35,"./typography":36,"flimflam-render":37,"flyd":54,"flyd-url":46,"ramda":236,"snabbdom":245,"snabbdom/h":237,"snabbdom/modules/attributes":240,"snabbdom/modules/class":241,"snabbdom/modules/eventlisteners":242,"snabbdom/modules/props":243,"snabbdom/modules/style":244}],19:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -661,7 +639,7 @@ module.exports = function (_) {
   return (0, _section2.default)('layout', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],21:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],20:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -687,7 +665,7 @@ module.exports = function (_) {
   return (0, _section2.default)('list', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],22:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],21:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -712,14 +690,14 @@ var _responsiveText2 = _interopRequireDefault(_responsiveText);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var demo = (0, _h2.default)('div.p-2.border.mb-3.md-mb-2.sm-mb-1', '.mb-3.md-mb-2.sm-mb-1');
+var demo = (0, _h2.default)('div.code.p-2.border.mb-3.md-mb-2.sm-mb-1', '.mb-3.md-mb-2.sm-mb-1');
 
 module.exports = function (_) {
   var content = (0, _h2.default)('div', [(0, _title2.default)('Margin'), demo, (0, _h2.default)('p.helpBox--success', _responsiveText2.default), (0, _code2.default)('.m-0  { margin: 0 }\n.mt-0 { margin-top: 0 }\n.mr-0 { margin-right: 0 }\n.mb-0 { margin-bottom: 0 }\n.ml-0 { margin-left: 0 }\n.mx-0 { margin-left: 0; margin-right: 0 }\n.my-0 { margin-top: 0; margin-bottom: 0 }\n\n.m-1  { margin: .5rem }\n.mt-1 { margin-top: .5rem }\n.mr-1 { margin-right: .5rem }\n.mb-1 { margin-bottom: .5rem }\n.ml-1 { margin-left: .5rem }\n.mx-1 { margin-left: .5rem; margin-right: .5rem }\n.my-1 { margin-top: .5rem; margin-bottom: .5rem }\n\n.m-2  { margin: 1rem }\n.mt-2 { margin-top: 1rem }\n.mr-2 { margin-right: 1rem }\n.mb-2 { margin-bottom: 1rem }\n.ml-2 { margin-left: 1rem }\n.mx-2 { margin-left: 1rem; margin-right: 1rem }\n.my-2 { margin-top: 1rem; margin-bottom: 1rem }\n\n.m-3  { margin: 2rem }\n.mt-3 { margin-top: 2rem }\n.mr-3 { margin-right: 2rem }\n.mb-3 { margin-bottom: 2rem }\n.ml-3 { margin-left: 2rem }\n.mx-3 { margin-left: 2rem; margin-right: 2rem }\n.my-3 { margin-top: 2rem; margin-bottom: 2rem }\n\n.m-4  { margin: 3rem }\n.mt-4 { margin-top: 3rem }\n.mr-4 { margin-right: 3rem }\n.mb-4 { margin-bottom: 3rem }\n.ml-4 { margin-left: 3rem }\n.mx-4 { margin-left: 3rem; margin-right: 3rem }\n.my-4 { margin-top: 3rem; margin-bottom: 3rem }\n\n.m-5  { margin: 4rem }\n.mt-5 { margin-top: 4rem }\n.mr-5 { margin-right: 4rem }\n.mb-5 { margin-bottom: 4rem }\n.ml-5 { margin-left: 4rem }\n.mx-5 { margin-left: 4rem; margin-right: 4rem }\n.my-5 { margin-top: 4rem; margin-bottom: 4rem }\n\n.ml-auto { margin-left: auto }\n.mr-auto { margin-right: auto }\n.mx-auto { margin-left: auto; margin-right: auto; }\n\n.m-neg-05 { margin: -.25rem; }\n.m-neg-1 { margin: -.5rem; }\n.m-neg-2 { margin: -1rem; }\n.m-neg-3 { margin: -2rem; }\n.m-neg-4 { margin: -3rem; }\n.m-neg-5 { margin: -4rem; }\n', 'css')]);
   return (0, _section2.default)('margin', content);
 };
 
-},{"./code":11,"./responsive-text":29,"./section":30,"./title":34,"snabbdom/h":237}],23:[function(require,module,exports){
+},{"./code":10,"./responsive-text":28,"./section":29,"./title":33,"snabbdom/h":237}],22:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -745,7 +723,7 @@ module.exports = function (_) {
   return (0, _section2.default)('misc', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],24:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],23:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -766,7 +744,7 @@ var _hyphenate2 = _interopRequireDefault(_hyphenate);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var links = ['about', 'align', 'aspect', 'background', 'blockquote', 'border', 'branding', 'button', 'cursor', 'disabled', 'form', 'grid', 'help box', 'hide', 'layout', 'list', 'margin', 'misc', 'opacity', 'padding', 'position', 'progress bar', 'shadow', 'table', 'tabs', 'type-scale', 'typography'];
+var links = ['about', 'align', 'aspect', 'background', 'blockquote', 'border', 'button', 'cursor', 'disabled', 'form', 'grid', 'help box', 'hide', 'layout', 'list', 'margin', 'misc', 'opacity', 'padding', 'position', 'progress bar', 'shadow', 'table', 'tabs', 'toggle-show', 'type-scale', 'typography'];
 
 var link = function link(ID$) {
   return function (txt) {
@@ -778,7 +756,7 @@ module.exports = function (state) {
   return (0, _h2.default)('div.nav.p-2.bg-grey-1', [(0, _h2.default)('ul.tabs--v', _ramda2.default.map(link(state.ID$), links))]);
 };
 
-},{"./capitalize":10,"./hyphenate":18,"ramda":236,"snabbdom/h":237}],25:[function(require,module,exports){
+},{"./capitalize":9,"./hyphenate":17,"ramda":236,"snabbdom/h":237}],24:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -804,7 +782,7 @@ module.exports = function (_) {
   return (0, _section2.default)('opacity', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],26:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],25:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -829,14 +807,14 @@ var _responsiveText2 = _interopRequireDefault(_responsiveText);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var demo = (0, _h2.default)('div.border.p-3.md-p-2.sm-p-1.mb-1', '.p-3.md-p-2.sm-p-1');
+var demo = (0, _h2.default)('div.border.code.p-3.md-p-2.sm-p-1.mb-1', '.p-3.md-p-2.sm-p-1');
 
 module.exports = function (_) {
   var content = (0, _h2.default)('div', [(0, _title2.default)('Padding'), demo, (0, _h2.default)('p.helpBox--success', _responsiveText2.default), (0, _code2.default)('\n.p-0  { padding:0 }\n.pt-0 { padding-top:0 }\n.pr-0 { padding-right:0 }\n.pb-0 { padding-bottom:0 }\n.pl-0 { padding-left:0 }\n.px-0 { padding-left:0; padding-right:0 }\n.py-0 { padding-top:0;  padding-bottom:0 }\n\n.p-1  { padding: .5rem }\n.pt-1 { padding-top: .5rem }\n.pr-1 { padding-right: .5rem }\n.pb-1 { padding-bottom: .5rem }\n.pl-1 { padding-left: .5rem }\n.py-1 { padding-top: .5rem; padding-bottom: .5rem }\n.px-1 { padding-left: .5rem; padding-right: .5rem }\n\n.p-2  { padding: 1rem }\n.pt-2 { padding-top: 1rem }\n.pr-2 { padding-right: 1rem }\n.pb-2 { padding-bottom: 1rem }\n.pl-2 { padding-left: 1rem }\n.py-2 { padding-top: 1rem; padding-bottom: 1rem }\n.px-2 { padding-left: 1rem; padding-right: 1rem }\n\n.p-3  { padding: 2rem }\n.pt-3 { padding-top: 2rem }\n.pr-3 { padding-right: 2rem }\n.pb-3 { padding-bottom: 2rem }\n.pl-3 { padding-left: 2rem }\n.py-3 { padding-top: 2rem; padding-bottom: 2rem }\n.px-3 { padding-left: 2rem; padding-right: 2rem }\n\n.p-4  { padding: 3rem }\n.pt-4 { padding-top: 3rem }\n.pr-4 { padding-right: 3rem }\n.pb-4 { padding-bottom: 3rem }\n.pl-4 { padding-left: 3rem }\n.py-4 { padding-top: 3rem; padding-bottom: 3rem }\n.px-4 { padding-left: 3rem; padding-right: 3rem }\n\n.p-5  { padding: 4rem }\n.pt-5 { padding-top: 4rem }\n.pr-5 { padding-right: 4rem }\n.pb-5 { padding-bottom: 4rem }\n.pl-5 { padding-left: 4rem }\n.py-5 { padding-top: 4rem; padding-bottom: 4rem }\n.px-5 { padding-left: 4rem; padding-right: 4rem }', 'css')]);
   return (0, _section2.default)('padding', content);
 };
 
-},{"./code":11,"./responsive-text":29,"./section":30,"./title":34,"snabbdom/h":237}],27:[function(require,module,exports){
+},{"./code":10,"./responsive-text":28,"./section":29,"./title":33,"snabbdom/h":237}],26:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -862,7 +840,7 @@ module.exports = function (_) {
   return (0, _section2.default)('position', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],28:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],27:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -892,12 +870,12 @@ module.exports = function (_) {
   return (0, _section2.default)('progress-bar', content);
 };
 
-},{"./brand-warn":7,"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],29:[function(require,module,exports){
+},{"./brand-warn":7,"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],28:[function(require,module,exports){
 'use strict';
 
 module.exports = 'There are media-query styles for each of the rules below. Prefix with sm- (max-width: 480px) and md- (max-width: 780px).';
 
-},{}],30:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -910,7 +888,7 @@ module.exports = function (thisID, content) {
   return (0, _h2.default)('section.border-bottom.pb-5.pt-1', { props: { id: thisID } }, [content]);
 };
 
-},{"snabbdom/h":237}],31:[function(require,module,exports){
+},{"snabbdom/h":237}],30:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -932,7 +910,7 @@ module.exports = function (_) {
   return (0, _section2.default)('shadow', content);
 };
 
-},{"./section":30,"./title":34,"snabbdom/h":237}],32:[function(require,module,exports){
+},{"./section":29,"./title":33,"snabbdom/h":237}],31:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -954,7 +932,7 @@ module.exports = function (_) {
   return (0, _section2.default)('table', content);
 };
 
-},{"./section":30,"./title":34,"snabbdom/h":237}],33:[function(require,module,exports){
+},{"./section":29,"./title":33,"snabbdom/h":237}],32:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -984,7 +962,7 @@ module.exports = function (_) {
   return (0, _section2.default)('tabs', content);
 };
 
-},{"./brand-warn":7,"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],34:[function(require,module,exports){
+},{"./brand-warn":7,"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],33:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -997,7 +975,35 @@ module.exports = function (txt) {
   return (0, _h2.default)('h3.mt-0.pt-2', txt);
 };
 
-},{"snabbdom/h":237}],35:[function(require,module,exports){
+},{"snabbdom/h":237}],34:[function(require,module,exports){
+'use strict';
+
+var _h = require('snabbdom/h');
+
+var _h2 = _interopRequireDefault(_h);
+
+var _title = require('./title');
+
+var _title2 = _interopRequireDefault(_title);
+
+var _section = require('./section');
+
+var _section2 = _interopRequireDefault(_section);
+
+var _code = require('./code');
+
+var _code2 = _interopRequireDefault(_code);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var demo = (0, _h2.default)('div.toggle-show-parent.border.p-2', [(0, _h2.default)('input', { props: { type: 'checkbox', id: 'toggleShow' } }), (0, _h2.default)('label', { attrs: { for: 'toggleShow' } }, [(0, _h2.default)('a.btn', 'Show content'), (0, _h2.default)('a.btn', 'Hide content')]), (0, _h2.default)('div.toggle-show-child.h1', 'Ack!')]);
+
+module.exports = function (_) {
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Toggle Show'), (0, _h2.default)('p', "This is a CSS only method for showing/hiding content by using a checkbox input's :checked state."), demo, (0, _code2.default)('\n<div class="toggle-show-parent">\n  <input type="checkbox" id="toggleShow">\n  <label for="toggleShow">\n    <a class="btn">Show content</a>\n    <a class="btn">Hide content</a>\n  </label>\n  <div class="toggle-show-child h1">Ack!</div>\n</div>\n'), (0, _code2.default)('\n.toggle-show-parent input[type=checkbox] + label:before,\n.toggle-show-parent input[type=checkbox]:checked + label *:first-of-type,\n.toggle-show-parent input[type=checkbox] + label  *:last-of-type,\n.toggle-show-parent input[type=checkbox] ~ .toggle-show-child { \n  display: none;\n}\n\n.toggle-show-parent input[type=checkbox] + label  *:first-of-type,\n.toggle-show-parent input[type=checkbox]:checked + label  *:last-of-type,\n.toggle-show-parent input[type=checkbox]:checked ~ .toggle-show-child { \n  display: block;\n}', 'css')]);
+  return (0, _section2.default)('toggle-show', content);
+};
+
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],35:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -1023,7 +1029,7 @@ module.exports = function (_) {
   return (0, _section2.default)('type-scale', content);
 };
 
-},{"./responsive-text":29,"./section":30,"./title":34,"snabbdom/h":237}],36:[function(require,module,exports){
+},{"./responsive-text":28,"./section":29,"./title":33,"snabbdom/h":237}],36:[function(require,module,exports){
 'use strict';
 
 var _h = require('snabbdom/h');
@@ -1049,11 +1055,11 @@ var lineHeightP = function lineHeightP(x) {
 };
 
 module.exports = function (_) {
-  var content = (0, _h2.default)('div', [(0, _title2.default)('Typography'), (0, _h2.default)('p.bold.mt-3', 'bold'), (0, _h2.default)('p.normal', 'normal'), (0, _h2.default)('p.italic', 'italic'), (0, _h2.default)('p.caps', 'caps'), (0, _h2.default)('p.underline', 'underline'), (0, _h2.default)('p.hover-underline', 'hover underline'), (0, _h2.default)('p.strike', 'strike'), (0, _h2.default)('div.width-100.truncate', 'Truncateeeeeeeeeeeeeeeeee'), (0, _code2.default)('<p class=\'bold\'>bold</p>\n<p class=\'normal\'>normal</p>\n<p class=\'italic\'>italic</p>\n<p class=\'caps\'>caps</p>\n<p class=\'underline\'>underline</p>\n<p class=\'strike\'>strike</p>\n<p class=\'hover-underline\'>hover underline</p>\n<p class=\'truncate width-100\'>Truncateeeeeeeeeeeeeeeeee</p>\n'), (0, _code2.default)('.line-height-1 { line-height: 1 }\n.line-height-2 { line-height: 1.2 }\n.line-height-3 { line-height: 1.4 }\n.line-height-4 { line-height: 1.6 }\n.line-height-5 { line-height: 1.8 }\n.line-height-6 { line-height: 2 }\n\n.font-family-inherit  { font-family: inherit }\n.font-size-inherit    { font-size: inherit }\n\n.text-decoration-none { text-decoration: none }\n\n.align-left  { text-align: left }\n.center      { text-align: center }\n.align-right { text-align: right }\n.justify     { text-align: justify }\n\n.nowrap { white-space: nowrap }\n.break-word { word-wrap: break-word }', 'css')]);
+  var content = (0, _h2.default)('div', [(0, _title2.default)('Typography'), (0, _h2.default)('p.bold.mt-3', 'bold'), (0, _h2.default)('p.normal', 'normal'), (0, _h2.default)('p.italic', 'italic'), (0, _h2.default)('p.capitalize', 'capitalize'), (0, _h2.default)('p.uppercase', 'uppercase'), (0, _h2.default)('p.underline', 'underline'), (0, _h2.default)('p.hover-underline', 'hover underline'), (0, _h2.default)('p.strike', 'strike'), (0, _h2.default)('div.width-100.truncate', 'Truncateeeeeeeeeeeeeeeeee'), (0, _h2.default)('p.code', 'const greet = text => alert(text)'), (0, _code2.default)('<p class=\'bold\'>bold</p>\n<p class=\'normal\'>normal</p>\n<p class=\'italic\'>italic</p>\n<p class=\'capitalize\'>capitalize</p>\n<p class=\'uppercase\'>uppercase</p>\n<p class=\'underline\'>underline</p>\n<p class=\'strike\'>strike</p>\n<p class=\'hover-underline\'>hover underline</p>\n<p class=\'truncate width-100\'>Truncateeeeeeeeeeeeeeeeee</p>\n<p class=\'code\'>const greet = text => alert(text)</p>\n'), (0, _code2.default)('.line-height-1 { line-height: 1 }\n.line-height-2 { line-height: 1.2 }\n.line-height-3 { line-height: 1.4 }\n.line-height-4 { line-height: 1.6 }\n.line-height-5 { line-height: 1.8 }\n.line-height-6 { line-height: 2 }\n\n.font-family-inherit  { font-family: inherit }\n.font-size-inherit    { font-size: inherit }\n\n.text-decoration-none { text-decoration: none }\n\n.align-left  { text-align: left }\n.center      { text-align: center }\n.align-right { text-align: right }\n.justify     { text-align: justify }\n\n.nowrap { white-space: nowrap }\n.break-word { word-wrap: break-word }', 'css')]);
   return (0, _section2.default)('typography', content);
 };
 
-},{"./code":11,"./section":30,"./title":34,"snabbdom/h":237}],37:[function(require,module,exports){
+},{"./code":10,"./section":29,"./title":33,"snabbdom/h":237}],37:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -38266,4 +38272,4 @@ module.exports = {
   }
 };
 
-},{}]},{},[19]);
+},{}]},{},[18]);
