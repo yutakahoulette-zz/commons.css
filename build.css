@@ -1859,10 +1859,6 @@ body { overflow: hidden; }
   border-color: rgb(219, 219, 219);
 }
 
-section.border-bottom:last-of-type {
-  border-bottom: none;
-}
-
 @media (max-width: 600px) {
   .nav { display: none; }
 

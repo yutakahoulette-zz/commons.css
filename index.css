@@ -1,9 +1,9 @@
 @import 'normalize.css';
-@import '../src';
+@import 'src';
 @import '@commitchange/color-variables';
 @import '@commitchange/grey-scale-variables';
-@import 'code.css';
-@import 'branding.css';
+@import 'docs-css/code.css';
+@import 'docs-css/branding.css';
 
 html { line-height: 1.6; }
 
@@ -37,10 +37,6 @@ body { overflow: hidden; }
 
 * {
   border-color: $grey-4;
-}
-
-section.border-bottom:last-of-type {
-  border-bottom: none;
 }
 
 @media (max-width: 600px) {

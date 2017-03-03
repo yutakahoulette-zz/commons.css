@@ -1,9 +1,9 @@
-import h from 'snabbdom/h'
+const h  = require('snabbdom/h')
 
-module.exports = state => 
- h('section.pt-3.pb-4.border-bottom', {props: {id: 'about'}}, [
+module.exports =  
+ h('section.pt-3.pb-4.border-bottom', [
      h('div.table.sm-block.mb-5.sm-center', [
-        h('img.middle-cell.sm-pr-0.pr-2.sm-pb-2.min-width-150.sm-inline-block', {props: {src: 'bison.png'}})
+        h('img.middle-cell.sm-pr-0.pr-2.sm-pb-2.min-width-150.sm-inline-block', {props: {src: 'images/bison.png'}})
       , h('div.middle-cell.sm-inline-block', [
           h('h1.h2.m-0', 'commons.css')
         , h('h4.mt-1.mb-0', 'v0.1.2')
@@ -21,7 +21,7 @@ module.exports = state =>
   , h('p.bold', 'NPM')
   , h('pre.bg-grey-1.p-1.mt-2', 'npm install commons.css')
   , h('p.bold', 'Github')
-  , h('p.mt-0', [ h('a', {props: {href: 'https://github.com/yutakahoulette/commons.css'}}, 'https://github.com/yutakahoulette/commons.css')])
+  , h('p.mt-0', [ h('a', {props: {href: 'https://github.com/yutakahoulette/commons.css'}}, 'github.com/yutakahoulette/commons.css')])
   , h('div.table.mt-3', [
       h('span.middle-cell.pr-1', {hook: {insert: x => x.elm.innerHTML = star}})
     , h('span.middle-cell', {hook: {insert: x => x.elm.innerHTML = twit}})

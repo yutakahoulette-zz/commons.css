@@ -1,8 +1,6 @@
-import h from 'snabbdom/h'
-import R from 'ramda'
-import title from './title'
-import code from './code'
-import section from './section'
+const R = require('ramda')
+const h  = require('snabbdom/h')
+const code = require('./code')
 
 const aspects = [
   '1x1'
@@ -19,10 +17,9 @@ const box = aspect =>
 
 const demo = h('div.mt-2', R.map(box, aspects))
   
-module.exports = _ => {
-  const content = h('div', [
-    title('Aspect')
-   , h('p', 'Sets a specific aspect ratio.')  
+module.exports = 
+  h('div', [
+     h('p', 'Sets a specific aspect ratio.')  
    , demo
    , code(`
 <div class='aspect aspect-1x1'>
@@ -30,6 +27,4 @@ module.exports = _ => {
 </div>
 `, 'html')
   ])
-  return section('aspect', content)
-}
 

@@ -1,13 +1,10 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
-import warn from './brand-warn'
-import code from './code'
+const h = require('snabbdom/h')
+const warn = require('./brand-warn')
+const code = require('./code')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Button')
-  , warn()
+module.exports = 
+   h('div', [
+    warn
   , h('p.mb-3', ['If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the ',  h('span.code', '.btn'),  ' class'])
   , h('div.mb-3', [
       h('button', 'Learn more')
@@ -20,7 +17,7 @@ module.exports = _ => {
   , h('p.mb-3', [
       'Instead of creating additional BEM style classes for buttons, such as '
     , h('div.inline.bg-grey-2', '.btn--large') 
-    , ', you can combine utility classes such type-scale, line-height, border and padding, to creating button variations.' 
+    , ', you can combine utility classes such as type-scale, line-height, border and padding, to create button variations.' 
     ])
   , h('div.mb-3', [
       h('button.h4.uppercase', 'Large upppercase')
@@ -53,6 +50,4 @@ module.exports = _ => {
   <button>Tuba</button>
 </div>`)
   ])
-  return section('button', content)
-}
 

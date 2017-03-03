@@ -1,6 +1,4 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
+const h  = require('snabbdom/h')
 
 const snippet = (klass, text) => {
   return h('span', [
@@ -9,10 +7,9 @@ const snippet = (klass, text) => {
   ])
 }
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Border')
-  , h('div', [
+module.exports = 
+  h('div', [
+    h('div', [
       snippet('.border')
     , snippet('.border-top')
     , snippet('.border-right')
@@ -33,6 +30,4 @@ module.exports = _ => {
     , h('pre.bg-grey-4.inline-block.center.circle.mt-0', {style: {lineHeight: '75px', width: '75px'}}, '.circle')
     ])
   ])
-  return section('border', content)
-}
 

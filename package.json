@@ -4,15 +4,15 @@
   "description": "css utilility classes + core UI components",
   "style": "lib/index.css",
   "scripts": {
-    "postcss": "postcss -c postcss-example.js -w -l",
-    "budo": "budo example/index.js --dir example  --live -- -t babelify",
+    "postcss": "postcss -c postcss/docs.js -w -l || true",
+    "budo": "budo index.js --live -- -t babelify",
     "build": "./build.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yutakahoulette/commons.css.git"
   },
-  "author":  "Yutaka Houlette <yutakahoulette@gmail.com> (http://yutakahoulette.com/)",
+  "author": "Yutaka Houlette <yutakahoulette@gmail.com> (http://yutakahoulette.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yutakahoulette/commons.css/issues"
@@ -22,11 +22,11 @@
     "@commitchange/color-variables": "0.0.1",
     "@commitchange/grey-scale-variables": "0.0.1",
     "autoprefixer": "^6.5.0",
-    "babel-preset-es2015": "^6.16.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "budo": "^9.2.1",
     "cssnano": "^3.10.0",
+    "es2040": "^1.2.4",
     "flimflam-render": "^0.1.4",
     "flyd": "^0.2.2",
     "flyd-url": "0.0.1",

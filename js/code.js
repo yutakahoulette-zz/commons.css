@@ -1,5 +1,5 @@
-import h from 'snabbdom/h'
-import hljs from 'highlight.js'
+const h  = require('snabbdom/h')
+const hljs = require('highlight.js')
 
 const highlight = vnode => hljs.highlightBlock(vnode.elm)
 
