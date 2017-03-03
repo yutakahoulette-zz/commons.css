@@ -11,8 +11,10 @@
 .underline{ text-decoration:underline }
 .hover-underline:hover { text-decoration:underline }
 
+code,
 .code,
 pre {
+  font-size: .85rem;
   font-family: 'Source Code Pro', Menlo, Consolas, 'Liberation Mono', monospace;
 }
 
@@ -37,4 +39,20 @@ pre {
 .line-height-4 { line-height: 1.6 }
 .line-height-5 { line-height: 1.8 }
 .line-height-6 { line-height: 2 }
+
+
+@media (max-width: 780px) {
+  .md-align-left { text-align:left }
+  .md-center { text-align:center }
+  .md-align-right { text-align:right }
+  .md-justify { text-align:justify }
+}
+
+@media (max-width: 480px) {
+  .sm-align-left { text-align:left }
+  .sm-center { text-align:center }
+  .sm-align-right { text-align:right }
+  .sm-justify { text-align:justify }
+}
+
 

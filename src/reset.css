@@ -33,8 +33,9 @@ blockquote {
   margin-bottom: 1em;
 }
 
+code,
 pre {
-  overflow: auto;
+  overflow-x: auto;
 }
 
 hr {
@@ -63,4 +64,9 @@ fieldset {
 }
 
 textarea { resize: vertical; }
+
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
 

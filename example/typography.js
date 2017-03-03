@@ -49,7 +49,22 @@ module.exports = _ => {
 .justify     { text-align: justify }
 
 .nowrap { white-space: nowrap }
-.break-word { word-wrap: break-word }`, 'css')
+.break-word { word-wrap: break-word }
+
+@media (max-width: 780px) {
+  .md-align-left { text-align:left }
+  .md-center { text-align:center }
+  .md-align-right { text-align:right }
+  .md-justify { text-align:justify }
+}
+
+@media (max-width: 480px) {
+  .sm-align-left { text-align:left }
+  .sm-center { text-align:center }
+  .sm-align-right { text-align:right }
+  .sm-justify { text-align:justify }
+}
+`, 'css')
   ])
   return section('typography', content)
 }

@@ -12,7 +12,7 @@ ul.tabs--h li a {
 
 ul.tabs--v li,
 ul.tabs--h li {
-  color: $grey-5;
+  color: grey;
   cursor: pointer;
   padding: .25em .5em;
 }

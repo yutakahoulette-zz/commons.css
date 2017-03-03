@@ -8,7 +8,7 @@ th {
 }
 
 tr:not(:first-of-type) {
-  border-top: 1px solid $grey-4;
+  border-top: 1px solid rgb(219, 219, 219);
 }
 
 

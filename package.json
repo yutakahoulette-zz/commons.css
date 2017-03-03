@@ -1,32 +1,32 @@
 {
   "name": "commons.css",
-  "version": "0.1.1",
-  "description": "utils + core UI components",
+  "version": "0.1.2",
+  "description": "css utilility classes + core UI components",
   "style": "lib/index.css",
   "scripts": {
     "postcss": "postcss -c postcss-example.js -w -l",
     "budo": "budo example/index.js --dir example  --live -- -t babelify",
-    "build": "postcss -c postcss-lib.js -l && mkdir -p example/dist && cp example/build.css example/dist/build.css && cp example/index.html  example/dist/index.html && browserify example/index.js -o example/dist/index.js -t babelify",
-    "gh-pages": "git subtree push --prefix example/dist origin gh-pages"
+    "build": "./build.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yutakahoulette/commons.css.git"
   },
-  "author": "yutakahoulette",
+  "author":  "Yutaka Houlette <yutakahoulette@gmail.com> (http://yutakahoulette.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yutakahoulette/commons.css/issues"
   },
   "homepage": "https://github.com/yutakahoulette/commons.css#readme",
   "devDependencies": {
-    "@commitchange/grey-scale-variables": "0.0.1",
     "@commitchange/color-variables": "0.0.1",
+    "@commitchange/grey-scale-variables": "0.0.1",
     "autoprefixer": "^6.5.0",
     "babel-preset-es2015": "^6.16.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
     "budo": "^9.2.1",
+    "cssnano": "^3.10.0",
     "flimflam-render": "^0.1.4",
     "flyd": "^0.2.2",
     "flyd-url": "0.0.1",
@@ -38,6 +38,7 @@
     "postcss-import": "^8.1.2",
     "precss": "^1.4.0",
     "ramda": "^0.22.1",
-    "snabbdom": "^0.5.3"
+    "snabbdom": "^0.5.3",
+    "uglifyjs": "^2.4.10"
   }
 }

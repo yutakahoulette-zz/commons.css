@@ -76,7 +76,7 @@ const scroll = ID$ => v => {
 const view = state => 
   h('div.relative', {hook: {insert: scroll(state.ID$)}}, [
     h('div.main', [
-      h('div.max-width-700.px-3', [
+      h('div.max-width-800.px-3', [
         nav(state)
       , about()
       , align()
@@ -105,6 +105,9 @@ const view = state =>
       , toggle()
       , typeScale()
       , typography()
+      , h('div.clearfix', [
+          h('img.right', {props: {src: 'trees.png'}})
+        ])
       ])
     ])
   ])

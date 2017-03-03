@@ -9,6 +9,7 @@ module.exports = _ => {
   , code(
 `.bg-cover {
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .bg-contain {
