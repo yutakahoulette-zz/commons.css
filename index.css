@@ -7,46 +7,48 @@
 
 html { line-height: 1.6; }
 
-body { overflow: hidden; }
+* { border-color: $grey-4; }
 
 .nav {
   left: 0;
   top: 0;
-  border-right: 1px solid $grey-4;
-  position: absolute;
+  position: fixed;
   width: 160px;
   overflow-y: auto;
   height: 100%;
 }
 
-.main {
-  width: calc(100% - 160px);
-  margin-left: 160px;
-  overflow-y: auto;
-  height: 100%;
+main {
+  padding-left: 160px;
   padding-bottom: 100px;
+}
+
+pre {
+  margin-bottom: 2rem;
+  background: $grey-1;
+  border: 1px solid $grey-4;
+  padding: 1rem;
+}
+
+section pre:last-of-type {
+  margin-bottom: 0;
 }
 
 .bg-grey-1 { background: $grey-1; }
 .bg-grey-2 { background: $grey-2; }
-.bg-grey-3 { background: $grey-3; }
-.bg-grey-4 { background: $grey-4; }
-.bg-grey-5 { background: $grey-5; }
 
 .color-white { color: white; }
+.bg-white { background: white; }
 
-* {
-  border-color: $grey-4;
-}
 
 @media (max-width: 600px) {
   .nav { display: none; }
 
-  .main {
+  main {
     width: 100%; 
-    margin-left: 0; 
+    padding-left: 0; 
   }
-  .main > .px-3 {
+  main > .px-3 {
     padding-left: 1rem;
     padding-right: 1rem;
   }

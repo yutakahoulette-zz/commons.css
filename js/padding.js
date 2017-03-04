@@ -1,16 +1,12 @@
-import h from 'snabbdom/h'
-import title from './title'
-import code from './code'
-import section from './section'
-import responsiveText from './responsive-text' 
-
+const h = require('snabbdom/h')
+const code = require('./code')
+const responsiveText = require('./responsive-text')
 
 const demo = h('div.border.code.p-3.md-p-2.sm-p-1.mb-1', '.p-3.md-p-2.sm-p-1')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Padding')
-  , demo
+module.exports = 
+   h('div', [
+    demo
   , h('p.helpBox--success', responsiveText) 
   , code(
 `
@@ -62,7 +58,4 @@ module.exports = _ => {
 .py-5 { padding-top: 4rem; padding-bottom: 4rem }
 .px-5 { padding-left: 4rem; padding-right: 4rem }`, 'css')
   ])
-  return section('padding', content)
-}
-
 

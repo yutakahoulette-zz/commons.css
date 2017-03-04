@@ -1,12 +1,9 @@
-import h from 'snabbdom/h'
-import title from './title'
-import code from './code'
-import section from './section'
+const h = require('snabbdom/h')
+const code = require('./code')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Misc')
-  , code(
+module.exports = 
+  h('div', [
+    code(
 `
 .no-padding-last-child > *:last-child { padding: 0 }
 
@@ -40,6 +37,4 @@ module.exports = _ => {
 }
 `, 'css')
   ])
-  return section('misc', content)
-}
 

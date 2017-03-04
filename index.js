@@ -6,19 +6,48 @@ const render = require('flimflam-render')
 const snabbdom = require('snabbdom')
 const url$ = require('flyd-url')
 
+// local
 const cap = require('./js/capitalize')
 const hyph = require('./js/hyphenate')
 const scroll = require('./js/scroll')
-
 const about = require('./js/about')
 
-const title = txt => h('h3.mt-0.pt-2', cap(txt))
+const map = R.addIndex(R.map)
 
-const section = key => 
-  h('section.border-bottom.pb-5.pt-1', {props: {id: hyph(key)}}, [
-    title(key)
-  , dict[key]
+const title = txt => h('h3.mt-0.mb-3', cap(txt))
+
+const images = [
+  ''
+, 'fake-moon'
+, 'smoke'
+, 'fake-palms'
+, 'rings'
+, 'moths'
+, 'stream'
+, 'bear-butt'
+, 'twister'
+, 'trees'
+]
+
+const image = (dir, name) =>
+  h('div.clearfix.pt-5', [
+    h(`img.${dir}`, {props: {src: `images/${name}.png`}})
   ])
+
+const section = (key, i) => {
+  i+=1
+  const addImage = i % 3 === 0
+  const dir = (i % 2 === 0) ? 'left' : 'right'
+  return h('section.mb-5', {props: {id: hyph(key)}}, [
+    h('div.bg-white.sh-1.p-2', [
+      title(key)
+    , dict[key]
+    ])
+  , addImage  
+    ? image(dir, images[i / 3])
+    : ''
+  ])
+}
 
 const link = id$ => txt => 
   h('li', {class: {'is-selected': hyph(txt) === id$()}}, [
@@ -26,14 +55,24 @@ const link = id$ => txt =>
   ])
 
 const nav = state => 
-  h('div.nav.p-2.bg-grey-1', [
+  h('div.nav.sh-1.p-2.bg-white', [
     h('ul.tabs--v', 
       R.map(link(state.id$), R.keys(dict))
     )
   ])
 
+const start = h('div', [
+    h('p.bold.m-0', 'CDN')
+  , h('pre', `<link href="https://unpkg.com/commons.css@0.1.2/lib/index.min.css" rel="stylesheet">`)
+  , h('p.bold.m-0', 'NPM')
+  , h('pre', 'npm install commons.css')
+  , h('p.bold.m-0', 'Github')
+  , h('pre', [ h('a', {props: {href: 'https://github.com/yutakahoulette/commons.css'}}, 'github.com/yutakahoulette/commons.css')])
+])
+
 const dict = {
-  'aspect': require('./js/aspect')
+  start
+, 'aspect': require('./js/aspect')
 , 'align': require('./js/align')
 , 'background': require('./js/background')
 , 'blockquote': require('./js/blockquote')
@@ -42,43 +81,36 @@ const dict = {
 , 'cursor': require('./js/cursor')
 , 'disabled': require('./js/disabled')
 , 'form': require('./js/form')
-// const grid = require('./js/grid')
-// const helpBox = require('./js/help-box')
-// const hide = require('./js/hide')
-// const layout = require('./js/layout')
-// const list = require('./js/list')
-// const opacity = require('./js/opacity')
-// const margin = require('./js/margin')
-// const misc = require('./js/misc')
-// const padding = require('./js/padding')
-// const position = require('./js/position')
-// const progressBar = require('./js/progress-bar')
-// const shadow = require('./js/shadow')
-// const table = require('./js/table')
-// const tabs = require('./js/tabs')
-// const toggle = require('./js/toggle')
-// const typeScale = require('./js/type-scale')
-// const typography = require('./js/typography')
-//
+, 'grid': require('./js/grid')
+, 'help box' : require('./js/help-box')
+, 'hide' : require('./js/hide')
+, 'layout' : require('./js/layout')
+, 'list' : require('./js/list')
+, 'opacity' : require('./js/opacity')
+, 'margin' : require('./js/margin')
+, 'misc' : require('./js/misc')
+, 'padding' : require('./js/padding')
+, 'position' : require('./js/position')
+, 'progress bar' : require('./js/progress-bar')
+, 'shadow' : require('./js/shadow')
+, 'table' : require('./js/table')
+, 'tabs' : require('./js/tabs')
+, 'toggle' : require('./js/toggle')
+, 'type-scale' : require('./js/type-scale')
+, 'typography' : require('./js/typography')
 }
 
 const init = () => ({
   id$: flyd.map(x => x.hash && x.hash.replace('#', ''), url$)
 })
 
-const imageDivider = (dir, name) =>
-  h('div.clearfix', [
-    h(`img.${dir}`, {props: {src: `images/${name}.png`}})
-  ])
-
 const view = state => 
-  h('div.relative', {hook: {insert: scroll(state.id$)}}, [
-    h('div.main', [
+  h('div.bg-grey-2', {hook: {insert: scroll(state.id$)}}, [
+    nav(state)
+  , h('main', [
       h('div.max-width-800.px-3', [
-        nav(state)
-      , about
-      , h('div.no-border-last-child', R.map(section, R.keys(dict)))
-      , imageDivider('right', 'trees')
+        about
+      , h('div', map(section, R.keys(dict)))
       ])
     ])
   ])

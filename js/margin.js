@@ -1,17 +1,13 @@
-import h from 'snabbdom/h'
-import title from './title'
-import code from './code'
-import section from './section'
-import responsiveText from './responsive-text' 
-
+const h = require('snabbdom/h')
+const code = require('./code')
+const responsiveText = require('./responsive-text')
 
 const demo = 
   h('div.code.p-2.border.mb-3.md-mb-2.sm-mb-1', '.mb-3.md-mb-2.sm-mb-1')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Margin')
-  , demo
+module.exports =
+  h('div', [
+    demo
   , h('p.helpBox--success', responsiveText) 
   , code(
 `.m-0  { margin: 0 }
@@ -74,6 +70,4 @@ module.exports = _ => {
 .m-neg-5 { margin: -4rem; }
 `, 'css')
   ])
-  return section('margin', content)
-}
 

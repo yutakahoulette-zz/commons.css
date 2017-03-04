@@ -1,17 +1,14 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
-import warn from './brand-warn'
+const h = require('snabbdom/h')
+const warn = require('./brand-warn')
+const code = require('./code')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Help box')
-  , warn()
+module.exports = 
+  h('div', [
+    warn
   , h('div', [
-      h('div.mb-2.helpBox--success', [h('pre.m-0', '.helpBox--success')])
-    , h('div.mb-2.helpBox--warn', [h('pre.m-0', '.helpBox--warn')])
-    , h('div.helpBox--error', [h('pre.m-0', '.helpBox--error')])
+      h('div.mb-2.helpBox--success.code', '.helpBox--success')
+    , h('div.mb-2.helpBox--warn.code', '.helpBox--warn')
+    , h('div.helpBox--error.code', '.helpBox--error')
     ])
   ])
-  return section('help-box', content)
-}
+

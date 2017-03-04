@@ -13,18 +13,22 @@ const aspects = [
 ]
 
 const box = aspect => 
-  h(`div.mb-1.aspect.aspect-${aspect}.col-5.md-col-8.sm-col-12`, [h('div.p-2.border.code', `.aspect.aspect-${aspect}`)])
+  h('div.p-1.col.col-4.md-col-6.sm-col-12', [
+    h(`div.aspect.aspect-${aspect}`, [
+      h('div.p-2.border.code', `.aspect.aspect-${aspect}`)
+    ])
+  ])
 
-const demo = h('div.mt-2', R.map(box, aspects))
+const demo = h('div.clearfix.m-neg-1', R.map(box, aspects))
   
 module.exports = 
-  h('div', [
-     h('p', 'Sets a specific aspect ratio.')  
-   , demo
-   , code(`
+h('div', [
+   h('p', 'Sets a specific aspect ratio.')  
+ , demo
+ , code(`
 <div class='aspect aspect-1x1'>
   <div>I'm a square</div>
 </div>
 `, 'html')
-  ])
+])
 

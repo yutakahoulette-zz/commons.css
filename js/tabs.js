@@ -1,13 +1,10 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
-import code from './code'
-import warn from './brand-warn'
+const h = require('snabbdom/h')
+const warn = require('./brand-warn')
+const code = require('./code')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Tabs')
-  , warn()
+module.exports = 
+  h('div', [
+    warn
   , h('p.bold', 'Horizontal tabs')
   , h('ul.tabs--h', [
         h('li.is-selected.mr-1', 'Apple')
@@ -33,5 +30,4 @@ module.exports = _ => {
   <li>Lychee</li>
 </ul>`)
   ])
-  return section('tabs', content)
-}
+

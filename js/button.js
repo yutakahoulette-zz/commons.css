@@ -5,7 +5,7 @@ const code = require('./code')
 module.exports = 
    h('div', [
     warn
-  , h('p.mb-3', ['If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the ',  h('span.code', '.btn'),  ' class'])
+  , h('p', ['If you would like to apply a button style to a non-button element (an anchor tag, for example), you can add the ',  h('span.code', '.btn'),  ' class'])
   , h('div.mb-3', [
       h('button', 'Learn more')
     , h('div.mt-1.code', 'default')
@@ -14,7 +14,7 @@ module.exports =
       h('button', {props: {disabled : true}}, 'Loading...')
     , h('div.mt-1.code', '.disabled')
     ])
-  , h('p.mb-3', [
+  , h('p', [
       'Instead of creating additional BEM style classes for buttons, such as '
     , h('div.inline.bg-grey-2', '.btn--large') 
     , ', you can combine utility classes such as type-scale, line-height, border and padding, to create button variations.' 
@@ -35,7 +35,7 @@ module.exports =
       h('button.not-rounded.sh-2', 'Shadow')
     , h('div.mt-1.code', 'button.not-rounded.sh-1')
     ])
-  , h('p.mb-3', 'To create a connected group of buttons, wrap your buttons or .btn classes in an element with the .buttons class')
+  , h('p.mb-2', 'To create a connected group of buttons, wrap your buttons or .btn classes in an element with the .buttons class')
   , h('div.buttons', [
       h('button', 'Guitar')
     , h('button', 'Bass')

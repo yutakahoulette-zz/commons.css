@@ -1,7 +1,7 @@
 const h  = require('snabbdom/h')
 
 module.exports =  
- h('section.pt-3.pb-4.border-bottom', [
+ h('section.pt-3.mb-5', [
      h('div.table.sm-block.mb-5.sm-center', [
         h('img.middle-cell.sm-pr-0.pr-2.sm-pb-2.min-width-150.sm-inline-block', {props: {src: 'images/bison.png'}})
       , h('div.middle-cell.sm-inline-block', [
@@ -15,13 +15,6 @@ module.exports =
       , h('a', {props: {href: 'http://basscss.com'}}, 'Basscss')
       , ', and styles for a handful of core UI components.' 
       ])
-  , h('h4.mt-5', 'Getting started')
-  , h('p.bold', 'CDN')
-  , h('pre.bg-grey-1.p-1', `<link href="https://unpkg.com/commons.css@0.1.2/lib/index.min.css" rel="stylesheet">`)
-  , h('p.bold', 'NPM')
-  , h('pre.bg-grey-1.p-1.mt-2', 'npm install commons.css')
-  , h('p.bold', 'Github')
-  , h('p.mt-0', [ h('a', {props: {href: 'https://github.com/yutakahoulette/commons.css'}}, 'github.com/yutakahoulette/commons.css')])
   , h('div.table.mt-3', [
       h('span.middle-cell.pr-1', {hook: {insert: x => x.elm.innerHTML = star}})
     , h('span.middle-cell', {hook: {insert: x => x.elm.innerHTML = twit}})

@@ -2,7 +2,8 @@ module.exports = {
   use: [
     'postcss-import'
   , 'precss'
-  , 'autoprefixer']
+  , 'autoprefixer'
+  , 'cssnano']
 , 'local-plugins' : true
 , 'autoprefixer' : {browsers: 'last 2 versions'}
 , input: 'index.css'

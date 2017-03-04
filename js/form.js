@@ -9,7 +9,7 @@ h('div', [
   warn
 , h('div', [
     label('Text input')
-  , h('input.max-width-300.mb-1', {props: {type: 'text'}})
+  , h('input.max-width-300.mb-2', {props: {type: 'text'}})
   , label('Number input with dollar prepended')
   , h('span.prepend', [
       h('span', '$')
@@ -40,7 +40,7 @@ h('div', [
   </select>
 </span>`)
   , label('Textarea')
-  , h('textarea.max-width-300.mb-1', {props: {type: 'text'}})
+  , h('textarea.max-width-300.mb-2', {props: {type: 'text'}})
   , label('Radio')
   , h('div.mb-1', [
       h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})
@@ -99,16 +99,16 @@ h('div', [
   <span class='table-cell'><input type='text'></span>
   <button class='btn--main rounded-right table-cell'>Search</button>
 </span>`)
-  , h('p', 'To modify form elements, add padding or type-scale utility classes, and elements will scale consistently:') 
+  , h('p.mt-3', 'To modify form elements, add padding or type-scale utility classes, and elements will scale consistently:') 
   , h('span.table', [
       h('span.table-cell.align-middle', [ h('input.py-3', {props: {type: 'text'}}) ])
     , h('button.py-3.btn--main.rounded-right.table-cell', 'Search')
     ])
-  , h('p.mt-1.mb-3', [h('span.code', '.py-3'), 'class added to input and button'])
+  , h('p.mt-1.mb-3', [h('span.code', '.py-3'), ' class added to input and button'])
   , h('span.table', [
       h('span.table-cell.align-middle', [ h('input.h3', {props: {type: 'text'}}) ])
     , h('button.h3.btn--main.rounded-right.table-cell', 'Search')
     ])
-  , h('p.mt-1.mb-3', [h('span.code', '.h3'), ' class added to input and button'])
+  , h('p.mt-1', [h('span.code', '.h3'), ' class added to input and button'])
   ])
 ])

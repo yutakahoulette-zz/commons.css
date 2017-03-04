@@ -1,13 +1,10 @@
-import h from 'snabbdom/h'
-import code from './code'
-import title from './title'
-import section from './section'
-import warn from './brand-warn'
+const h = require('snabbdom/h')
+const warn = require('./brand-warn')
+const code = require('./code')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Progress bar')
-  , warn()
+module.exports = 
+  h('div', [
+    warn
   , h('span.progressBar.bg-grey-3', [ h('span', {style: {width: '80%'}}) ])
   , code( 
 `<span class='progressBar.bg-grey-3'>
@@ -25,8 +22,5 @@ module.exports = _ => {
 `<span class='progressBar.h2.bg-grey-3.pill'>
   <span style='width: 20%'></span>
 </span>`)
-    ])
-  return section('progress-bar', content)
-}
-
+  ])
 

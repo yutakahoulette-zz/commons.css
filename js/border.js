@@ -27,7 +27,7 @@ module.exports =
     , snippet('.bg-grey-4.rounded-bottom', '.rounded-bottom')
     , snippet('.bg-grey-4.rounded-left', '.rounded-left')
     , snippet('.bg-grey-4.not-rounded', '.not-rounded')
-    , h('pre.bg-grey-4.inline-block.center.circle.mt-0', {style: {lineHeight: '75px', width: '75px'}}, '.circle')
+    , h('div.code.bg-grey-4.inline-block.center.circle.mt-0', {style: {lineHeight: '75px', width: '75px'}}, '.circle')
     ])
   ])
 

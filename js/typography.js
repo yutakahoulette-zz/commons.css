@@ -1,14 +1,11 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
-import code from './code'
+const h = require('snabbdom/h')
+const code = require('./code')
 
 const lineHeightP = x => h(`pre.line-height-${x}.bg-grey-1`, ` .line-height-${x}`)
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Typography')
-  , h('p.bold.mt-3', 'bold')
+module.exports = 
+  h('div', [
+    h('p.bold.mt-3', 'bold')
   , h('p.normal', 'normal')
   , h('p.italic', 'italic')
   , h('p.capitalize', 'capitalize')
@@ -66,6 +63,4 @@ module.exports = _ => {
 }
 `, 'css')
   ])
-  return section('typography', content)
-}
 

@@ -1,8 +1,6 @@
-import h from 'snabbdom/h'
-import title from './title'
-import code from './code'
-import section from './section'
-import responsiveText from './responsive-text' 
+const h = require('snabbdom/h')
+const code = require('./code')
+const responsiveText = require('./responsive-text')
 
 const demo = h('div.clearfix.code', [
   h('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12')
@@ -10,12 +8,11 @@ const demo = h('div.clearfix.code', [
 , h('div.border.p-2.col.col-4.md-col-12', '.col-4.md-col-12')
 ])
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Grid')
-  , demo
-  , h('p.helpBox--success', responsiveText) 
-  , code(
+module.exports = 
+h('div', [
+  demo
+, h('p.helpBox--success', responsiveText) 
+, code(
 `.col       { float: left }
 .col-right { float: right }
 .col-1  { width: 8.33333% }
@@ -30,7 +27,5 @@ module.exports = _ => {
 .col-10 { width: 83.33333% }
 .col-11 { width: 91.66667% }
 .col-12 { width: 100% }`, 'css')
-  ])
-  return section('grid', content)
-}
+])
 

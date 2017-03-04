@@ -1,7 +1,5 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
-import code from './code'
+const h = require('snabbdom/h')
+const code = require('./code')
 
 const demo = h('div.toggle-show-parent.border.p-2', [
   h('input', {props: {type: 'checkbox', id: 'toggleShow'}})
@@ -12,10 +10,9 @@ const demo = h('div.toggle-show-parent.border.p-2', [
 , h('div.toggle-show-child.h1', 'Ack!') 
 ])
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Toggle Show')
-  , h('p', "This is a CSS only method for showing/hiding content by using a checkbox input's :checked state.")   
+module.exports = 
+  h('div', [
+    h('p', "This is a CSS only method for showing/hiding content by using a checkbox input's :checked state.")   
   , demo
   , code(`
 <div class="toggle-show-parent">
@@ -41,6 +38,4 @@ module.exports = _ => {
   display: block;
 }`, 'css')
   ])
-  return section('toggle-show', content)
-}
 

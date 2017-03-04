@@ -1,12 +1,9 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
-import responsiveText from './responsive-text' 
+const h = require('snabbdom/h')
+const responsiveText = require('./responsive-text')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Type-scale')
-  , h('p.helpBox--success', responsiveText) 
+module.exports = 
+  h('div', [
+    h('p.helpBox--success', responsiveText) 
   , h('p.h1.md-h2.sm-h3', '.h1.md-h2.sm-h3') 
   , h('p.h1', '<h1> or .h1 (3rem)')
   , h('p.h2', '<h2> or .h2 (2.5rem)')
@@ -16,6 +13,4 @@ module.exports = _ => {
   , h('p.h6', '<h6> or .h6 (.75rem)')
   , h('p.small', '<small> or .small (.75rem)')
   ])
-  return section('type-scale', content)
-}
 

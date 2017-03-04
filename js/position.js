@@ -1,12 +1,9 @@
-import h from 'snabbdom/h'
-import title from './title'
-import code from './code'
-import section from './section'
+const h = require('snabbdom/h')
+const code = require('./code')
 
-module.exports = _ => {
-  const content = h('div', [
-      title('Position')
-    , code(
+module.exports = 
+  h('div', [
+   code(
 `.relative { position: relative }
 .absolute { position: absolute }
 .fixed    { position: fixed }
@@ -29,7 +26,4 @@ module.exports = _ => {
   right: 0;
 }`, 'css')
   ])
-  return section('position', content)
-}
-
 

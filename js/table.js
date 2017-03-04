@@ -1,11 +1,8 @@
-import h from 'snabbdom/h'
-import title from './title'
-import section from './section'
+const h = require('snabbdom/h')
 
-module.exports = _ => {
-  const content = h('div', [
-    title('Table')
-  , h('table', [
+module.exports = 
+  h('div', [
+    h('table', [
       h('tr', [
         h('th', 'Name')
       , h('th', 'Year')
@@ -28,5 +25,4 @@ module.exports = _ => {
       ])
     ])
   ])
-  return section('table', content)
-}
+

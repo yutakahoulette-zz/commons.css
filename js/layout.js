@@ -1,13 +1,9 @@
-import h from 'snabbdom/h'
-import title from './title'
-import code from './code'
-import section from './section'
+const h = require('snabbdom/h')
+const code = require('./code')
 
-
-module.exports = _ => {
-  const content = h('div', [
-    title('Layout')
-  , code(
+module.exports = 
+  h('div', [
+    code(
 `.inline       { display:inline }
 .block        { display:block }
 .inline-block { display:inline-block }
@@ -75,12 +71,6 @@ module.exports = _ => {
   .sm-table        { display:table }
   .sm-table-cell   { display:table-cell }
 }
-
-
-
 `, 'css')
   ])
-  return section('layout', content)
-}
-
 
