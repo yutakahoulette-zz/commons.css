@@ -63,7 +63,7 @@ const nav = state =>
 
 const start = h('div', [
     h('p.bold.m-0', 'CDN')
-  , h('pre', `<link href="https://unpkg.com/commons.css@0.1.2/lib/index.min.css" rel="stylesheet">`)
+  , h('pre', `<link href="https://unpkg.com/commons.css@0.1.3/lib/index.min.css" rel="stylesheet">`)
   , h('p.bold.m-0', 'NPM')
   , h('pre', 'npm install commons.css')
   , h('p.bold.m-0', 'Github')

@@ -3,7 +3,6 @@
 echo "running postcss processes..."
 postcss -c postcss/lib.js -l 
 postcss -c postcss/nano.js -l 
-postcss -c postcss/example -l 
 
 echo "creating docs folder if it does not exist..."
 mkdir -p docs 

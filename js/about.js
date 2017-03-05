@@ -6,7 +6,7 @@ module.exports =
         h('img.middle-cell.md-pr-0.pr-2.md-pb-2.min-width-150.md-inline-block', {props: {src: 'images/bison.png'}})
       , h('div.middle-cell.md-block', [
           h('h1.h2.m-0', 'commons.css')
-        , h('h4.mt-1.mb-0', 'v0.1.2')
+        , h('h4.mt-1.mb-0', 'v0.1.3')
         ])
       ])
     , h('p', [
