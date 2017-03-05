@@ -28,15 +28,15 @@ module.exports =
   display: block;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30em) {
   .sm-hide { display:none !important }
 }
 
-@media (min-width: 480px) and (max-width: 780px){
+@media (min-width: 30em) and (max-width: 45em){
   .md-hide { display:none !important }
 }
 
-@media (min-width: 780px){
+@media (min-width: 45em){
   .lg-hide { display:none !important }
 }
 `, 'css')

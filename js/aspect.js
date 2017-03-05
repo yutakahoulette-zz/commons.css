@@ -13,7 +13,7 @@ const aspects = [
 ]
 
 const box = aspect => 
-  h('div.p-1.col.col-4.md-col-6.sm-col-12', [
+  h('div.p-1.col.col-6.md-col-12', [
     h(`div.aspect.aspect-${aspect}`, [
       h('div.p-2.border.code', `.aspect.aspect-${aspect}`)
     ])

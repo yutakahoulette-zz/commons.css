@@ -3,8 +3,8 @@ const code = require('./code')
 const responsiveText = require('./responsive-text')
 
 const demo = h('div.clearfix.code', [
-  h('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12')
-, h('div.border.p-2.col.col-4.md-col-6', '.col-4.md-col-6.sm-col-12')
+  h('div.border.p-2.col.col-4.md-col-6.sm-col-12', '.col-4.md-col-6.sm-col-12')
+, h('div.border.p-2.col.col-4.md-col-6.sm-col-12', '.col-4.md-col-6.sm-col-12')
 , h('div.border.p-2.col.col-4.md-col-12', '.col-4.md-col-12')
 ])
 

@@ -19,12 +19,6 @@ module.exports =
 
 .invisible { visibility: hidden }
 
-.container {
-  max-width: 980px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .content-width {
   width: 1%;
   white-space: nowrap;

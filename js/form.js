@@ -9,11 +9,11 @@ h('div', [
   warn
 , h('div', [
     label('Text input')
-  , h('input.max-width-300.mb-2', {props: {type: 'text'}})
+  , h('input.max-width-1.mb-2', {props: {type: 'text'}})
   , label('Number input with dollar prepended')
   , h('span.prepend', [
       h('span', '$')
-    , h('input.width-100', {props: {type: 'number'}})
+    , h('input', {props: {type: 'number'}})
     ])
   , h('br')
   , code(
@@ -40,7 +40,7 @@ h('div', [
   </select>
 </span>`)
   , label('Textarea')
-  , h('textarea.max-width-300.mb-2', {props: {type: 'text'}})
+  , h('textarea.max-width-1.mb-2', {props: {type: 'text'}})
   , label('Radio')
   , h('div.mb-1', [
       h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})

@@ -10,15 +10,15 @@
   display: block;
 }
 
-@media (max-width: 480px) {
+@media (max-width: $sm-break) {
   .sm-hide { display:none !important }
 }
 
-@media (min-width: 480px) and (max-width: 780px){
+@media (min-width: $sm-break) and (max-width: $md-break){
   .md-hide { display:none !important }
 }
 
-@media (min-width: 780px){
+@media (min-width: $md-break){
   .lg-hide { display:none !important }
 }
 

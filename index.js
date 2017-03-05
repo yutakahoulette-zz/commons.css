@@ -30,7 +30,7 @@ const images = [
 ]
 
 const image = (dir, name) =>
-  h('div.clearfix.pt-5', [
+  h('div.clearfix.pt-5.sm-px-2.sm-pt-3', [
     h(`img.${dir}`, {props: {src: `images/${name}.png`}})
   ])
 
@@ -38,7 +38,7 @@ const section = (key, i) => {
   i+=1
   const addImage = i % 3 === 0
   const dir = (i % 2 === 0) ? 'left' : 'right'
-  return h('section.mb-5', {props: {id: hyph(key)}}, [
+  return h('section.mb-5.sm-mb-3', {props: {id: hyph(key)}}, [
     h('div.bg-white.sh-1.p-2', [
       title(key)
     , dict[key]
@@ -55,7 +55,7 @@ const link = id$ => txt =>
   ])
 
 const nav = state => 
-  h('div.nav.sh-1.p-2.bg-white', [
+  h('div.nav.sh-1.p-2.bg-white.sm-hide', [
     h('ul.tabs--v', 
       R.map(link(state.id$), R.keys(dict))
     )
@@ -107,8 +107,8 @@ const init = () => ({
 const view = state => 
   h('div.bg-grey-2', {hook: {insert: scroll(state.id$)}}, [
     nav(state)
-  , h('main', [
-      h('div.max-width-800.px-3', [
+  , h('main.sm-p-0', [
+      h('div.max-width-4.px-3.sm-p-0', [
         about
       , h('div', map(section, R.keys(dict)))
       ])

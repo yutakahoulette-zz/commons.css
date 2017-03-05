@@ -65,7 +65,7 @@
 .m-neg-4 { margin: -3rem; }
 .m-neg-5 { margin: -4rem; }
 
-@media (max-width: 780px){
+@media (max-width: $md-break){
   .md-m-0  { margin:0 }
   .md-mt-0 { margin-top:0 }
   .md-mr-0 { margin-right:0 }
@@ -134,7 +134,7 @@
   .m-neg-5 { margin: -4rem; }
 }
 
-@media (max-width: 480px){
+@media (max-width: $sm-break){
   .sm-m-0  { margin:0 }
   .sm-mt-0 { margin-top:0 }
   .sm-mr-0 { margin-right:0 }

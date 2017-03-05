@@ -5,8 +5,6 @@
 @import 'docs-css/code.css';
 @import 'docs-css/branding.css';
 
-html { line-height: 1.6; }
-
 * { border-color: $grey-4; }
 
 .nav {
@@ -30,28 +28,13 @@ pre {
   padding: 1rem;
 }
 
-section pre:last-of-type {
-  margin-bottom: 0;
-}
+section pre:last-of-type { margin-bottom: 0; }
 
 .bg-grey-1 { background: $grey-1; }
 .bg-grey-2 { background: $grey-2; }
+.bg-grey-3 { background: $grey-3; }
+.bg-grey-4 { background: $grey-4; }
 
 .color-white { color: white; }
 .bg-white { background: white; }
-
-
-@media (max-width: 600px) {
-  .nav { display: none; }
-
-  main {
-    width: 100%; 
-    padding-left: 0; 
-  }
-  main > .px-3 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
 

@@ -48,14 +48,14 @@ module.exports =
 .nowrap { white-space: nowrap }
 .break-word { word-wrap: break-word }
 
-@media (max-width: 780px) {
+@media (max-width: 45em) {
   .md-align-left { text-align:left }
   .md-center { text-align:center }
   .md-align-right { text-align:right }
   .md-justify { text-align:justify }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30em) {
   .sm-align-left { text-align:left }
   .sm-center { text-align:center }
   .sm-align-right { text-align:right }
