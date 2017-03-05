@@ -20,12 +20,14 @@ module.exports =
 
 .hover-hide-child,
 .hover-hide-parent:hover .hover-show-child {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hover-show-child,
 .hover-hide-parent:hover .hover-hide-child {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 30em) {
