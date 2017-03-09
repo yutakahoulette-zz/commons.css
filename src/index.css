@@ -1,7 +1,8 @@
+@import 'normalize.css';
 @import './reset.css';
+
 @import './break-points.css';
 
-/* base: */
 @import './align.css';
 @import './border.css';
 @import './grid.css';

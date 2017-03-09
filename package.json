@@ -1,6 +1,6 @@
 {
   "name": "commons.css",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "css utilility classes + core UI components",
   "style": "lib/index.css",
   "scripts": {
