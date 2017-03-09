@@ -7,4 +7,7 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.bg-white {
+  background: white;
+}
 

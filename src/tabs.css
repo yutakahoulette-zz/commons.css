@@ -18,8 +18,8 @@ ul.tabs--h li {
 }
 
 ul.tabs--h li {
-  border-bottom: 2px solid transparent;
-  line-height: 2em;
+  border-bottom: 3px solid transparent;
+  line-height: 2;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -37,9 +37,8 @@ ul.tabs--v li:hover {
 
 ul.tabs--v li {
   display: block;
-  line-height: 1;
-  margin-bottom: .5em;
-  border-left: 2px solid transparent;
-  border-bottom-width: 1px;
+  line-height: 1.25;
+  margin-bottom: .25em;
+  border-left: 3px solid transparent;
 }
 

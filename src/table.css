@@ -12,13 +12,3 @@ tr:not(:first-of-type) {
 }
 
 
-@media (max-width: 480px) {
-  table {
-    font-size: 14px;
-  }
-  td, th {
-    padding: .5em;
-  }
-}
-
-

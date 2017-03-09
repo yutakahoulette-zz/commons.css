@@ -34,11 +34,10 @@ pre {
 .break-word { word-wrap:break-word }
 
 .line-height-1 { line-height: 1 }
-.line-height-2 { line-height: 1.2 }
-.line-height-3 { line-height: 1.4 }
-.line-height-4 { line-height: 1.6 }
-.line-height-5 { line-height: 1.8 }
-.line-height-6 { line-height: 2 }
+.line-height-2 { line-height: 1.25 }
+.line-height-3 { line-height: 1.5 }
+.line-height-4 { line-height: 1.75 }
+.line-height-5 { line-height: 2 }
 
 
 @media (max-width: 780px) {

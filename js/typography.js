@@ -13,7 +13,9 @@ module.exports =
   , h('p.underline', 'underline')
   , h('p.hover-underline', 'hover underline')
   , h('p.strike', 'strike')
-  , h('div.width-100.truncate', 'Truncateeeeeeeeeeeeeeeeee')
+  , h('div.max-width-1', [
+      h('p.truncate', 'Truncateeeeeeeeeeeeeeeeeeeee')
+    ])
   , h('p.code', 'const greet = text => alert(text)')
   , code(
 `<p class='bold'>bold</p>
@@ -24,7 +26,9 @@ module.exports =
 <p class='underline'>underline</p>
 <p class='strike'>strike</p>
 <p class='hover-underline'>hover underline</p>
-<p class='truncate width-100'>Truncateeeeeeeeeeeeeeeeee</p>
+<div class='max-width-1'>
+  <p class='truncate'>Truncateeeeeeeeeeeeeeeeeeeee</p>
+</div>
 <p class='code'>const greet = text => alert(text)</p>
 `)
   , code(

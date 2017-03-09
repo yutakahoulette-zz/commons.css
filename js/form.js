@@ -40,7 +40,7 @@ h('div', [
   </select>
 </span>`)
   , label('Textarea')
-  , h('textarea.max-width-1.mb-2', {props: {type: 'text'}})
+  , h('textarea.max-width-2.mb-2', {props: {type: 'text'}})
   , label('Radio')
   , h('div.mb-1', [
       h('input', {props: {type: 'radio', id: 'radio1', name: 'radio'}})

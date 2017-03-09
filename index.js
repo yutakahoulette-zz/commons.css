@@ -71,7 +71,7 @@ const start = h('div', [
 ])
 
 const dict = {
-  start
+  'getting started': start
 , 'aspect': require('./js/aspect')
 , 'align': require('./js/align')
 , 'background': require('./js/background')
@@ -82,7 +82,6 @@ const dict = {
 , 'disabled': require('./js/disabled')
 , 'form': require('./js/form')
 , 'grid': require('./js/grid')
-, 'help box' : require('./js/help-box')
 , 'hide' : require('./js/hide')
 , 'layout' : require('./js/layout')
 , 'list' : require('./js/list')
@@ -91,7 +90,6 @@ const dict = {
 , 'misc' : require('./js/misc')
 , 'padding' : require('./js/padding')
 , 'position' : require('./js/position')
-, 'progress bar' : require('./js/progress-bar')
 , 'shadow' : require('./js/shadow')
 , 'table' : require('./js/table')
 , 'tabs' : require('./js/tabs')

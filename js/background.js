@@ -12,6 +12,10 @@ module.exports =
 .bg-contain {
   background-size: contain;
   background-repeat: no-repeat;
-}`, 'css')
+}
+.bg-white {
+  background: white;
+}
+`, 'css')
   ])
 

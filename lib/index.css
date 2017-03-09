@@ -1,6 +1,6 @@
 html { 
-  font-size: 16px; 
   line-height: 1.5;
+  font-size: 16px;
 }
 
 * { box-sizing: border-box; }
@@ -15,8 +15,6 @@ img {
 svg { max-height: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.2;
   margin-top: 1em;
   margin-bottom: .5em;
 }
@@ -53,8 +51,6 @@ fieldset {
 }
 
 textarea { resize: vertical; }
-
-input { -webkit-appearance: none; }
 
 /* base: */
 
@@ -784,6 +780,10 @@ input { -webkit-appearance: none; }
   background-repeat: no-repeat;
 }
 
+.bg-white {
+  background: white;
+}
+
 .aspect { position: relative }
 
 .aspect:before {
@@ -817,7 +817,7 @@ input { -webkit-appearance: none; }
 blockquote {
   padding: .5em .5em .5em 1em;
   border-left: 3px solid grey;
-  font-size: 1.2em;
+  font-size: 1.25em;
   margin-left: 0;
 }
 
@@ -886,7 +886,6 @@ textarea, input, select {
   padding: .5em;
   line-height: inherit;
   font-family: inherit;
-  font-size: 16px;
   margin: 0;
   width: 100%;
   background-color: white;
@@ -894,10 +893,9 @@ textarea, input, select {
 }
 
 label {
-  font-weight: bold;
   margin-bottom: .5rem;
   display: block;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 select {
@@ -948,8 +946,6 @@ input[type='checkbox'], input[type='radio'] {
 
 input[type='checkbox'] + label, input[type='radio'] + label {
   cursor: pointer;
-  font-weight: normal;
-  font-size: 16px;
   color: initial;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -971,13 +967,9 @@ input[type='checkbox'] + label:before, input[type='radio'] + label:before {
 }
 
 input[type='checkbox'] + label:before, input[type='radio'] + label:before, input[type='checkbox'] + label span, input[type='radio'] + label span {
-  display: table-cell;
+  display: inline-block;
   line-height: 1;
   vertical-align: middle;
-}
-
-input[type='checkbox'] + label span, input[type='radio'] + label span {
-  padding-left: .5em;
 }
 
 input[type='radio'] + label:before {
@@ -1012,12 +1004,6 @@ input[type='radio']:checked + label:before, input[type='checkbox']:checked + lab
 
 .toggle input[type='radio']:checked + label {
   color: white;
-}
-
-[class*='helpBox--'] {
-  padding: .75em;
-  border-left-width: 2px;
-  border-left-style: solid;
 }
 
 ul, ol {
@@ -1064,22 +1050,6 @@ li {
   transform: translateY(-50%);
 }
 
-.progressBar {
-  width: 100%;
-  display: block;
-  overflow: hidden;
-}
-
-.progressBar > span {
-  line-height: .5;
-  display: inline-block;
-}
-
-.progressBar > span:before {
-  content: '.';
-  visibility: hidden;
-}
-
 .sh-1 {box-shadow: 0 1px 3px 1px rgba(0,0,0,.1)}
 
 .sh-2 {box-shadow: 0 1.5px 6px 1px rgba(0,0,0,.2)}
@@ -1100,15 +1070,6 @@ tr:not(:first-of-type) {
   border-top: 1px solid rgb(219, 219, 219);
 }
 
-@media (max-width: 480px) {
-  table {
-    font-size: 14px;
-  }
-  td, th {
-    padding: .5em;
-  }
-}
-
 ul.tabs--h, ul.tabs--v {
   padding: 0;
   cursor: default;
@@ -1126,8 +1087,8 @@ ul.tabs--v li, ul.tabs--h li {
 }
 
 ul.tabs--h li {
-  border-bottom: 2px solid transparent;
-  line-height: 2em;
+  border-bottom: 3px solid transparent;
+  line-height: 2;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -1142,10 +1103,9 @@ ul.tabs--h li:hover, ul.tabs--v li:hover {
 
 ul.tabs--v li {
   display: block;
-  line-height: 1;
-  margin-bottom: .5em;
-  border-left: 2px solid transparent;
-  border-bottom-width: 1px;
+  line-height: 1.25;
+  margin-bottom: .25em;
+  border-left: 3px solid transparent;
 }
 
 .toggle-show-parent input[type=checkbox] + label:before, .toggle-show-parent input[type=checkbox]:checked + label *:first-of-type, .toggle-show-parent input[type=checkbox] + label  *:last-of-type, .toggle-show-parent input[type=checkbox] ~ .toggle-show-child { 
@@ -1242,15 +1202,13 @@ code, .code, pre {
 
 .line-height-1 { line-height: 1 }
 
-.line-height-2 { line-height: 1.2 }
+.line-height-2 { line-height: 1.25 }
 
-.line-height-3 { line-height: 1.4 }
+.line-height-3 { line-height: 1.5 }
 
-.line-height-4 { line-height: 1.6 }
+.line-height-4 { line-height: 1.75 }
 
-.line-height-5 { line-height: 1.8 }
-
-.line-height-6 { line-height: 2 }
+.line-height-5 { line-height: 2 }
 
 @media (max-width: 780px) {
   .md-align-left { text-align:left }

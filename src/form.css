@@ -6,7 +6,6 @@ select {
   padding: .5em;
   line-height: inherit;
   font-family: inherit;
-  font-size: 16px;
   margin: 0;
   width: 100%;
   background-color: white;
@@ -14,10 +13,9 @@ select {
 }
 
 label {
-  font-weight: bold;
   margin-bottom: .5rem;
   display: block;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 select {
@@ -74,8 +72,6 @@ input[type='radio'] {
 input[type='checkbox'] + label,
 input[type='radio'] + label {
   cursor: pointer;
-  font-weight: normal;
-  font-size: 16px;
   color: initial;
   user-select: none;
   display: inline-block;
@@ -98,15 +94,11 @@ input[type='checkbox'] + label:before,
 input[type='radio'] + label:before,
 input[type='checkbox'] + label span, 
 input[type='radio'] + label span {
-  display: table-cell;
+  display: inline-block;
   line-height: 1;
   vertical-align: middle;
 }
 
-input[type='checkbox'] + label span, 
-input[type='radio'] + label span {
-  padding-left: .5em;
-}
 
 input[type='radio'] + label:before {
   border-radius: 50%;

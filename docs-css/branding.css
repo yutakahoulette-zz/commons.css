@@ -52,6 +52,12 @@ input[type='radio']:checked + label:before { color:  transparent;
 .toggle input[type='radio']:checked + label { background: $green }
 
 
+[class*='helpBox--'] {
+  padding: .75em;
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
 /* brand colors for help box */
 .helpBox--success {
   background: $green-light;
