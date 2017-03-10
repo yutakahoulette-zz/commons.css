@@ -1258,7 +1258,6 @@ blockquote {
   margin: 0;
   padding: 0.5em;
   outline: none;
-  border-width: 1px;
   border-style: solid;
   border-radius: 3px;
   -webkit-user-select: none;
