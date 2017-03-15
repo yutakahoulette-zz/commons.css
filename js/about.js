@@ -13,7 +13,7 @@ module.exports =
         h('strong', 'commons.css ')
       , 'is comprised of utility classes heavily inspired by '
       , h('a', {props: {href: 'http://basscss.com'}}, 'Basscss')
-      , ', and styles for a handful of core UI components.' 
+      , ', + normalize.css + styles for a handful of core UI components.' 
       ])
   , h('p', {hook: {insert: x => x.elm.innerHTML = star}})
   ])

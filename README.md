@@ -1,37 +1,8 @@
-includes utility classes + styles for core UI components:
+css utilility classes + normalize.css + core UI components
 
 **docs:** [http://yutakahoulette.com/commons.css/](http://yutakahoulette.com/commons.css/)
 
 to use: `npm install --save --save-dev commons.css`
-
-module list:
-
-- align
-- aspect
-- background
-- blockquote
-- border
-- button
-- cursor
-- dissabled
-- form
-- grid
-- help box
-- hide
-- layout
-- list
-- margin
-- misc
-- opacity
-- padding
-- position
-- progress bar
-- shadow
-- table
-- tabs
-- toggle-scale
-- type-scale
-- typography
 
 i recommond using postcss and postcss-import for managing/building css:
 
