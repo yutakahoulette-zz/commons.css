@@ -1,6 +1,6 @@
 {
   "name": "commons.css",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "css utilility classes + normalize.css + core UI components",
   "style": "lib/index.css",
   "scripts": {
@@ -40,7 +40,6 @@
     "precss": "^1.4.0",
     "ramda": "^0.22.1",
     "snabbdom": "^0.5.3",
-    "uglifyjs": "^2.4.10",
-    "imagesloaded": "^4.1.1"
+    "uglifyjs": "^2.4.10"
   }
 }
